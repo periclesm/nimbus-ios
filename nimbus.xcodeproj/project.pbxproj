@@ -9,23 +9,30 @@
 /* Begin PBXBuildFile section */
 		684A20891EA74B7400BFC44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
 		684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208B1EA74B7400BFC44C /* AppDelegate.m */; };
-		684A208F1EA74B7400BFC44C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208E1EA74B7400BFC44C /* ViewController.m */; };
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
+		684A20A31EA74E5700BFC44C /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20A21EA74E5700BFC44C /* MainController.m */; };
+		684A20A91EA7589A00BFC44C /* IntroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20A81EA7589A00BFC44C /* IntroController.m */; };
+		6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799085B13FD94F076C2E2A7A /* libPods-nimbus.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A20881EA74B7400BFC44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		684A208A1EA74B7400BFC44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		684A208B1EA74B7400BFC44C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		684A208D1EA74B7400BFC44C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		684A208E1EA74B7400BFC44C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		684A20911EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		684A20931EA74B7400BFC44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684A20961EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		684A20981EA74B7400BFC44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		684A20A11EA74E5700BFC44C /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		684A20A21EA74E5700BFC44C /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		684A20A71EA7589A00BFC44C /* IntroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroController.h; sourceTree = "<group>"; };
+		684A20A81EA7589A00BFC44C /* IntroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroController.m; sourceTree = "<group>"; };
+		799085B13FD94F076C2E2A7A /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				684A20861EA74B7400BFC44C /* nimbus */,
 				684A20851EA74B7400BFC44C /* Products */,
+				D2828EE83853650EBC6D7666 /* Pods */,
+				7896288071E0E771343E6221 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +70,13 @@
 			children = (
 				684A208A1EA74B7400BFC44C /* AppDelegate.h */,
 				684A208B1EA74B7400BFC44C /* AppDelegate.m */,
-				684A208D1EA74B7400BFC44C /* ViewController.h */,
-				684A208E1EA74B7400BFC44C /* ViewController.m */,
-				684A20901EA74B7400BFC44C /* Main.storyboard */,
-				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */,
+				684A20901EA74B7400BFC44C /* Main.storyboard */,
+				684A20A71EA7589A00BFC44C /* IntroController.h */,
+				684A20A81EA7589A00BFC44C /* IntroController.m */,
+				684A20A11EA74E5700BFC44C /* MainController.h */,
+				684A20A21EA74E5700BFC44C /* MainController.m */,
+				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20981EA74B7400BFC44C /* Info.plist */,
 				684A20871EA74B7400BFC44C /* Supporting Files */,
 			);
@@ -79,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7896288071E0E771343E6221 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				799085B13FD94F076C2E2A7A /* libPods-nimbus.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2828EE83853650EBC6D7666 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */,
+				D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 684A209B1EA74B7400BFC44C /* Build configuration list for PBXNativeTarget "nimbus" */;
 			buildPhases = (
+				B943777581A2326B5D711B04 /* [CP] Check Pods Manifest.lock */,
 				684A20801EA74B7400BFC44C /* Sources */,
 				684A20811EA74B7400BFC44C /* Frameworks */,
 				684A20821EA74B7400BFC44C /* Resources */,
+				AC9D08F65FEADDAD111A294C /* [CP] Embed Pods Frameworks */,
+				AF6501BA74364306629C125B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,13 +178,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC9D08F65FEADDAD111A294C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF6501BA74364306629C125B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nimbus/Pods-nimbus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B943777581A2326B5D711B04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		684A20801EA74B7400BFC44C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684A208F1EA74B7400BFC44C /* ViewController.m in Sources */,
+				684A20A91EA7589A00BFC44C /* IntroController.m in Sources */,
 				684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */,
+				684A20A31EA74E5700BFC44C /* MainController.m in Sources */,
 				684A20891EA74B7400BFC44C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +354,7 @@
 		};
 		684A209C1EA74B7400BFC44C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
@@ -285,6 +367,7 @@
 		};
 		684A209D1EA74B7400BFC44C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
@@ -314,6 +397,7 @@
 				684A209D1EA74B7400BFC44C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IntroController.h
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface IntroController : UIViewController
 
 @end
-
