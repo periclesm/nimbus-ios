@@ -10,4 +10,6 @@
 
 @interface DetailController : UITableViewController
 
+@property (nonatomic, nonnull, strong) NSString *objectId;
+
 @end

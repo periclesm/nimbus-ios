@@ -77,7 +77,7 @@
                             <outlet property="delegate" destination="1rD-uf-3dq" id="dgk-AZ-eKU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Cloud Formations" id="L7f-Kv-8zv"/>
+                    <navigationItem key="navigationItem" title="Clouds" id="L7f-Kv-8zv"/>
                     <connections>
                         <segue destination="kkN-16-lcQ" kind="show" identifier="detailSegue" id="YCS-qg-oi8"/>
                     </connections>
@@ -104,9 +104,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="239.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-v6-AuB">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-v6-AuB">
                                                     <rect key="frame" x="-0.5" y="0.0" width="375" height="180"/>
-                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="bHa-v6-AuB" secondAttribute="height" multiplier="25:12" id="dYW-oD-sYB"/>
                                                     </constraints>
@@ -149,25 +148,28 @@
                             </tableViewSection>
                             <tableViewSection id="lej-I7-8n9">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cloudDetailCell" rowHeight="100" id="fhj-Wv-mdy">
-                                        <rect key="frame" x="0.0" y="240" width="375" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cloudDetailCell" rowHeight="120" id="fhj-Wv-mdy">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fhj-Wv-mdy" id="id5-K5-Kyk">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVQ-Ch-DcC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVQ-Ch-DcC">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="120"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sVQ-Ch-DcC" firstAttribute="leading" secondItem="id5-K5-Kyk" secondAttribute="leading" constant="8" id="VgJ-XV-cA4"/>
+                                                <constraint firstAttribute="trailing" secondItem="sVQ-Ch-DcC" secondAttribute="trailing" constant="8" id="kvp-1G-Uyv"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
                                             <constraint firstItem="sVQ-Ch-DcC" firstAttribute="height" secondItem="fhj-Wv-mdy" secondAttribute="height" id="MJv-0u-9in"/>
-                                            <constraint firstItem="sVQ-Ch-DcC" firstAttribute="width" secondItem="fhj-Wv-mdy" secondAttribute="width" id="QWW-kf-8zF"/>
                                             <constraint firstItem="sVQ-Ch-DcC" firstAttribute="centerX" secondItem="fhj-Wv-mdy" secondAttribute="centerX" id="o28-yv-3Dc"/>
                                             <constraint firstItem="sVQ-Ch-DcC" firstAttribute="centerY" secondItem="fhj-Wv-mdy" secondAttribute="centerY" id="vAl-ow-MeN"/>
                                         </constraints>
@@ -182,10 +184,10 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="cloudDetails" destination="sVQ-Ch-DcC" id="hzK-7Q-VAE"/>
-                        <outlet property="cloudImage" destination="bHa-v6-AuB" id="3fc-dZ-oDM"/>
-                        <outlet property="cloudInitials" destination="8FY-9A-EfN" id="FKU-2R-QrH"/>
-                        <outlet property="cloudName" destination="5fO-tX-fNM" id="Kem-CW-Ggp"/>
+                        <outlet property="clDetails" destination="sVQ-Ch-DcC" id="f6Q-6K-iRJ"/>
+                        <outlet property="clImage" destination="bHa-v6-AuB" id="e0c-97-1iN"/>
+                        <outlet property="clInitials" destination="8FY-9A-EfN" id="SDB-Ld-Goe"/>
+                        <outlet property="clName" destination="5fO-tX-fNM" id="dyM-qH-ucn"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ms8-Qp-sdD" userLabel="First Responder" sceneMemberID="firstResponder"/>

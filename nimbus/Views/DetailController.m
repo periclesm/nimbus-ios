@@ -10,10 +10,10 @@
 
 @interface DetailController ()
 {
-	IBOutlet UIImageView *cloudImage;
-	IBOutlet UILabel *cloudInitials;
-	IBOutlet UILabel *cloudName;
-	IBOutlet UITextView *cloudDetails;
+	IBOutlet UIImageView *clImage;
+	IBOutlet UILabel *clInitials;
+	IBOutlet UILabel *clName;
+	IBOutlet UITextView *clDetails;
 }
 
 @end
@@ -23,8 +23,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	[self GetCloudData];
 	
 	self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+}
+
+#pragma mark - Data
+
+- (void)GetCloudData
+{
+	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", self.objectId];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
+	NSArray *cloudListData = [EntityController SearchItemsFromEntity:@"CloudList" predicate:predicate];
+	
+	CloudList *cl = cloudListData[0];
+	clInitials.text = cl.initials;
+	clName.text = cl.name;
+	self.title = cl.name;
+	
+	clDetails.text = [Presenter GetCloudDetails:cl.detail];
+	
+	[Networker GetRemoteImage:[Presenter GetCloudImageURL:cl.detail] completion:^(UIImage *image) {
+		clImage.image = image;
+	}];
 }
 
 #pragma mark - Table view data source

@@ -7,6 +7,7 @@
 //
 
 #import "MainController.h"
+#import "DetailController.h"
 
 #pragma mark - Table Cells
 
@@ -68,7 +69,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     cloudCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cloudCell" forIndexPath:indexPath];
-	
 	CloudList *cl = cloudArray[indexPath.row];
 	
 	cell.cloudInitials.text = cl.initials;
@@ -81,7 +81,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
-	[self performSegueWithIdentifier:@"detailSegue" sender:nil];
+	CloudList *cl = cloudArray[indexPath.row];
+	[self performSegueWithIdentifier:@"detailSegue" sender:cl.objectId];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([[segue identifier] isEqualToString:@"detailSegue"])
+	{
+		DetailController *dtc = [segue destinationViewController];
+		dtc.objectId = (NSString*)sender;
+	}
 }
 
 @end
