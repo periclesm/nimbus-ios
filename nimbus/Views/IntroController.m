@@ -18,22 +18,7 @@
 {
     [super viewDidLoad];
 	
-	[Networker GetDataFromService:cloudList completion:^(id response) {
-		NSLog(@"response: %@", response);
-	}];
-	
-	[Networker GetDataFromService:cloudType completion:^(id response) {
-		NSLog(@"response: %@", response);
-	}];
-	
-	[Networker GetDataFromService:cloudDetails completion:^(id response) {
-		NSLog(@"response: %@", response);
-	}];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
+	[Presenter GetInitialData];
 }
 
 @end

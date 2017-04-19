@@ -34,7 +34,7 @@
 	[postRequest setValue:@"Y6372R67Q2UCqCsWuCnD4YZ3ACEiiFxngF6WNqwE" forHTTPHeaderField:@"X-Parse-Application-Id"];
 	[postRequest setValue:@"LdJJnrhcCEiY8kRA3vAwg4sxT73LhQu84Efmv796" forHTTPHeaderField:@"X-Parse-REST-API-Key"];
 	
-	NSURLSessionConfiguration *config = [self SessionConfiguration];
+	NSURLSessionConfiguration *config = [self SessionConfigurationWithCache:NO];
 	config.requestCachePolicy = NSURLRequestReturnCacheDataElseLoad;
 	NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
 	NSURLSessionDataTask *task =  [session dataTaskWithRequest:postRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
@@ -98,7 +98,7 @@
 {
 	__block UIImage *dnlImage = nil;
 	
-	NSURLSessionConfiguration *config = [self SessionConfiguration];
+	NSURLSessionConfiguration *config = [self SessionConfigurationWithCache:YES];
 	
 	NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
 	NSURLSessionDataTask *task = [session dataTaskWithURL:[NSURL URLWithString:imageURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
@@ -118,12 +118,12 @@
 
 #pragma mark - Utilities
 
-- (NSURLSessionConfiguration*)SessionConfiguration
+- (NSURLSessionConfiguration*)SessionConfigurationWithCache:(Boolean)cached
 {
 	NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
 	
 	config.HTTPShouldUsePipelining = YES;
-	config.requestCachePolicy = NSURLRequestReturnCacheDataElseLoad;
+	config.requestCachePolicy = cached? NSURLRequestReturnCacheDataElseLoad:NSURLRequestReloadIgnoringLocalAndRemoteCacheData;
 	config.timeoutIntervalForRequest = 30;
 	config.timeoutIntervalForResource = 30;
 	
