@@ -73,7 +73,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Cloud Formations" id="L7f-Kv-8zv"/>
                     <connections>
-                        <segue destination="kkN-16-lcQ" kind="show" id="YCS-qg-oi8"/>
+                        <segue destination="kkN-16-lcQ" kind="show" identifier="mainSegue" id="YCS-qg-oi8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKL-NY-SBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,7 +124,7 @@
                                 <rect key="frame" x="170" y="448" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="1rD-uf-3dq" kind="show" id="8dX-iT-swi"/>
+                                    <segue destination="1rD-uf-3dq" kind="show" identifier="introSegue" id="8dX-iT-swi"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eha-RZ-kOu">

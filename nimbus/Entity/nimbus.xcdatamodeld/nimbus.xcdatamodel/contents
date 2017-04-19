@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CloudDetail" representedClassName="CloudDetail" syncable="YES" codeGenerationType="class">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="objectId" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="CloudList" representedClassName="CloudList" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="objectId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="order" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="CloudType" representedClassName="CloudType" syncable="YES" codeGenerationType="class">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="objectId" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CloudDetail" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="CloudList" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="CloudType" positionX="-36" positionY="9" width="128" height="90"/>
+    </elements>
+</model>
