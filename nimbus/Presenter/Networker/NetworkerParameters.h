@@ -7,7 +7,7 @@
 //
 
 UIKIT_EXTERN NSString* const cloudList;
-UIKIT_EXTERN NSString* const cloudDetails;
+UIKIT_EXTERN NSString* const cloudDetail;
 UIKIT_EXTERN NSString* const cloudType;
 
 @interface NetworkerParameters : NSObject

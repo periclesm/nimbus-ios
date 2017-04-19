@@ -14,7 +14,7 @@
 @implementation NetworkerParameters
 
 NSString* const cloudList		= @"https://stage.rdfn.eu/nimbus/classes/cloudList";
-NSString* const cloudDetails	= @"https://stage.rdfn.eu/nimbus/classes/cloudDetails";
+NSString* const cloudDetail		= @"https://stage.rdfn.eu/nimbus/classes/cloudDetail";
 NSString* const cloudType		= @"https://stage.rdfn.eu/nimbus/classes/cloudType";
 
 + (NSString*)GetAddressForService:(NSString*)service parameters:(NSDictionary*)params
@@ -22,7 +22,7 @@ NSString* const cloudType		= @"https://stage.rdfn.eu/nimbus/classes/cloudType";
 	SWITCH(service)
 	{
 		CASE(cloudList)		{ return cloudList; }
-		CASE(cloudDetails)	{ return cloudDetails; }
+		CASE(cloudDetail)	{ return cloudDetail; }
 		CASE(cloudType)		{ return cloudType; }
 	}
 	

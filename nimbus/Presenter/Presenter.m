@@ -24,11 +24,44 @@
 		[EntityController SetItemsToEntity:@"CloudType" items:datamap];
 	}];
 	
-	[Networker GetDataFromService:cloudDetails completion:^(id response) {
+	[Networker GetDataFromService:cloudDetail completion:^(id response) {
 //		NSLog(@"response: %@", response);
 		NSArray *datamap = [DataModeller DataMapForEntity:DataEntityDetail object:(NSDictionary *)response];
 		[EntityController SetItemsToEntity:@"CloudDetail" items:datamap];
 	}];
+}
+
++ (NSString*)GetCloudDetails:(NSString*)objectId
+{
+	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
+	NSArray *clouddetail = [EntityController SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
+	
+	CloudDetail *cd = clouddetail[0];
+	
+	return cd.detail;
+}
+
++ (NSString*)GetCloudImageURL:(NSString*)objectId
+{
+	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
+	NSArray *clouddetail = [EntityController SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
+	
+	CloudDetail *cd = clouddetail[0];
+	
+	return cd.image;
+}
+
++ (NSString*)GetCloudType:(NSString*)objectId
+{
+	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
+	NSArray *clouddetail = [EntityController SearchItemsFromEntity:@"CloudType" predicate:predicate];
+	
+	CloudType *ct = clouddetail[0];
+	
+	return ct.name;
 }
 
 @end

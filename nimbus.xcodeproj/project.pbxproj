@@ -21,6 +21,7 @@
 		684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */; };
 		684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */; };
 		684A20EB1EA7A4F700BFC44C /* DataModeller.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20EA1EA7A4F700BFC44C /* DataModeller.m */; };
+		684A20F41EA7DB2300BFC44C /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20F31EA7DB2300BFC44C /* DetailController.m */; };
 		6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799085B13FD94F076C2E2A7A /* libPods-nimbus.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkIndicator.m; sourceTree = "<group>"; };
 		684A20E91EA7A4F700BFC44C /* DataModeller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModeller.h; sourceTree = "<group>"; };
 		684A20EA1EA7A4F700BFC44C /* DataModeller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModeller.m; sourceTree = "<group>"; };
+		684A20F21EA7DB2300BFC44C /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		684A20F31EA7DB2300BFC44C /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
 		799085B13FD94F076C2E2A7A /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +122,8 @@
 				684A20AD1EA76BCA00BFC44C /* IntroController.m */,
 				684A20AE1EA76BCA00BFC44C /* MainController.h */,
 				684A20AF1EA76BCA00BFC44C /* MainController.m */,
+				684A20F21EA7DB2300BFC44C /* DetailController.h */,
+				684A20F31EA7DB2300BFC44C /* DetailController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,9 +133,9 @@
 			children = (
 				684A20E91EA7A4F700BFC44C /* DataModeller.h */,
 				684A20EA1EA7A4F700BFC44C /* DataModeller.m */,
-				684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */,
 				684A20C91EA772D700BFC44C /* EntityController.h */,
 				684A20CA1EA772D700BFC44C /* EntityController.m */,
+				684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -148,10 +153,10 @@
 		684A20DF1EA7A3DB00BFC44C /* Networker */ = {
 			isa = PBXGroup;
 			children = (
-				684A20E01EA7A3DB00BFC44C /* Networker.h */,
-				684A20E11EA7A3DB00BFC44C /* Networker.m */,
 				684A20E21EA7A3DB00BFC44C /* NetworkerParameters.h */,
 				684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */,
+				684A20E01EA7A3DB00BFC44C /* Networker.h */,
+				684A20E11EA7A3DB00BFC44C /* Networker.m */,
 				684A20E41EA7A3DB00BFC44C /* NetworkIndicator.h */,
 				684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */,
 			);
@@ -306,6 +311,7 @@
 				684A20EB1EA7A4F700BFC44C /* DataModeller.m in Sources */,
 				684A20B11EA76BCA00BFC44C /* MainController.m in Sources */,
 				684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */,
+				684A20F41EA7DB2300BFC44C /* DetailController.m in Sources */,
 				684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */,
 				684A20891EA74B7400BFC44C /* main.m in Sources */,
 				684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */,

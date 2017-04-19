@@ -33,9 +33,9 @@ static NSManagedObjectContext *defaultContext;
 
 + (void)SetItemsToEntity:(NSString*)entity items:(NSArray*)items
 {
-//	NSInteger currentCount = [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
-//	if (currentCount > 0)
-//		[NSClassFromString(entity) MR_truncateAll];
+	NSInteger currentCount = [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
+	if (currentCount > 0)
+		[NSClassFromString(entity) MR_truncateAll];
 	
 	if (items.count > 0)
 	{

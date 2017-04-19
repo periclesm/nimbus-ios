@@ -13,7 +13,7 @@
 
 @interface cloudCell : UITableViewCell
 
-@property (nonatomic, weak, nullable) IBOutlet UIImageView *cloudImage;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *cloudInitials;
 @property (nonatomic, weak, nullable) IBOutlet UILabel *cloudName;
 @property (nonatomic, weak, nullable) IBOutlet UILabel *cloudDetail;
 

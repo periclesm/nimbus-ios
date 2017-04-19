@@ -35,7 +35,7 @@
 	[postRequest setValue:@"LdJJnrhcCEiY8kRA3vAwg4sxT73LhQu84Efmv796" forHTTPHeaderField:@"X-Parse-REST-API-Key"];
 	
 	NSURLSessionConfiguration *config = [self SessionConfigurationWithCache:NO];
-	config.requestCachePolicy = NSURLRequestReturnCacheDataElseLoad;
+
 	NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
 	NSURLSessionDataTask *task =  [session dataTaskWithRequest:postRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
 		
@@ -122,15 +122,16 @@
 {
 	NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
 	
-	config.HTTPShouldUsePipelining = YES;
 	config.requestCachePolicy = cached? NSURLRequestReturnCacheDataElseLoad:NSURLRequestReloadIgnoringLocalAndRemoteCacheData;
+	config.HTTPShouldUsePipelining = YES;
+	
 	config.timeoutIntervalForRequest = 30;
 	config.timeoutIntervalForResource = 30;
 	
 	config.allowsCellularAccess = YES;
 	
-	config.sessionSendsLaunchEvents = YES;
-	config.discretionary = YES;
+//	config.sessionSendsLaunchEvents = YES;
+//	config.discretionary = YES;
 	
 	return config;
 }

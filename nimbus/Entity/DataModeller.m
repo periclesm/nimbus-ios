@@ -26,7 +26,10 @@
 					NSDictionary *dataDict = @{
 											   @"objectId": [self ProcessValue:result[@"objectId"]],
 											   @"order": [self ProcessValue:result[@"order"]],
-											   @"name": [self ProcessValue:result[@"name"]]
+											   @"name": [self ProcessValue:result[@"name"]],
+											   @"initials": [self ProcessValue:result[@"initials"]],
+											   @"detail": [self ProcessValue:result[@"detail"][@"objectId"]],
+											   @"type": [self ProcessValue:result[@"type"][@"objectId"]],
 											   };
 					
 					[dataMap addObject:dataDict];
@@ -57,7 +60,6 @@
 				{
 					NSDictionary *dataDict = @{
 											   @"objectId": [self ProcessValue:result[@"objectId"]],
-											   @"name": [self ProcessValue:result[@"name"]],
 											   @"detail": [self ProcessValue:result[@"detail"]],
 											   @"image": [self ProcessValue:result[@"image"]]
 											   };

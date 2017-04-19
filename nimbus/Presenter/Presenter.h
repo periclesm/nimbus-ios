@@ -9,5 +9,8 @@
 @interface Presenter : NSObject
 
 + (void)GetInitialData;
++ (NSString*)GetCloudDetails:(NSString*)objectId;
++ (NSString*)GetCloudImageURL:(NSString*)objectId;
++ (NSString*)GetCloudType:(NSString*)objectId;
 
 @end
