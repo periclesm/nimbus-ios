@@ -1,0 +1,16 @@
+//
+//  Nimbus-Prefix.pch
+//  nimbus
+//
+//  Created by Pericles Maravelakis on 19/04/2017.
+//  Copyright © 2017 Cloudfields. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import <MagicalRecord/MagicalRecord.h>
+
+#import "EntityController.h"
+#import "NetworkerParameters.h"
+#import "Networker.h"
