@@ -61,7 +61,8 @@
 					NSDictionary *dataDict = @{
 											   @"objectId": [self ProcessValue:result[@"objectId"]],
 											   @"detail": [self ProcessValue:result[@"detail"]],
-											   @"image": [self ProcessValue:result[@"image"]]
+											   @"image": [self ProcessValue:result[@"image"]],
+											   @"wiki": [self ProcessValue:result[@"wiki"]]
 											   };
 					
 					[dataMap addObject:dataDict];

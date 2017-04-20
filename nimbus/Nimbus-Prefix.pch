@@ -12,7 +12,5 @@
 #import <MagicalRecord/MagicalRecord.h>
 
 #import "Presenter.h"
-#import "NetworkerParameters.h"
 #import "Networker.h"
-
 #import "EntityController.h"

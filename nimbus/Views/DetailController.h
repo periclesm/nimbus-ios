@@ -6,8 +6,6 @@
 //  Copyright © 2017 Cloudfields. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface DetailController : UITableViewController
 
 @property (nonatomic, nonnull, strong) NSString *objectId;

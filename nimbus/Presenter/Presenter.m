@@ -31,7 +31,16 @@
 	}];
 }
 
-+ (NSString*)GetCloudDetails:(NSString*)objectId
++ (CloudList*)GetCloudInfo:(NSString*)objectId
+{
+	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
+	NSArray *cloudListData = [EntityController SearchItemsFromEntity:@"CloudList" predicate:predicate];
+	
+	return cloudListData[0];
+}
+
++ (NSString*)GetCloudDetails:(NSString*)objectId shortText:(Boolean)shortText
 {
 	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
@@ -39,7 +48,15 @@
 	
 	CloudDetail *cd = clouddetail[0];
 	
-	return cd.detail;
+	if (shortText)
+	{
+		if ([cd.detail rangeOfString:@"."].location != NSNotFound)
+			return [cd.detail substringToIndex:[cd.detail rangeOfString:@"."].location +1];
+		else
+			return cd.detail;
+	}
+	else
+		return cd.detail;
 }
 
 + (NSString*)GetCloudImageURL:(NSString*)objectId
@@ -53,13 +70,24 @@
 	return cd.image;
 }
 
++ (NSString*)GetCloudWikiURL:(NSString*)objectId
+{
+	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
+	NSArray *clouddetail = [EntityController SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
+	
+	CloudDetail *cd = clouddetail[0];
+	
+	return cd.wiki;
+}
+
 + (NSString*)GetCloudType:(NSString*)objectId
 {
 	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
-	NSArray *clouddetail = [EntityController SearchItemsFromEntity:@"CloudType" predicate:predicate];
+	NSArray *cloudtype = [EntityController SearchItemsFromEntity:@"CloudType" predicate:predicate];
 	
-	CloudType *ct = clouddetail[0];
+	CloudType *ct = cloudtype[0];
 	
 	return ct.name;
 }

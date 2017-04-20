@@ -64,29 +64,31 @@ static NSManagedObjectContext *defaultContext;
 
 + (void)UpdateItemsToEntity:(NSString*)entity items:(NSArray*)items
 {
-	for (int i = 0; i < items.count; i++)
+	if (items.count > 0)
 	{
-		@try
+		for (int i = 0; i < items.count; i++)
 		{
-			NSArray *currentItems = [self GetItemsFromEntity:entity];
-			id newEntity = [NSClassFromString(entity) MR_createEntityInContext:[self GetContext]];
-			newEntity = currentItems[i];
-			[newEntity setValuesForKeysWithDictionary:items[i]];
+			@try
+			{
+				NSArray *currentItems = [self GetItemsFromEntity:entity];
+				id newEntity = [NSClassFromString(entity) MR_createEntityInContext:[self GetContext]];
+				newEntity = currentItems[i];
+				[newEntity setValuesForKeysWithDictionary:items[i]];
+			}
+			@catch (NSException *exception)
+			{
+				NSLog(@"Exception in updating %@ with message: %@", entity, exception.description);
+			}
+			@finally
+			{
+				[[self GetContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
+					if (error) NSLog(@"Error in saving %@ context because: %@", entity, error.localizedDescription);
+				}];
+			}
+			
 		}
-		@catch (NSException *exception)
-		{
-			NSLog(@"Exception in updating %@ with message: %@", entity, exception.description);
-		}
-		@finally
-		{
-			[[self GetContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
-				if (error) NSLog(@"Error in saving %@ context because: %@", entity, error.localizedDescription);
-			}];
-		}
-		
 	}
 }
-
 
 #pragma mark - Get
 
@@ -97,7 +99,7 @@ static NSManagedObjectContext *defaultContext;
 
 + (NSArray*)GetItemsFromEntity:(NSString*)entity
 {
-	NSInteger currentCount = [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
+	NSInteger currentCount = [self GetItemCountFromEntity:entity];
 	
 	if (currentCount > 0)
 		return [NSClassFromString(entity) MR_findAll];
@@ -107,7 +109,7 @@ static NSManagedObjectContext *defaultContext;
 
 + (NSArray*)GetSortedItemsFromEntity:(NSString*)entity sortBy:(NSString*)sort ascending:(Boolean)asc
 {
-	NSInteger currentCount = [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
+	NSInteger currentCount = [self GetItemCountFromEntity:entity];
 	
 	if (currentCount > 0)
 		return [NSClassFromString(entity) MR_findAllSortedBy:sort ascending:asc];
@@ -157,7 +159,7 @@ static NSManagedObjectContext *defaultContext;
 
 + (NSArray*)SearchItemsFromEntity:(NSString*)entity predicate:(NSPredicate*)pred
 {
-	NSInteger currentCount = [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
+	NSInteger currentCount = [self GetItemCountFromEntity:entity];
 	
 	if (currentCount > 0)
 		return [NSClassFromString(entity) MR_findAllWithPredicate:pred];

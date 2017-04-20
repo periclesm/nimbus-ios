@@ -55,6 +55,7 @@
 		684A20EA1EA7A4F700BFC44C /* DataModeller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModeller.m; sourceTree = "<group>"; };
 		684A20F21EA7DB2300BFC44C /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
 		684A20F31EA7DB2300BFC44C /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
+		68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbusv2.xcdatamodel; sourceTree = "<group>"; };
 		799085B13FD94F076C2E2A7A /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -493,9 +494,10 @@
 		684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */,
 				684A20B41EA76C0600BFC44C /* nimbus.xcdatamodel */,
 			);
-			currentVersion = 684A20B41EA76C0600BFC44C /* nimbus.xcdatamodel */;
+			currentVersion = 68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */;
 			path = nimbus.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -7,6 +7,7 @@
 //
 
 #import "NetworkIndicator.h"
+#import "NetworkerParameters.h"
 
 @interface Networker : NSObject <NSURLSessionDelegate>
 

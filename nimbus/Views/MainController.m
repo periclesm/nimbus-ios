@@ -9,20 +9,6 @@
 #import "MainController.h"
 #import "DetailController.h"
 
-#pragma mark - Table Cells
-
-@implementation cloudCell
-@synthesize cloudInitials, cloudName, cloudDetail;
-
-- (void)awakeFromNib
-{
-	[super awakeFromNib];
-	self.backgroundColor = [UIColor clearColor];
-	self.cloudInitials.layer.cornerRadius = self.cloudInitials.frame.size.width/2;
-}
-
-@end
-
 #pragma mark - Table View Controller
 
 @interface MainController ()
@@ -73,7 +59,7 @@
 	
 	cell.cloudInitials.text = cl.initials;
 	cell.cloudName.text = cl.name;
-	cell.cloudDetail.text = [Presenter GetCloudDetails:cl.detail];
+	cell.cloudDetail.text = [Presenter GetCloudDetails:cl.detail shortText:YES];
     
     return cell;
 }
@@ -92,6 +78,20 @@
 		DetailController *dtc = [segue destinationViewController];
 		dtc.objectId = (NSString*)sender;
 	}
+}
+
+@end
+
+#pragma mark - Table Cells
+
+@implementation cloudCell
+@synthesize cloudInitials, cloudName, cloudDetail;
+
+- (void)awakeFromNib
+{
+	[super awakeFromNib];
+	self.backgroundColor = [UIColor clearColor];
+	self.cloudInitials.layer.cornerRadius = self.cloudInitials.frame.size.width/2;
 }
 
 @end
