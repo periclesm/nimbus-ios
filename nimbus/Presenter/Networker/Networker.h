@@ -11,7 +11,7 @@
 
 @interface Networker : NSObject <NSURLSessionDelegate>
 
-+ (void)GetDataFromService:(NSString*)service completion:(void (^)(id response))completion;
++ (void)GetDataFromService:(NSString*)service parameters:(NSDictionary*)params completion:(void (^)(id response))completion;
 + (void)GetRemoteImage:(NSString*)imageURL completion:(void (^)(UIImage *image))completion;
 
 @end

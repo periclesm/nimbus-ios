@@ -12,21 +12,21 @@
 
 #pragma mark - Service Data
 
-+ (void)GetDataFromService:(NSString*)service completion:(void (^)(id response))completion
++ (void)GetDataFromService:(NSString*)service parameters:(NSDictionary*)params completion:(void (^)(id response))completion
 {
 	__block Networker *net = [Networker new];
 	
 	[NetworkIndicator IncreaseActivity];
 	
-	[net GetDataFromService:service completion:^(id response) {
+	[net GetDataFromService:service parameters:params completion:^(id response) {
 		[NetworkIndicator DecreaseActivity];
 		completion(response);
 	}];
 }
 
-- (void)GetDataFromService:(NSString*)service completion:(void (^)(id response))completion
+- (void)GetDataFromService:(NSString*)service parameters:(NSDictionary*)params completion:(void (^)(id response))completion
 {
-	NSURL *requestURL = [NSURL URLWithString:[NetworkerParameters GetAddressForService:service parameters:nil]];
+	NSURL *requestURL = [NSURL URLWithString:[NetworkerParameters GetAddressForService:service parameters:params]];
 	NSMutableURLRequest *postRequest = [NSMutableURLRequest requestWithURL:requestURL];
 	
 	[postRequest setHTTPMethod:@"GET"];

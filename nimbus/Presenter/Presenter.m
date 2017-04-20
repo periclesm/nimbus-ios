@@ -12,22 +12,28 @@
 
 + (void)GetInitialData
 {
-	[Networker GetDataFromService:cloudList completion:^(id response) {
+	[Networker GetDataFromService:cloudList parameters:nil completion:^(id response) {
 //		NSLog(@"response: %@", response);
 		NSArray *datamap = [DataModeller DataMapForEntity:DataEntityList object:(NSDictionary *)response];
 		[EntityController SetItemsToEntity:@"CloudList" items:datamap];
 	}];
 	
-	[Networker GetDataFromService:cloudType completion:^(id response) {
+	[Networker GetDataFromService:cloudType parameters:nil completion:^(id response) {
 //		NSLog(@"response: %@", response);
 		NSArray *datamap = [DataModeller DataMapForEntity:DataEntityType object:(NSDictionary *)response];
 		[EntityController SetItemsToEntity:@"CloudType" items:datamap];
 	}];
 	
-	[Networker GetDataFromService:cloudDetail completion:^(id response) {
+	[Networker GetDataFromService:cloudDetail parameters:nil completion:^(id response) {
 //		NSLog(@"response: %@", response);
 		NSArray *datamap = [DataModeller DataMapForEntity:DataEntityDetail object:(NSDictionary *)response];
 		[EntityController SetItemsToEntity:@"CloudDetail" items:datamap];
+	}];
+	
+	//alternate method to get all data in a single call -- not used for the time being
+	NSDictionary *params = @{@"include":@"detail,type"};
+	[Networker GetDataFromService:cloudListParam parameters:params completion:^(id response) {
+		NSLog(@"response: %@", response);
 	}];
 }
 
