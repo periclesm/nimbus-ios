@@ -27,7 +27,6 @@
 	cloudArray = [NSMutableArray array];
 	[self GetCloudData];
 	self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-	
 }
 
 #pragma mark - Data

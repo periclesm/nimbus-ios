@@ -25,8 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[self GetCloudData];
 	
+	[self GetCloudData];
 	self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 

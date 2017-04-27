@@ -61,34 +61,34 @@ static NSManagedObjectContext *defaultContext;
 }
 
 #pragma mark - Update
-
-+ (void)UpdateItemsToEntity:(NSString*)entity items:(NSArray*)items
-{
-	if (items.count > 0)
-	{
-		for (int i = 0; i < items.count; i++)
-		{
-			@try
-			{
-				NSArray *currentItems = [self GetItemsFromEntity:entity];
-				id newEntity = [NSClassFromString(entity) MR_createEntityInContext:[self GetContext]];
-				newEntity = currentItems[i];
-				[newEntity setValuesForKeysWithDictionary:items[i]];
-			}
-			@catch (NSException *exception)
-			{
-				NSLog(@"Exception in updating %@ with message: %@", entity, exception.description);
-			}
-			@finally
-			{
-				[[self GetContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
-					if (error) NSLog(@"Error in saving %@ context because: %@", entity, error.localizedDescription);
-				}];
-			}
-			
-		}
-	}
-}
+/// Not yet ready!
+//+ (void)UpdateItemsToEntity:(NSString*)entity items:(NSArray*)items
+//{
+//	if (items.count > 0)
+//	{
+//		for (int i = 0; i < items.count; i++)
+//		{
+//			@try
+//			{
+//				NSArray *currentItems = [self GetItemsFromEntity:entity];
+//				id newEntity = [NSClassFromString(entity) MR_createEntityInContext:[self GetContext]];
+//				newEntity = currentItems[i];
+//				[newEntity setValuesForKeysWithDictionary:items[i]];
+//			}
+//			@catch (NSException *exception)
+//			{
+//				NSLog(@"Exception in updating %@ with message: %@", entity, exception.description);
+//			}
+//			@finally
+//			{
+//				[[self GetContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
+//					if (error) NSLog(@"Error in saving %@ context because: %@", entity, error.localizedDescription);
+//				}];
+//			}
+//			
+//		}
+//	}
+//}
 
 #pragma mark - Get
 

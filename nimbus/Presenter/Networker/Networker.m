@@ -14,11 +14,9 @@
 
 + (void)GetDataFromService:(NSString*)service parameters:(NSDictionary*)params completion:(void (^)(id response))completion
 {
-	__block Networker *net = [Networker new];
-	
 	[NetworkIndicator IncreaseActivity];
 	
-	[net GetDataFromService:service parameters:params completion:^(id response) {
+	[[Networker new] GetDataFromService:service parameters:params completion:^(id response) {
 		[NetworkIndicator DecreaseActivity];
 		completion(response);
 	}];
@@ -86,9 +84,9 @@
 
 + (void)GetRemoteImage:(NSString*)imageURL completion:(void (^)(UIImage *image))completion
 {
-	Networker *mdn = [Networker new];
 	[NetworkIndicator IncreaseActivity];
-	[mdn GetRemoteImage:imageURL completion:^(UIImage *image) {
+	
+	[[Networker new] GetRemoteImage:imageURL completion:^(UIImage *image) {
 		[NetworkIndicator DecreaseActivity];
 		completion(image);
 	}];

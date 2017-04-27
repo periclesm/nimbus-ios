@@ -30,11 +30,11 @@
 		[EntityController SetItemsToEntity:@"CloudDetail" items:datamap];
 	}];
 	
-	//alternate method to get all data in a single call -- not used for the time being
-	NSDictionary *params = @{@"include":@"detail,type"};
-	[Networker GetDataFromService:cloudListParam parameters:params completion:^(id response) {
-		NSLog(@"response: %@", response);
-	}];
+///	alternate method to get all data in a single call -- not used for the time being
+//	NSDictionary *params = @{@"include":@"detail,type"};
+//	[Networker GetDataFromService:cloudListParam parameters:params completion:^(id response) {
+//		NSLog(@"response: %@", response);
+//	}];
 }
 
 + (CloudList*)GetCloudInfo:(NSString*)objectId

@@ -18,7 +18,7 @@
 + (void)SetItemsToEntity:(NSString*)entity items:(NSArray*)items;
 
 #pragma maek - Update
-+ (void)UpdateItemsToEntity:(NSString*)entity items:(NSArray*)items;
+//+ (void)UpdateItemsToEntity:(NSString*)entity items:(NSArray*)items;
 
 #pragma mark - Get
 + (NSInteger)GetItemCountFromEntity:(NSString*)entity;
