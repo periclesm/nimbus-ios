@@ -18,6 +18,7 @@
 	IBOutlet UILabel *clName;
 	IBOutlet UILabel *clAltitude;
 	IBOutlet UILabel *clDetails;
+	IBOutlet DGActivityIndicatorView *activity;
 }
 
 @end
@@ -28,6 +29,10 @@
 {
 	[self GetCloudData];
     [super viewDidLoad];
+
+	activity.type = DGActivityIndicatorAnimationTypeBallRotate;
+	activity.size = activity.frame.size.width-8.0f;
+	activity.tintColor = [UIColor lightGrayColor];
 }
 
 #pragma mark - Data
@@ -43,9 +48,11 @@
 	clDetails.text = [Presenter GetCloudDetails:cl.detail shortText:NO];
 
 	clImage.alpha = 0;
+	[activity startAnimating];
 	[Networker GetRemoteImage:[Presenter GetCloudImageURL:cl.detail] completion:^(UIImage *image) {
 		self->clImage.image = image;
 		[UIView animateWithDuration:0.25 animations:^{ self->clImage.alpha = 1; }];
+		[self->activity stopAnimating];
 	}];
 }
 

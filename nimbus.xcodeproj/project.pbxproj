@@ -102,7 +102,7 @@
 				684A208A1EA74B7400BFC44C /* AppDelegate.h */,
 				684A208B1EA74B7400BFC44C /* AppDelegate.m */,
 				68B2E05220E9F98200C20BD5 /* Components */,
-				684A20AB1EA76BCA00BFC44C /* Views */,
+				684A20AB1EA76BCA00BFC44C /* View */,
 				684A20DB1EA7A3AB00BFC44C /* Controller */,
 				684A20B21EA76BF500BFC44C /* Model */,
 				684A20871EA74B7400BFC44C /* Supporting Files */,
@@ -121,7 +121,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		684A20AB1EA76BCA00BFC44C /* Views */ = {
+		684A20AB1EA76BCA00BFC44C /* View */ = {
 			isa = PBXGroup;
 			children = (
 				68B2E05120E9F43400C20BD5 /* Storyboards */,
@@ -132,7 +132,7 @@
 				684A20F21EA7DB2300BFC44C /* DetailVC.h */,
 				684A20F31EA7DB2300BFC44C /* DetailVC.m */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		684A20B21EA76BF500BFC44C /* Model */ = {

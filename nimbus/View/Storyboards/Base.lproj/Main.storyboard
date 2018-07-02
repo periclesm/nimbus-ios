@@ -144,13 +144,23 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-ti-d7m" customClass="DGActivityIndicatorView">
+                                                    <rect key="frame" x="163.5" y="65" width="48" height="48"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="h9h-RC-Pua"/>
+                                                        <constraint firstAttribute="width" secondItem="fhe-ti-d7m" secondAttribute="height" multiplier="1:1" id="l2N-Q1-sBT"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="fhe-ti-d7m" firstAttribute="centerX" secondItem="Wd2-iK-nsb" secondAttribute="centerX" id="22l-cH-90M"/>
                                                 <constraint firstAttribute="trailing" secondItem="bHa-v6-AuB" secondAttribute="trailing" id="5j6-kM-V6g"/>
                                                 <constraint firstAttribute="bottom" secondItem="GAx-qe-R6a" secondAttribute="bottom" constant="8" id="AeZ-Ib-hfw"/>
                                                 <constraint firstItem="8FY-9A-EfN" firstAttribute="leading" secondItem="Wd2-iK-nsb" secondAttribute="leading" constant="8" id="Ahy-sF-Y9R"/>
                                                 <constraint firstItem="bHa-v6-AuB" firstAttribute="top" secondItem="Wd2-iK-nsb" secondAttribute="top" id="D0W-c6-l6I"/>
                                                 <constraint firstItem="8FY-9A-EfN" firstAttribute="bottom" secondItem="bHa-v6-AuB" secondAttribute="bottom" constant="54" id="IAP-Jz-IUl"/>
+                                                <constraint firstItem="fhe-ti-d7m" firstAttribute="centerY" secondItem="bHa-v6-AuB" secondAttribute="centerY" id="OEE-BN-kn8"/>
                                                 <constraint firstItem="bHa-v6-AuB" firstAttribute="leading" secondItem="Wd2-iK-nsb" secondAttribute="leading" id="ULL-De-cj4"/>
                                                 <constraint firstItem="8FY-9A-EfN" firstAttribute="bottom" secondItem="GAx-qe-R6a" secondAttribute="bottom" id="Wye-8J-KXd"/>
                                                 <constraint firstAttribute="trailing" secondItem="GAx-qe-R6a" secondAttribute="trailing" constant="8" id="kyj-LX-tBQ"/>
@@ -202,6 +212,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activity" destination="fhe-ti-d7m" id="hbU-mj-AVh"/>
                         <outlet property="clAltitude" destination="v2R-cV-jye" id="nAV-qE-1ct"/>
                         <outlet property="clDetails" destination="t23-PT-gNh" id="ycR-ei-EC5"/>
                         <outlet property="clImage" destination="bHa-v6-AuB" id="e0c-97-1iN"/>
