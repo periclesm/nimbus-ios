@@ -19,7 +19,7 @@
 
 	cell.cloudInitials.text = cl.initials;
 	cell.cloudName.text = cl.name;
-	cell.cloudDetail.text = [Presenter GetCloudDetails:cl.detail shortText:YES];
+	cell.cloudDetail.text = [DataLogic GetCloudDetails:cl.detail shortText:YES];
 
 	return cell;
 }

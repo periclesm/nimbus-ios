@@ -122,13 +122,14 @@
 {
 	NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
 	
-	config.requestCachePolicy = cached? NSURLRequestReturnCacheDataElseLoad:NSURLRequestReloadIgnoringLocalAndRemoteCacheData;
+	config.requestCachePolicy = cached? NSURLRequestReturnCacheDataElseLoad : NSURLRequestReloadIgnoringLocalAndRemoteCacheData;
 	config.HTTPShouldUsePipelining = YES;
 	
 	config.timeoutIntervalForRequest = 30;
 	config.timeoutIntervalForResource = 30;
 	
 	config.allowsCellularAccess = YES;
+	config.waitsForConnectivity = YES;
 	
 //	config.sessionSendsLaunchEvents = YES;
 //	config.discretionary = YES;

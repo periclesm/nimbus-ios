@@ -10,14 +10,14 @@
 
 #import "DataQuery.h"
 
-@interface Presenter : NSObject
+@interface DataLogic : NSObject
 
 + (void)GetInitialData;
 
++ (NSString*)GetCloudType:(NSString*)objectId;
 + (CloudList*)GetCloudInfo:(NSString*)objectId;
 + (NSString*)GetCloudDetails:(NSString*)objectId shortText:(Boolean)shortText;
 + (NSString*)GetCloudImageURL:(NSString*)objectId;
 + (NSString*)GetCloudWikiURL:(NSString*)objectId;
-+ (NSString*)GetCloudType:(NSString*)objectId;
 
 @end

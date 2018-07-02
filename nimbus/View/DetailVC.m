@@ -11,18 +11,6 @@
 #import "DetailVC.h"
 @import SafariServices;
 
-@interface DetailVC ()
-{
-	IBOutlet UIImageView *clImage;
-	IBOutlet UILabel *clInitials;
-	IBOutlet UILabel *clName;
-	IBOutlet UILabel *clAltitude;
-	IBOutlet UILabel *clDetails;
-	IBOutlet DGActivityIndicatorView *activity;
-}
-
-@end
-
 @implementation DetailVC
 
 - (void)viewDidLoad
@@ -39,17 +27,17 @@
 
 - (void)GetCloudData
 {	
-	CloudList *cl = [Presenter GetCloudInfo:self.objectId];
+	CloudList *cl = [DataLogic GetCloudInfo:self.objectId];
 	
 	self.title = cl.name;
 	clInitials.text = cl.initials;
 	clName.text = cl.name;
-	clAltitude.text = [[Presenter GetCloudType:cl.type] stringByAppendingString:@" altitude"];
-	clDetails.text = [Presenter GetCloudDetails:cl.detail shortText:NO];
+	clAltitude.text = [[DataLogic GetCloudType:cl.type] stringByAppendingString:@" altitude"];
+	clDetails.text = [DataLogic GetCloudDetails:cl.detail shortText:NO];
 
 	clImage.alpha = 0;
 	[activity startAnimating];
-	[Networker GetRemoteImage:[Presenter GetCloudImageURL:cl.detail] completion:^(UIImage *image) {
+	[Networker GetRemoteImage:[DataLogic GetCloudImageURL:cl.detail] completion:^(UIImage *image) {
 		self->clImage.image = image;
 		[UIView animateWithDuration:0.25 animations:^{ self->clImage.alpha = 1; }];
 		[self->activity stopAnimating];
@@ -60,8 +48,8 @@
 
 - (IBAction)WikiButton:(id)sender
 {
-	CloudList *cl = [Presenter GetCloudInfo:self.objectId];
-	SFSafariViewController *safariView = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[Presenter GetCloudWikiURL:cl.detail]]];
+	CloudList *cl = [DataLogic GetCloudInfo:self.objectId];
+	SFSafariViewController *safariView = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[DataLogic GetCloudWikiURL:cl.detail]]];
 	[self presentViewController:safariView animated:YES completion:nil];
 }
 

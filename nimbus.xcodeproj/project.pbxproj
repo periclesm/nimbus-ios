@@ -16,7 +16,7 @@
 		684A20B11EA76BCA00BFC44C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AF1EA76BCA00BFC44C /* MainVC.m */; };
 		684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */; };
 		684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20CA1EA772D700BFC44C /* DataQuery.m */; };
-		684A20DE1EA7A3BB00BFC44C /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20DD1EA7A3BB00BFC44C /* Presenter.m */; };
+		684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20DD1EA7A3BB00BFC44C /* DataLogic.m */; };
 		684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E11EA7A3DB00BFC44C /* Networker.m */; };
 		684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */; };
 		684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */; };
@@ -45,8 +45,8 @@
 		684A20C91EA772D700BFC44C /* DataQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataQuery.h; sourceTree = "<group>"; };
 		684A20CA1EA772D700BFC44C /* DataQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataQuery.m; sourceTree = "<group>"; };
 		684A20CC1EA7733C00BFC44C /* Nimbus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Prefix.pch"; sourceTree = "<group>"; };
-		684A20DC1EA7A3BB00BFC44C /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
-		684A20DD1EA7A3BB00BFC44C /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		684A20DC1EA7A3BB00BFC44C /* DataLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLogic.h; sourceTree = "<group>"; };
+		684A20DD1EA7A3BB00BFC44C /* DataLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLogic.m; sourceTree = "<group>"; };
 		684A20E01EA7A3DB00BFC44C /* Networker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networker.h; sourceTree = "<group>"; };
 		684A20E11EA7A3DB00BFC44C /* Networker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networker.m; sourceTree = "<group>"; };
 		684A20E21EA7A3DB00BFC44C /* NetworkerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkerParameters.h; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				684A20DF1EA7A3DB00BFC44C /* Networker */,
-				684A20DC1EA7A3BB00BFC44C /* Presenter.h */,
-				684A20DD1EA7A3BB00BFC44C /* Presenter.m */,
+				684A20DC1EA7A3BB00BFC44C /* DataLogic.h */,
+				684A20DD1EA7A3BB00BFC44C /* DataLogic.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684A20DE1EA7A3BB00BFC44C /* Presenter.m in Sources */,
+				684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */,
 				684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */,
 				684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */,
 				68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */,
@@ -389,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -440,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +457,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,7 +473,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -16,7 +16,7 @@
 {
     [super viewDidLoad];
 	
-	[Presenter GetInitialData];
+	[DataLogic GetInitialData];
 }
 
 @end

@@ -13,13 +13,6 @@
 
 #pragma mark - Table View Controller
 
-@interface MainVC ()
-{
-	NSMutableArray *cloudArray;
-}
-
-@end
-
 @implementation MainVC
 
 #pragma mark - View Lifecycle

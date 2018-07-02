@@ -14,7 +14,7 @@
 #import <MagicalRecord/MagicalRecord.h>
 #import <DGActivityIndicatorView/DGActivityIndicatorView.h>
 
-#import "Presenter.h"
+#import "DataLogic.h"
 #import "Networker.h"
 #import "DataQuery.h"
 

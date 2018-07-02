@@ -9,6 +9,14 @@
 //
 
 @interface DetailVC : UITableViewController
+{
+	IBOutlet UIImageView *clImage;
+	IBOutlet UILabel *clInitials;
+	IBOutlet UILabel *clName;
+	IBOutlet UILabel *clAltitude;
+	IBOutlet UILabel *clDetails;
+	IBOutlet DGActivityIndicatorView *activity;
+}
 
 @property (nonatomic, nonnull, strong) NSString *objectId;
 

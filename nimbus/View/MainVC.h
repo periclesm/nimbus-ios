@@ -9,6 +9,9 @@
 //
 
 @interface MainVC : UITableViewController
+{
+	NSMutableArray *cloudArray;
+}
 
 @end
 

@@ -1,5 +1,5 @@
 //
-//  Presenter.m
+//  PDataLogic.m
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -8,9 +8,9 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-#import "Presenter.h"
+#import "DataLogic.h"
 
-@implementation Presenter
+@implementation DataLogic
 
 + (void)GetInitialData
 {
@@ -31,12 +31,17 @@
 		NSArray *datamap = [DataMapper DataMapForEntity:DataEntityDetail object:(NSDictionary *)response];
 		[DataQuery SetItemsToEntity:@"CloudDetail" items:datamap];
 	}];
-	
-///	alternate method to get all data in a single call -- not used for the time being
-//	NSDictionary *params = @{@"include":@"detail,type"};
-//	[Networker GetDataFromService:cloudListParam parameters:params completion:^(id response) {
-//		NSLog(@"response: %@", response);
-//	}];
+}
+
++ (NSString*)GetCloudType:(NSString*)objectId
+{
+	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
+	NSArray *cloudtype = [DataQuery SearchItemsFromEntity:@"CloudType" predicate:predicate];
+
+	CloudType *ct = cloudtype.firstObject;
+
+	return ct.name;
 }
 
 + (CloudList*)GetCloudInfo:(NSString*)objectId
@@ -44,8 +49,8 @@
 	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
 	NSArray *cloudListData = [DataQuery SearchItemsFromEntity:@"CloudList" predicate:predicate];
-	
-	return cloudListData[0];
+
+	return cloudListData.firstObject;
 }
 
 + (NSString*)GetCloudDetails:(NSString*)objectId shortText:(Boolean)shortText
@@ -54,12 +59,12 @@
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
 	NSArray *clouddetail = [DataQuery SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
 	
-	CloudDetail *cd = clouddetail[0];
+	CloudDetail *cd = clouddetail.firstObject;
 	
 	if (shortText)
 	{
 		if ([cd.detail rangeOfString:@"."].location != NSNotFound)
-			return [cd.detail substringToIndex:[cd.detail rangeOfString:@"."].location +1];
+			return [cd.detail substringToIndex:[cd.detail rangeOfString:@"."].location + 1];
 		else
 			return cd.detail;
 	}
@@ -73,7 +78,7 @@
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
 	NSArray *clouddetail = [DataQuery SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
 	
-	CloudDetail *cd = clouddetail[0];
+	CloudDetail *cd = clouddetail.firstObject;
 	
 	return cd.image;
 }
@@ -84,20 +89,9 @@
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
 	NSArray *clouddetail = [DataQuery SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
 	
-	CloudDetail *cd = clouddetail[0];
+	CloudDetail *cd = clouddetail.firstObject;
 	
 	return cd.wiki;
-}
-
-+ (NSString*)GetCloudType:(NSString*)objectId
-{
-	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
-	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
-	NSArray *cloudtype = [DataQuery SearchItemsFromEntity:@"CloudType" predicate:predicate];
-	
-	CloudType *ct = cloudtype[0];
-	
-	return ct.name;
 }
 
 @end
