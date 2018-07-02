@@ -1,5 +1,5 @@
 //
-//  DetailController.h
+//  DetailVC.h
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -8,7 +8,7 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-@interface DetailController : UITableViewController
+@interface DetailVC : UITableViewController
 
 @property (nonatomic, nonnull, strong) NSString *objectId;
 

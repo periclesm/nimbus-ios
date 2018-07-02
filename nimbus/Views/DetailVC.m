@@ -1,5 +1,5 @@
 //
-//  DetailController.m
+//  DetailVC.m
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -8,28 +8,26 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-#import "DetailController.h"
+#import "DetailVC.h"
 @import SafariServices;
 
-@interface DetailController ()
+@interface DetailVC ()
 {
 	IBOutlet UIImageView *clImage;
 	IBOutlet UILabel *clInitials;
 	IBOutlet UILabel *clName;
 	IBOutlet UILabel *clAltitude;
-	IBOutlet UITextView *clDetails;
+	IBOutlet UILabel *clDetails;
 }
 
 @end
 
-@implementation DetailController
+@implementation DetailVC
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	
 	[self GetCloudData];
-	self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    [super viewDidLoad];
 }
 
 #pragma mark - Data
@@ -43,24 +41,12 @@
 	clName.text = cl.name;
 	clAltitude.text = [[Presenter GetCloudType:cl.type] stringByAppendingString:@" altitude"];
 	clDetails.text = [Presenter GetCloudDetails:cl.detail shortText:NO];
-	
+
 	clImage.alpha = 0;
 	[Networker GetRemoteImage:[Presenter GetCloudImageURL:cl.detail] completion:^(UIImage *image) {
-		clImage.image = image;
-		[UIView animateWithDuration:0.25 animations:^{ clImage.alpha = 1; }];
+		self->clImage.image = image;
+		[UIView animateWithDuration:0.25 animations:^{ self->clImage.alpha = 1; }];
 	}];
-}
-
-#pragma mark - Table view data source
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	if (indexPath.section == 0)
-		return 240;
-	else if (indexPath.section == 1)
-		return self.tableView.frame.size.height - 240 - 64;
-	else
-		return 44;
 }
 
 #pragma mark - IBActions

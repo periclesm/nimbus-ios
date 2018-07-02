@@ -1,5 +1,5 @@
 //
-//  IntroController.m
+//  IntroVC.m
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -8,13 +8,9 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-#import "IntroController.h"
+#import "IntroVC.h"
 
-@interface IntroController ()
-
-@end
-
-@implementation IntroController
+@implementation IntroVC
 
 - (void)viewDidLoad
 {

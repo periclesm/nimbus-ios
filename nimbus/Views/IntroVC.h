@@ -1,5 +1,5 @@
 //
-//  IntroController.h
+//  IntroVC.h
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -8,6 +8,6 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-@interface IntroController : UIViewController
+@interface IntroVC : UIViewController
 
 @end

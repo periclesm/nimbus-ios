@@ -16,3 +16,6 @@
 #import "Presenter.h"
 #import "Networker.h"
 #import "EntityController.h"
+
+#import "TableCellClass.h"
+#import "TableCellSynthesis.h"
