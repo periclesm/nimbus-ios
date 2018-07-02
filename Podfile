@@ -1,7 +1,11 @@
 platform :ios, '10.0'
-inhibit_all_warnings!
+
+# Pod Groups
+def production
+	pod 'MagicalRecord', '~> 2.3.2'
+	pod 'DGActivityIndicatorView', '~> 2.1.1'
+end
 
 target 'nimbus' do
-  # Pods for PIPForex
-  pod 'MagicalRecord'
+  production
 end
