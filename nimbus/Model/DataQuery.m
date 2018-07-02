@@ -1,5 +1,5 @@
 //
-//  EntityController.m
+//  DataQuery.m
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -8,11 +8,11 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-#import "EntityController.h"
+#import "DataQuery.h"
 
 static NSManagedObjectContext *defaultContext;
 
-@implementation EntityController
+@implementation DataQuery
 
 + (NSManagedObjectContext*)GetContext
 {
@@ -31,7 +31,34 @@ static NSManagedObjectContext *defaultContext;
 	return context;
 }
 
-#pragma mark - Add
+#pragma mark - Get
+
++ (NSInteger)GetItemCountFromEntity:(NSString*)entity
+{
+	return [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
+}
+
++ (NSArray*)GetItemsFromEntity:(NSString*)entity
+{
+	NSInteger currentCount = [self GetItemCountFromEntity:entity];
+
+	if (currentCount > 0)
+		return [NSClassFromString(entity) MR_findAll];
+	else
+		return [NSArray array];
+}
+
++ (NSArray*)GetSortedItemsFromEntity:(NSString*)entity sortBy:(NSString*)sort ascending:(Boolean)asc
+{
+	NSInteger currentCount = [self GetItemCountFromEntity:entity];
+
+	if (currentCount > 0)
+		return [NSClassFromString(entity) MR_findAllSortedBy:sort ascending:asc];
+	else
+		return [NSArray array];
+}
+
+#pragma mark - Set
 
 + (void)SetItemsToEntity:(NSString*)entity items:(NSArray*)items
 {
@@ -60,63 +87,6 @@ static NSManagedObjectContext *defaultContext;
 			}
 		}
 	}
-}
-
-#pragma mark - Update
-/// Not yet ready!
-//+ (void)UpdateItemsToEntity:(NSString*)entity items:(NSArray*)items
-//{
-//	if (items.count > 0)
-//	{
-//		for (int i = 0; i < items.count; i++)
-//		{
-//			@try
-//			{
-//				NSArray *currentItems = [self GetItemsFromEntity:entity];
-//				id newEntity = [NSClassFromString(entity) MR_createEntityInContext:[self GetContext]];
-//				newEntity = currentItems[i];
-//				[newEntity setValuesForKeysWithDictionary:items[i]];
-//			}
-//			@catch (NSException *exception)
-//			{
-//				NSLog(@"Exception in updating %@ with message: %@", entity, exception.description);
-//			}
-//			@finally
-//			{
-//				[[self GetContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
-//					if (error) NSLog(@"Error in saving %@ context because: %@", entity, error.localizedDescription);
-//				}];
-//			}
-//			
-//		}
-//	}
-//}
-
-#pragma mark - Get
-
-+ (NSInteger)GetItemCountFromEntity:(NSString*)entity
-{
-	return [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
-}
-
-+ (NSArray*)GetItemsFromEntity:(NSString*)entity
-{
-	NSInteger currentCount = [self GetItemCountFromEntity:entity];
-	
-	if (currentCount > 0)
-		return [NSClassFromString(entity) MR_findAll];
-	else
-		return [NSArray array];
-}
-
-+ (NSArray*)GetSortedItemsFromEntity:(NSString*)entity sortBy:(NSString*)sort ascending:(Boolean)asc
-{
-	NSInteger currentCount = [self GetItemCountFromEntity:entity];
-	
-	if (currentCount > 0)
-		return [NSClassFromString(entity) MR_findAllSortedBy:sort ascending:asc];
-	else
-		return [NSArray array];
 }
 
 #pragma mark - Delete

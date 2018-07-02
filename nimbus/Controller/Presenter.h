@@ -8,7 +8,7 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-#import "EntityController.h"
+#import "DataQuery.h"
 
 @interface Presenter : NSObject
 

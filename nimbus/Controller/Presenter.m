@@ -16,20 +16,20 @@
 {
 	[Networker GetDataFromService:cloudList parameters:nil completion:^(id response) {
 //		NSLog(@"response: %@", response);
-		NSArray *datamap = [DataModeller DataMapForEntity:DataEntityList object:(NSDictionary *)response];
-		[EntityController SetItemsToEntity:@"CloudList" items:datamap];
+		NSArray *datamap = [DataMapper DataMapForEntity:DataEntityList object:(NSDictionary *)response];
+		[DataQuery SetItemsToEntity:@"CloudList" items:datamap];
 	}];
 	
 	[Networker GetDataFromService:cloudType parameters:nil completion:^(id response) {
 //		NSLog(@"response: %@", response);
-		NSArray *datamap = [DataModeller DataMapForEntity:DataEntityType object:(NSDictionary *)response];
-		[EntityController SetItemsToEntity:@"CloudType" items:datamap];
+		NSArray *datamap = [DataMapper DataMapForEntity:DataEntityType object:(NSDictionary *)response];
+		[DataQuery SetItemsToEntity:@"CloudType" items:datamap];
 	}];
 	
 	[Networker GetDataFromService:cloudDetail parameters:nil completion:^(id response) {
 //		NSLog(@"response: %@", response);
-		NSArray *datamap = [DataModeller DataMapForEntity:DataEntityDetail object:(NSDictionary *)response];
-		[EntityController SetItemsToEntity:@"CloudDetail" items:datamap];
+		NSArray *datamap = [DataMapper DataMapForEntity:DataEntityDetail object:(NSDictionary *)response];
+		[DataQuery SetItemsToEntity:@"CloudDetail" items:datamap];
 	}];
 	
 ///	alternate method to get all data in a single call -- not used for the time being
@@ -43,7 +43,7 @@
 {
 	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
-	NSArray *cloudListData = [EntityController SearchItemsFromEntity:@"CloudList" predicate:predicate];
+	NSArray *cloudListData = [DataQuery SearchItemsFromEntity:@"CloudList" predicate:predicate];
 	
 	return cloudListData[0];
 }
@@ -52,7 +52,7 @@
 {
 	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
-	NSArray *clouddetail = [EntityController SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
+	NSArray *clouddetail = [DataQuery SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
 	
 	CloudDetail *cd = clouddetail[0];
 	
@@ -71,7 +71,7 @@
 {
 	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
-	NSArray *clouddetail = [EntityController SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
+	NSArray *clouddetail = [DataQuery SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
 	
 	CloudDetail *cd = clouddetail[0];
 	
@@ -82,7 +82,7 @@
 {
 	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
-	NSArray *clouddetail = [EntityController SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
+	NSArray *clouddetail = [DataQuery SearchItemsFromEntity:@"CloudDetail" predicate:predicate];
 	
 	CloudDetail *cd = clouddetail[0];
 	
@@ -93,7 +93,7 @@
 {
 	NSString *predicateString = [NSString stringWithFormat:@"objectId == '%@'", objectId];
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
-	NSArray *cloudtype = [EntityController SearchItemsFromEntity:@"CloudType" predicate:predicate];
+	NSArray *cloudtype = [DataQuery SearchItemsFromEntity:@"CloudType" predicate:predicate];
 	
 	CloudType *ct = cloudtype[0];
 	

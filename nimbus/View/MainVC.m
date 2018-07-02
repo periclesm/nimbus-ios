@@ -45,7 +45,7 @@
 {
 	if (cloudArray.count > 0) [cloudArray removeAllObjects];
 	
-	return [[EntityController GetSortedItemsFromEntity:@"CloudList" sortBy:@"order" ascending:YES] mutableCopy];
+	return [[DataQuery GetSortedItemsFromEntity:@"CloudList" sortBy:@"order" ascending:YES] mutableCopy];
 }
 
 #pragma mark - Table view data source

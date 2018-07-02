@@ -1,5 +1,5 @@
 //
-//  DataModeller.m
+//  DataMapper.m
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -8,9 +8,9 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-#import "DataModeller.h"
+#import "DataMapper.h"
 
-@implementation DataModeller
+@implementation DataMapper
 
 + (NSArray*)DataMapForEntity:(DataEntity)class object:(NSDictionary*)objects
 {

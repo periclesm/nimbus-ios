@@ -1,5 +1,5 @@
 //
-//  DataModeller.h
+//  DataMapper.h
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 19/04/2017.
@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, DataEntity)
 	DataEntityDetail
 };
 
-@interface DataModeller : NSObject
+@interface DataMapper : NSObject
 
 + (NSArray*)DataMapForEntity:(DataEntity)class object:(NSDictionary*)objects;
 
