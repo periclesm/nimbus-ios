@@ -12,16 +12,18 @@
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
-		684A20B01EA76BCA00BFC44C /* IntroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AD1EA76BCA00BFC44C /* IntroController.m */; };
-		684A20B11EA76BCA00BFC44C /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AF1EA76BCA00BFC44C /* MainController.m */; };
+		684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AD1EA76BCA00BFC44C /* IntroVC.m */; };
+		684A20B11EA76BCA00BFC44C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AF1EA76BCA00BFC44C /* MainVC.m */; };
 		684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */; };
-		684A20CB1EA772D700BFC44C /* EntityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20CA1EA772D700BFC44C /* EntityController.m */; };
-		684A20DE1EA7A3BB00BFC44C /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20DD1EA7A3BB00BFC44C /* Presenter.m */; };
+		684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20CA1EA772D700BFC44C /* DataQuery.m */; };
+		684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20DD1EA7A3BB00BFC44C /* DataLogic.m */; };
 		684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E11EA7A3DB00BFC44C /* Networker.m */; };
 		684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */; };
 		684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */; };
-		684A20EB1EA7A4F700BFC44C /* DataModeller.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20EA1EA7A4F700BFC44C /* DataModeller.m */; };
-		684A20F41EA7DB2300BFC44C /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20F31EA7DB2300BFC44C /* DetailController.m */; };
+		684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20EA1EA7A4F700BFC44C /* DataMapper.m */; };
+		684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20F31EA7DB2300BFC44C /* DetailVC.m */; };
+		68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2E05420E9FAA200C20BD5 /* TableCellClass.m */; };
+		68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */; };
 		6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799085B13FD94F076C2E2A7A /* libPods-nimbus.a */; };
 /* End PBXBuildFile section */
 
@@ -35,26 +37,30 @@
 		684A20931EA74B7400BFC44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684A20961EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		684A20981EA74B7400BFC44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		684A20AC1EA76BCA00BFC44C /* IntroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroController.h; sourceTree = "<group>"; };
-		684A20AD1EA76BCA00BFC44C /* IntroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroController.m; sourceTree = "<group>"; };
-		684A20AE1EA76BCA00BFC44C /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
-		684A20AF1EA76BCA00BFC44C /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		684A20AC1EA76BCA00BFC44C /* IntroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroVC.h; sourceTree = "<group>"; };
+		684A20AD1EA76BCA00BFC44C /* IntroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroVC.m; sourceTree = "<group>"; };
+		684A20AE1EA76BCA00BFC44C /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		684A20AF1EA76BCA00BFC44C /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		684A20B41EA76C0600BFC44C /* nimbus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbus.xcdatamodel; sourceTree = "<group>"; };
-		684A20C91EA772D700BFC44C /* EntityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityController.h; sourceTree = "<group>"; };
-		684A20CA1EA772D700BFC44C /* EntityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityController.m; sourceTree = "<group>"; };
+		684A20C91EA772D700BFC44C /* DataQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataQuery.h; sourceTree = "<group>"; };
+		684A20CA1EA772D700BFC44C /* DataQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataQuery.m; sourceTree = "<group>"; };
 		684A20CC1EA7733C00BFC44C /* Nimbus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Prefix.pch"; sourceTree = "<group>"; };
-		684A20DC1EA7A3BB00BFC44C /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
-		684A20DD1EA7A3BB00BFC44C /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		684A20DC1EA7A3BB00BFC44C /* DataLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLogic.h; sourceTree = "<group>"; };
+		684A20DD1EA7A3BB00BFC44C /* DataLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLogic.m; sourceTree = "<group>"; };
 		684A20E01EA7A3DB00BFC44C /* Networker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networker.h; sourceTree = "<group>"; };
 		684A20E11EA7A3DB00BFC44C /* Networker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networker.m; sourceTree = "<group>"; };
 		684A20E21EA7A3DB00BFC44C /* NetworkerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkerParameters.h; sourceTree = "<group>"; };
 		684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkerParameters.m; sourceTree = "<group>"; };
 		684A20E41EA7A3DB00BFC44C /* NetworkIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkIndicator.h; sourceTree = "<group>"; };
 		684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkIndicator.m; sourceTree = "<group>"; };
-		684A20E91EA7A4F700BFC44C /* DataModeller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModeller.h; sourceTree = "<group>"; };
-		684A20EA1EA7A4F700BFC44C /* DataModeller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModeller.m; sourceTree = "<group>"; };
-		684A20F21EA7DB2300BFC44C /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
-		684A20F31EA7DB2300BFC44C /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
+		684A20E91EA7A4F700BFC44C /* DataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMapper.h; sourceTree = "<group>"; };
+		684A20EA1EA7A4F700BFC44C /* DataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMapper.m; sourceTree = "<group>"; };
+		684A20F21EA7DB2300BFC44C /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
+		684A20F31EA7DB2300BFC44C /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
+		68B2E05320E9FAA200C20BD5 /* TableCellClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellClass.h; sourceTree = "<group>"; };
+		68B2E05420E9FAA200C20BD5 /* TableCellClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellClass.m; sourceTree = "<group>"; };
+		68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellSynthesis.h; sourceTree = "<group>"; };
+		68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellSynthesis.m; sourceTree = "<group>"; };
 		68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbusv2.xcdatamodel; sourceTree = "<group>"; };
 		799085B13FD94F076C2E2A7A /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,11 +101,10 @@
 			children = (
 				684A208A1EA74B7400BFC44C /* AppDelegate.h */,
 				684A208B1EA74B7400BFC44C /* AppDelegate.m */,
-				684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */,
-				684A20901EA74B7400BFC44C /* Main.storyboard */,
-				684A20AB1EA76BCA00BFC44C /* Views */,
-				684A20DB1EA7A3AB00BFC44C /* Presenter */,
-				684A20B21EA76BF500BFC44C /* Entity */,
+				68B2E05220E9F98200C20BD5 /* Components */,
+				684A20AB1EA76BCA00BFC44C /* View */,
+				684A20DB1EA7A3AB00BFC44C /* Controller */,
+				684A20B21EA76BF500BFC44C /* Model */,
 				684A20871EA74B7400BFC44C /* Supporting Files */,
 			);
 			path = nimbus;
@@ -116,39 +121,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		684A20AB1EA76BCA00BFC44C /* Views */ = {
+		684A20AB1EA76BCA00BFC44C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				684A20AC1EA76BCA00BFC44C /* IntroController.h */,
-				684A20AD1EA76BCA00BFC44C /* IntroController.m */,
-				684A20AE1EA76BCA00BFC44C /* MainController.h */,
-				684A20AF1EA76BCA00BFC44C /* MainController.m */,
-				684A20F21EA7DB2300BFC44C /* DetailController.h */,
-				684A20F31EA7DB2300BFC44C /* DetailController.m */,
+				68B2E05120E9F43400C20BD5 /* Storyboards */,
+				684A20AC1EA76BCA00BFC44C /* IntroVC.h */,
+				684A20AD1EA76BCA00BFC44C /* IntroVC.m */,
+				684A20AE1EA76BCA00BFC44C /* MainVC.h */,
+				684A20AF1EA76BCA00BFC44C /* MainVC.m */,
+				684A20F21EA7DB2300BFC44C /* DetailVC.h */,
+				684A20F31EA7DB2300BFC44C /* DetailVC.m */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
-		684A20B21EA76BF500BFC44C /* Entity */ = {
+		684A20B21EA76BF500BFC44C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				684A20E91EA7A4F700BFC44C /* DataModeller.h */,
-				684A20EA1EA7A4F700BFC44C /* DataModeller.m */,
-				684A20C91EA772D700BFC44C /* EntityController.h */,
-				684A20CA1EA772D700BFC44C /* EntityController.m */,
 				684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */,
+				684A20E91EA7A4F700BFC44C /* DataMapper.h */,
+				684A20EA1EA7A4F700BFC44C /* DataMapper.m */,
+				684A20C91EA772D700BFC44C /* DataQuery.h */,
+				684A20CA1EA772D700BFC44C /* DataQuery.m */,
 			);
-			path = Entity;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		684A20DB1EA7A3AB00BFC44C /* Presenter */ = {
+		684A20DB1EA7A3AB00BFC44C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				684A20DF1EA7A3DB00BFC44C /* Networker */,
-				684A20DC1EA7A3BB00BFC44C /* Presenter.h */,
-				684A20DD1EA7A3BB00BFC44C /* Presenter.m */,
+				684A20DC1EA7A3BB00BFC44C /* DataLogic.h */,
+				684A20DD1EA7A3BB00BFC44C /* DataLogic.m */,
 			);
-			path = Presenter;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		684A20DF1EA7A3DB00BFC44C /* Networker */ = {
@@ -162,6 +168,26 @@
 				684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */,
 			);
 			path = Networker;
+			sourceTree = "<group>";
+		};
+		68B2E05120E9F43400C20BD5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */,
+				684A20901EA74B7400BFC44C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		68B2E05220E9F98200C20BD5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				68B2E05320E9FAA200C20BD5 /* TableCellClass.h */,
+				68B2E05420E9FAA200C20BD5 /* TableCellClass.m */,
+				68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */,
+				68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		7896288071E0E771343E6221 /* Frameworks */ = {
@@ -192,8 +218,6 @@
 				684A20801EA74B7400BFC44C /* Sources */,
 				684A20811EA74B7400BFC44C /* Frameworks */,
 				684A20821EA74B7400BFC44C /* Resources */,
-				AC9D08F65FEADDAD111A294C /* [CP] Embed Pods Frameworks */,
-				AF6501BA74364306629C125B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,7 +234,7 @@
 		684A207C1EA74B7400BFC44C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Cloudfields;
 				TargetAttributes = {
 					684A20831EA74B7400BFC44C = {
@@ -252,49 +276,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AC9D08F65FEADDAD111A294C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF6501BA74364306629C125B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nimbus/Pods-nimbus-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B943777581A2326B5D711B04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nimbus-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -304,15 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684A20DE1EA7A3BB00BFC44C /* Presenter.m in Sources */,
-				684A20CB1EA772D700BFC44C /* EntityController.m in Sources */,
-				684A20B01EA76BCA00BFC44C /* IntroController.m in Sources */,
+				684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */,
+				684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */,
+				684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */,
+				68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */,
 				684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */,
 				684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */,
-				684A20EB1EA7A4F700BFC44C /* DataModeller.m in Sources */,
-				684A20B11EA76BCA00BFC44C /* MainController.m in Sources */,
+				684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */,
+				68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */,
+				684A20B11EA76BCA00BFC44C /* MainVC.m in Sources */,
 				684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */,
-				684A20F41EA7DB2300BFC44C /* DetailController.m in Sources */,
+				684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */,
 				684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */,
 				684A20891EA74B7400BFC44C /* main.m in Sources */,
 				684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */,
@@ -351,15 +350,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -382,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,15 +407,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -425,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,7 +457,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,7 +473,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";

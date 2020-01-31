@@ -7,163 +7,329 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0254C924CDB7E4821A57011121170D1B /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 880DDEE801F9F6C5E732934BEA1DB671 /* NSManagedObject+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		04C3A37266FB57C79915948308A3DDE9 /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = 34CD3B4B3B20041A43A91866A116AD1E /* MagicalRecord+Options.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07BBC2F29764A6C606E4EB5E7CBF354B /* MagicalImportFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C679DED62022EF96E6F1237504923EE /* MagicalImportFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C2AB767E407EA5465BCA9D323B0E37E /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A291E116E0527F9D7C4769279FB146 /* NSEntityDescription+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1A116465F2A2F320F61784ED86820A95 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C043EB6D28AD0577EA772574B9C4D7FD /* MagicalImportFunctions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1DE5FE824666C8DC9B21ABB324846178 /* NSManagedObjectContext+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D85F884160E2C103C0EBD90D731B0B6 /* NSManagedObjectContext+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		200902E8B10ACDB86705FF9301A86E9B /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B53F149867F1BD0E2AF3BA8FEA8D5D /* NSManagedObject+MagicalFinders.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		209F394FEAFC142CC698D6866F432863 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC861213EC8055528A9F37BF0249279 /* MagicalRecord+ErrorHandling.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		22649FE5700984C024BD78437703F4BC /* NSManagedObject+MagicalFinders.h in Headers */ = {isa = PBXBuildFile; fileRef = DE954C622911C6FED930D815EF9D4C79 /* NSManagedObject+MagicalFinders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22BBC0BC897BDCB2F6E9C0DE8B556A1C /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A3EAFF35F4EF9875F8F530F51A7DD3 /* MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E5B2A75E16644786B370D064340304E /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 98203196DD2690B2D5D1EB94C35CABE5 /* NSManagedObject+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2EAF80266A01147BE2FC23C00E090285 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5237E808721CC674399C2094CE0245 /* NSRelationshipDescription+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3956D7F2703F084391CC71497E754F16 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F2BB4272D0F77ABCAB3FF45A8CAFDF /* MagicalRecordLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A92604F86B98063142990C99DC0FF43 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C61E4E7F060A16A9E710972DC6C22F /* NSManagedObject+MagicalAggregation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3AC536B47EE5E2528DCE9219FF83A96E /* NSManagedObject+MagicalAggregation.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A8679AD4EB6E51753456F8432DD488 /* NSManagedObject+MagicalAggregation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BBEF2BF9E331F2F228D84A08D3D4847 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1118079125D147BB9D0D4022FE8C33BF /* MagicalRecordInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D7EDAC6F8E782AB0B7822DA16EC1CC8 /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = B3B309968D02A4306BDB7F72C37A120E /* NSManagedObjectModel+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42BF41BB0D25090BED2668459ED9C7A1 /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D913D836B190000B0842D96DE7A3AE8 /* MagicalRecordDeprecationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		468E38A511E308A91EF87A71378217F7 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B35FF87217901A3DF5EAE41E77E73 /* NSString+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4A245AC4510E6E870B1D8ACCCA03582D /* MagicalRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E24C60428AB1C721372143205E1C6C /* MagicalRecord-dummy.m */; };
-		4AD6DF0F1A5B175A2D0BABFD5F5BBB7F /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E0C6108DC2DEDD5BAF5256B8FB09D /* MagicalRecordInternal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4BE91F177B49A72C89C772C4D356069A /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A63DBA3C0F9E30F62AEEBDCE160A0 /* MagicalRecord+Actions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5B24CD2EFD2D1A53632FDB140A7C93D0 /* NSManagedObjectContext+MagicalObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = A48097D554EB783E1ACD6031139C6447 /* NSManagedObjectContext+MagicalObserving.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DA7211DEF1AA7045B62C404E7D3C034 /* NSManagedObjectContext+MagicalChainSave.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C93A050ACAB44E8144DCD940A979048 /* NSManagedObjectContext+MagicalChainSave.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B66CA206E2A81A5611C033235367B41 /* NSRelationshipDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = DC78D36FA626FAC9030D2AFD285D8939 /* NSRelationshipDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D19E5C0F7C5DC14392891F756F3964E /* NSNumber+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 909954DFA55A19CF7E0926C6AB474816 /* NSNumber+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8001D55144F1EC904DEF98EE8A3CCD89 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF778EA56F0E0D0B3985B5BBB91FD33 /* NSManagedObjectContext+MagicalThreading.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		82209CC1D6E8F63B01B56F76D04681C7 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F08F53B07190E7239F7C3A212AE890F /* MagicalRecord+ErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82F21AA91D927E45CEA7C0E4FA8781FB /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 842CBC9EBA62A121912CE16D5AD02C79 /* NSNumber+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		85FE798AAD9D1247ABAA148EDF1BC1D9 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 10043162AB541730BA4E9CEAB2E64835 /* NSPersistentStoreCoordinator+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8B40AA11E4391845A6D96A2BB81B8A02 /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = F5421AE863C059A44E408D59C8776370 /* NSObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9200871A4826C05C48C6D13EB2ADED04 /* NSManagedObjectContext+MagicalSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F1DC1FEC7173CE4A634A04F42220A9 /* NSManagedObjectContext+MagicalSaves.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95E6236B7EE86AA2A5DA5EA823C7E1B0 /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = B279E0A0AFBE7B546388A6739E3639C7 /* NSManagedObjectContext+MagicalThreading.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97D8C0671A850117F88E4996FABF5222 /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFBEAB0A4AA40F17C4CA82D8EE8CB73 /* NSManagedObjectContext+MagicalChainSave.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9C26AA74686ACF7A53CB80BF8C724AAC /* Pods-nimbus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B6938219F3F5C9CD98BE377DC7973 /* Pods-nimbus-dummy.m */; };
-		A5695AF9972B3A9F568FD69FCACDD4C4 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE96667CD663A49D1C4622886B3E5FC /* NSAttributeDescription+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A5E1EF4F2E7270886CB43DF678BAB308 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B8553F2233BB0C56B8D79CB49239E5 /* NSObject+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A9EDDBFF070174BCAB6F39BB23D5A14B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */; };
-		AA8A345E0C02F0E0CD98B87D9B5B24E4 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 1002712BF566FA0E4C8B69D7FC942F20 /* NSManagedObjectContext+MagicalObserving.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		AD204A16D73350A3160C585AF45DEEAC /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 978A270E8D1A47F4CBBEFD387A3AC3E2 /* NSEntityDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B082DFBD27E80B0472DEDD3809AB67E3 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B02D40983557298A6C3FB52328483A /* MagicalRecord+ShorthandMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B30DE1D0FEFD0706CF5CBCCAC0151CF9 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7D4EF5D3C49FDDD7A1EA7DF5A78388 /* MagicalRecord+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5D43B9D04F08ABFAE2C6D51C4D886DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */; };
-		B9D2227241286FE37FDB06ED2DFC5C39 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = 341028A6CA4636B1B7BD3B2044806FC3 /* MagicalRecord+Actions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA3CB9B48351FF4B8D8F9A411A6B62AA /* MagicalRecordXcode7CompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4682A990EA8759026A39BC550E305C /* MagicalRecordXcode7CompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC89F3D0301FF1F7391C4F86B3F22A21 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 2754A939E68643CA3608FA913875B06B /* NSManagedObjectContext+MagicalSaves.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BEF7A25C6F66B4EDFCE7C5B66E69BA2C /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = A146127D1DB963432932D6B19ABFBF5A /* NSManagedObject+MagicalRequests.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C821853E66AB5BEF4BDF07252F1F920C /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9A0F59F1325408E871A25EB9CB7BD /* MagicalRecord+Setup.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CBBC35ACBF79DFA14F46789517F309AF /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 562561D5ADDDEDD4BCF6618F8C13E4BD /* MagicalRecord+iCloud.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CC3B8960FEB681A1F289B3A00CE7DA77 /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E8904E74B78956938CCC8DF81D487 /* MagicalRecord+ShorthandMethods.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D16323DC61BF62227874B35C2770C0A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A7BE07A93D389088D0712B8DA370ED /* CoreData.framework */; };
-		D4C0E2D6C9285E6A885851FA8E3D227A /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B5AA5C6FE81C2164CD24162B1BF30E /* MagicalRecord+Options.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E1A946B82BF14BF1ECDDF2BCC6D5354F /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F609076B69CCA673F7479D59E1B21A /* NSManagedObjectContext+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		EC13398E6A998A029F2A983429CDADD0 /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 403805C3C529609409FC5675A377BA4A /* NSPersistentStore+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC713D4028F12311E919AE329AAE39AF /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F836C7FBFEAA17546ADF04EC26540E43 /* NSPersistentStoreCoordinator+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0728748EB0DD3F8BEC327BA8C5F0FA5 /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 302D9B3036911A76CD7A2DCD9AB12C08 /* NSString+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F70EDA3FBA2287B85F0564BC5B1CC3F9 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B8AAA7F4FA21C9A1209DE3564B192 /* NSPersistentStore+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F712A8F691272E80E8FB927D67D90F75 /* NSManagedObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 75BE7CC9AEB38EDAE4E4B379C6AF5E5C /* NSManagedObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA15BF85576C757EEE73601B665DC115 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8055109696489053C101F8D26BDF4D11 /* NSManagedObjectModel+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FB515756232019605E26CE5B45EC0DAA /* NSManagedObject+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EBB836710247DD9B39155D86297E05 /* NSManagedObject+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE7003D1571761DD0A64AFE503E42A43 /* NSAttributeDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 121C28B56B3639F530FD54EAC87FCA58 /* NSAttributeDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FED592D88D5B0A4F564902B0BEA2A309 /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1B9C83811E76F121B34A650E1ACE70 /* MagicalRecord+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF6D2CDA6691206405D88763E0156BEE /* NSManagedObject+MagicalRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = E447532A92EA1D4A9A154746AA5D286A /* NSManagedObject+MagicalRequests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		019A47D88D0CAD46387F7E20F84D2748 /* DGActivityIndicatorBallBeatAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE2CED61C258435EC0A50C95F09B34A /* DGActivityIndicatorBallBeatAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		03EFD78155BC92960757F803CE757F5F /* DGActivityIndicatorBallClipRotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B65957D71BCF747F5A74D7B2FE5FEDB3 /* DGActivityIndicatorBallClipRotateAnimation.m */; };
+		044CF29DE509B71EBC4ACE68CA70A430 /* NSRelationshipDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9326759A2B92719E5F49193A54D71D /* NSRelationshipDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07196219552075F2B897C75611B8FDBC /* DGActivityIndicatorBallScaleMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B604EB87B6B6ABF0573B258E59E1BE /* DGActivityIndicatorBallScaleMultipleAnimation.m */; };
+		071C8432A05579D84441EF39B97B5C9E /* DGActivityIndicatorTripleRingsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = A99BC4A1D6B6CB4DE0172F872511A481 /* DGActivityIndicatorTripleRingsAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07AFB081C36CA95D0EEE623D41E9A13B /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = B054F879FA035212A3F92BAF84388114 /* MagicalRecord+iCloud.m */; };
+		08D46508FF27FD645A0DA01CA4C05833 /* DGActivityIndicatorLineScalePartyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FCBDDB6A2063B017EF9A892FC7E805 /* DGActivityIndicatorLineScalePartyAnimation.m */; };
+		08F504C8A995CB51E79E030D2F2AA116 /* DGActivityIndicatorLineScalePartyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A608DF914C7E35B149293BFCD36FF0C /* DGActivityIndicatorLineScalePartyAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B2234D6120961CAB0AFC468B5B4735F /* DGActivityIndicatorBallClipRotateAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = A8F006EFE5F55BB1B93EB4C2F59AD360 /* DGActivityIndicatorBallClipRotateAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B2E8F8D8D32332F42677B88A5B86282 /* DGActivityIndicatorBallScaleRippleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = DF631D7AB91155B5CFDB504043840314 /* DGActivityIndicatorBallScaleRippleAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0BE65C7E618A4E3E3985FB3F091EF672 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FACC142A10CDDAAA8A37538DF488C61 /* NSManagedObject+MagicalAggregation.m */; };
+		0C35A7F88300552F4C0474F7780978A6 /* NSManagedObject+MagicalAggregation.h in Headers */ = {isa = PBXBuildFile; fileRef = 00DFEE1EE04DF3582F89554C29623250 /* NSManagedObject+MagicalAggregation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0C98DCF46C92A1237745FCADC0612781 /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B860C582652BB0148D4F9F6E244DD41 /* NSManagedObject+MagicalFinders.m */; };
+		102FE6FB7E107520BAE436B64D34DFC3 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 52061C126230F5FCA7C41E43BD950F77 /* NSManagedObjectContext+MagicalObserving.m */; };
+		13BE382E6ED174E1597E734456C30F89 /* DGActivityIndicatorBallZigZagDeflectAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = AD7FE2EBF2733E55BD8BC325BE1A14C8 /* DGActivityIndicatorBallZigZagDeflectAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		18740FD9DFA556391A7EF8C459C97C00 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E52325CA2909162E673759CC18000A /* NSManagedObject+MagicalRequests.m */; };
+		18C9BF1CB697B57ABD85D1EC5CD5F443 /* DGActivityIndicatorRotatingSquaresAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = AD23E118028054C17C94A2A6A39EB8F7 /* DGActivityIndicatorRotatingSquaresAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E0E6992A34C3EA3F3523D2B367705AE /* DGActivityIndicatorBallGridBeatAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2302EE7A7A367EF543B35BAED9D52B1D /* DGActivityIndicatorBallGridBeatAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1FA953F8EDCD4AB5186F1A84F5555263 /* DGActivityIndicatorBallZigZagAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD09513596CA048DA6C28D833BE2545 /* DGActivityIndicatorBallZigZagAnimation.m */; };
+		250B84C6C4ADA5E344017018695A5AC5 /* NSManagedObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A888602982C24B84FBD9F9E42A91F20A /* NSManagedObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2556BD0C101841B48272CD70B2D63ED3 /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3C8E351ABBDFC10215B0ABA8374052 /* DGActivityIndicatorRotatingSandglassAnimation.m */; };
+		28992B1DA7FEA435615F7A9AD28320D5 /* DGActivityIndicatorBallBeatAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B41CC20E3661C47623F8CF0DFBB3B /* DGActivityIndicatorBallBeatAnimation.m */; };
+		29436E0E225977ACBCCE9A9859B3B11F /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA70AB4889421E0BE9438DF8C31D7CA /* MagicalRecord+Options.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2AFC06CAC2D245073ECA018A23A38C95 /* DGActivityIndicatorCookieTerminatorAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FEB179C22F3614C2DC28048D6584F8B /* DGActivityIndicatorCookieTerminatorAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2B1979009C9D6936964776A86623E2E1 /* DGActivityIndicatorFiveDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = A3DB3CE6F471223A4AF44804D8490775 /* DGActivityIndicatorFiveDotsAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BB58A0D3E79CBE19970CA8567A3C0CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567CC9627FCF9E142805D264D34518CC /* Foundation.framework */; };
+		2E9D43F8982E0DF2D62A0ED23E5387E5 /* DGActivityIndicatorTriplePulseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F4C6CC7DE48896129B0AB559BE6F43 /* DGActivityIndicatorTriplePulseAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		30DD9EF407C22DD00854FD79EECF1B43 /* DGActivityIndicatorBallPulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E565B4AF67CA9A9E13D3AE21E2C58DE /* DGActivityIndicatorBallPulseAnimation.m */; };
+		3176676FA75D50B23AF2CA36C1A0D4DB /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 403C0E3CB50C6FEEFE119E35ECF79345 /* NSManagedObject+MagicalDataImport.m */; };
+		3511450999DD6A984EA8F4E0CE11EF14 /* DGActivityIndicatorBallZigZagDeflectAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F66D6AE9072B1C9BB8C42CF2F3D6ACC /* DGActivityIndicatorBallZigZagDeflectAnimation.m */; };
+		3943A13F16D23E6A778394E82A0E4058 /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD7119E57CA715C38AEE484C380B63 /* DGActivityIndicatorBallGridBeatAnimation.m */; };
+		3AC578763AACC81166AA24570684D0D2 /* DGActivityIndicatorBallPulseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 96AC9FAD4A2A8399A6DF6F5F33634B27 /* DGActivityIndicatorBallPulseAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41346E27BB06CB58C076D2DBEDA000A8 /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA1757D4B7C17AD54AD6C285BAB9982 /* DGActivityIndicatorRotatingTrigonAnimation.m */; };
+		430B5F96499E6055061C69F9881B1D26 /* Pods-nimbus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3B6938219F3F5C9CD98BE377DC7973 /* Pods-nimbus-dummy.m */; };
+		432385B8FF4F3032BB2F36133155EC87 /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 204516883FE287A67E0B5E418961E7A7 /* NSEntityDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44D4883EE11CE063B128A50C1D67C8BE /* NSManagedObjectContext+MagicalSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = F63E22F82731595EEB911CF985FEBD54 /* NSManagedObjectContext+MagicalSaves.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46FFF8F1725F0DDCE87C63AEB6F63D8E /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B4C9DC59FAF399D268208AEB671912 /* NSAttributeDescription+MagicalDataImport.m */; };
+		474F080A5622522997803C228EFFD154 /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1616FD8D51740A21F352F2CB7AE328 /* DGActivityIndicatorBallClipRotatePulseAnimation.m */; };
+		478E339A9BD0CA1C6682485DF45BCD76 /* DGActivityIndicatorThreeDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB3FE93516CB87572328A58C605A /* DGActivityIndicatorThreeDotsAnimation.m */; };
+		4A404A2AF5F4F3BD813FB2BFFC5C917B /* DGActivityIndicatorBallClipRotateMultipleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F8DBC71FDEDA76A34547B405C0CBE6 /* DGActivityIndicatorBallClipRotateMultipleAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4AC3D8DD9D36FF212930EE209D5B1435 /* NSManagedObjectContext+MagicalChainSave.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BACBB38229BCD0B48EDBAB36A3B4857 /* NSManagedObjectContext+MagicalChainSave.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E5B0F34AE450B6FF7A6A8577DF8B7DC /* NSManagedObjectContext+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = F55F320788094B86B018109A7A6D76F8 /* NSManagedObjectContext+MagicalRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52C9D8647B34A103AF08F1FC00B9A76D /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1FE81693BD32A722E7E6B23608F346 /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m */; };
+		579B91A85B009BCF744486EE655C1B27 /* NSManagedObject+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4C3B1A23E704E4204385174117679A /* NSManagedObject+MagicalRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58BBC4BE2BDDD29D1E06FEEC14CB4AB7 /* DGActivityIndicatorThreeDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 550B95145DB0A744DF6A9E71B22B9406 /* DGActivityIndicatorThreeDotsAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58C7A2F8B926F414E8C81337EBC3A368 /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBB58BAED01F4E26F85F38AF529A639 /* DGActivityIndicatorRotatingSquaresAnimation.m */; };
+		5A440C66C0F350DD1FE3C4F851E9204C /* DGActivityIndicatorLineScaleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E080D31E08279348845E587809BDF8F /* DGActivityIndicatorLineScaleAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5BF49D00B27EFC184F0B75AAC939988F /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A76D474161A76F2C31E7E8C56823DCD /* NSObject+MagicalDataImport.m */; };
+		5D7525F5A2D90A820104EF0C4374621B /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 861D9A478056AB0C7CCC51F9B4202B22 /* NSManagedObjectModel+MagicalRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5EF993BFFBAC8C8BAD115DBB754FFCA9 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE66EF6829F9786D1C2482FD1BC78BA /* NSManagedObject+MagicalRecord.m */; };
+		60A4D478BACB62FC704D9F0A52BF80DA /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB67A871048BE06FA43BAFF9FF5BEE /* MagicalRecord+Setup.m */; };
+		61066E1FDF10C92A3AA85788F7B695BA /* DGActivityIndicatorAnimationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0230DA86F2EC73C2A6D007B418FC30B2 /* DGActivityIndicatorAnimationProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		618BF0F9A8D6DD9D510AE62089E6F6E0 /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB9A864CB9F9AC88EF8A0F9B80C1F3 /* DGActivityIndicatorLineScalePulseOutAnimation.m */; };
+		6216A40715D9C14CFE2D04B53FA3AEF2 /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8BBE73BC51318DBE1A3ACD368581EB /* DGActivityIndicatorBallGridPulseAnimation.m */; };
+		69B06D1A6FF85503627E1F9289D6FA63 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B82050041D31EBCF970818B04DC1CB /* MagicalRecord+Actions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		69DEE3B5CEB84719615E786204A5A7AD /* DGActivityIndicatorDoubleBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = F70A9CF853F4BE5877FBA683F1D4DDAD /* DGActivityIndicatorDoubleBounceAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6A6EF46F88F5FAEA8CB60AC3D73CB069 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CA10C6E2F1A7B57BA11FFC8A76705C /* NSPersistentStoreCoordinator+MagicalRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6A8F99D77FC6A63E35B6905EE534D079 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3F775D2A0CFF7A1031F16B4B59B7B1 /* MagicalRecordInternal.m */; };
+		6C43E5AD3776A44AEE5CA3F79148D5AE /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E42B89AAA7DF75684939E83171A315 /* MagicalRecord+ShorthandMethods.m */; };
+		740FE9D3B4754C5D664C37F1B8371D92 /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D7F8D20D767FA046D5AF7563997E79 /* DGActivityIndicatorCookieTerminatorAnimation.m */; };
+		773046887FDC3B5F9E0C2B7B0115B7F3 /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF765D93DE2A1489C5EBBD60556B3F /* DGActivityIndicatorBallScaleRippleAnimation.m */; };
+		785A773A258C5CBB283A935BF7ED0DA3 /* NSManagedObjectContext+MagicalObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E30B2E463A48224A7AA27B7AF6B8E3 /* NSManagedObjectContext+MagicalObserving.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7AAB5BA5952BCE7179031D37AF464534 /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = C28952124F7F137A3133D3093595A006 /* NSManagedObjectContext+MagicalChainSave.m */; };
+		8038B6D5F6AA798A8D1D170FB92F2970 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = B73C4EB16C3530DDE3EAC0B79A0529CB /* NSManagedObjectContext+MagicalSaves.m */; };
+		80E4F55726E7FBA8AD8E75D3F424A352 /* DGActivityIndicatorBallScaleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E31ED30AF2CBDDCB7ED7A21CC800BB /* DGActivityIndicatorBallScaleAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82568A3D4F5D4F08EA183AA2326771AE /* NSManagedObject+MagicalRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9B745551D5AB1EBD4547845AD9DBD8 /* NSManagedObject+MagicalRequests.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		830C66DA7E898E0D870FAC8FB11A9743 /* DGActivityIndicatorNineDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B1AB6440E0C5F2B719BF4F8442CAB4B2 /* DGActivityIndicatorNineDotsAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		832BCC3608C7E15770A05C49CF97CED4 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB1BFE6372B94BCCD30B18114BACFBF /* MagicalRecord+iCloud.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		866D104E342463CA2269C40C0FF78D49 /* DGActivityIndicatorBallPulseSyncAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 11CBC29977AC69C60A1D85576961C841 /* DGActivityIndicatorBallPulseSyncAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B7321B5D60B31FF9EB2692797E780A0 /* DGActivityIndicatorTwoDotsAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1B0C0CB5FE9FB7C1BC71462DB48C9F /* DGActivityIndicatorTwoDotsAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C4E0389D0587FA6CB7A467988079A70 /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = FCC321DBBE73F6F2461FE3014912B80F /* NSString+MagicalDataImport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F6DD65EFB711EA769B031BEB984AA7C /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = AA243D97B084FBD64C22FBD2B81E7D2A /* NSManagedObjectContext+MagicalRecord.m */; };
+		90512B3690027F2A06BF43FBE71C9732 /* DGActivityIndicatorAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = AC022F8DEA55A10FB2B4C8F449308A54 /* DGActivityIndicatorAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		910A106DC30B40A731C424D7319F6B5F /* DGActivityIndicatorTriangleSkewSpinAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B50DE0EC1DBE083DFC560CE2E66B1F /* DGActivityIndicatorTriangleSkewSpinAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9257006ABCAB427B5CC3E648B570A8B9 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4926CB4427137E691515CA094DB027 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m */; };
+		92EC5F67F2EA627857B2B7A95DC7E7C7 /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E71FCFF1163EFCAFDD58EEB59A18C95 /* DGActivityIndicatorDoubleBounceAnimation.m */; };
+		9330535E5A36728EFDCBA821E8A37074 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC4E1101318468C87912B354E332552 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9453787F8626EC0F3A058DF5057C5E4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FD025D71C79552EB4B3C43A32AA6ED /* UIKit.framework */; };
+		947980586E1A92E7588712FC3DE5D7AC /* DGActivityIndicatorBallPulseSyncAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 785740B1F4DC258D856EDA1E81CD3DA0 /* DGActivityIndicatorBallPulseSyncAnimation.m */; };
+		986C0256A749734D0F34A7B068408771 /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC9FEBFD9E327C464D82FCB6994926B /* MagicalRecordDeprecationMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9A63C78119FCF9DEDDC85439013EB238 /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 965132D65A7B12E4F6398C165DE35261 /* MagicalRecord+Setup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9AEE518F9A809FD774739CEE88F77CF3 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE00EBCF09C73EF81D0C43416936348 /* MagicalRecordInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B52D08AAA699E5244363339C75D9AF8 /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 651B4289101CBE0A22DCA15E99855325 /* NSObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0F0E88BE165D41ABE326A00AB674E71 /* MagicalRecordXcode7CompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = EE462461E0A0786BE3116B2C334E4C5D /* MagicalRecordXcode7CompatibilityMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2A3AAD364C02B60CCEE1568CB4B7550 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4AB554C398291CF6683867BED3DDC5 /* MagicalRecord+ShorthandMethods.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A6DBDD1C59036BA2E4736A7778823F03 /* DGActivityIndicatorBallRotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4829C09DD31D285B3CFCBD9D71204223 /* DGActivityIndicatorBallRotateAnimation.m */; };
+		A6DF3C1939CD57E4FB9FF4294C85DF75 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1F1C2C9DE9C4256D843BAC1B30AD4 /* NSEntityDescription+MagicalDataImport.m */; };
+		A6ED5FC8DA96D7806496C5D3CF622A03 /* DGActivityIndicatorBallClipRotatePulseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = F8BDD8377773C71F53E7B6F292CF4B9E /* DGActivityIndicatorBallClipRotatePulseAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A9FE161ECA16D0ED2C988E3E0CD7F42B /* NSNumber+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E42BAD24F8DFE36845C39B6700A4531 /* NSNumber+MagicalDataImport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA93B5B82A6CAA4FC5894FEF74CB2840 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EC84EB6E56CE26C022F5D3696F3454 /* MagicalRecord+Actions.m */; };
+		B3585D78C5370FB1C4500E4511BC3DA4 /* DGActivityIndicatorBallTrianglePathAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6501DB3991092A31C746B93D0B21943D /* DGActivityIndicatorBallTrianglePathAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4B4306E548C2DA77363BB975D7DD63E /* MagicalRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0C538932765AC977F796941FCE983 /* MagicalRecord-dummy.m */; };
+		B551A0F498118AB4D622BAAA68EEE1ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567CC9627FCF9E142805D264D34518CC /* Foundation.framework */; };
+		B5D43B9D04F08ABFAE2C6D51C4D886DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567CC9627FCF9E142805D264D34518CC /* Foundation.framework */; };
+		B6CDFE5CCD88F571353D32DB617CAAB0 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD5044BA38A9A5BD17BAE422673BF0 /* NSManagedObjectModel+MagicalRecord.m */; };
+		B756524F2FD51835E6D43055B13C7BDD /* DGActivityIndicatorBallGridPulseAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B15FB8641C20E669689F9ADF5B5B1905 /* DGActivityIndicatorBallGridPulseAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B80BB34B9EA393487C81034B2984B960 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = E67B7CA7FBCE4652E700BEE12CB0C1EF /* NSManagedObjectContext+MagicalThreading.m */; };
+		BA5C355F0C0820A012A37757B270D6B9 /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AD49A30A1B9E14FAC604F6BD6AB52 /* DGActivityIndicatorBallClipRotateMultipleAnimation.m */; };
+		BA862644C9A7922FD2C5192605CD2C3C /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 15375F5E6CD50CB3DBAB7C4A1AE610B0 /* MagicalImportFunctions.m */; };
+		BDF472113B23579BCA2FAB5E268805E0 /* DGActivityIndicatorLineScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAE3853D0EA30071A6286826287D6F /* DGActivityIndicatorLineScaleAnimation.m */; };
+		C3AE677C94F45501C8D8BAA157C3FE40 /* DGActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B7F21E91028677A1858B66DB946ACA /* DGActivityIndicatorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3B44B3F354A30535932F533499C4E44 /* DGActivityIndicatorBallScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6F6EF11C5D4C0AAB4B875FA441E06A /* DGActivityIndicatorBallScaleAnimation.m */; };
+		C4880949FA4C990AB8586369B604507A /* NSManagedObject+MagicalFinders.h in Headers */ = {isa = PBXBuildFile; fileRef = FED70A2A859D44E60E2CE853BA31C329 /* NSManagedObject+MagicalFinders.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C534640410E9CA8C52A5C810248AC963 /* DGActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E82F75765D299CF68DE87A93A8B1D5 /* DGActivityIndicatorView.m */; };
+		C6278DAB39D388526F0264383C64BF06 /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E886B5AD4A6E3190FDCD5C1683787A /* MagicalRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6A1FA9ABC5739725DEAE85998AB95A3 /* DGActivityIndicatorBallSpinFadeLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BA1E51E784085DF6A2B0CC2F87BAAB /* DGActivityIndicatorBallSpinFadeLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6F6685461FF7D1515BCD62600B1F259 /* DGActivityIndicatorNineDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13315BF2E010975E586EA883EEA42BA4 /* DGActivityIndicatorNineDotsAnimation.m */; };
+		C81E8B35C54E04DE3397F4D54A12A1DB /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FF05417AA2DE07A8485CFB79716214 /* NSManagedObjectContext+MagicalThreading.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC8F3B19A0978D77F540F0AF3C79A5B0 /* DGActivityIndicatorLineScalePulseOutAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 415FC00E324EEBF30564E0B56DC8CA5D /* DGActivityIndicatorLineScalePulseOutAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CDCF753517EB214B8251A145397C458F /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE4398E4E96B10EA529C35025ABD71A /* NSString+MagicalDataImport.m */; };
+		CE5BAFD572EE40850242797E4215F8E9 /* DGActivityIndicatorTriplePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD88EEC33A3F5B7CEB826116B412AE7 /* DGActivityIndicatorTriplePulseAnimation.m */; };
+		D16323DC61BF62227874B35C2770C0A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6788C15B51D04030F9334A66BAF4776E /* CoreData.framework */; };
+		D1B70B439DA0390C3DF041DDB9BCDF62 /* DGActivityIndicatorTwoDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C7E8032ACD8565E5C02D16B2E37995 /* DGActivityIndicatorTwoDotsAnimation.m */; };
+		D56F0FF32B52178D41DAA7F73312CD0B /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 501469376BA9F9BA019D70E9BEF82BD4 /* MagicalRecordLogging.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DCDEE9DE607FE3169372FC9E3A35E563 /* NSAttributeDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = F7945DFF02297C8593621A7CB8ECB359 /* NSAttributeDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF494FD1E090ADC64A7159D8AD192DF8 /* DGActivityIndicatorBallRotateAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 838A57D9953C4A6433A2553CCDF380AD /* DGActivityIndicatorBallRotateAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E07D41182E7977257DE4289839F6869C /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB7568503769FF5B260FB45F664B657 /* NSPersistentStore+MagicalRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E0D5A7BA54140A4E81858DFAED58CE0F /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2A7242AAC33F92F2818181AF9AF8EA /* MagicalRecord+ErrorHandling.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E0E9CA722FB3010669EF7188A466C906 /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 44514AEF0ED04D781D008571117967FA /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E1DA5C248EB3BC36B58A245D9E2DA113 /* DGActivityIndicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59827A328291D16581277E9FBFA7FD /* DGActivityIndicatorAnimation.m */; };
+		E94A33F2325A7F5DAFA3CA6B2AD50261 /* DGActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 273AA368E2C9295AC4E04019C53A3EC2 /* DGActivityIndicatorView-dummy.m */; };
+		E981FD3AE2C7513975DB49EAA89D2876 /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 933D63139D7C1A760B52B3DC83E6386E /* DGActivityIndicatorTriangleSkewSpinAnimation.m */; };
+		E9C70AF6D3482C408314ACDF96B75C4E /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D2D42590AA49774326F615E88C9E47 /* MagicalRecord+Options.m */; };
+		EC8F847EAC10D7ACE57F23E9A41C96AE /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 37803E0DFB1439EE40736766D8E07D04 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		ED25E768526EEF0591318C2C1B07B202 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097F042E599B27AC037653E5F656E4A /* NSNumber+MagicalDataImport.m */; };
+		F10D4756BD202FEAA97BDB707AE06837 /* DGActivityIndicatorBallScaleMultipleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C66744B62057A3D2EA5FEB89632037 /* DGActivityIndicatorBallScaleMultipleAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6B7FCE2EE54276259C94649A2A52808 /* DGActivityIndicatorFiveDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF4A37FB8777E5AB36C687E7E7F891 /* DGActivityIndicatorFiveDotsAnimation.m */; };
+		F7BC71CCA928134348E383709A1E0214 /* MagicalImportFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1594818773B1CDB5FBBA2168189B499D /* MagicalImportFunctions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F802CF0F13B3F949A657DFF7AC10018E /* DGActivityIndicatorBallSpinFadeLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 767E6C5233227637CB88EB4C2DB16FA0 /* DGActivityIndicatorBallSpinFadeLoader.m */; };
+		F8D902E96F164354B00D0D63DEE5388A /* DGActivityIndicatorTripleRingsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C8B80318F2C33654EC8D6CCE038 /* DGActivityIndicatorTripleRingsAnimation.m */; };
+		FA2674093F773C305F6629F68175A1D7 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1DBB10C5D2BBB0F94D4E7D32572AF /* NSPersistentStore+MagicalRecord.m */; };
+		FA65F720773D3F3DB0F1E9F409BC2EE8 /* DGActivityIndicatorRotatingTrigonAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF815AC62910ED78642AD5DE9975CD1 /* DGActivityIndicatorRotatingTrigonAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCD7864E7CD935E3B2898EBE6980773B /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE9EBED42F2E4A157C3A83765DCAC0 /* DGActivityIndicatorBallTrianglePathAnimation.m */; };
+		FD350FB6CF6062EA006BC1842515AFCC /* DGActivityIndicatorBallZigZagAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B24D7FE6149D5E54D7555D28CD5A251E /* DGActivityIndicatorBallZigZagAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEBFE4ABC53714F599CE8B28CD2A444D /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BADFD8671CF918906C307C38580F444 /* MagicalRecord+ErrorHandling.m */; };
+		FF1795A17AF8D855CC406D1552833C7A /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 853F2A056C9FC3993B9E502773931331 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		FFF53D7C3156E8FF1167EB1681BA6099 /* DGActivityIndicatorRotatingSandglassAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0558EC0F0DD0C9A3A7AFED4DD68153 /* DGActivityIndicatorRotatingSandglassAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C2194E16C539E64C6A00F22E30974686 /* PBXContainerItemProxy */ = {
+		2871B1C31E52330EE2975DC4478650BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 417EA9844EC286C5B1B8FCB029C00130;
 			remoteInfo = MagicalRecord;
 		};
+		9554A61673DF0AD9E207260E0DAA59B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA9754FB7A82758566D360BD30C2517;
+			remoteInfo = DGActivityIndicatorView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0097F042E599B27AC037653E5F656E4A /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
+		00DFEE1EE04DF3582F89554C29623250 /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalAggregation.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
+		0230DA86F2EC73C2A6D007B418FC30B2 /* DGActivityIndicatorAnimationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorAnimationProtocol.h; path = DGActivityIndicatorView/DGActivityIndicatorAnimationProtocol.h; sourceTree = "<group>"; };
+		04FF765D93DE2A1489C5EBBD60556B3F /* DGActivityIndicatorBallScaleRippleAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallScaleRippleAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallScaleRippleAnimation.m; sourceTree = "<group>"; };
+		06E82F75765D299CF68DE87A93A8B1D5 /* DGActivityIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorView.m; path = DGActivityIndicatorView/DGActivityIndicatorView.m; sourceTree = "<group>"; };
+		078AD49A30A1B9E14FAC604F6BD6AB52 /* DGActivityIndicatorBallClipRotateMultipleAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallClipRotateMultipleAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallClipRotateMultipleAnimation.m; sourceTree = "<group>"; };
+		08CB67A871048BE06FA43BAFF9FF5BEE /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = "<group>"; };
+		0A2CE027CCBCEC9D40BA23EDAF9209C2 /* MagicalRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-prefix.pch"; sourceTree = "<group>"; };
 		0A7018E4832B9231E0E5618634BD3647 /* Pods-nimbus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nimbus-frameworks.sh"; sourceTree = "<group>"; };
-		0F08F53B07190E7239F7C3A212AE890F /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
-		1002712BF566FA0E4C8B69D7FC942F20 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
-		10043162AB541730BA4E9CEAB2E64835 /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
-		1118079125D147BB9D0D4022FE8C33BF /* MagicalRecordInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordInternal.h; path = MagicalRecord/Core/MagicalRecordInternal.h; sourceTree = "<group>"; };
-		121C28B56B3639F530FD54EAC87FCA58 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		0A76D474161A76F2C31E7E8C56823DCD /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		0E1B0C0CB5FE9FB7C1BC71462DB48C9F /* DGActivityIndicatorTwoDotsAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorTwoDotsAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTwoDotsAnimation.h; sourceTree = "<group>"; };
+		11CBC29977AC69C60A1D85576961C841 /* DGActivityIndicatorBallPulseSyncAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallPulseSyncAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallPulseSyncAnimation.h; sourceTree = "<group>"; };
+		13315BF2E010975E586EA883EEA42BA4 /* DGActivityIndicatorNineDotsAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorNineDotsAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorNineDotsAnimation.m; sourceTree = "<group>"; };
+		13E52325CA2909162E673759CC18000A /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRequests.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
+		14A1FB3FE93516CB87572328A58C605A /* DGActivityIndicatorThreeDotsAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorThreeDotsAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorThreeDotsAnimation.m; sourceTree = "<group>"; };
+		15375F5E6CD50CB3DBAB7C4A1AE610B0 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalImportFunctions.m; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.m; sourceTree = "<group>"; };
+		1594818773B1CDB5FBBA2168189B499D /* MagicalImportFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalImportFunctions.h; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.h; sourceTree = "<group>"; };
 		1668484C4CF0DDAA5B07C02844EF6331 /* Pods-nimbus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nimbus-resources.sh"; sourceTree = "<group>"; };
-		20EBB836710247DD9B39155D86297E05 /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
-		20F2BB4272D0F77ABCAB3FF45A8CAFDF /* MagicalRecordLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordLogging.h; path = MagicalRecord/Core/MagicalRecordLogging.h; sourceTree = "<group>"; };
-		217E0C6108DC2DEDD5BAF5256B8FB09D /* MagicalRecordInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalRecordInternal.m; path = MagicalRecord/Core/MagicalRecordInternal.m; sourceTree = "<group>"; };
-		21B53F149867F1BD0E2AF3BA8FEA8D5D /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalFinders.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
-		2754A939E68643CA3608FA913875B06B /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalSaves.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
-		28C61E4E7F060A16A9E710972DC6C22F /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalAggregation.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
-		2F7B35FF87217901A3DF5EAE41E77E73 /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
-		302D9B3036911A76CD7A2DCD9AB12C08 /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
-		31A291E116E0527F9D7C4769279FB146 /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
-		341028A6CA4636B1B7BD3B2044806FC3 /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = "<group>"; };
-		34CD3B4B3B20041A43A91866A116AD1E /* MagicalRecord+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Options.h"; path = "MagicalRecord/Core/MagicalRecord+Options.h"; sourceTree = "<group>"; };
-		3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		17BA1E51E784085DF6A2B0CC2F87BAAB /* DGActivityIndicatorBallSpinFadeLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallSpinFadeLoader.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallSpinFadeLoader.h; sourceTree = "<group>"; };
+		17FCBDDB6A2063B017EF9A892FC7E805 /* DGActivityIndicatorLineScalePartyAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorLineScalePartyAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorLineScalePartyAnimation.m; sourceTree = "<group>"; };
+		1943B8636EC09C6C99305E0D8FD0BAFF /* MagicalRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagicalRecord.xcconfig; sourceTree = "<group>"; };
+		1AC9FEBFD9E327C464D82FCB6994926B /* MagicalRecordDeprecationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordDeprecationMacros.h; path = MagicalRecord/Core/MagicalRecordDeprecationMacros.h; sourceTree = "<group>"; };
+		1AD1DBB10C5D2BBB0F94D4E7D32572AF /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		1AD88EEC33A3F5B7CEB826116B412AE7 /* DGActivityIndicatorTriplePulseAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorTriplePulseAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTriplePulseAnimation.m; sourceTree = "<group>"; };
+		1B59827A328291D16581277E9FBFA7FD /* DGActivityIndicatorAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorAnimation.m; sourceTree = "<group>"; };
+		1B752CF675FCA4CEA62B0DBDE7E595A4 /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CCB9A864CB9F9AC88EF8A0F9B80C1F3 /* DGActivityIndicatorLineScalePulseOutAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorLineScalePulseOutAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorLineScalePulseOutAnimation.m; sourceTree = "<group>"; };
+		1CE2CED61C258435EC0A50C95F09B34A /* DGActivityIndicatorBallBeatAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallBeatAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallBeatAnimation.h; sourceTree = "<group>"; };
+		204516883FE287A67E0B5E418961E7A7 /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		2302EE7A7A367EF543B35BAED9D52B1D /* DGActivityIndicatorBallGridBeatAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallGridBeatAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallGridBeatAnimation.h; sourceTree = "<group>"; };
+		273AA368E2C9295AC4E04019C53A3EC2 /* DGActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DGActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		2AF815AC62910ED78642AD5DE9975CD1 /* DGActivityIndicatorRotatingTrigonAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorRotatingTrigonAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorRotatingTrigonAnimation.h; sourceTree = "<group>"; };
+		2E080D31E08279348845E587809BDF8F /* DGActivityIndicatorLineScaleAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorLineScaleAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorLineScaleAnimation.h; sourceTree = "<group>"; };
+		2E71FCFF1163EFCAFDD58EEB59A18C95 /* DGActivityIndicatorDoubleBounceAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorDoubleBounceAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorDoubleBounceAnimation.m; sourceTree = "<group>"; };
+		32F4C6CC7DE48896129B0AB559BE6F43 /* DGActivityIndicatorTriplePulseAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorTriplePulseAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTriplePulseAnimation.h; sourceTree = "<group>"; };
+		32FF05417AA2DE07A8485CFB79716214 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalThreading.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
+		37803E0DFB1439EE40736766D8E07D04 /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
 		37BB358DBD8587BD319F0AEBBD33824D /* Pods-nimbus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nimbus-acknowledgements.plist"; sourceTree = "<group>"; };
-		3C4682A990EA8759026A39BC550E305C /* MagicalRecordXcode7CompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordXcode7CompatibilityMacros.h; path = MagicalRecord/Core/MagicalRecordXcode7CompatibilityMacros.h; sourceTree = "<group>"; };
-		3D4D20EE39C9DA1AFBEC232ED9644F24 /* MagicalRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-prefix.pch"; sourceTree = "<group>"; };
-		403805C3C529609409FC5675A377BA4A /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
-		43A8679AD4EB6E51753456F8432DD488 /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalAggregation.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
-		562561D5ADDDEDD4BCF6618F8C13E4BD /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+iCloud.m"; path = "MagicalRecord/Core/MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
+		3B9326759A2B92719E5F49193A54D71D /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		3E42BAD24F8DFE36845C39B6700A4531 /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
+		3FA70AB4889421E0BE9438DF8C31D7CA /* MagicalRecord+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Options.h"; path = "MagicalRecord/Core/MagicalRecord+Options.h"; sourceTree = "<group>"; };
+		3FEB179C22F3614C2DC28048D6584F8B /* DGActivityIndicatorCookieTerminatorAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorCookieTerminatorAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorCookieTerminatorAnimation.h; sourceTree = "<group>"; };
+		403C0E3CB50C6FEEFE119E35ECF79345 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		415FC00E324EEBF30564E0B56DC8CA5D /* DGActivityIndicatorLineScalePulseOutAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorLineScalePulseOutAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorLineScalePulseOutAnimation.h; sourceTree = "<group>"; };
+		41CD7119E57CA715C38AEE484C380B63 /* DGActivityIndicatorBallGridBeatAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallGridBeatAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallGridBeatAnimation.m; sourceTree = "<group>"; };
+		42D7F8D20D767FA046D5AF7563997E79 /* DGActivityIndicatorCookieTerminatorAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorCookieTerminatorAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorCookieTerminatorAnimation.m; sourceTree = "<group>"; };
+		44514AEF0ED04D781D008571117967FA /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorLineScalePulseOutRapidAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorLineScalePulseOutRapidAnimation.h; sourceTree = "<group>"; };
+		4829C09DD31D285B3CFCBD9D71204223 /* DGActivityIndicatorBallRotateAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallRotateAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallRotateAnimation.m; sourceTree = "<group>"; };
+		4BADFD8671CF918906C307C38580F444 /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ErrorHandling.m"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
+		4CA920B032E825AEB3DDE8C0C9F7CD3F /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		501469376BA9F9BA019D70E9BEF82BD4 /* MagicalRecordLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordLogging.h; path = MagicalRecord/Core/MagicalRecordLogging.h; sourceTree = "<group>"; };
+		51F8DBC71FDEDA76A34547B405C0CBE6 /* DGActivityIndicatorBallClipRotateMultipleAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallClipRotateMultipleAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallClipRotateMultipleAnimation.h; sourceTree = "<group>"; };
+		52061C126230F5FCA7C41E43BD950F77 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
+		54B604EB87B6B6ABF0573B258E59E1BE /* DGActivityIndicatorBallScaleMultipleAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallScaleMultipleAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallScaleMultipleAnimation.m; sourceTree = "<group>"; };
+		550B95145DB0A744DF6A9E71B22B9406 /* DGActivityIndicatorThreeDotsAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorThreeDotsAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorThreeDotsAnimation.h; sourceTree = "<group>"; };
+		55E30B2E463A48224A7AA27B7AF6B8E3 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalObserving.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
+		567CC9627FCF9E142805D264D34518CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5892019487FD5EE4F409BC2AF1F23751 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
-		5A7D4EF5D3C49FDDD7A1EA7DF5A78388 /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+iCloud.h"; path = "MagicalRecord/Core/MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
-		5C1B9C83811E76F121B34A650E1ACE70 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Setup.h"; path = "MagicalRecord/Core/MagicalRecord+Setup.h"; sourceTree = "<group>"; };
-		60B8553F2233BB0C56B8D79CB49239E5 /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
-		61F609076B69CCA673F7479D59E1B21A /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
-		64A3EAFF35F4EF9875F8F530F51A7DD3 /* MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecord.h; path = MagicalRecord/MagicalRecord.h; sourceTree = "<group>"; };
-		6D913D836B190000B0842D96DE7A3AE8 /* MagicalRecordDeprecationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordDeprecationMacros.h; path = MagicalRecord/Core/MagicalRecordDeprecationMacros.h; sourceTree = "<group>"; };
-		6DE96667CD663A49D1C4622886B3E5FC /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
-		75BE7CC9AEB38EDAE4E4B379C6AF5E5C /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
-		7F3A63DBA3C0F9E30F62AEEBDCE160A0 /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = "<group>"; };
-		8055109696489053C101F8D26BDF4D11 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
+		5A608DF914C7E35B149293BFCD36FF0C /* DGActivityIndicatorLineScalePartyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorLineScalePartyAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorLineScalePartyAnimation.h; sourceTree = "<group>"; };
+		5AB7568503769FF5B260FB45F664B657 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
+		5EEAE3853D0EA30071A6286826287D6F /* DGActivityIndicatorLineScaleAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorLineScaleAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorLineScaleAnimation.m; sourceTree = "<group>"; };
+		5F66D6AE9072B1C9BB8C42CF2F3D6ACC /* DGActivityIndicatorBallZigZagDeflectAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallZigZagDeflectAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallZigZagDeflectAnimation.m; sourceTree = "<group>"; };
+		5FACC142A10CDDAAA8A37538DF488C61 /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalAggregation.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
+		6501DB3991092A31C746B93D0B21943D /* DGActivityIndicatorBallTrianglePathAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallTrianglePathAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallTrianglePathAnimation.h; sourceTree = "<group>"; };
+		651B4289101CBE0A22DCA15E99855325 /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		65FD025D71C79552EB4B3C43A32AA6ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6788C15B51D04030F9334A66BAF4776E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		6D4C3B1A23E704E4204385174117679A /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
+		6F3C8E351ABBDFC10215B0ABA8374052 /* DGActivityIndicatorRotatingSandglassAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorRotatingSandglassAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorRotatingSandglassAnimation.m; sourceTree = "<group>"; };
+		6FC4E1101318468C87912B354E332552 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallScaleRippleMultipleAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallScaleRippleMultipleAnimation.h; sourceTree = "<group>"; };
+		71CA10C6E2F1A7B57BA11FFC8A76705C /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
+		767E6C5233227637CB88EB4C2DB16FA0 /* DGActivityIndicatorBallSpinFadeLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallSpinFadeLoader.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallSpinFadeLoader.m; sourceTree = "<group>"; };
+		76E42B89AAA7DF75684939E83171A315 /* MagicalRecord+ShorthandMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ShorthandMethods.m"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.m"; sourceTree = "<group>"; };
+		785740B1F4DC258D856EDA1E81CD3DA0 /* DGActivityIndicatorBallPulseSyncAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallPulseSyncAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallPulseSyncAnimation.m; sourceTree = "<group>"; };
+		7BACBB38229BCD0B48EDBAB36A3B4857 /* NSManagedObjectContext+MagicalChainSave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalChainSave.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"; sourceTree = "<group>"; };
 		80A3C0770B7DE0880A444D60A6039BC1 /* Pods-nimbus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nimbus-acknowledgements.markdown"; sourceTree = "<group>"; };
-		81BCA39FDBEB64B8E12E8B97860F8ED8 /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMagicalRecord.a; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		842CBC9EBA62A121912CE16D5AD02C79 /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
-		880DDEE801F9F6C5E732934BEA1DB671 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
-		909954DFA55A19CF7E0926C6AB474816 /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		978A270E8D1A47F4CBBEFD387A3AC3E2 /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
-		98203196DD2690B2D5D1EB94C35CABE5 /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
-		9C679DED62022EF96E6F1237504923EE /* MagicalImportFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalImportFunctions.h; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.h; sourceTree = "<group>"; };
-		9C93A050ACAB44E8144DCD940A979048 /* NSManagedObjectContext+MagicalChainSave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalChainSave.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"; sourceTree = "<group>"; };
-		9D85F884160E2C103C0EBD90D731B0B6 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
-		9FF9A0F59F1325408E871A25EB9CB7BD /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = "<group>"; };
-		A146127D1DB963432932D6B19ABFBF5A /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRequests.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
-		A48097D554EB783E1ACD6031139C6447 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalObserving.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
-		ACF778EA56F0E0D0B3985B5BBB91FD33 /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalThreading.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
-		B0E24C60428AB1C721372143205E1C6C /* MagicalRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord-dummy.m"; sourceTree = "<group>"; };
-		B279E0A0AFBE7B546388A6739E3639C7 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalThreading.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
-		B3B309968D02A4306BDB7F72C37A120E /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
-		B3B5AA5C6FE81C2164CD24162B1BF30E /* MagicalRecord+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Options.m"; path = "MagicalRecord/Core/MagicalRecord+Options.m"; sourceTree = "<group>"; };
-		B59E8904E74B78956938CCC8DF81D487 /* MagicalRecord+ShorthandMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ShorthandMethods.m"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.m"; sourceTree = "<group>"; };
-		B86B8AAA7F4FA21C9A1209DE3564B192 /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		838A57D9953C4A6433A2553CCDF380AD /* DGActivityIndicatorBallRotateAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallRotateAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallRotateAnimation.h; sourceTree = "<group>"; };
+		84FD4C8B80318F2C33654EC8D6CCE038 /* DGActivityIndicatorTripleRingsAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorTripleRingsAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTripleRingsAnimation.m; sourceTree = "<group>"; };
+		853F2A056C9FC3993B9E502773931331 /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRelationshipDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		861D9A478056AB0C7CCC51F9B4202B22 /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
+		8CBD5044BA38A9A5BD17BAE422673BF0 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
+		8E90E39A82FB239F2EFEA232D837D6D9 /* libDGActivityIndicatorView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDGActivityIndicatorView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		933D63139D7C1A760B52B3DC83E6386E /* DGActivityIndicatorTriangleSkewSpinAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorTriangleSkewSpinAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTriangleSkewSpinAnimation.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		965132D65A7B12E4F6398C165DE35261 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Setup.h"; path = "MagicalRecord/Core/MagicalRecord+Setup.h"; sourceTree = "<group>"; };
+		96AC9FAD4A2A8399A6DF6F5F33634B27 /* DGActivityIndicatorBallPulseAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallPulseAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallPulseAnimation.h; sourceTree = "<group>"; };
+		99C7E8032ACD8565E5C02D16B2E37995 /* DGActivityIndicatorTwoDotsAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorTwoDotsAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTwoDotsAnimation.m; sourceTree = "<group>"; };
+		9B860C582652BB0148D4F9F6E244DD41 /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalFinders.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
+		9CD09513596CA048DA6C28D833BE2545 /* DGActivityIndicatorBallZigZagAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallZigZagAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallZigZagAnimation.m; sourceTree = "<group>"; };
+		9E565B4AF67CA9A9E13D3AE21E2C58DE /* DGActivityIndicatorBallPulseAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallPulseAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallPulseAnimation.m; sourceTree = "<group>"; };
+		9EB1BFE6372B94BCCD30B18114BACFBF /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+iCloud.h"; path = "MagicalRecord/Core/MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
+		9F6F6EF11C5D4C0AAB4B875FA441E06A /* DGActivityIndicatorBallScaleAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallScaleAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallScaleAnimation.m; sourceTree = "<group>"; };
+		A3DB3CE6F471223A4AF44804D8490775 /* DGActivityIndicatorFiveDotsAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorFiveDotsAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorFiveDotsAnimation.h; sourceTree = "<group>"; };
+		A888602982C24B84FBD9F9E42A91F20A /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A8C0C538932765AC977F796941FCE983 /* MagicalRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord-dummy.m"; sourceTree = "<group>"; };
+		A8F006EFE5F55BB1B93EB4C2F59AD360 /* DGActivityIndicatorBallClipRotateAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallClipRotateAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallClipRotateAnimation.h; sourceTree = "<group>"; };
+		A99BC4A1D6B6CB4DE0172F872511A481 /* DGActivityIndicatorTripleRingsAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorTripleRingsAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTripleRingsAnimation.h; sourceTree = "<group>"; };
+		AA243D97B084FBD64C22FBD2B81E7D2A /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
+		AB2A7242AAC33F92F2818181AF9AF8EA /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
+		AB9B745551D5AB1EBD4547845AD9DBD8 /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRequests.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
+		ABF1F1C2C9DE9C4256D843BAC1B30AD4 /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		AC022F8DEA55A10FB2B4C8F449308A54 /* DGActivityIndicatorAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorAnimation.h; sourceTree = "<group>"; };
+		AD23E118028054C17C94A2A6A39EB8F7 /* DGActivityIndicatorRotatingSquaresAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorRotatingSquaresAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorRotatingSquaresAnimation.h; sourceTree = "<group>"; };
+		AD7FE2EBF2733E55BD8BC325BE1A14C8 /* DGActivityIndicatorBallZigZagDeflectAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallZigZagDeflectAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallZigZagDeflectAnimation.h; sourceTree = "<group>"; };
+		AE4926CB4427137E691515CA094DB027 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallScaleRippleMultipleAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallScaleRippleMultipleAnimation.m; sourceTree = "<group>"; };
+		AEE00EBCF09C73EF81D0C43416936348 /* MagicalRecordInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordInternal.h; path = MagicalRecord/Core/MagicalRecordInternal.h; sourceTree = "<group>"; };
+		AF1616FD8D51740A21F352F2CB7AE328 /* DGActivityIndicatorBallClipRotatePulseAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallClipRotatePulseAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallClipRotatePulseAnimation.m; sourceTree = "<group>"; };
+		B054F879FA035212A3F92BAF84388114 /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+iCloud.m"; path = "MagicalRecord/Core/MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
+		B0B82050041D31EBCF970818B04DC1CB /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = "<group>"; };
+		B0E31ED30AF2CBDDCB7ED7A21CC800BB /* DGActivityIndicatorBallScaleAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallScaleAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallScaleAnimation.h; sourceTree = "<group>"; };
+		B15FB8641C20E669689F9ADF5B5B1905 /* DGActivityIndicatorBallGridPulseAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallGridPulseAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallGridPulseAnimation.h; sourceTree = "<group>"; };
+		B1AB6440E0C5F2B719BF4F8442CAB4B2 /* DGActivityIndicatorNineDotsAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorNineDotsAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorNineDotsAnimation.h; sourceTree = "<group>"; };
+		B24D7FE6149D5E54D7555D28CD5A251E /* DGActivityIndicatorBallZigZagAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallZigZagAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallZigZagAnimation.h; sourceTree = "<group>"; };
+		B65957D71BCF747F5A74D7B2FE5FEDB3 /* DGActivityIndicatorBallClipRotateAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallClipRotateAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallClipRotateAnimation.m; sourceTree = "<group>"; };
+		B73C4EB16C3530DDE3EAC0B79A0529CB /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalSaves.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
+		B8EC84EB6E56CE26C022F5D3696F3454 /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = "<group>"; };
 		BA3B6938219F3F5C9CD98BE377DC7973 /* Pods-nimbus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nimbus-dummy.m"; sourceTree = "<group>"; };
-		BAFBEAB0A4AA40F17C4CA82D8EE8CB73 /* NSManagedObjectContext+MagicalChainSave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalChainSave.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m"; sourceTree = "<group>"; };
-		C043EB6D28AD0577EA772574B9C4D7FD /* MagicalImportFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalImportFunctions.m; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.m; sourceTree = "<group>"; };
+		BC3F775D2A0CFF7A1031F16B4B59B7B1 /* MagicalRecordInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalRecordInternal.m; path = MagicalRecord/Core/MagicalRecordInternal.m; sourceTree = "<group>"; };
+		BECE9EBED42F2E4A157C3A83765DCAC0 /* DGActivityIndicatorBallTrianglePathAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallTrianglePathAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallTrianglePathAnimation.m; sourceTree = "<group>"; };
+		BFA1757D4B7C17AD54AD6C285BAB9982 /* DGActivityIndicatorRotatingTrigonAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorRotatingTrigonAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorRotatingTrigonAnimation.m; sourceTree = "<group>"; };
+		C28952124F7F137A3133D3093595A006 /* NSManagedObjectContext+MagicalChainSave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalChainSave.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m"; sourceTree = "<group>"; };
+		C5B4C9DC59FAF399D268208AEB671912 /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
 		C5CDB2C4D11D3EE19E6105F0959D1020 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
-		D5F1DC1FEC7173CE4A634A04F42220A9 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalSaves.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
-		DC5237E808721CC674399C2094CE0245 /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRelationshipDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
-		DC78D36FA626FAC9030D2AFD285D8939 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
-		DE954C622911C6FED930D815EF9D4C79 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalFinders.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
-		E447532A92EA1D4A9A154746AA5D286A /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRequests.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
-		E583B230435768CBD6D39B145A2676CA /* MagicalRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagicalRecord.xcconfig; sourceTree = "<group>"; };
-		E7B02D40983557298A6C3FB52328483A /* MagicalRecord+ShorthandMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ShorthandMethods.h"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.h"; sourceTree = "<group>"; };
-		EA81F930919AB68830797AA1C91E756F /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-nimbus.a"; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5421AE863C059A44E408D59C8776370 /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
-		F7A7BE07A93D389088D0712B8DA370ED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		F836C7FBFEAA17546ADF04EC26540E43 /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
-		FEC861213EC8055528A9F37BF0249279 /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ErrorHandling.m"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
+		C6E886B5AD4A6E3190FDCD5C1683787A /* MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecord.h; path = MagicalRecord/MagicalRecord.h; sourceTree = "<group>"; };
+		C8C66744B62057A3D2EA5FEB89632037 /* DGActivityIndicatorBallScaleMultipleAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallScaleMultipleAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallScaleMultipleAnimation.h; sourceTree = "<group>"; };
+		CDBB58BAED01F4E26F85F38AF529A639 /* DGActivityIndicatorRotatingSquaresAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorRotatingSquaresAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorRotatingSquaresAnimation.m; sourceTree = "<group>"; };
+		D1C659417CF8B91A9D9368FF9250B281 /* DGActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DGActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
+		D9B7F21E91028677A1858B66DB946ACA /* DGActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorView.h; path = DGActivityIndicatorView/DGActivityIndicatorView.h; sourceTree = "<group>"; };
+		DA1FE81693BD32A722E7E6B23608F346 /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorLineScalePulseOutRapidAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorLineScalePulseOutRapidAnimation.m; sourceTree = "<group>"; };
+		DF631D7AB91155B5CFDB504043840314 /* DGActivityIndicatorBallScaleRippleAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallScaleRippleAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallScaleRippleAnimation.h; sourceTree = "<group>"; };
+		E67B7CA7FBCE4652E700BEE12CB0C1EF /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalThreading.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
+		EABF4A37FB8777E5AB36C687E7E7F891 /* DGActivityIndicatorFiveDotsAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorFiveDotsAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorFiveDotsAnimation.m; sourceTree = "<group>"; };
+		EBE4398E4E96B10EA529C35025ABD71A /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
+		ED078B22443F0CB432E3FFF0D7CED1D4 /* DGActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DGActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		EE462461E0A0786BE3116B2C334E4C5D /* MagicalRecordXcode7CompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordXcode7CompatibilityMacros.h; path = MagicalRecord/Core/MagicalRecordXcode7CompatibilityMacros.h; sourceTree = "<group>"; };
+		F3B50DE0EC1DBE083DFC560CE2E66B1F /* DGActivityIndicatorTriangleSkewSpinAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorTriangleSkewSpinAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTriangleSkewSpinAnimation.h; sourceTree = "<group>"; };
+		F55F320788094B86B018109A7A6D76F8 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
+		F63E22F82731595EEB911CF985FEBD54 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalSaves.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
+		F70A9CF853F4BE5877FBA683F1D4DDAD /* DGActivityIndicatorDoubleBounceAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorDoubleBounceAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorDoubleBounceAnimation.h; sourceTree = "<group>"; };
+		F7945DFF02297C8593621A7CB8ECB359 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		F7D2D42590AA49774326F615E88C9E47 /* MagicalRecord+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Options.m"; path = "MagicalRecord/Core/MagicalRecord+Options.m"; sourceTree = "<group>"; };
+		F8BDD8377773C71F53E7B6F292CF4B9E /* DGActivityIndicatorBallClipRotatePulseAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallClipRotatePulseAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallClipRotatePulseAnimation.h; sourceTree = "<group>"; };
+		F97B41CC20E3661C47623F8CF0DFBB3B /* DGActivityIndicatorBallBeatAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallBeatAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallBeatAnimation.m; sourceTree = "<group>"; };
+		FB4AB554C398291CF6683867BED3DDC5 /* MagicalRecord+ShorthandMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ShorthandMethods.h"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.h"; sourceTree = "<group>"; };
+		FBE66EF6829F9786D1C2482FD1BC78BA /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
+		FCC321DBBE73F6F2461FE3014912B80F /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
+		FD0558EC0F0DD0C9A3A7AFED4DD68153 /* DGActivityIndicatorRotatingSandglassAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorRotatingSandglassAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorRotatingSandglassAnimation.h; sourceTree = "<group>"; };
+		FED70A2A859D44E60E2CE853BA31C329 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalFinders.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
+		FF8BBE73BC51318DBE1A3ACD368581EB /* DGActivityIndicatorBallGridPulseAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallGridPulseAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallGridPulseAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		891A3F29EFDB40FFC5ACE1091FDC9522 /* Frameworks */ = {
+		21889AD90E2CE315B298FB638625A993 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9EDDBFF070174BCAB6F39BB23D5A14B /* Foundation.framework in Frameworks */,
+				2BB58A0D3E79CBE19970CA8567A3C0CE /* Foundation.framework in Frameworks */,
+				9453787F8626EC0F3A058DF5057C5E4A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EA5F438535DA8AAB9B8BE71D162947D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B551A0F498118AB4D622BAAA68EEE1ED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +345,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08B9A5F420C22CAECF6ED513C5F2BE71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E90E39A82FB239F2EFEA232D837D6D9 /* libDGActivityIndicatorView.a */,
+				4CA920B032E825AEB3DDE8C0C9F7CD3F /* libMagicalRecord.a */,
+				1B752CF675FCA4CEA62B0DBDE7E595A4 /* libPods-nimbus.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B334439B388DB67667E1A59E099E8A7 /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				FC004EFF37FF57468704EC0F0309F74C /* Core */,
+				C37D181CA4C7FE5A7965E025619E3C03 /* Support Files */,
+			);
+			path = MagicalRecord;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A95125708E742DC1F60FE6F7AFFAD0EA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1300E43EA44A86E38FE9C518E49F35E9 /* Pods-nimbus */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,94 +387,103 @@
 			path = "Target Support Files/Pods-nimbus";
 			sourceTree = "<group>";
 		};
-		3F393C1F4BAA218A04DB66F8425A41C5 /* Core */ = {
+		26688FE643B8FB27B79F91C9C70CF45C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C679DED62022EF96E6F1237504923EE /* MagicalImportFunctions.h */,
-				C043EB6D28AD0577EA772574B9C4D7FD /* MagicalImportFunctions.m */,
-				64A3EAFF35F4EF9875F8F530F51A7DD3 /* MagicalRecord.h */,
-				341028A6CA4636B1B7BD3B2044806FC3 /* MagicalRecord+Actions.h */,
-				7F3A63DBA3C0F9E30F62AEEBDCE160A0 /* MagicalRecord+Actions.m */,
-				0F08F53B07190E7239F7C3A212AE890F /* MagicalRecord+ErrorHandling.h */,
-				FEC861213EC8055528A9F37BF0249279 /* MagicalRecord+ErrorHandling.m */,
-				5A7D4EF5D3C49FDDD7A1EA7DF5A78388 /* MagicalRecord+iCloud.h */,
-				562561D5ADDDEDD4BCF6618F8C13E4BD /* MagicalRecord+iCloud.m */,
-				34CD3B4B3B20041A43A91866A116AD1E /* MagicalRecord+Options.h */,
-				B3B5AA5C6FE81C2164CD24162B1BF30E /* MagicalRecord+Options.m */,
-				5C1B9C83811E76F121B34A650E1ACE70 /* MagicalRecord+Setup.h */,
-				9FF9A0F59F1325408E871A25EB9CB7BD /* MagicalRecord+Setup.m */,
-				E7B02D40983557298A6C3FB52328483A /* MagicalRecord+ShorthandMethods.h */,
-				B59E8904E74B78956938CCC8DF81D487 /* MagicalRecord+ShorthandMethods.m */,
-				6D913D836B190000B0842D96DE7A3AE8 /* MagicalRecordDeprecationMacros.h */,
-				1118079125D147BB9D0D4022FE8C33BF /* MagicalRecordInternal.h */,
-				217E0C6108DC2DEDD5BAF5256B8FB09D /* MagicalRecordInternal.m */,
-				20F2BB4272D0F77ABCAB3FF45A8CAFDF /* MagicalRecordLogging.h */,
-				3C4682A990EA8759026A39BC550E305C /* MagicalRecordXcode7CompatibilityMacros.h */,
-				121C28B56B3639F530FD54EAC87FCA58 /* NSAttributeDescription+MagicalDataImport.h */,
-				6DE96667CD663A49D1C4622886B3E5FC /* NSAttributeDescription+MagicalDataImport.m */,
-				978A270E8D1A47F4CBBEFD387A3AC3E2 /* NSEntityDescription+MagicalDataImport.h */,
-				31A291E116E0527F9D7C4769279FB146 /* NSEntityDescription+MagicalDataImport.m */,
-				43A8679AD4EB6E51753456F8432DD488 /* NSManagedObject+MagicalAggregation.h */,
-				28C61E4E7F060A16A9E710972DC6C22F /* NSManagedObject+MagicalAggregation.m */,
-				75BE7CC9AEB38EDAE4E4B379C6AF5E5C /* NSManagedObject+MagicalDataImport.h */,
-				880DDEE801F9F6C5E732934BEA1DB671 /* NSManagedObject+MagicalDataImport.m */,
-				DE954C622911C6FED930D815EF9D4C79 /* NSManagedObject+MagicalFinders.h */,
-				21B53F149867F1BD0E2AF3BA8FEA8D5D /* NSManagedObject+MagicalFinders.m */,
-				20EBB836710247DD9B39155D86297E05 /* NSManagedObject+MagicalRecord.h */,
-				98203196DD2690B2D5D1EB94C35CABE5 /* NSManagedObject+MagicalRecord.m */,
-				E447532A92EA1D4A9A154746AA5D286A /* NSManagedObject+MagicalRequests.h */,
-				A146127D1DB963432932D6B19ABFBF5A /* NSManagedObject+MagicalRequests.m */,
-				9C93A050ACAB44E8144DCD940A979048 /* NSManagedObjectContext+MagicalChainSave.h */,
-				BAFBEAB0A4AA40F17C4CA82D8EE8CB73 /* NSManagedObjectContext+MagicalChainSave.m */,
-				A48097D554EB783E1ACD6031139C6447 /* NSManagedObjectContext+MagicalObserving.h */,
-				1002712BF566FA0E4C8B69D7FC942F20 /* NSManagedObjectContext+MagicalObserving.m */,
-				9D85F884160E2C103C0EBD90D731B0B6 /* NSManagedObjectContext+MagicalRecord.h */,
-				61F609076B69CCA673F7479D59E1B21A /* NSManagedObjectContext+MagicalRecord.m */,
-				D5F1DC1FEC7173CE4A634A04F42220A9 /* NSManagedObjectContext+MagicalSaves.h */,
-				2754A939E68643CA3608FA913875B06B /* NSManagedObjectContext+MagicalSaves.m */,
-				B279E0A0AFBE7B546388A6739E3639C7 /* NSManagedObjectContext+MagicalThreading.h */,
-				ACF778EA56F0E0D0B3985B5BBB91FD33 /* NSManagedObjectContext+MagicalThreading.m */,
-				B3B309968D02A4306BDB7F72C37A120E /* NSManagedObjectModel+MagicalRecord.h */,
-				8055109696489053C101F8D26BDF4D11 /* NSManagedObjectModel+MagicalRecord.m */,
-				909954DFA55A19CF7E0926C6AB474816 /* NSNumber+MagicalDataImport.h */,
-				842CBC9EBA62A121912CE16D5AD02C79 /* NSNumber+MagicalDataImport.m */,
-				F5421AE863C059A44E408D59C8776370 /* NSObject+MagicalDataImport.h */,
-				60B8553F2233BB0C56B8D79CB49239E5 /* NSObject+MagicalDataImport.m */,
-				403805C3C529609409FC5675A377BA4A /* NSPersistentStore+MagicalRecord.h */,
-				B86B8AAA7F4FA21C9A1209DE3564B192 /* NSPersistentStore+MagicalRecord.m */,
-				F836C7FBFEAA17546ADF04EC26540E43 /* NSPersistentStoreCoordinator+MagicalRecord.h */,
-				10043162AB541730BA4E9CEAB2E64835 /* NSPersistentStoreCoordinator+MagicalRecord.m */,
-				DC78D36FA626FAC9030D2AFD285D8939 /* NSRelationshipDescription+MagicalDataImport.h */,
-				DC5237E808721CC674399C2094CE0245 /* NSRelationshipDescription+MagicalDataImport.m */,
-				302D9B3036911A76CD7A2DCD9AB12C08 /* NSString+MagicalDataImport.h */,
-				2F7B35FF87217901A3DF5EAE41E77E73 /* NSString+MagicalDataImport.m */,
+				D1C659417CF8B91A9D9368FF9250B281 /* DGActivityIndicatorView.xcconfig */,
+				273AA368E2C9295AC4E04019C53A3EC2 /* DGActivityIndicatorView-dummy.m */,
+				ED078B22443F0CB432E3FFF0D7CED1D4 /* DGActivityIndicatorView-prefix.pch */,
 			);
-			name = Core;
+			name = "Support Files";
+			path = "../Target Support Files/DGActivityIndicatorView";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		2DD79EAD8CF192A523C21224E8C4BA09 /* DGActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				A81C0CB292E45FAFBFC1DA48D35250D0 /* iOS */,
+				AC022F8DEA55A10FB2B4C8F449308A54 /* DGActivityIndicatorAnimation.h */,
+				1B59827A328291D16581277E9FBFA7FD /* DGActivityIndicatorAnimation.m */,
+				0230DA86F2EC73C2A6D007B418FC30B2 /* DGActivityIndicatorAnimationProtocol.h */,
+				1CE2CED61C258435EC0A50C95F09B34A /* DGActivityIndicatorBallBeatAnimation.h */,
+				F97B41CC20E3661C47623F8CF0DFBB3B /* DGActivityIndicatorBallBeatAnimation.m */,
+				A8F006EFE5F55BB1B93EB4C2F59AD360 /* DGActivityIndicatorBallClipRotateAnimation.h */,
+				B65957D71BCF747F5A74D7B2FE5FEDB3 /* DGActivityIndicatorBallClipRotateAnimation.m */,
+				51F8DBC71FDEDA76A34547B405C0CBE6 /* DGActivityIndicatorBallClipRotateMultipleAnimation.h */,
+				078AD49A30A1B9E14FAC604F6BD6AB52 /* DGActivityIndicatorBallClipRotateMultipleAnimation.m */,
+				F8BDD8377773C71F53E7B6F292CF4B9E /* DGActivityIndicatorBallClipRotatePulseAnimation.h */,
+				AF1616FD8D51740A21F352F2CB7AE328 /* DGActivityIndicatorBallClipRotatePulseAnimation.m */,
+				2302EE7A7A367EF543B35BAED9D52B1D /* DGActivityIndicatorBallGridBeatAnimation.h */,
+				41CD7119E57CA715C38AEE484C380B63 /* DGActivityIndicatorBallGridBeatAnimation.m */,
+				B15FB8641C20E669689F9ADF5B5B1905 /* DGActivityIndicatorBallGridPulseAnimation.h */,
+				FF8BBE73BC51318DBE1A3ACD368581EB /* DGActivityIndicatorBallGridPulseAnimation.m */,
+				96AC9FAD4A2A8399A6DF6F5F33634B27 /* DGActivityIndicatorBallPulseAnimation.h */,
+				9E565B4AF67CA9A9E13D3AE21E2C58DE /* DGActivityIndicatorBallPulseAnimation.m */,
+				11CBC29977AC69C60A1D85576961C841 /* DGActivityIndicatorBallPulseSyncAnimation.h */,
+				785740B1F4DC258D856EDA1E81CD3DA0 /* DGActivityIndicatorBallPulseSyncAnimation.m */,
+				838A57D9953C4A6433A2553CCDF380AD /* DGActivityIndicatorBallRotateAnimation.h */,
+				4829C09DD31D285B3CFCBD9D71204223 /* DGActivityIndicatorBallRotateAnimation.m */,
+				B0E31ED30AF2CBDDCB7ED7A21CC800BB /* DGActivityIndicatorBallScaleAnimation.h */,
+				9F6F6EF11C5D4C0AAB4B875FA441E06A /* DGActivityIndicatorBallScaleAnimation.m */,
+				C8C66744B62057A3D2EA5FEB89632037 /* DGActivityIndicatorBallScaleMultipleAnimation.h */,
+				54B604EB87B6B6ABF0573B258E59E1BE /* DGActivityIndicatorBallScaleMultipleAnimation.m */,
+				DF631D7AB91155B5CFDB504043840314 /* DGActivityIndicatorBallScaleRippleAnimation.h */,
+				04FF765D93DE2A1489C5EBBD60556B3F /* DGActivityIndicatorBallScaleRippleAnimation.m */,
+				6FC4E1101318468C87912B354E332552 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h */,
+				AE4926CB4427137E691515CA094DB027 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m */,
+				17BA1E51E784085DF6A2B0CC2F87BAAB /* DGActivityIndicatorBallSpinFadeLoader.h */,
+				767E6C5233227637CB88EB4C2DB16FA0 /* DGActivityIndicatorBallSpinFadeLoader.m */,
+				6501DB3991092A31C746B93D0B21943D /* DGActivityIndicatorBallTrianglePathAnimation.h */,
+				BECE9EBED42F2E4A157C3A83765DCAC0 /* DGActivityIndicatorBallTrianglePathAnimation.m */,
+				B24D7FE6149D5E54D7555D28CD5A251E /* DGActivityIndicatorBallZigZagAnimation.h */,
+				9CD09513596CA048DA6C28D833BE2545 /* DGActivityIndicatorBallZigZagAnimation.m */,
+				AD7FE2EBF2733E55BD8BC325BE1A14C8 /* DGActivityIndicatorBallZigZagDeflectAnimation.h */,
+				5F66D6AE9072B1C9BB8C42CF2F3D6ACC /* DGActivityIndicatorBallZigZagDeflectAnimation.m */,
+				3FEB179C22F3614C2DC28048D6584F8B /* DGActivityIndicatorCookieTerminatorAnimation.h */,
+				42D7F8D20D767FA046D5AF7563997E79 /* DGActivityIndicatorCookieTerminatorAnimation.m */,
+				F70A9CF853F4BE5877FBA683F1D4DDAD /* DGActivityIndicatorDoubleBounceAnimation.h */,
+				2E71FCFF1163EFCAFDD58EEB59A18C95 /* DGActivityIndicatorDoubleBounceAnimation.m */,
+				A3DB3CE6F471223A4AF44804D8490775 /* DGActivityIndicatorFiveDotsAnimation.h */,
+				EABF4A37FB8777E5AB36C687E7E7F891 /* DGActivityIndicatorFiveDotsAnimation.m */,
+				2E080D31E08279348845E587809BDF8F /* DGActivityIndicatorLineScaleAnimation.h */,
+				5EEAE3853D0EA30071A6286826287D6F /* DGActivityIndicatorLineScaleAnimation.m */,
+				5A608DF914C7E35B149293BFCD36FF0C /* DGActivityIndicatorLineScalePartyAnimation.h */,
+				17FCBDDB6A2063B017EF9A892FC7E805 /* DGActivityIndicatorLineScalePartyAnimation.m */,
+				415FC00E324EEBF30564E0B56DC8CA5D /* DGActivityIndicatorLineScalePulseOutAnimation.h */,
+				1CCB9A864CB9F9AC88EF8A0F9B80C1F3 /* DGActivityIndicatorLineScalePulseOutAnimation.m */,
+				44514AEF0ED04D781D008571117967FA /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h */,
+				DA1FE81693BD32A722E7E6B23608F346 /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m */,
+				B1AB6440E0C5F2B719BF4F8442CAB4B2 /* DGActivityIndicatorNineDotsAnimation.h */,
+				13315BF2E010975E586EA883EEA42BA4 /* DGActivityIndicatorNineDotsAnimation.m */,
+				FD0558EC0F0DD0C9A3A7AFED4DD68153 /* DGActivityIndicatorRotatingSandglassAnimation.h */,
+				6F3C8E351ABBDFC10215B0ABA8374052 /* DGActivityIndicatorRotatingSandglassAnimation.m */,
+				AD23E118028054C17C94A2A6A39EB8F7 /* DGActivityIndicatorRotatingSquaresAnimation.h */,
+				CDBB58BAED01F4E26F85F38AF529A639 /* DGActivityIndicatorRotatingSquaresAnimation.m */,
+				2AF815AC62910ED78642AD5DE9975CD1 /* DGActivityIndicatorRotatingTrigonAnimation.h */,
+				BFA1757D4B7C17AD54AD6C285BAB9982 /* DGActivityIndicatorRotatingTrigonAnimation.m */,
+				550B95145DB0A744DF6A9E71B22B9406 /* DGActivityIndicatorThreeDotsAnimation.h */,
+				14A1FB3FE93516CB87572328A58C605A /* DGActivityIndicatorThreeDotsAnimation.m */,
+				F3B50DE0EC1DBE083DFC560CE2E66B1F /* DGActivityIndicatorTriangleSkewSpinAnimation.h */,
+				933D63139D7C1A760B52B3DC83E6386E /* DGActivityIndicatorTriangleSkewSpinAnimation.m */,
+				32F4C6CC7DE48896129B0AB559BE6F43 /* DGActivityIndicatorTriplePulseAnimation.h */,
+				1AD88EEC33A3F5B7CEB826116B412AE7 /* DGActivityIndicatorTriplePulseAnimation.m */,
+				A99BC4A1D6B6CB4DE0172F872511A481 /* DGActivityIndicatorTripleRingsAnimation.h */,
+				84FD4C8B80318F2C33654EC8D6CCE038 /* DGActivityIndicatorTripleRingsAnimation.m */,
+				0E1B0C0CB5FE9FB7C1BC71462DB48C9F /* DGActivityIndicatorTwoDotsAnimation.h */,
+				99C7E8032ACD8565E5C02D16B2E37995 /* DGActivityIndicatorTwoDotsAnimation.m */,
+				D9B7F21E91028677A1858B66DB946ACA /* DGActivityIndicatorView.h */,
+				06E82F75765D299CF68DE87A93A8B1D5 /* DGActivityIndicatorView.m */,
+				26688FE643B8FB27B79F91C9C70CF45C /* Support Files */,
 			);
-			name = Frameworks;
+			path = DGActivityIndicatorView;
 			sourceTree = "<group>";
 		};
-		4D5E0E861088AA9B819EDC0D83875BDF /* Pods */ = {
+		544FCC153003B658A65B5BF62179F5BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				82161D6C599D91B9CD297D1815511760 /* MagicalRecord */,
+				2DD79EAD8CF192A523C21224E8C4BA09 /* DGActivityIndicatorView */,
+				0B334439B388DB67667E1A59E099E8A7 /* MagicalRecord */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		6073A6D384B43B8A55A17F43D0E84352 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				81BCA39FDBEB64B8E12E8B97860F8ED8 /* libMagicalRecord.a */,
-				EA81F930919AB68830797AA1C91E756F /* libPods-nimbus.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		73B90DC170A3BC9D2AED10DCF399180F /* Targets Support Files */ = {
@@ -296,81 +498,180 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				4D5E0E861088AA9B819EDC0D83875BDF /* Pods */,
-				6073A6D384B43B8A55A17F43D0E84352 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				544FCC153003B658A65B5BF62179F5BE /* Pods */,
+				08B9A5F420C22CAECF6ED513C5F2BE71 /* Products */,
 				73B90DC170A3BC9D2AED10DCF399180F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82161D6C599D91B9CD297D1815511760 /* MagicalRecord */ = {
+		A95125708E742DC1F60FE6F7AFFAD0EA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3F393C1F4BAA218A04DB66F8425A41C5 /* Core */,
-				FC083B0FAAD6EC020E10EEBC26B3B734 /* Support Files */,
-			);
-			name = MagicalRecord;
-			path = MagicalRecord;
-			sourceTree = "<group>";
-		};
-		A81C0CB292E45FAFBFC1DA48D35250D0 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F7A7BE07A93D389088D0712B8DA370ED /* CoreData.framework */,
-				3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */,
+				6788C15B51D04030F9334A66BAF4776E /* CoreData.framework */,
+				567CC9627FCF9E142805D264D34518CC /* Foundation.framework */,
+				65FD025D71C79552EB4B3C43A32AA6ED /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FC083B0FAAD6EC020E10EEBC26B3B734 /* Support Files */ = {
+		C37D181CA4C7FE5A7965E025619E3C03 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E583B230435768CBD6D39B145A2676CA /* MagicalRecord.xcconfig */,
-				B0E24C60428AB1C721372143205E1C6C /* MagicalRecord-dummy.m */,
-				3D4D20EE39C9DA1AFBEC232ED9644F24 /* MagicalRecord-prefix.pch */,
+				1943B8636EC09C6C99305E0D8FD0BAFF /* MagicalRecord.xcconfig */,
+				A8C0C538932765AC977F796941FCE983 /* MagicalRecord-dummy.m */,
+				0A2CE027CCBCEC9D40BA23EDAF9209C2 /* MagicalRecord-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MagicalRecord";
 			sourceTree = "<group>";
 		};
+		FC004EFF37FF57468704EC0F0309F74C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1594818773B1CDB5FBBA2168189B499D /* MagicalImportFunctions.h */,
+				15375F5E6CD50CB3DBAB7C4A1AE610B0 /* MagicalImportFunctions.m */,
+				C6E886B5AD4A6E3190FDCD5C1683787A /* MagicalRecord.h */,
+				B0B82050041D31EBCF970818B04DC1CB /* MagicalRecord+Actions.h */,
+				B8EC84EB6E56CE26C022F5D3696F3454 /* MagicalRecord+Actions.m */,
+				AB2A7242AAC33F92F2818181AF9AF8EA /* MagicalRecord+ErrorHandling.h */,
+				4BADFD8671CF918906C307C38580F444 /* MagicalRecord+ErrorHandling.m */,
+				9EB1BFE6372B94BCCD30B18114BACFBF /* MagicalRecord+iCloud.h */,
+				B054F879FA035212A3F92BAF84388114 /* MagicalRecord+iCloud.m */,
+				3FA70AB4889421E0BE9438DF8C31D7CA /* MagicalRecord+Options.h */,
+				F7D2D42590AA49774326F615E88C9E47 /* MagicalRecord+Options.m */,
+				965132D65A7B12E4F6398C165DE35261 /* MagicalRecord+Setup.h */,
+				08CB67A871048BE06FA43BAFF9FF5BEE /* MagicalRecord+Setup.m */,
+				FB4AB554C398291CF6683867BED3DDC5 /* MagicalRecord+ShorthandMethods.h */,
+				76E42B89AAA7DF75684939E83171A315 /* MagicalRecord+ShorthandMethods.m */,
+				1AC9FEBFD9E327C464D82FCB6994926B /* MagicalRecordDeprecationMacros.h */,
+				AEE00EBCF09C73EF81D0C43416936348 /* MagicalRecordInternal.h */,
+				BC3F775D2A0CFF7A1031F16B4B59B7B1 /* MagicalRecordInternal.m */,
+				501469376BA9F9BA019D70E9BEF82BD4 /* MagicalRecordLogging.h */,
+				EE462461E0A0786BE3116B2C334E4C5D /* MagicalRecordXcode7CompatibilityMacros.h */,
+				F7945DFF02297C8593621A7CB8ECB359 /* NSAttributeDescription+MagicalDataImport.h */,
+				C5B4C9DC59FAF399D268208AEB671912 /* NSAttributeDescription+MagicalDataImport.m */,
+				204516883FE287A67E0B5E418961E7A7 /* NSEntityDescription+MagicalDataImport.h */,
+				ABF1F1C2C9DE9C4256D843BAC1B30AD4 /* NSEntityDescription+MagicalDataImport.m */,
+				00DFEE1EE04DF3582F89554C29623250 /* NSManagedObject+MagicalAggregation.h */,
+				5FACC142A10CDDAAA8A37538DF488C61 /* NSManagedObject+MagicalAggregation.m */,
+				A888602982C24B84FBD9F9E42A91F20A /* NSManagedObject+MagicalDataImport.h */,
+				403C0E3CB50C6FEEFE119E35ECF79345 /* NSManagedObject+MagicalDataImport.m */,
+				FED70A2A859D44E60E2CE853BA31C329 /* NSManagedObject+MagicalFinders.h */,
+				9B860C582652BB0148D4F9F6E244DD41 /* NSManagedObject+MagicalFinders.m */,
+				6D4C3B1A23E704E4204385174117679A /* NSManagedObject+MagicalRecord.h */,
+				FBE66EF6829F9786D1C2482FD1BC78BA /* NSManagedObject+MagicalRecord.m */,
+				AB9B745551D5AB1EBD4547845AD9DBD8 /* NSManagedObject+MagicalRequests.h */,
+				13E52325CA2909162E673759CC18000A /* NSManagedObject+MagicalRequests.m */,
+				7BACBB38229BCD0B48EDBAB36A3B4857 /* NSManagedObjectContext+MagicalChainSave.h */,
+				C28952124F7F137A3133D3093595A006 /* NSManagedObjectContext+MagicalChainSave.m */,
+				55E30B2E463A48224A7AA27B7AF6B8E3 /* NSManagedObjectContext+MagicalObserving.h */,
+				52061C126230F5FCA7C41E43BD950F77 /* NSManagedObjectContext+MagicalObserving.m */,
+				F55F320788094B86B018109A7A6D76F8 /* NSManagedObjectContext+MagicalRecord.h */,
+				AA243D97B084FBD64C22FBD2B81E7D2A /* NSManagedObjectContext+MagicalRecord.m */,
+				F63E22F82731595EEB911CF985FEBD54 /* NSManagedObjectContext+MagicalSaves.h */,
+				B73C4EB16C3530DDE3EAC0B79A0529CB /* NSManagedObjectContext+MagicalSaves.m */,
+				32FF05417AA2DE07A8485CFB79716214 /* NSManagedObjectContext+MagicalThreading.h */,
+				E67B7CA7FBCE4652E700BEE12CB0C1EF /* NSManagedObjectContext+MagicalThreading.m */,
+				861D9A478056AB0C7CCC51F9B4202B22 /* NSManagedObjectModel+MagicalRecord.h */,
+				8CBD5044BA38A9A5BD17BAE422673BF0 /* NSManagedObjectModel+MagicalRecord.m */,
+				3E42BAD24F8DFE36845C39B6700A4531 /* NSNumber+MagicalDataImport.h */,
+				0097F042E599B27AC037653E5F656E4A /* NSNumber+MagicalDataImport.m */,
+				651B4289101CBE0A22DCA15E99855325 /* NSObject+MagicalDataImport.h */,
+				0A76D474161A76F2C31E7E8C56823DCD /* NSObject+MagicalDataImport.m */,
+				5AB7568503769FF5B260FB45F664B657 /* NSPersistentStore+MagicalRecord.h */,
+				1AD1DBB10C5D2BBB0F94D4E7D32572AF /* NSPersistentStore+MagicalRecord.m */,
+				71CA10C6E2F1A7B57BA11FFC8A76705C /* NSPersistentStoreCoordinator+MagicalRecord.h */,
+				37803E0DFB1439EE40736766D8E07D04 /* NSPersistentStoreCoordinator+MagicalRecord.m */,
+				3B9326759A2B92719E5F49193A54D71D /* NSRelationshipDescription+MagicalDataImport.h */,
+				853F2A056C9FC3993B9E502773931331 /* NSRelationshipDescription+MagicalDataImport.m */,
+				FCC321DBBE73F6F2461FE3014912B80F /* NSString+MagicalDataImport.h */,
+				EBE4398E4E96B10EA529C35025ABD71A /* NSString+MagicalDataImport.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		332ACDA10DD7A95486A7F437FC4D8E8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90512B3690027F2A06BF43FBE71C9732 /* DGActivityIndicatorAnimation.h in Headers */,
+				61066E1FDF10C92A3AA85788F7B695BA /* DGActivityIndicatorAnimationProtocol.h in Headers */,
+				019A47D88D0CAD46387F7E20F84D2748 /* DGActivityIndicatorBallBeatAnimation.h in Headers */,
+				0B2234D6120961CAB0AFC468B5B4735F /* DGActivityIndicatorBallClipRotateAnimation.h in Headers */,
+				4A404A2AF5F4F3BD813FB2BFFC5C917B /* DGActivityIndicatorBallClipRotateMultipleAnimation.h in Headers */,
+				A6ED5FC8DA96D7806496C5D3CF622A03 /* DGActivityIndicatorBallClipRotatePulseAnimation.h in Headers */,
+				1E0E6992A34C3EA3F3523D2B367705AE /* DGActivityIndicatorBallGridBeatAnimation.h in Headers */,
+				B756524F2FD51835E6D43055B13C7BDD /* DGActivityIndicatorBallGridPulseAnimation.h in Headers */,
+				3AC578763AACC81166AA24570684D0D2 /* DGActivityIndicatorBallPulseAnimation.h in Headers */,
+				866D104E342463CA2269C40C0FF78D49 /* DGActivityIndicatorBallPulseSyncAnimation.h in Headers */,
+				DF494FD1E090ADC64A7159D8AD192DF8 /* DGActivityIndicatorBallRotateAnimation.h in Headers */,
+				80E4F55726E7FBA8AD8E75D3F424A352 /* DGActivityIndicatorBallScaleAnimation.h in Headers */,
+				F10D4756BD202FEAA97BDB707AE06837 /* DGActivityIndicatorBallScaleMultipleAnimation.h in Headers */,
+				0B2E8F8D8D32332F42677B88A5B86282 /* DGActivityIndicatorBallScaleRippleAnimation.h in Headers */,
+				9330535E5A36728EFDCBA821E8A37074 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.h in Headers */,
+				C6A1FA9ABC5739725DEAE85998AB95A3 /* DGActivityIndicatorBallSpinFadeLoader.h in Headers */,
+				B3585D78C5370FB1C4500E4511BC3DA4 /* DGActivityIndicatorBallTrianglePathAnimation.h in Headers */,
+				FD350FB6CF6062EA006BC1842515AFCC /* DGActivityIndicatorBallZigZagAnimation.h in Headers */,
+				13BE382E6ED174E1597E734456C30F89 /* DGActivityIndicatorBallZigZagDeflectAnimation.h in Headers */,
+				2AFC06CAC2D245073ECA018A23A38C95 /* DGActivityIndicatorCookieTerminatorAnimation.h in Headers */,
+				69DEE3B5CEB84719615E786204A5A7AD /* DGActivityIndicatorDoubleBounceAnimation.h in Headers */,
+				2B1979009C9D6936964776A86623E2E1 /* DGActivityIndicatorFiveDotsAnimation.h in Headers */,
+				5A440C66C0F350DD1FE3C4F851E9204C /* DGActivityIndicatorLineScaleAnimation.h in Headers */,
+				08F504C8A995CB51E79E030D2F2AA116 /* DGActivityIndicatorLineScalePartyAnimation.h in Headers */,
+				CC8F3B19A0978D77F540F0AF3C79A5B0 /* DGActivityIndicatorLineScalePulseOutAnimation.h in Headers */,
+				E0E9CA722FB3010669EF7188A466C906 /* DGActivityIndicatorLineScalePulseOutRapidAnimation.h in Headers */,
+				830C66DA7E898E0D870FAC8FB11A9743 /* DGActivityIndicatorNineDotsAnimation.h in Headers */,
+				FFF53D7C3156E8FF1167EB1681BA6099 /* DGActivityIndicatorRotatingSandglassAnimation.h in Headers */,
+				18C9BF1CB697B57ABD85D1EC5CD5F443 /* DGActivityIndicatorRotatingSquaresAnimation.h in Headers */,
+				FA65F720773D3F3DB0F1E9F409BC2EE8 /* DGActivityIndicatorRotatingTrigonAnimation.h in Headers */,
+				58BBC4BE2BDDD29D1E06FEEC14CB4AB7 /* DGActivityIndicatorThreeDotsAnimation.h in Headers */,
+				910A106DC30B40A731C424D7319F6B5F /* DGActivityIndicatorTriangleSkewSpinAnimation.h in Headers */,
+				2E9D43F8982E0DF2D62A0ED23E5387E5 /* DGActivityIndicatorTriplePulseAnimation.h in Headers */,
+				071C8432A05579D84441EF39B97B5C9E /* DGActivityIndicatorTripleRingsAnimation.h in Headers */,
+				8B7321B5D60B31FF9EB2692797E780A0 /* DGActivityIndicatorTwoDotsAnimation.h in Headers */,
+				C3AE677C94F45501C8D8BAA157C3FE40 /* DGActivityIndicatorView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CAFED17BDC60D8C7760C48789A4BB3E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07BBC2F29764A6C606E4EB5E7CBF354B /* MagicalImportFunctions.h in Headers */,
-				B9D2227241286FE37FDB06ED2DFC5C39 /* MagicalRecord+Actions.h in Headers */,
-				82209CC1D6E8F63B01B56F76D04681C7 /* MagicalRecord+ErrorHandling.h in Headers */,
-				B30DE1D0FEFD0706CF5CBCCAC0151CF9 /* MagicalRecord+iCloud.h in Headers */,
-				04C3A37266FB57C79915948308A3DDE9 /* MagicalRecord+Options.h in Headers */,
-				FED592D88D5B0A4F564902B0BEA2A309 /* MagicalRecord+Setup.h in Headers */,
-				B082DFBD27E80B0472DEDD3809AB67E3 /* MagicalRecord+ShorthandMethods.h in Headers */,
-				22BBC0BC897BDCB2F6E9C0DE8B556A1C /* MagicalRecord.h in Headers */,
-				42BF41BB0D25090BED2668459ED9C7A1 /* MagicalRecordDeprecationMacros.h in Headers */,
-				3BBEF2BF9E331F2F228D84A08D3D4847 /* MagicalRecordInternal.h in Headers */,
-				3956D7F2703F084391CC71497E754F16 /* MagicalRecordLogging.h in Headers */,
-				BA3CB9B48351FF4B8D8F9A411A6B62AA /* MagicalRecordXcode7CompatibilityMacros.h in Headers */,
-				FE7003D1571761DD0A64AFE503E42A43 /* NSAttributeDescription+MagicalDataImport.h in Headers */,
-				AD204A16D73350A3160C585AF45DEEAC /* NSEntityDescription+MagicalDataImport.h in Headers */,
-				3AC536B47EE5E2528DCE9219FF83A96E /* NSManagedObject+MagicalAggregation.h in Headers */,
-				F712A8F691272E80E8FB927D67D90F75 /* NSManagedObject+MagicalDataImport.h in Headers */,
-				22649FE5700984C024BD78437703F4BC /* NSManagedObject+MagicalFinders.h in Headers */,
-				FB515756232019605E26CE5B45EC0DAA /* NSManagedObject+MagicalRecord.h in Headers */,
-				FF6D2CDA6691206405D88763E0156BEE /* NSManagedObject+MagicalRequests.h in Headers */,
-				5DA7211DEF1AA7045B62C404E7D3C034 /* NSManagedObjectContext+MagicalChainSave.h in Headers */,
-				5B24CD2EFD2D1A53632FDB140A7C93D0 /* NSManagedObjectContext+MagicalObserving.h in Headers */,
-				1DE5FE824666C8DC9B21ABB324846178 /* NSManagedObjectContext+MagicalRecord.h in Headers */,
-				9200871A4826C05C48C6D13EB2ADED04 /* NSManagedObjectContext+MagicalSaves.h in Headers */,
-				95E6236B7EE86AA2A5DA5EA823C7E1B0 /* NSManagedObjectContext+MagicalThreading.h in Headers */,
-				3D7EDAC6F8E782AB0B7822DA16EC1CC8 /* NSManagedObjectModel+MagicalRecord.h in Headers */,
-				7D19E5C0F7C5DC14392891F756F3964E /* NSNumber+MagicalDataImport.h in Headers */,
-				8B40AA11E4391845A6D96A2BB81B8A02 /* NSObject+MagicalDataImport.h in Headers */,
-				EC13398E6A998A029F2A983429CDADD0 /* NSPersistentStore+MagicalRecord.h in Headers */,
-				EC713D4028F12311E919AE329AAE39AF /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */,
-				6B66CA206E2A81A5611C033235367B41 /* NSRelationshipDescription+MagicalDataImport.h in Headers */,
-				F0728748EB0DD3F8BEC327BA8C5F0FA5 /* NSString+MagicalDataImport.h in Headers */,
+				F7BC71CCA928134348E383709A1E0214 /* MagicalImportFunctions.h in Headers */,
+				69B06D1A6FF85503627E1F9289D6FA63 /* MagicalRecord+Actions.h in Headers */,
+				E0D5A7BA54140A4E81858DFAED58CE0F /* MagicalRecord+ErrorHandling.h in Headers */,
+				832BCC3608C7E15770A05C49CF97CED4 /* MagicalRecord+iCloud.h in Headers */,
+				29436E0E225977ACBCCE9A9859B3B11F /* MagicalRecord+Options.h in Headers */,
+				9A63C78119FCF9DEDDC85439013EB238 /* MagicalRecord+Setup.h in Headers */,
+				A2A3AAD364C02B60CCEE1568CB4B7550 /* MagicalRecord+ShorthandMethods.h in Headers */,
+				C6278DAB39D388526F0264383C64BF06 /* MagicalRecord.h in Headers */,
+				986C0256A749734D0F34A7B068408771 /* MagicalRecordDeprecationMacros.h in Headers */,
+				9AEE518F9A809FD774739CEE88F77CF3 /* MagicalRecordInternal.h in Headers */,
+				D56F0FF32B52178D41DAA7F73312CD0B /* MagicalRecordLogging.h in Headers */,
+				A0F0E88BE165D41ABE326A00AB674E71 /* MagicalRecordXcode7CompatibilityMacros.h in Headers */,
+				DCDEE9DE607FE3169372FC9E3A35E563 /* NSAttributeDescription+MagicalDataImport.h in Headers */,
+				432385B8FF4F3032BB2F36133155EC87 /* NSEntityDescription+MagicalDataImport.h in Headers */,
+				0C35A7F88300552F4C0474F7780978A6 /* NSManagedObject+MagicalAggregation.h in Headers */,
+				250B84C6C4ADA5E344017018695A5AC5 /* NSManagedObject+MagicalDataImport.h in Headers */,
+				C4880949FA4C990AB8586369B604507A /* NSManagedObject+MagicalFinders.h in Headers */,
+				579B91A85B009BCF744486EE655C1B27 /* NSManagedObject+MagicalRecord.h in Headers */,
+				82568A3D4F5D4F08EA183AA2326771AE /* NSManagedObject+MagicalRequests.h in Headers */,
+				4AC3D8DD9D36FF212930EE209D5B1435 /* NSManagedObjectContext+MagicalChainSave.h in Headers */,
+				785A773A258C5CBB283A935BF7ED0DA3 /* NSManagedObjectContext+MagicalObserving.h in Headers */,
+				4E5B0F34AE450B6FF7A6A8577DF8B7DC /* NSManagedObjectContext+MagicalRecord.h in Headers */,
+				44D4883EE11CE063B128A50C1D67C8BE /* NSManagedObjectContext+MagicalSaves.h in Headers */,
+				C81E8B35C54E04DE3397F4D54A12A1DB /* NSManagedObjectContext+MagicalThreading.h in Headers */,
+				5D7525F5A2D90A820104EF0C4374621B /* NSManagedObjectModel+MagicalRecord.h in Headers */,
+				A9FE161ECA16D0ED2C988E3E0CD7F42B /* NSNumber+MagicalDataImport.h in Headers */,
+				9B52D08AAA699E5244363339C75D9AF8 /* NSObject+MagicalDataImport.h in Headers */,
+				E07D41182E7977257DE4289839F6869C /* NSPersistentStore+MagicalRecord.h in Headers */,
+				6A6EF46F88F5FAEA8CB60AC3D73CB069 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */,
+				044CF29DE509B71EBC4ACE68CA70A430 /* NSRelationshipDescription+MagicalDataImport.h in Headers */,
+				8C4E0389D0587FA6CB7A467988079A70 /* NSString+MagicalDataImport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +682,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB93549D0CC382AF5EA34B2B8D92F0EA /* Build configuration list for PBXNativeTarget "MagicalRecord" */;
 			buildPhases = (
-				6448E32F05164816D4905F05AACB84BD /* Sources */,
+				181B99DCEABD340774BC44E0B5270045 /* Sources */,
 				A48122A00BDA4626BEE5C21B9D4A6B95 /* Frameworks */,
 				CAFED17BDC60D8C7760C48789A4BB3E9 /* Headers */,
 			);
@@ -391,24 +692,42 @@
 			);
 			name = MagicalRecord;
 			productName = MagicalRecord;
-			productReference = 81BCA39FDBEB64B8E12E8B97860F8ED8 /* libMagicalRecord.a */;
+			productReference = 4CA920B032E825AEB3DDE8C0C9F7CD3F /* libMagicalRecord.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C5DAF028D0C56174DFA251FBE09A9F12 /* Pods-nimbus */ = {
+		6F8FFEBE9F7F490CD49B08267AEF7C1C /* Pods-nimbus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D35C973BA0F8418B8B02AE116BF58779 /* Build configuration list for PBXNativeTarget "Pods-nimbus" */;
+			buildConfigurationList = E8E7F77179C58C19842F1E420C51E2AC /* Build configuration list for PBXNativeTarget "Pods-nimbus" */;
 			buildPhases = (
-				F6A53BE4EE8464A17F25B25AF26806E0 /* Sources */,
-				891A3F29EFDB40FFC5ACE1091FDC9522 /* Frameworks */,
+				749AC8B48324E2D276CEE2EF23339F47 /* Sources */,
+				9EA5F438535DA8AAB9B8BE71D162947D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0EB8AFB1D4119A4B6C52B999B28C1501 /* PBXTargetDependency */,
+				CC921F662F47A76179B3337BEC14A3FA /* PBXTargetDependency */,
+				61E4A058EA868D9DAD08B56B9C4C6A73 /* PBXTargetDependency */,
 			);
 			name = "Pods-nimbus";
 			productName = "Pods-nimbus";
-			productReference = EA81F930919AB68830797AA1C91E756F /* libPods-nimbus.a */;
+			productReference = 1B752CF675FCA4CEA62B0DBDE7E595A4 /* libPods-nimbus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FBA9754FB7A82758566D360BD30C2517 /* DGActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5944019A2CB6A67A45A28F9941EB2C16 /* Build configuration list for PBXNativeTarget "DGActivityIndicatorView" */;
+			buildPhases = (
+				2BDD4B6CAB5C7469CC15EB36AAF26F8B /* Sources */,
+				21889AD90E2CE315B298FB638625A993 /* Frameworks */,
+				332ACDA10DD7A95486A7F437FC4D8E8C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DGActivityIndicatorView;
+			productName = DGActivityIndicatorView;
+			productReference = 8E90E39A82FB239F2EFEA232D837D6D9 /* libDGActivityIndicatorView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -417,8 +736,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1000;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -428,255 +747,381 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6073A6D384B43B8A55A17F43D0E84352 /* Products */;
+			productRefGroup = 08B9A5F420C22CAECF6ED513C5F2BE71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				FBA9754FB7A82758566D360BD30C2517 /* DGActivityIndicatorView */,
 				417EA9844EC286C5B1B8FCB029C00130 /* MagicalRecord */,
-				C5DAF028D0C56174DFA251FBE09A9F12 /* Pods-nimbus */,
+				6F8FFEBE9F7F490CD49B08267AEF7C1C /* Pods-nimbus */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6448E32F05164816D4905F05AACB84BD /* Sources */ = {
+		181B99DCEABD340774BC44E0B5270045 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A116465F2A2F320F61784ED86820A95 /* MagicalImportFunctions.m in Sources */,
-				4BE91F177B49A72C89C772C4D356069A /* MagicalRecord+Actions.m in Sources */,
-				209F394FEAFC142CC698D6866F432863 /* MagicalRecord+ErrorHandling.m in Sources */,
-				CBBC35ACBF79DFA14F46789517F309AF /* MagicalRecord+iCloud.m in Sources */,
-				D4C0E2D6C9285E6A885851FA8E3D227A /* MagicalRecord+Options.m in Sources */,
-				C821853E66AB5BEF4BDF07252F1F920C /* MagicalRecord+Setup.m in Sources */,
-				CC3B8960FEB681A1F289B3A00CE7DA77 /* MagicalRecord+ShorthandMethods.m in Sources */,
-				4A245AC4510E6E870B1D8ACCCA03582D /* MagicalRecord-dummy.m in Sources */,
-				4AD6DF0F1A5B175A2D0BABFD5F5BBB7F /* MagicalRecordInternal.m in Sources */,
-				A5695AF9972B3A9F568FD69FCACDD4C4 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
-				0C2AB767E407EA5465BCA9D323B0E37E /* NSEntityDescription+MagicalDataImport.m in Sources */,
-				3A92604F86B98063142990C99DC0FF43 /* NSManagedObject+MagicalAggregation.m in Sources */,
-				0254C924CDB7E4821A57011121170D1B /* NSManagedObject+MagicalDataImport.m in Sources */,
-				200902E8B10ACDB86705FF9301A86E9B /* NSManagedObject+MagicalFinders.m in Sources */,
-				2E5B2A75E16644786B370D064340304E /* NSManagedObject+MagicalRecord.m in Sources */,
-				BEF7A25C6F66B4EDFCE7C5B66E69BA2C /* NSManagedObject+MagicalRequests.m in Sources */,
-				97D8C0671A850117F88E4996FABF5222 /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
-				AA8A345E0C02F0E0CD98B87D9B5B24E4 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
-				E1A946B82BF14BF1ECDDF2BCC6D5354F /* NSManagedObjectContext+MagicalRecord.m in Sources */,
-				BC89F3D0301FF1F7391C4F86B3F22A21 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
-				8001D55144F1EC904DEF98EE8A3CCD89 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
-				FA15BF85576C757EEE73601B665DC115 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
-				82F21AA91D927E45CEA7C0E4FA8781FB /* NSNumber+MagicalDataImport.m in Sources */,
-				A5E1EF4F2E7270886CB43DF678BAB308 /* NSObject+MagicalDataImport.m in Sources */,
-				F70EDA3FBA2287B85F0564BC5B1CC3F9 /* NSPersistentStore+MagicalRecord.m in Sources */,
-				85FE798AAD9D1247ABAA148EDF1BC1D9 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
-				2EAF80266A01147BE2FC23C00E090285 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
-				468E38A511E308A91EF87A71378217F7 /* NSString+MagicalDataImport.m in Sources */,
+				BA862644C9A7922FD2C5192605CD2C3C /* MagicalImportFunctions.m in Sources */,
+				AA93B5B82A6CAA4FC5894FEF74CB2840 /* MagicalRecord+Actions.m in Sources */,
+				FEBFE4ABC53714F599CE8B28CD2A444D /* MagicalRecord+ErrorHandling.m in Sources */,
+				07AFB081C36CA95D0EEE623D41E9A13B /* MagicalRecord+iCloud.m in Sources */,
+				E9C70AF6D3482C408314ACDF96B75C4E /* MagicalRecord+Options.m in Sources */,
+				60A4D478BACB62FC704D9F0A52BF80DA /* MagicalRecord+Setup.m in Sources */,
+				6C43E5AD3776A44AEE5CA3F79148D5AE /* MagicalRecord+ShorthandMethods.m in Sources */,
+				B4B4306E548C2DA77363BB975D7DD63E /* MagicalRecord-dummy.m in Sources */,
+				6A8F99D77FC6A63E35B6905EE534D079 /* MagicalRecordInternal.m in Sources */,
+				46FFF8F1725F0DDCE87C63AEB6F63D8E /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				A6DF3C1939CD57E4FB9FF4294C85DF75 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				0BE65C7E618A4E3E3985FB3F091EF672 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				3176676FA75D50B23AF2CA36C1A0D4DB /* NSManagedObject+MagicalDataImport.m in Sources */,
+				0C98DCF46C92A1237745FCADC0612781 /* NSManagedObject+MagicalFinders.m in Sources */,
+				5EF993BFFBAC8C8BAD115DBB754FFCA9 /* NSManagedObject+MagicalRecord.m in Sources */,
+				18740FD9DFA556391A7EF8C459C97C00 /* NSManagedObject+MagicalRequests.m in Sources */,
+				7AAB5BA5952BCE7179031D37AF464534 /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
+				102FE6FB7E107520BAE436B64D34DFC3 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				8F6DD65EFB711EA769B031BEB984AA7C /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				8038B6D5F6AA798A8D1D170FB92F2970 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				B80BB34B9EA393487C81034B2984B960 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				B6CDFE5CCD88F571353D32DB617CAAB0 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				ED25E768526EEF0591318C2C1B07B202 /* NSNumber+MagicalDataImport.m in Sources */,
+				5BF49D00B27EFC184F0B75AAC939988F /* NSObject+MagicalDataImport.m in Sources */,
+				FA2674093F773C305F6629F68175A1D7 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				EC8F847EAC10D7ACE57F23E9A41C96AE /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				FF1795A17AF8D855CC406D1552833C7A /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				CDCF753517EB214B8251A145397C458F /* NSString+MagicalDataImport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6A53BE4EE8464A17F25B25AF26806E0 /* Sources */ = {
+		2BDD4B6CAB5C7469CC15EB36AAF26F8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C26AA74686ACF7A53CB80BF8C724AAC /* Pods-nimbus-dummy.m in Sources */,
+				E1DA5C248EB3BC36B58A245D9E2DA113 /* DGActivityIndicatorAnimation.m in Sources */,
+				28992B1DA7FEA435615F7A9AD28320D5 /* DGActivityIndicatorBallBeatAnimation.m in Sources */,
+				03EFD78155BC92960757F803CE757F5F /* DGActivityIndicatorBallClipRotateAnimation.m in Sources */,
+				BA5C355F0C0820A012A37757B270D6B9 /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
+				474F080A5622522997803C228EFFD154 /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,
+				3943A13F16D23E6A778394E82A0E4058 /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */,
+				6216A40715D9C14CFE2D04B53FA3AEF2 /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */,
+				30DD9EF407C22DD00854FD79EECF1B43 /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
+				947980586E1A92E7588712FC3DE5D7AC /* DGActivityIndicatorBallPulseSyncAnimation.m in Sources */,
+				A6DBDD1C59036BA2E4736A7778823F03 /* DGActivityIndicatorBallRotateAnimation.m in Sources */,
+				C3B44B3F354A30535932F533499C4E44 /* DGActivityIndicatorBallScaleAnimation.m in Sources */,
+				07196219552075F2B897C75611B8FDBC /* DGActivityIndicatorBallScaleMultipleAnimation.m in Sources */,
+				773046887FDC3B5F9E0C2B7B0115B7F3 /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,
+				9257006ABCAB427B5CC3E648B570A8B9 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */,
+				F802CF0F13B3F949A657DFF7AC10018E /* DGActivityIndicatorBallSpinFadeLoader.m in Sources */,
+				FCD7864E7CD935E3B2898EBE6980773B /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */,
+				1FA953F8EDCD4AB5186F1A84F5555263 /* DGActivityIndicatorBallZigZagAnimation.m in Sources */,
+				3511450999DD6A984EA8F4E0CE11EF14 /* DGActivityIndicatorBallZigZagDeflectAnimation.m in Sources */,
+				740FE9D3B4754C5D664C37F1B8371D92 /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */,
+				92EC5F67F2EA627857B2B7A95DC7E7C7 /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */,
+				F6B7FCE2EE54276259C94649A2A52808 /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
+				BDF472113B23579BCA2FAB5E268805E0 /* DGActivityIndicatorLineScaleAnimation.m in Sources */,
+				08D46508FF27FD645A0DA01CA4C05833 /* DGActivityIndicatorLineScalePartyAnimation.m in Sources */,
+				618BF0F9A8D6DD9D510AE62089E6F6E0 /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */,
+				52C9D8647B34A103AF08F1FC00B9A76D /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */,
+				C6F6685461FF7D1515BCD62600B1F259 /* DGActivityIndicatorNineDotsAnimation.m in Sources */,
+				2556BD0C101841B48272CD70B2D63ED3 /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,
+				58C7A2F8B926F414E8C81337EBC3A368 /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */,
+				41346E27BB06CB58C076D2DBEDA000A8 /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */,
+				478E339A9BD0CA1C6682485DF45BCD76 /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
+				E981FD3AE2C7513975DB49EAA89D2876 /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
+				CE5BAFD572EE40850242797E4215F8E9 /* DGActivityIndicatorTriplePulseAnimation.m in Sources */,
+				F8D902E96F164354B00D0D63DEE5388A /* DGActivityIndicatorTripleRingsAnimation.m in Sources */,
+				D1B70B439DA0390C3DF041DDB9BCDF62 /* DGActivityIndicatorTwoDotsAnimation.m in Sources */,
+				E94A33F2325A7F5DAFA3CA6B2AD50261 /* DGActivityIndicatorView-dummy.m in Sources */,
+				C534640410E9CA8C52A5C810248AC963 /* DGActivityIndicatorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749AC8B48324E2D276CEE2EF23339F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430B5F96499E6055061C69F9881B1D26 /* Pods-nimbus-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0EB8AFB1D4119A4B6C52B999B28C1501 /* PBXTargetDependency */ = {
+		61E4A058EA868D9DAD08B56B9C4C6A73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MagicalRecord;
 			target = 417EA9844EC286C5B1B8FCB029C00130 /* MagicalRecord */;
-			targetProxy = C2194E16C539E64C6A00F22E30974686 /* PBXContainerItemProxy */;
+			targetProxy = 2871B1C31E52330EE2975DC4478650BC /* PBXContainerItemProxy */;
+		};
+		CC921F662F47A76179B3337BEC14A3FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DGActivityIndicatorView;
+			target = FBA9754FB7A82758566D360BD30C2517 /* DGActivityIndicatorView */;
+			targetProxy = 9554A61673DF0AD9E207260E0DAA59B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3D2F499376213CABD2BC18AA8AB5B16B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C659417CF8B91A9D9368FF9250B281 /* DGActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DGActivityIndicatorView/DGActivityIndicatorView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DGActivityIndicatorView;
+				PRODUCT_NAME = DGActivityIndicatorView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		672B77D660AD46F8990F95EBB2D35060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1943B8636EC09C6C99305E0D8FD0BAFF /* MagicalRecord.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MagicalRecord/MagicalRecord-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MagicalRecord;
+				PRODUCT_NAME = MagicalRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C400A0E1A3200404DF968067A978BF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1943B8636EC09C6C99305E0D8FD0BAFF /* MagicalRecord.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MagicalRecord/MagicalRecord-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MagicalRecord;
+				PRODUCT_NAME = MagicalRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		99B46F80CF70CCA1BE206DDA7F3C8ACA /* Release */ = {
+		9F0FBFB1BE18458D8DD6AF28DE442E2D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E583B230435768CBD6D39B145A2676CA /* MagicalRecord.xcconfig */;
+			baseConfigurationReference = C5CDB2C4D11D3EE19E6105F0959D1020 /* Pods-nimbus.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MagicalRecord/MagicalRecord-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A837D6247FB024B3E13B803E607E23AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5892019487FD5EE4F409BC2AF1F23751 /* Pods-nimbus.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		AAB79EBF328D78F2CFF31DAB7DAEBAC1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E583B230435768CBD6D39B145A2676CA /* MagicalRecord.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MagicalRecord/MagicalRecord-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C03B8870130C98D1B02B59D003687524 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E98BDDBDB399E37C244F0A7FFB0FAD80 /* Release */ = {
+		A9E33D4FA13F69D38621527D9D19137C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5CDB2C4D11D3EE19E6105F0959D1020 /* Pods-nimbus.release.xcconfig */;
+			baseConfigurationReference = D1C659417CF8B91A9D9368FF9250B281 /* DGActivityIndicatorView.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				GCC_PREFIX_HEADER = "Target Support Files/DGActivityIndicatorView/DGActivityIndicatorView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DGActivityIndicatorView;
+				PRODUCT_NAME = DGActivityIndicatorView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1437BAE9BFB78CBF3866386DAAAD0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5892019487FD5EE4F409BC2AF1F23751 /* Pods-nimbus.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -684,8 +1129,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				643C76AA582046977B7877822ED7A258 /* Debug */,
-				C03B8870130C98D1B02B59D003687524 /* Release */,
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5944019A2CB6A67A45A28F9941EB2C16 /* Build configuration list for PBXNativeTarget "DGActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2F499376213CABD2BC18AA8AB5B16B /* Debug */,
+				A9E33D4FA13F69D38621527D9D19137C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -693,17 +1147,17 @@
 		CB93549D0CC382AF5EA34B2B8D92F0EA /* Build configuration list for PBXNativeTarget "MagicalRecord" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAB79EBF328D78F2CFF31DAB7DAEBAC1 /* Debug */,
-				99B46F80CF70CCA1BE206DDA7F3C8ACA /* Release */,
+				8C400A0E1A3200404DF968067A978BF2 /* Debug */,
+				672B77D660AD46F8990F95EBB2D35060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D35C973BA0F8418B8B02AE116BF58779 /* Build configuration list for PBXNativeTarget "Pods-nimbus" */ = {
+		E8E7F77179C58C19842F1E420C51E2AC /* Build configuration list for PBXNativeTarget "Pods-nimbus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A837D6247FB024B3E13B803E607E23AC /* Debug */,
-				E98BDDBDB399E37C244F0A7FFB0FAD80 /* Release */,
+				E1437BAE9BFB78CBF3866386DAAAD0DD /* Debug */,
+				9F0FBFB1BE18458D8DD6AF28DE442E2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
