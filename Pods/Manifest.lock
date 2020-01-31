@@ -9,7 +9,7 @@ DEPENDENCIES:
   - MagicalRecord (~> 2.3.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - DGActivityIndicatorView
     - MagicalRecord
 
@@ -17,6 +17,6 @@ SPEC CHECKSUMS:
   DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
-PODFILE CHECKSUM: 7ff8055c971aca9e4c5154cc0382d6a6afcbd596
+PODFILE CHECKSUM: 2419c2ebd40e53479f302ce0851d5ceabf2b6710
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
