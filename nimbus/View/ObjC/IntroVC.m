@@ -12,10 +12,8 @@
 
 @implementation IntroVC
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	
 	[DataLogic GetInitialData];
 }
 

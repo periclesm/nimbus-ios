@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		683511E623E59B1E007AC2BB /* TableCellSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */; };
+		683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E723E59C13007AC2BB /* TableCellClass.swift */; };
+		683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511EC23E5A3C1007AC2BB /* ActivityView.swift */; };
 		684A20891EA74B7400BFC44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
 		684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208B1EA74B7400BFC44C /* AppDelegate.m */; };
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
 		684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AD1EA76BCA00BFC44C /* IntroVC.m */; };
-		684A20B11EA76BCA00BFC44C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AF1EA76BCA00BFC44C /* MainVC.m */; };
 		684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */; };
 		684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20CA1EA772D700BFC44C /* DataQuery.m */; };
 		684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20DD1EA7A3BB00BFC44C /* DataLogic.m */; };
@@ -24,11 +26,18 @@
 		684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20F31EA7DB2300BFC44C /* DetailVC.m */; };
 		68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2E05420E9FAA200C20BD5 /* TableCellClass.m */; };
 		68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */; };
+		68B9265223E56D6B0046D78C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265123E56D6B0046D78C /* MainVC.swift */; };
+		68B9265323E5726C0046D78C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AF1EA76BCA00BFC44C /* MainVC.m */; };
+		68B9265523E572B00046D78C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265423E572B00046D78C /* DetailVC.swift */; };
+		68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265823E57B0C0046D78C /* IntroVC.swift */; };
 		6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799085B13FD94F076C2E2A7A /* libPods-nimbus.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
+		683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellSynthesis.swift; sourceTree = "<group>"; };
+		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
+		683511EC23E5A3C1007AC2BB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A20881EA74B7400BFC44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		684A208A1EA74B7400BFC44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +70,10 @@
 		68B2E05420E9FAA200C20BD5 /* TableCellClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellClass.m; sourceTree = "<group>"; };
 		68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellSynthesis.h; sourceTree = "<group>"; };
 		68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellSynthesis.m; sourceTree = "<group>"; };
+		68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Bridge.h"; sourceTree = "<group>"; };
+		68B9265123E56D6B0046D78C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		68B9265423E572B00046D78C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		68B9265823E57B0C0046D78C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbusv2.xcdatamodel; sourceTree = "<group>"; };
 		799085B13FD94F076C2E2A7A /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +91,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		683511E923E59F35007AC2BB /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				683511EB23E59F46007AC2BB /* ObjC */,
+				683511EA23E59F3E007AC2BB /* Swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		683511EA23E59F3E007AC2BB /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				683511E723E59C13007AC2BB /* TableCellClass.swift */,
+				683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		683511EB23E59F46007AC2BB /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				68B2E05320E9FAA200C20BD5 /* TableCellClass.h */,
+				68B2E05420E9FAA200C20BD5 /* TableCellClass.m */,
+				68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */,
+				68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
 		684A207B1EA74B7400BFC44C = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +143,9 @@
 			children = (
 				684A208A1EA74B7400BFC44C /* AppDelegate.h */,
 				684A208B1EA74B7400BFC44C /* AppDelegate.m */,
-				68B2E05220E9F98200C20BD5 /* Components */,
-				684A20AB1EA76BCA00BFC44C /* View */,
-				684A20DB1EA7A3AB00BFC44C /* Controller */,
 				684A20B21EA76BF500BFC44C /* Model */,
+				684A20DB1EA7A3AB00BFC44C /* Controller */,
+				684A20AB1EA76BCA00BFC44C /* View */,
 				684A20871EA74B7400BFC44C /* Supporting Files */,
 			);
 			path = nimbus;
@@ -117,6 +158,7 @@
 				684A20981EA74B7400BFC44C /* Info.plist */,
 				684A20881EA74B7400BFC44C /* main.m */,
 				684A20CC1EA7733C00BFC44C /* Nimbus-Prefix.pch */,
+				68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,13 +166,10 @@
 		684A20AB1EA76BCA00BFC44C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				68B2E05220E9F98200C20BD5 /* Components */,
 				68B2E05120E9F43400C20BD5 /* Storyboards */,
-				684A20AC1EA76BCA00BFC44C /* IntroVC.h */,
-				684A20AD1EA76BCA00BFC44C /* IntroVC.m */,
-				684A20AE1EA76BCA00BFC44C /* MainVC.h */,
-				684A20AF1EA76BCA00BFC44C /* MainVC.m */,
-				684A20F21EA7DB2300BFC44C /* DetailVC.h */,
-				684A20F31EA7DB2300BFC44C /* DetailVC.m */,
+				68B9265723E57AD80046D78C /* ObjC */,
+				68B9265623E57AD20046D78C /* Swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,12 +221,33 @@
 		68B2E05220E9F98200C20BD5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				68B2E05320E9FAA200C20BD5 /* TableCellClass.h */,
-				68B2E05420E9FAA200C20BD5 /* TableCellClass.m */,
-				68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */,
-				68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */,
+				683511E923E59F35007AC2BB /* TableCells */,
+				683511EC23E5A3C1007AC2BB /* ActivityView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		68B9265623E57AD20046D78C /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				68B9265823E57B0C0046D78C /* IntroVC.swift */,
+				68B9265123E56D6B0046D78C /* MainVC.swift */,
+				68B9265423E572B00046D78C /* DetailVC.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		68B9265723E57AD80046D78C /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				684A20AC1EA76BCA00BFC44C /* IntroVC.h */,
+				684A20AD1EA76BCA00BFC44C /* IntroVC.m */,
+				684A20AE1EA76BCA00BFC44C /* MainVC.h */,
+				684A20AF1EA76BCA00BFC44C /* MainVC.m */,
+				684A20F21EA7DB2300BFC44C /* DetailVC.h */,
+				684A20F31EA7DB2300BFC44C /* DetailVC.m */,
+			);
+			path = ObjC;
 			sourceTree = "<group>";
 		};
 		7896288071E0E771343E6221 /* Frameworks */ = {
@@ -240,6 +300,7 @@
 					684A20831EA74B7400BFC44C = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = AFNBPBD3C5;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -303,15 +364,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */,
+				68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */,
+				68B9265223E56D6B0046D78C /* MainVC.swift in Sources */,
 				684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */,
+				68B9265323E5726C0046D78C /* MainVC.m in Sources */,
 				684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */,
+				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
+				683511E623E59B1E007AC2BB /* TableCellSynthesis.swift in Sources */,
 				68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */,
 				684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */,
 				684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */,
 				684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */,
 				68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */,
-				684A20B11EA76BCA00BFC44C /* MainVC.m in Sources */,
+				683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */,
 				684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */,
+				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
 				684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */,
 				684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */,
 				684A20891EA74B7400BFC44C /* main.m in Sources */,
@@ -395,6 +462,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -446,6 +514,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -456,13 +525,18 @@
 			baseConfigurationReference = 677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nimbus/Nimbus-Bridge.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -472,13 +546,17 @@
 			baseConfigurationReference = D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nimbus/Nimbus-Bridge.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

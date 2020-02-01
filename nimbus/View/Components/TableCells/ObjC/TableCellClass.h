@@ -8,7 +8,6 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-
 @interface cloudCell : UITableViewCell
 
 @property (nonatomic, weak, nullable) IBOutlet UILabel *cloudInitials;

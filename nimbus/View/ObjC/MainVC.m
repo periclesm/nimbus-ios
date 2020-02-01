@@ -17,16 +17,13 @@
 
 #pragma mark - View Lifecycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	cloudArray = [self GetCloudData];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-	if ([[segue identifier] isEqualToString:@"detailSegue"])
-	{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	if ([[segue identifier] isEqualToString:@"detailSegue"]) {
 		DetailVC *dtc = [segue destinationViewController];
 		dtc.objectId = (NSString*)sender;
 	}
@@ -34,33 +31,33 @@
 
 #pragma mark - Data
 
-- (NSMutableArray*)GetCloudData
-{
-	if (cloudArray.count > 0) [cloudArray removeAllObjects];
+- (NSMutableArray*)GetCloudData {
+	if (cloudArray.count > 0)
+        [cloudArray removeAllObjects];
 	
 	return [[DataQuery GetSortedItemsFromEntity:@"CloudList" sortBy:@"order" ascending:YES] mutableCopy];
 }
 
-#pragma mark - Table view data source
+#pragma mark - Actions
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
+- (IBAction)refreshData:(id)sender {
+    [DataLogic GetInitialData];
+    [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+#pragma mark - Table view data source
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return cloudArray.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	return [TableCellSynthesis CloudCell:tableView datasource:cloudArray index:indexPath];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[tableView deselectRowAtIndexPath:indexPath animated:true];
 	CloudList *cl = cloudArray[indexPath.row];
 	[self performSegueWithIdentifier:@"detailSegue" sender:cl.objectId];
 }

@@ -12,14 +12,13 @@
 
 @implementation TableCellSynthesis
 
-+ (cloudCell*)CloudCell:(UITableView*)tableView datasource:(NSArray*)datasource index:(NSIndexPath*)indexPath
-{
++ (cloudCell*)CloudCell:(UITableView*)tableView datasource:(NSArray*)datasource index:(NSIndexPath*)indexPath {
 	cloudCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cloudCell" forIndexPath:indexPath];
 	CloudList *cl = datasource[indexPath.row];
 
 	cell.cloudInitials.text = cl.initials;
 	cell.cloudName.text = cl.name;
-	cell.cloudDetail.text = [DataLogic GetCloudDetails:cl.detail shortText:YES];
+	cell.cloudDetail.text = [DataLogic GetCloudDetails:cl.detail shortText:true];
 
 	return cell;
 }
