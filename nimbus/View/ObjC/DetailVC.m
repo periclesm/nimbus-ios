@@ -13,8 +13,7 @@
 
 @implementation DetailVC
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
 	[self GetCloudData];
     [super viewDidLoad];
 
@@ -25,8 +24,7 @@
 
 #pragma mark - Data
 
-- (void)GetCloudData
-{	
+- (void)GetCloudData {
 	CloudList *cl = [DataLogic GetCloudInfo:self.objectId];
 	
 	self.title = cl.name;
@@ -39,18 +37,23 @@
 	[activity startAnimating];
 	[Networker GetRemoteImage:[DataLogic GetCloudImageURL:cl.detail] completion:^(UIImage *image) {
 		self->clImage.image = image;
-		[UIView animateWithDuration:0.25 animations:^{ self->clImage.alpha = 1; }];
+		[UIView animateWithDuration:0.25 animations:^{
+            self->clImage.alpha = 1;
+            
+        }];
+        
 		[self->activity stopAnimating];
 	}];
 }
 
 #pragma mark - IBActions
 
-- (IBAction)WikiButton:(id)sender
-{
+- (IBAction)WikiButton:(id)sender {
 	CloudList *cl = [DataLogic GetCloudInfo:self.objectId];
 	SFSafariViewController *safariView = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[DataLogic GetCloudWikiURL:cl.detail]]];
-	[self presentViewController:safariView animated:YES completion:nil];
+    safariView.modalPresentationStyle = UIModalPresentationFormSheet;
+    safariView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+	[self presentViewController:safariView animated:true completion:nil];
 }
 
 @end

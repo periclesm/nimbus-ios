@@ -8,8 +8,7 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-@interface DetailVC : UITableViewController
-{
+@interface DetailVC : UITableViewController {
 	IBOutlet UIImageView *clImage;
 	IBOutlet UILabel *clInitials;
 	IBOutlet UILabel *clName;

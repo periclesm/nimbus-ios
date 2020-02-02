@@ -13,11 +13,9 @@
 @implementation cloudCell
 @synthesize cloudInitials, cloudName, cloudDetail;
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
 	[super awakeFromNib];
 	self.backgroundColor = [UIColor clearColor];
-//	self.cloudInitials.layer.cornerRadius = self.cloudInitials.frame.size.width/2;
 }
 
 @end
