@@ -15,10 +15,10 @@
 
 @implementation NetworkerParameters
 
-NSString* const cloudList		= @"https://stage.rdfn.eu/nimbus/classes/cloudList";
-NSString* const cloudListParam	= @"https://stage.rdfn.eu/nimbus/classes/cloudList?";
-NSString* const cloudDetail		= @"https://stage.rdfn.eu/nimbus/classes/cloudDetail";
-NSString* const cloudType		= @"https://stage.rdfn.eu/nimbus/classes/cloudType";
+NSString* const cloudList		= @"https://stage.clfd.eu/nimbus/classes/cloudList";
+NSString* const cloudListParam	= @"https://stage.clfd.eu/nimbus/classes/cloudList?";
+NSString* const cloudDetail		= @"https://stage.clfd.eu/nimbus/classes/cloudDetail";
+NSString* const cloudType		= @"https://stage.clfd.eu/nimbus/classes/cloudType";
 
 + (NSString*)GetAddressForService:(NSString*)service parameters:(NSDictionary*)params
 {
