@@ -14,14 +14,12 @@ static NSManagedObjectContext *defaultContext;
 
 @implementation DataQuery
 
-+ (NSManagedObjectContext*)GetContext
-{
++ (NSManagedObjectContext*)GetContext {
 	NSManagedObjectContext *context;
 	
 	if (![NSThread isMainThread])
 		context = [NSManagedObjectContext MR_context];
-	else
-	{
+	else {
 		if (defaultContext == nil)
 			context = [NSManagedObjectContext MR_defaultContext];
 		else
@@ -33,13 +31,11 @@ static NSManagedObjectContext *defaultContext;
 
 #pragma mark - Get
 
-+ (NSInteger)GetItemCountFromEntity:(NSString*)entity
-{
++ (NSInteger)GetItemCountFromEntity:(NSString*)entity {
 	return [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
 }
 
-+ (NSArray*)GetItemsFromEntity:(NSString*)entity
-{
++ (NSArray*)GetItemsFromEntity:(NSString*)entity {
 	NSInteger currentCount = [self GetItemCountFromEntity:entity];
 
 	if (currentCount > 0)
@@ -48,8 +44,7 @@ static NSManagedObjectContext *defaultContext;
 		return [NSArray array];
 }
 
-+ (NSArray*)GetSortedItemsFromEntity:(NSString*)entity sortBy:(NSString*)sort ascending:(Boolean)asc
-{
++ (NSArray*)GetSortedItemsFromEntity:(NSString*)entity sortBy:(NSString*)sort ascending:(Boolean)asc {
 	NSInteger currentCount = [self GetItemCountFromEntity:entity];
 
 	if (currentCount > 0)
@@ -60,27 +55,21 @@ static NSManagedObjectContext *defaultContext;
 
 #pragma mark - Set
 
-+ (void)SetItemsToEntity:(NSString*)entity items:(NSArray*)items
-{
++ (void)SetItemsToEntity:(NSString*)entity items:(NSArray*)items {
 	NSInteger currentCount = [[NSClassFromString(entity) MR_numberOfEntities] integerValue];
 	if (currentCount > 0)
 		[NSClassFromString(entity) MR_truncateAll];
 	
-	if (items.count > 0)
-	{
-		for (NSDictionary *itemdict in items)
-		{
-			@try
-			{
+	if (items.count > 0) {
+		for (NSDictionary *itemdict in items) {
+			@try {
 				id newEntity = [NSClassFromString(entity) MR_createEntityInContext:[self GetContext]];
 				[newEntity setValuesForKeysWithDictionary:itemdict];
 			}
-			@catch (NSException *exception)
-			{
+			@catch (NSException *exception) {
 				NSLog(@"Exception in updating %@ with message: %@", entity, exception.description);
 			}
-			@finally
-			{
+			@finally {
 				[[self GetContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
 					if (error) NSLog(@"Error in saving %@ context because: %@", entity, error.localizedDescription);
 				}];
@@ -91,36 +80,28 @@ static NSManagedObjectContext *defaultContext;
 
 #pragma mark - Delete
 
-+ (void)DeleteAllItemsFromEntity:(NSString*)entity
-{
-	@try
-	{
++ (void)DeleteAllItemsFromEntity:(NSString*)entity {
+	@try {
 		[NSClassFromString(entity) MR_truncateAllInContext:[self GetContext]];
 	}
-	@catch (NSException *exception)
-	{
+	@catch (NSException *exception) {
 		NSLog(@"Exception in deleting %@ with message: %@", entity, exception.description);
 	}
-	@finally
-	{
+	@finally {
 		[[self GetContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
 			if (error) NSLog(@"Error in saving %@ context because: %@", entity, error.localizedDescription);
 		}];
 	}
 }
 
-+ (void)DeleteItemFromEntity:(NSString*)entity predicate:(NSPredicate*)pred
-{
-	@try
-	{
++ (void)DeleteItemFromEntity:(NSString*)entity predicate:(NSPredicate*)pred {
+	@try {
 		[NSClassFromString(entity) MR_deleteAllMatchingPredicate:pred inContext:[self GetContext]];
 	}
-	@catch (NSException *exception)
-	{
+	@catch (NSException *exception) {
 		NSLog(@"Exception in deleting %@ with message: %@", entity, exception.description);
 	}
-	@finally
-	{
+	@finally {
 		[[self GetContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
 			if (error) NSLog(@"Error in deleting items from %@ context because: %@", entity, error.localizedDescription);
 		}];
@@ -129,8 +110,7 @@ static NSManagedObjectContext *defaultContext;
 
 #pragma mark - Search
 
-+ (NSArray*)SearchItemsFromEntity:(NSString*)entity predicate:(NSPredicate*)pred
-{
++ (NSArray*)SearchItemsFromEntity:(NSString*)entity predicate:(NSPredicate*)pred {
 	NSInteger currentCount = [self GetItemCountFromEntity:entity];
 	
 	if (currentCount > 0)

@@ -12,19 +12,14 @@
 
 @implementation DataMapper
 
-+ (NSArray*)DataMapForEntity:(DataEntity)class object:(NSDictionary*)objects
-{
++ (NSArray*)DataMapForEntity:(DataEntity)class object:(NSDictionary*)objects {
 	NSMutableArray *dataMap = [NSMutableArray array];
 	NSArray *data = objects[@"results"];
 	
-	if (data.count > 0)
-	{
-		switch (class)
-		{
-			case DataEntityList:
-			{
-				for (NSDictionary *result in data)
-				{
+	if (data.count > 0) {
+		switch (class) {
+			case DataEntityList: {
+				for (NSDictionary *result in data) {
 					NSDictionary *dataDict = @{
 											   @"objectId": [self ProcessValue:result[@"objectId"]],
 											   @"order": [self ProcessValue:result[@"order"]],
@@ -40,10 +35,8 @@
 				break;
 			}
 				
-			case DataEntityType:
-			{
-				for (NSDictionary *result in data)
-				{
+			case DataEntityType: {
+				for (NSDictionary *result in data) {
 					NSDictionary *dataDict = @{
 											   @"objectId": [self ProcessValue:result[@"objectId"]],
 											   @"name": [self ProcessValue:result[@"name"]],
@@ -56,10 +49,8 @@
 				break;
 			}
 				
-			case DataEntityDetail:
-			{
-				for (NSDictionary *result in data)
-				{
+			case DataEntityDetail: {
+				for (NSDictionary *result in data) {
 					NSDictionary *dataDict = @{
 											   @"objectId": [self ProcessValue:result[@"objectId"]],
 											   @"detail": [self ProcessValue:result[@"detail"]],
@@ -78,16 +69,13 @@
 	return [NSArray arrayWithArray:dataMap];
 }
 
-+ (id)ProcessValue:(id)object
-{
++ (id)ProcessValue:(id)object {
 	id returnObject;
 	
-	if (object == nil || object == [NSNull null])
-	{
+	if (object == nil || object == [NSNull null]) {
 		returnObject = [NSNull null];
 	}
-	else if ([object isKindOfClass:[NSString class]])
-	{
+	else if ([object isKindOfClass:[NSString class]]) {
 		NSString *objString = object;
 		
 		if ([objString isEqualToString:@"nil"] || objString.length == 0)
@@ -95,8 +83,7 @@
 		else
 			returnObject = [objString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	}
-	else
-	{
+	else {
 		returnObject = object;
 	}
 	
