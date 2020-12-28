@@ -47,7 +47,10 @@
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateString];
 	NSArray *cloudListData = [DataQuery SearchItemsFromEntity:@"CloudList" predicate:predicate];
 
-	return cloudListData.firstObject;
+	if (cloudListData.count > 0)
+		return cloudListData.firstObject;
+	else
+		return nil;
 }
 
 + (NSString*)GetCloudDetails:(NSString*)objectId shortText:(Boolean)shortText {

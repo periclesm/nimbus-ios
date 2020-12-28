@@ -53,12 +53,13 @@ class DetailVC: UITableViewController {
     // MARK: - Actions
     
     @IBAction func WikiButton(_ sender: UIBarButtonItem) {
-        let cl = DataLogic.getCloudInfo(self.objectId)
-        if let url = URL(string: DataLogic.getCloudWikiURL(cl?.detail)) {
-            let safari = SFSafariViewController(url: url)
-            safari.modalPresentationStyle = .formSheet
-            safari.modalTransitionStyle = .coverVertical
-            self.present(safari, animated: true, completion: nil)
-        }
-    }
+		if let cl = DataLogic.getCloudInfo(self.objectId) {
+			if let url = URL(string: DataLogic.getCloudWikiURL(cl.detail)) {
+				let safari = SFSafariViewController(url: url)
+				safari.modalPresentationStyle = .formSheet
+				safari.modalTransitionStyle = .coverVertical
+				self.present(safari, animated: true, completion: nil)
+			}
+		}
+	}
 }
