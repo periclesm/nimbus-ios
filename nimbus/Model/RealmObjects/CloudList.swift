@@ -20,7 +20,7 @@ class CloudLists: Object {
 	@objc dynamic var type: String = ""
 
 
-	//MARK: - DB Properies
+	//MARK: - DB Properies --
 
 	override static func primaryKey() -> String? {
 		return "objectId"
@@ -33,5 +33,11 @@ class CloudLists: Object {
 	override static func ignoredProperties() -> [String] {
 		return []
 	}
-	
+
+
+	//MARK: - Map Data --
+
+	class func mapData() {
+
+	}
 }

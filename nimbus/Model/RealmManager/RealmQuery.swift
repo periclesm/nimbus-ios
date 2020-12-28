@@ -21,7 +21,7 @@ class RealmQuery: NSObject {
 							 predicate: NSPredicate,
 							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object>? {
 
-		return RealmOperation.get(dataObject: dataObject)?.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
+		return RealmOperation.get(dataObject: dataObject).filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
 
 	/**
@@ -58,7 +58,7 @@ class RealmQuery: NSObject {
 								 predicate: NSPredicate,
 								 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> List<Object> {
 
-		let data = RealmOperation.get(dataObject: dataObject)?.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
+		let data = RealmOperation.get(dataObject: dataObject).filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 		return self.resultsToListConversion(results: data)
 	}
 
@@ -77,7 +77,7 @@ class RealmQuery: NSObject {
 	//MARK: - Filter --
 	
 	class func filter(dataObject: Object.Type, predicate: NSPredicate) -> Results<Object>? {
-		return RealmOperation.get(dataObject: dataObject)?.filter(predicate)
+		return RealmOperation.get(dataObject: dataObject).filter(predicate)
 	}
 	
 	class func filter(dataResults: Results<Object>?, predicate: NSPredicate) -> Results<Object>? {
@@ -92,7 +92,7 @@ class RealmQuery: NSObject {
 	//MARK: - Sort --
 
 	class func sort(dataObject: Object.Type, sortAttribute: String, ascending: Bool = true) -> Results<Object>? {
-		return RealmOperation.get(dataObject: dataObject)?.sorted(byKeyPath: sortAttribute, ascending: ascending)
+		return RealmOperation.get(dataObject: dataObject).sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
 	
 	class func sort(dataResults: Results<Object>, sortAttribute: String, ascending: Bool = true) -> Results<Object> {

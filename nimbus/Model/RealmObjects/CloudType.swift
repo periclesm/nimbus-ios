@@ -16,7 +16,8 @@ class CloudType: Object {
 	@objc dynamic var name: String = ""
 	@objc dynamic var detail: String = ""
 
-	//MARK: - DB Properies
+
+	//MARK: - DB Properies --
 
 	override static func primaryKey() -> String? {
 		return "objectId"
@@ -30,4 +31,10 @@ class CloudType: Object {
 		return []
 	}
 	
+
+	//MARK: - Map Data --
+
+	class func mapData() {
+
+	}
 }

@@ -14,14 +14,30 @@ class Database: NSObject {
 
 	static var shared = Database()
 
-	var mainDB: Realm? 
+	private var mainDB: Realm?
+
+	var db: Realm {
+		set(newSchema) {
+			self.mainDB = newSchema
+		}
+
+		get {
+			if self.mainDB != nil {
+				return self.mainDB!
+			}
+			else {
+				self.mainDB = self.initMainDB()
+				return self.mainDB!
+			}
+		}
+	}
 
 	override init() {
 		super.init()
 		self.mainDB = self.initMainDB()
 	}
 
-	func initMainDB() -> Realm? {
+	private func initMainDB() -> Realm? {
 		let schemaVer: UInt64 = 0
 
 		let config = Realm.Configuration (

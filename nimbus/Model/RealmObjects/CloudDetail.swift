@@ -17,7 +17,8 @@ class CloudDetail: Object {
 	@objc dynamic var image: String = ""
 	@objc dynamic var wikiURL: String = ""
 
-	//MARK: - DB Properies
+	
+	//MARK: - DB Properies --
 
 	override static func primaryKey() -> String? {
 		return "objectId"
@@ -31,4 +32,10 @@ class CloudDetail: Object {
 		return []
 	}
 
+
+	//MARK: - Map Data --
+
+	class func mapData() {
+
+	}
 }
