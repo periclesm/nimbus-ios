@@ -13,7 +13,6 @@ import RealmSwift
 class Database: NSObject {
 
 	static var shared = Database()
-
 	private var mainDB: Realm?
 
 	var db: Realm {
@@ -44,13 +43,7 @@ class Database: NSObject {
 			fileURL: self.dbFile(name: "cloudDB.realm"),
 			readOnly: false,
 			schemaVersion: schemaVer,
-			migrationBlock: { (migration, oldSchema) in
-				self.migrateDB(oldSchema: oldSchema, newSchema: schemaVer, migrationProcess: migration)
-			},
-			deleteRealmIfMigrationNeeded: false,
-			shouldCompactOnLaunch: { (totalBytes, usedBytes) -> Bool in
-				return (Double(usedBytes) / Double(totalBytes)) < 0.75 },
-			objectTypes: [CloudType.self, CloudLists.self, CloudDetail.self])
+			deleteRealmIfMigrationNeeded: true)
 
 		var db: Realm? = nil
 
@@ -65,7 +58,7 @@ class Database: NSObject {
 
 	private func dbFile(name: String) -> URL {
 		let path = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).first!)
-		let dbDir = path.appendingPathComponent("db")
+		let dbDir = path.appendingPathComponent("realm")
 		let file = dbDir.appendingPathComponent(name)
 
 		if !FileManager.default.fileExists(atPath: dbDir.absoluteString) {
@@ -78,17 +71,4 @@ class Database: NSObject {
 
 		return file
 	}
-
-	//MARK: - Migration
-
-	private func migrateDB(oldSchema: UInt64, newSchema: UInt64, migrationProcess: Migration) {
-		if (oldSchema < newSchema) {
-			//perform migration
-			//migrationProcess.create(<#T##typeName: String##String#>)
-			//migrationProcess.delete(<#T##object: MigrationObject##MigrationObject#>)
-			//migrationProcess.deleteData(forType: <#T##String#>)
-			//migrationProcess.renameProperty(onType: <#T##String#>, from: <#T##String#>, to: <#T##String#>)
-		}
-	}
-
 }

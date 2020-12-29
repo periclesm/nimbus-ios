@@ -40,14 +40,26 @@ class DetailVC: UITableViewController {
         
         clImage.alpha = 0
         activity.startAnimating()
+
+		let config = NetConfig.initWithConfig(requestURL: URL(string: DataLogic.getCloudImageURL(cl?.detail)), requestTimeout: 10, requestMethod: .GET)
+		Networker.getImage(config: config) { (response) in
+			if response.completed {
+				self.clImage.image = response.data as? UIImage
+				UIView.animate(withDuration: 0.25) {
+					self.clImage.alpha = 1
+				}
+			}
+
+			self.activity.stopAnimating()
+		}
         
-        Networker.getRemoteImage(DataLogic.getCloudImageURL(cl?.detail)) { (image) in
-            self.clImage.image = image
-            UIView.animate(withDuration: 0.25) {
-                self.clImage.alpha = 1
-            }
-            self.activity.stopAnimating()
-        }
+//        Networker.getRemoteImage(DataLogic.getCloudImageURL(cl?.detail)) { (image) in
+//            self.clImage.image = image
+//            UIView.animate(withDuration: 0.25) {
+//                self.clImage.alpha = 1
+//            }
+//            self.activity.stopAnimating()
+//        }
     }
 
     // MARK: - Actions

@@ -20,6 +20,9 @@
 		684109F5259B2D2800A80552 /* NetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EE259B2D2800A80552 /* NetData.swift */; };
 		684109F6259B2D2800A80552 /* NetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EF259B2D2800A80552 /* NetConfig.swift */; };
 		684109F7259B2D2800A80552 /* NetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109F0259B2D2800A80552 /* NetResponse.swift */; };
+		684109FB259B2E5100A80552 /* GQLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FA259B2E5100A80552 /* GQLAPI.swift */; };
+		684109FF259B39D500A80552 /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FE259B39D500A80552 /* DataAPI.swift */; };
+		68410A03259B3FA500A80552 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410A02259B3FA500A80552 /* DataMapper.swift */; };
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
@@ -32,9 +35,9 @@
 		684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */; };
 		684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20EA1EA7A4F700BFC44C /* DataMapper.m */; };
 		684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20F31EA7DB2300BFC44C /* DetailVC.m */; };
-		684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D7597259A435D003FCB1C /* CloudDetail.swift */; };
-		684D759C259A436D003FCB1C /* CloudList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759B259A436D003FCB1C /* CloudList.swift */; };
-		684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759F259A43DF003FCB1C /* CloudType.swift */; };
+		684D7598259A435D003FCB1C /* clDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D7597259A435D003FCB1C /* clDetail.swift */; };
+		684D759C259A436D003FCB1C /* clList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759B259A436D003FCB1C /* clList.swift */; };
+		684D75A0259A43DF003FCB1C /* clType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759F259A43DF003FCB1C /* clType.swift */; };
 		684D75A3259A460D003FCB1C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A2259A460D003FCB1C /* Database.swift */; };
 		684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A7259A47A9003FCB1C /* RealmOperation.swift */; };
 		684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A8259A47AC003FCB1C /* RealmQuery.swift */; };
@@ -61,6 +64,9 @@
 		684109EE259B2D2800A80552 /* NetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetData.swift; sourceTree = "<group>"; };
 		684109EF259B2D2800A80552 /* NetConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConfig.swift; sourceTree = "<group>"; };
 		684109F0259B2D2800A80552 /* NetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetResponse.swift; sourceTree = "<group>"; };
+		684109FA259B2E5100A80552 /* GQLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GQLAPI.swift; sourceTree = "<group>"; };
+		684109FE259B39D500A80552 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
+		68410A02259B3FA500A80552 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A20881EA74B7400BFC44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		684A208A1EA74B7400BFC44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,9 +95,9 @@
 		684A20EA1EA7A4F700BFC44C /* DataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMapper.m; sourceTree = "<group>"; };
 		684A20F21EA7DB2300BFC44C /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
 		684A20F31EA7DB2300BFC44C /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
-		684D7597259A435D003FCB1C /* CloudDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDetail.swift; sourceTree = "<group>"; };
-		684D759B259A436D003FCB1C /* CloudList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudList.swift; sourceTree = "<group>"; };
-		684D759F259A43DF003FCB1C /* CloudType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudType.swift; sourceTree = "<group>"; };
+		684D7597259A435D003FCB1C /* clDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clDetail.swift; sourceTree = "<group>"; };
+		684D759B259A436D003FCB1C /* clList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clList.swift; sourceTree = "<group>"; };
+		684D759F259A43DF003FCB1C /* clType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clType.swift; sourceTree = "<group>"; };
 		684D75A2259A460D003FCB1C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		684D75A7259A47A9003FCB1C /* RealmOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperation.swift; sourceTree = "<group>"; };
 		684D75A8259A47AC003FCB1C /* RealmQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
@@ -178,6 +184,14 @@
 			path = Constructors;
 			sourceTree = "<group>";
 		};
+		684109F9259B2E3A00A80552 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				684109FA259B2E5100A80552 /* GQLAPI.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
 		684A207B1EA74B7400BFC44C = {
 			isa = PBXGroup;
 			children = (
@@ -235,9 +249,12 @@
 		684A20B21EA76BF500BFC44C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				684109F9259B2E3A00A80552 /* GraphQL */,
 				684D75C3259A4E1F003FCB1C /* CoreData_ObjC */,
 				684D7596259A4343003FCB1C /* RealmObjects */,
 				684D75A6259A4795003FCB1C /* RealmManager */,
+				684109FE259B39D500A80552 /* DataAPI.swift */,
+				68410A02259B3FA500A80552 /* DataMapper.swift */,
 				684109E3259B2BB200A80552 /* DataManager.swift */,
 			);
 			path = Model;
@@ -270,9 +287,9 @@
 		684D7596259A4343003FCB1C /* RealmObjects */ = {
 			isa = PBXGroup;
 			children = (
-				684D7597259A435D003FCB1C /* CloudDetail.swift */,
-				684D759B259A436D003FCB1C /* CloudList.swift */,
-				684D759F259A43DF003FCB1C /* CloudType.swift */,
+				684D759F259A43DF003FCB1C /* clType.swift */,
+				684D7597259A435D003FCB1C /* clDetail.swift */,
+				684D759B259A436D003FCB1C /* clList.swift */,
 			);
 			path = RealmObjects;
 			sourceTree = "<group>";
@@ -486,14 +503,16 @@
 				68B9265323E5726C0046D78C /* MainVC.m in Sources */,
 				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
 				684109F4259B2D2800A80552 /* NetIndicator.swift in Sources */,
-				684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */,
+				684D75A0259A43DF003FCB1C /* clType.swift in Sources */,
 				684109F5259B2D2800A80552 /* NetData.swift in Sources */,
 				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
 				684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
+				68410A03259B3FA500A80552 /* DataMapper.swift in Sources */,
 				684109F2259B2D2800A80552 /* NetAgent.swift in Sources */,
 				683511E623E59B1E007AC2BB /* TableCellSynthesis.swift in Sources */,
-				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
+				684109FF259B39D500A80552 /* DataAPI.swift in Sources */,
+				684D7598259A435D003FCB1C /* clDetail.swift in Sources */,
 				68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */,
 				684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */,
 				684109F1259B2D2800A80552 /* Networker.swift in Sources */,
@@ -509,7 +528,8 @@
 				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
 				684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */,
 				684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */,
-				684D759C259A436D003FCB1C /* CloudList.swift in Sources */,
+				684109FB259B2E5100A80552 /* GQLAPI.swift in Sources */,
+				684D759C259A436D003FCB1C /* clList.swift in Sources */,
 				684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

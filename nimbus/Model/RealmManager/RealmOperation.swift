@@ -36,8 +36,8 @@ class RealmOperation: NSObject {
 	}
 
 	/// Adds an array of objects in the database
-	class func add(dataList: Array<Object>?, updatePolicy: Realm.UpdatePolicy = .modified) {
-		guard let data = dataList else {
+	class func add(dataArray: Array<Object>?, updatePolicy: Realm.UpdatePolicy = .modified) {
+		guard let data = dataArray else {
 			return
 		}
 
@@ -46,7 +46,7 @@ class RealmOperation: NSObject {
 
 			do {
 				try db.write {
-					db.add(dataList!, update: updatePolicy)
+					db.add(data, update: updatePolicy)
 				}
 			} catch let error as NSError {
 				debugPrint("Error in adding object array: \(error.localizedDescription)")

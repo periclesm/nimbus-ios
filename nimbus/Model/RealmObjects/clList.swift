@@ -10,7 +10,7 @@
 
 import RealmSwift
 
-class CloudLists: Object {
+class clList: Object {
 
 	@objc dynamic var objectId: String = ""
 	@objc dynamic var order: Int = 0
@@ -37,7 +37,16 @@ class CloudLists: Object {
 
 	//MARK: - Map Data --
 
-	class func mapData() {
+	class func mapObject(object: Dictionary<AnyHashable,Any>) -> clList {
+		let listObject = clList()
 
+		listObject.objectId = object["objectId"] as? String ?? ""
+		listObject.order = object["order"] as? Int ?? 0
+		listObject.initials = object["initials"] as? String ?? ""
+		listObject.name = object["name"] as? String ?? ""
+		listObject.detail = object["detail"] as? String ?? ""
+		listObject.type = object["type"] as? String ?? ""
+
+		return listObject
 	}
 }

@@ -10,12 +10,12 @@
 
 import RealmSwift
 
-class CloudDetail: Object {
+class clDetail: Object {
 
 	@objc dynamic var objectId: String = ""
 	@objc dynamic var detail: String = ""
 	@objc dynamic var image: String = ""
-	@objc dynamic var wikiURL: String = ""
+	@objc dynamic var wiki: String = ""
 
 	
 	//MARK: - DB Properies --
@@ -25,7 +25,7 @@ class CloudDetail: Object {
 	}
 
 	override static func indexedProperties() -> [String] {
-		return ["image", "wikiURL"]
+		return ["image", "wiki"]
 	}
 
 	override static func ignoredProperties() -> [String] {
@@ -35,7 +35,14 @@ class CloudDetail: Object {
 
 	//MARK: - Map Data --
 
-	class func mapData() {
+	class func mapObject(object: Dictionary<AnyHashable,Any>) -> clDetail {
+		let detailObject = clDetail()
 
+		detailObject.objectId = object["objectId"] as? String ?? ""
+		detailObject.detail = object["detail"] as? String ?? ""
+		detailObject.image = object["image"] as? String ?? ""
+		detailObject.wiki = object["wiki"] as? String ?? ""
+
+		return detailObject
 	}
 }
