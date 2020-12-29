@@ -10,8 +10,16 @@
 		683511E623E59B1E007AC2BB /* TableCellSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */; };
 		683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E723E59C13007AC2BB /* TableCellClass.swift */; };
 		683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511EC23E5A3C1007AC2BB /* ActivityView.swift */; };
-		684A20891EA74B7400BFC44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
-		684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208B1EA74B7400BFC44C /* AppDelegate.m */; };
+		684109DF259B2B5A00A80552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
+		684109E1259B2B6500A80552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208B1EA74B7400BFC44C /* AppDelegate.m */; };
+		684109E4259B2BB200A80552 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E3259B2BB200A80552 /* DataManager.swift */; };
+		684109F1259B2D2800A80552 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E8259B2D2800A80552 /* Networker.swift */; };
+		684109F2259B2D2800A80552 /* NetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E9259B2D2800A80552 /* NetAgent.swift */; };
+		684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EB259B2D2800A80552 /* NetUtilities.swift */; };
+		684109F4259B2D2800A80552 /* NetIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EC259B2D2800A80552 /* NetIndicator.swift */; };
+		684109F5259B2D2800A80552 /* NetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EE259B2D2800A80552 /* NetData.swift */; };
+		684109F6259B2D2800A80552 /* NetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EF259B2D2800A80552 /* NetConfig.swift */; };
+		684109F7259B2D2800A80552 /* NetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109F0259B2D2800A80552 /* NetResponse.swift */; };
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
@@ -45,6 +53,14 @@
 		683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellSynthesis.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
 		683511EC23E5A3C1007AC2BB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		684109E3259B2BB200A80552 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		684109E8259B2D2800A80552 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		684109E9259B2D2800A80552 /* NetAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetAgent.swift; sourceTree = "<group>"; };
+		684109EB259B2D2800A80552 /* NetUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetUtilities.swift; sourceTree = "<group>"; };
+		684109EC259B2D2800A80552 /* NetIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetIndicator.swift; sourceTree = "<group>"; };
+		684109EE259B2D2800A80552 /* NetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetData.swift; sourceTree = "<group>"; };
+		684109EF259B2D2800A80552 /* NetConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConfig.swift; sourceTree = "<group>"; };
+		684109F0259B2D2800A80552 /* NetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetResponse.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A20881EA74B7400BFC44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		684A208A1EA74B7400BFC44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +148,36 @@
 			path = ObjC;
 			sourceTree = "<group>";
 		};
+		684109E7259B2D2800A80552 /* Networker */ = {
+			isa = PBXGroup;
+			children = (
+				684109EA259B2D2800A80552 /* Utilities */,
+				684109ED259B2D2800A80552 /* Constructors */,
+				684109E8259B2D2800A80552 /* Networker.swift */,
+				684109E9259B2D2800A80552 /* NetAgent.swift */,
+			);
+			path = Networker;
+			sourceTree = "<group>";
+		};
+		684109EA259B2D2800A80552 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				684109EB259B2D2800A80552 /* NetUtilities.swift */,
+				684109EC259B2D2800A80552 /* NetIndicator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		684109ED259B2D2800A80552 /* Constructors */ = {
+			isa = PBXGroup;
+			children = (
+				684109EE259B2D2800A80552 /* NetData.swift */,
+				684109EF259B2D2800A80552 /* NetConfig.swift */,
+				684109F0259B2D2800A80552 /* NetResponse.swift */,
+			);
+			path = Constructors;
+			sourceTree = "<group>";
+		};
 		684A207B1EA74B7400BFC44C = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +238,7 @@
 				684D75C3259A4E1F003FCB1C /* CoreData_ObjC */,
 				684D7596259A4343003FCB1C /* RealmObjects */,
 				684D75A6259A4795003FCB1C /* RealmManager */,
+				684109E3259B2BB200A80552 /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,14 +246,15 @@
 		684A20DB1EA7A3AB00BFC44C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				684A20DF1EA7A3DB00BFC44C /* Networker */,
+				684109E7259B2D2800A80552 /* Networker */,
+				684A20DF1EA7A3DB00BFC44C /* Networker-ObjC */,
 				684A20DC1EA7A3BB00BFC44C /* DataLogic.h */,
 				684A20DD1EA7A3BB00BFC44C /* DataLogic.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		684A20DF1EA7A3DB00BFC44C /* Networker */ = {
+		684A20DF1EA7A3DB00BFC44C /* Networker-ObjC */ = {
 			isa = PBXGroup;
 			children = (
 				684A20E21EA7A3DB00BFC44C /* NetworkerParameters.h */,
@@ -216,7 +264,7 @@
 				684A20E41EA7A3DB00BFC44C /* NetworkIndicator.h */,
 				684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */,
 			);
-			path = Networker;
+			path = "Networker-ObjC";
 			sourceTree = "<group>";
 		};
 		684D7596259A4343003FCB1C /* RealmObjects */ = {
@@ -429,31 +477,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684109DF259B2B5A00A80552 /* main.m in Sources */,
 				684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */,
+				684109E1259B2B6500A80552 /* AppDelegate.m in Sources */,
 				68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */,
 				68B9265223E56D6B0046D78C /* MainVC.swift in Sources */,
 				684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */,
 				68B9265323E5726C0046D78C /* MainVC.m in Sources */,
+				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
+				684109F4259B2D2800A80552 /* NetIndicator.swift in Sources */,
 				684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */,
+				684109F5259B2D2800A80552 /* NetData.swift in Sources */,
 				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
 				684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
+				684109F2259B2D2800A80552 /* NetAgent.swift in Sources */,
 				683511E623E59B1E007AC2BB /* TableCellSynthesis.swift in Sources */,
 				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
 				68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */,
 				684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */,
-				684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */,
+				684109F1259B2D2800A80552 /* Networker.swift in Sources */,
 				684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */,
 				68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */,
+				684109E4259B2BB200A80552 /* DataManager.swift in Sources */,
 				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
 				683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */,
+				684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */,
 				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
 				684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */,
+				684109F7259B2D2800A80552 /* NetResponse.swift in Sources */,
 				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
 				684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */,
 				684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */,
 				684D759C259A436D003FCB1C /* CloudList.swift in Sources */,
-				684A20891EA74B7400BFC44C /* main.m in Sources */,
 				684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
