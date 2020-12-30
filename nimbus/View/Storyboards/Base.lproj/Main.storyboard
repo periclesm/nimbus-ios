@@ -156,7 +156,7 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-ti-d7m" customClass="ActivityView" customModule="nimbus" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-ti-d7m" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
                                                     <rect key="frame" x="163.66666666666666" y="66" width="48" height="48"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>

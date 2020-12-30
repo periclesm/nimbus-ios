@@ -64,40 +64,16 @@
 		684A20931EA74B7400BFC44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684A20961EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		684A20981EA74B7400BFC44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		684A20AC1EA76BCA00BFC44C /* IntroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroVC.h; sourceTree = "<group>"; };
-		684A20AD1EA76BCA00BFC44C /* IntroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroVC.m; sourceTree = "<group>"; };
-		684A20AE1EA76BCA00BFC44C /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
-		684A20AF1EA76BCA00BFC44C /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
-		684A20B41EA76C0600BFC44C /* nimbus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbus.xcdatamodel; sourceTree = "<group>"; };
-		684A20C91EA772D700BFC44C /* DataQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataQuery.h; sourceTree = "<group>"; };
-		684A20CA1EA772D700BFC44C /* DataQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataQuery.m; sourceTree = "<group>"; };
-		684A20DC1EA7A3BB00BFC44C /* DataLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLogic.h; sourceTree = "<group>"; };
-		684A20DD1EA7A3BB00BFC44C /* DataLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLogic.m; sourceTree = "<group>"; };
-		684A20E01EA7A3DB00BFC44C /* Networker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networker.h; sourceTree = "<group>"; };
-		684A20E11EA7A3DB00BFC44C /* Networker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networker.m; sourceTree = "<group>"; };
-		684A20E21EA7A3DB00BFC44C /* NetworkerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkerParameters.h; sourceTree = "<group>"; };
-		684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkerParameters.m; sourceTree = "<group>"; };
-		684A20E41EA7A3DB00BFC44C /* NetworkIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkIndicator.h; sourceTree = "<group>"; };
-		684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkIndicator.m; sourceTree = "<group>"; };
-		684A20E91EA7A4F700BFC44C /* DataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMapper.h; sourceTree = "<group>"; };
-		684A20EA1EA7A4F700BFC44C /* DataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMapper.m; sourceTree = "<group>"; };
-		684A20F21EA7DB2300BFC44C /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
-		684A20F31EA7DB2300BFC44C /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
 		684D7597259A435D003FCB1C /* clDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clDetail.swift; sourceTree = "<group>"; };
 		684D759B259A436D003FCB1C /* clList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clList.swift; sourceTree = "<group>"; };
 		684D759F259A43DF003FCB1C /* clType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clType.swift; sourceTree = "<group>"; };
 		684D75A2259A460D003FCB1C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		684D75A7259A47A9003FCB1C /* RealmOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperation.swift; sourceTree = "<group>"; };
 		684D75A8259A47AC003FCB1C /* RealmQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
-		68B2E05320E9FAA200C20BD5 /* TableCellClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellClass.h; sourceTree = "<group>"; };
-		68B2E05420E9FAA200C20BD5 /* TableCellClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellClass.m; sourceTree = "<group>"; };
-		68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellSynthesis.h; sourceTree = "<group>"; };
-		68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellSynthesis.m; sourceTree = "<group>"; };
 		68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Bridge.h"; sourceTree = "<group>"; };
 		68B9265123E56D6B0046D78C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		68B9265423E572B00046D78C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		68B9265823E57B0C0046D78C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
-		68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbusv2.xcdatamodel; sourceTree = "<group>"; };
 		68EA8DFA259C6AF800E8D937 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		68EA8DFD259C6B0900E8D937 /* TypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeController.swift; sourceTree = "<group>"; };
 		68EA8E00259C6B1900E8D937 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
@@ -184,7 +160,6 @@
 		684A20861EA74B7400BFC44C /* nimbus */ = {
 			isa = PBXGroup;
 			children = (
-				68EA8E0F259CC99F00E8D937 /* ObjC_Archive */,
 				684A208A1EA74B7400BFC44C /* AppDelegate.h */,
 				684A208B1EA74B7400BFC44C /* AppDelegate.m */,
 				68EA8E17259CCA3D00E8D937 /* Platform */,
@@ -242,19 +217,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		684A20DF1EA7A3DB00BFC44C /* Networker */ = {
-			isa = PBXGroup;
-			children = (
-				684A20E21EA7A3DB00BFC44C /* NetworkerParameters.h */,
-				684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */,
-				684A20E01EA7A3DB00BFC44C /* Networker.h */,
-				684A20E11EA7A3DB00BFC44C /* Networker.m */,
-				684A20E41EA7A3DB00BFC44C /* NetworkIndicator.h */,
-				684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */,
-			);
-			path = Networker;
-			sourceTree = "<group>";
-		};
 		684D7596259A4343003FCB1C /* RealmObjects */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,85 +254,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		68EA8E0F259CC99F00E8D937 /* ObjC_Archive */ = {
-			isa = PBXGroup;
-			children = (
-				68EA8E16259CCA1D00E8D937 /* Platform */,
-				68EA8E18259CCA5100E8D937 /* Model */,
-				68EA8E19259CCA5800E8D937 /* Controller */,
-				68EA8E10259CC9AC00E8D937 /* View */,
-			);
-			path = ObjC_Archive;
-			sourceTree = "<group>";
-		};
-		68EA8E10259CC9AC00E8D937 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				68EA8E11259CC9CF00E8D937 /* Components */,
-				684A20AC1EA76BCA00BFC44C /* IntroVC.h */,
-				684A20AD1EA76BCA00BFC44C /* IntroVC.m */,
-				684A20AE1EA76BCA00BFC44C /* MainVC.h */,
-				684A20AF1EA76BCA00BFC44C /* MainVC.m */,
-				684A20F21EA7DB2300BFC44C /* DetailVC.h */,
-				684A20F31EA7DB2300BFC44C /* DetailVC.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		68EA8E11259CC9CF00E8D937 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				68EA8E12259CC9D700E8D937 /* TableCells */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		68EA8E12259CC9D700E8D937 /* TableCells */ = {
-			isa = PBXGroup;
-			children = (
-				68B2E05320E9FAA200C20BD5 /* TableCellClass.h */,
-				68B2E05420E9FAA200C20BD5 /* TableCellClass.m */,
-				68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */,
-				68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */,
-			);
-			path = TableCells;
-			sourceTree = "<group>";
-		};
-		68EA8E16259CCA1D00E8D937 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				684A20DF1EA7A3DB00BFC44C /* Networker */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
 		68EA8E17259CCA3D00E8D937 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
 				684109E7259B2D2800A80552 /* Networker */,
 			);
 			path = Platform;
-			sourceTree = "<group>";
-		};
-		68EA8E18259CCA5100E8D937 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				684A20E91EA7A4F700BFC44C /* DataMapper.h */,
-				684A20EA1EA7A4F700BFC44C /* DataMapper.m */,
-				684A20C91EA772D700BFC44C /* DataQuery.h */,
-				684A20CA1EA772D700BFC44C /* DataQuery.m */,
-				684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		68EA8E19259CCA5800E8D937 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				684A20DC1EA7A3BB00BFC44C /* DataLogic.h */,
-				684A20DD1EA7A3BB00BFC44C /* DataLogic.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		7896288071E0E771343E6221 /* Frameworks */ = {
@@ -685,7 +574,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "nimbus/Nimbus-Bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -707,7 +595,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "nimbus/Nimbus-Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -735,20 +622,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */,
-				684A20B41EA76C0600BFC44C /* nimbus.xcdatamodel */,
-			);
-			currentVersion = 68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */;
-			path = nimbus.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 684A207C1EA74B7400BFC44C /* Project object */;
 }
