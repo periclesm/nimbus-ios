@@ -11,12 +11,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import <MagicalRecord/MagicalRecord.h>
-#import <DGActivityIndicatorView/DGActivityIndicatorView.h>
+//#import <MagicalRecord/MagicalRecord.h>
+//#import <DGActivityIndicatorView/DGActivityIndicatorView.h>
 
-#import "DataLogic.h"
-#import "Networker.h"
-#import "DataQuery.h"
+//#import "DataLogic.h"
+//#import "Networker.h"
+//#import "DataQuery.h"
 
-#import "TableCellClass.h"
-#import "TableCellSynthesis.h"
+//#import "TableCellClass.h"
+//#import "TableCellSynthesis.h"

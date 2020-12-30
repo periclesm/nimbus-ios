@@ -33,18 +33,20 @@ class MainVC: UITableViewController {
         if !cloudArray.isEmpty {
             cloudArray.removeAll()
         }
-        
-        if let data = DataQuery.getSortedItems(fromEntity: "CloudList", sortBy: "order", ascending: true) {
-            return data
-        }
-                
-        return []
+
+		return  ListController.getListData(sortBy: "order", ascending: true)
+
+//        if let data = DataQuery.getSortedItems(fromEntity: "CloudList", sortBy: "order", ascending: true) {
+//            return data
+//        }
+//                
+//        return []
     }
     
     // MARK: - Actions
     
     @IBAction func refreshData() {
-        DataLogic.getInitialData()
+        //DataLogic.getInitialData()
         self.tableView.reloadData()
         self.refreshControl?.endRefreshing()
     }
@@ -62,7 +64,7 @@ class MainVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let cl = cloudArray[indexPath.row] as! CloudList
+        let cl = cloudArray[indexPath.row] as! clList
         self.performSegue(withIdentifier: "detailSegue", sender: cl.objectId)
     }
 

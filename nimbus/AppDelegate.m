@@ -18,13 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	[MagicalRecord setupAutoMigratingCoreDataStack];
-	[MagicalRecord setLoggingLevel:MagicalRecordLoggingLevelError];
+//	[MagicalRecord setupAutoMigratingCoreDataStack];
+//	[MagicalRecord setLoggingLevel:MagicalRecordLoggingLevelError];
 	return YES;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-	[MagicalRecord cleanUp];
+//	[MagicalRecord cleanUp];
 }
 
 @end

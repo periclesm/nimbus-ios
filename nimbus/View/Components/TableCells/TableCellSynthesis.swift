@@ -12,11 +12,11 @@ class TableCellSynthesis: NSObject {
     
     class func cloudCell(for tableView: UITableView, datasource: Array<Any>, index: IndexPath) -> cloudCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cloudCell", for: index) as! cloudCell
-        let cl = datasource[index.row] as! CloudList
+        let cl = datasource[index.row] as! clList
         
         cell.cloudInitials?.text = cl.initials
         cell.cloudName?.text = cl.name
-        cell.cloudDetail?.text = DataLogic.getCloudDetails(cl.detail, shortText: true)
+		cell.cloudDetail?.text = cl.detail?.detail
         
         return cell
     }

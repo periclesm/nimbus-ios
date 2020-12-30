@@ -15,6 +15,6 @@ class IntroVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		DataManager.prefetchData()
-        DataLogic.getInitialData()
+        //DataLogic.getInitialData()
     }
 }

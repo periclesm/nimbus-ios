@@ -30,18 +30,19 @@ class DetailVC: UITableViewController {
     // MARK: - Data
     
     func getCloudData() {
-        let cl = DataLogic.getCloudInfo(self.objectId)
+		let cl = ListController.getCloud(objectId: self.objectId)
+        //let cl = DataLogic.getCloudInfo(self.objectId)
         
         self.title = cl?.name
         clInitials.text = cl?.initials
         clName.text = cl?.name
-        clAltitude.text = DataLogic.getCloudType(cl?.type) + " altitude"
-        clDetails.text = DataLogic.getCloudDetails(cl?.detail, shortText: false)
+		clAltitude.text = (cl?.type!.name)! + " altitude" //DataLogic.getCloudType(cl?.type) + " altitude"
+		clDetails.text = cl?.detail?.detail //DataLogic.getCloudDetails(cl?.detail, shortText: false)
         
         clImage.alpha = 0
         activity.startAnimating()
 
-		let config = NetConfig.initWithConfig(requestURL: URL(string: DataLogic.getCloudImageURL(cl?.detail)), requestTimeout: 10, requestMethod: .GET)
+		let config = NetConfig.initWithConfig(requestURL: URL(string: (cl?.detail!.image)!), requestTimeout: 10, requestMethod: .GET)
 		Networker.getImage(config: config) { (response) in
 			if response.completed {
 				self.clImage.image = response.data as? UIImage
@@ -65,8 +66,8 @@ class DetailVC: UITableViewController {
     // MARK: - Actions
     
     @IBAction func WikiButton(_ sender: UIBarButtonItem) {
-		if let cl = DataLogic.getCloudInfo(self.objectId) {
-			if let url = URL(string: DataLogic.getCloudWikiURL(cl.detail)) {
+		if let cl = ListController.getCloud(objectId: self.objectId) { //DataLogic.getCloudInfo(self.objectId) {
+			if let url = URL(string: cl.detail!.wiki) {
 				let safari = SFSafariViewController(url: url)
 				safari.modalPresentationStyle = .formSheet
 				safari.modalTransitionStyle = .coverVertical
