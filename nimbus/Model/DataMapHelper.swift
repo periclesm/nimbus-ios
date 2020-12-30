@@ -10,7 +10,7 @@
 
 import RealmSwift
 
-class DataMapper: NSObject {
+class DataMapHelper: NSObject {
 
 	/// Three different ways to check against nil... Why? Because we can!
 

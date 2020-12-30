@@ -32,7 +32,11 @@ class DataAPI: NSObject {
 		}
 	}
 
-	//NSString* const cloudListParam	= @"https://stage.clfd.eu/nimbus/classes/cloudList?";
+	static var allCloudData: URL {
+		get {
+			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudList?include=detail&include=type")!
+		}
+	}
 
 
 	//MARK: - Utilities --

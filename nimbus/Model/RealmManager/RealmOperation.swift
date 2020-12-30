@@ -22,12 +22,12 @@ class RealmOperation: NSObject {
 	//MARK: - Additions & Updates --
 
 	/// Adds a single object in the database
-	class func add(dataObject: Object, updatePolicy: Realm.UpdatePolicy = .modified) {
+	class func add(_ object: Object, updatePolicy: Realm.UpdatePolicy = .modified) {
 		let db = Database.shared.db
 
 		do {
 			try db.write {
-				db.add(dataObject, update: updatePolicy)
+				db.add(object, update: updatePolicy)
 			}
 		} catch let error as NSError {
 			debugPrint("Error in adding object: \(error.localizedDescription)")

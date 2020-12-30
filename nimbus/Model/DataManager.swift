@@ -15,22 +15,24 @@ class DataManager: NSObject {
 	//MARK: - Prefetch Classes --
 
 	class func prefetchData() {
-		self.getTypeData()
-		self.getDetailData()
-		self.getListData()
+//		self.getTypeData()
+//		self.getDetailData()
+//		self.getListData()
+
+		self.getAllData()
 	}
 
 	//MARK: - Get Data Classes --
 
 	class func getAllData() {
 		let headers = DataAPI.getDefaultHeaders()
-		let body = DataAPI.getBody(bodyData: "")
-		let config = NetConfig.initWithConfig(requestURL: GQLAPI.baseURL, requestHeaders: headers, requestBody: body, requestMethod: .POST)
+		let config = NetConfig.initWithConfig(requestURL: DataAPI.allCloudData, requestHeaders: headers, requestMethod: .GET)
 
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				debugPrint(data)
+				DataMapHelper.mapCloudList(data: data)
+				debugPrint("Fetch All Data complete")
 			}
 			else {
 				debugPrint(response.error?.localizedDescription ?? "error")
@@ -45,7 +47,7 @@ class DataManager: NSObject {
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapper.mapCloudType(data: data)
+				DataMapHelper.mapCloudType(data: data)
 				debugPrint("Fetch Type Data complete")
 			}
 			else {
@@ -61,7 +63,7 @@ class DataManager: NSObject {
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapper.mapCloudDetail(data: data)
+				DataMapHelper.mapCloudDetail(data: data)
 				debugPrint("Fetch Detail Data complete")
 			}
 			else {
@@ -77,7 +79,7 @@ class DataManager: NSObject {
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapper.mapCloudList(data: data)
+				DataMapHelper.mapCloudList(data: data)
 				debugPrint("Fetch List Data complete")
 			}
 			else {

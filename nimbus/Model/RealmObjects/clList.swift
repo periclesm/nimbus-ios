@@ -16,8 +16,8 @@ class clList: Object {
 	@objc dynamic var order: Int = 0
 	@objc dynamic var initials: String = ""
 	@objc dynamic var name: String = ""
-	@objc dynamic var detail: String = ""
-	@objc dynamic var type: String = ""
+	@objc dynamic var detail: clDetail? = nil
+	@objc dynamic var type: clType? = nil
 
 
 	//MARK: - DB Properies --
@@ -27,7 +27,7 @@ class clList: Object {
 	}
 
 	override static func indexedProperties() -> [String] {
-		return ["order", "name", "initials", "type"]
+		return ["order", "name", "initials"]
 	}
 
 	override static func ignoredProperties() -> [String] {
@@ -44,8 +44,20 @@ class clList: Object {
 		listObject.order = object["order"] as? Int ?? 0
 		listObject.initials = object["initials"] as? String ?? ""
 		listObject.name = object["name"] as? String ?? ""
-		listObject.detail = object["detail"] as? String ?? ""
-		listObject.type = object["type"] as? String ?? ""
+
+		if let details = object["detail"] as? Dictionary<AnyHashable,Any> {
+			let detailObject = clDetail.mapObject(object: details)
+			//add to database
+			RealmOperation.add(detailObject)
+			listObject.detail = detailObject
+		}
+
+		if let typeData = object["type"] as? Dictionary<AnyHashable,Any> {
+			let typeObject = clType.mapObject(object: typeData)
+			//add to database
+			RealmOperation.add(typeObject)
+			listObject.type = typeObject
+		}
 
 		return listObject
 	}
