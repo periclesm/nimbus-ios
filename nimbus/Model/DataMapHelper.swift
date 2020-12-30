@@ -14,12 +14,12 @@ class DataMapHelper: NSObject {
 
 	/// Three different ways to check against nil... Why? Because we can!
 
-	class func mapCloudType(data: Dictionary<AnyHashable,Any>) {
-		var dataArray: Array<clType> = []
+	class func mapAltitudeData(data: Dictionary<AnyHashable,Any>) {
+		var dataArray: Array<CloudAltitude> = []
 
 		if let results = data["results"] as? Array<Dictionary<String,Any>> {
 			for object in results {
-				let typeObject = clType.mapObject(object: object)
+				let typeObject = CloudAltitude.mapObject(object: object)
 				dataArray.append(typeObject)
 			}
 		}
@@ -29,12 +29,12 @@ class DataMapHelper: NSObject {
 		}
 	}
 
-	class func mapCloudDetail(data: Dictionary<AnyHashable,Any>) {
+	class func mapDetailData(data: Dictionary<AnyHashable,Any>) {
 		if let results = data["results"] as? Array<Dictionary<String,Any>> {
-			var dataArray: Array<clDetail> = []
+			var dataArray: Array<CloudDetail> = []
 
 			for object in results {
-				let detailObject = clDetail.mapObject(object: object)
+				let detailObject = CloudDetail.mapObject(object: object)
 				dataArray.append(detailObject)
 			}
 
@@ -44,15 +44,15 @@ class DataMapHelper: NSObject {
 		}
 	}
 
-	class func mapCloudList(data: Dictionary<AnyHashable,Any>) {
+	class func mapCloudData(data: Dictionary<AnyHashable,Any>) {
 		guard let results = data["results"] as? Array<Dictionary<String,Any>>  else {
 			return
 		}
 
-		var dataArray: Array<clList> = []
+		var dataArray: Array<Cloud> = []
 
 		for object in results {
-			let listObject = clList.mapObject(object: object)
+			let listObject = Cloud.mapObject(object: object)
 			dataArray.append(listObject)
 		}
 

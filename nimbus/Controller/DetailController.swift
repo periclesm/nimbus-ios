@@ -13,12 +13,12 @@ import RealmSwift
 class DetailController: NSObject {
 
 	class func getCloudDetailCount() -> Int {
-		return Database.shared.db.objects(clDetail.self).count
+		return Database.shared.db.objects(CloudDetail.self).count
 	}
 
-	class func getCloudDetail(objectId: String) -> clDetail? {
+	class func getCloudDetail(objectId: String) -> CloudDetail? {
 		let predicate = NSPredicate(format: "objectId = %@", objectId)
-		let cloud = Database.shared.db.objects(clDetail.self).filter(predicate)
+		let cloud = Database.shared.db.objects(CloudDetail.self).filter(predicate)
 		if !cloud.isEmpty {
 			return cloud.first
 		}

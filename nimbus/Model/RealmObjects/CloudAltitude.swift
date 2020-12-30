@@ -10,7 +10,7 @@
 
 import RealmSwift
 
-class clType: Object {
+class CloudAltitude: Object {
 
 	@objc dynamic var objectId: String = ""
 	@objc dynamic var name: String = ""
@@ -34,8 +34,8 @@ class clType: Object {
 
 	//MARK: - Map Data --
 
-	class func mapObject(object: Dictionary<AnyHashable,Any>) -> clType {
-		let typeObject = clType()
+	class func mapObject(object: Dictionary<AnyHashable,Any>) -> CloudAltitude {
+		let typeObject = CloudAltitude()
 		typeObject.objectId = object["objectId"] as? String ?? ""
 		typeObject.name = object["name"] as? String ?? ""
 		typeObject.detail = object["detail"] as? String ?? ""

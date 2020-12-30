@@ -15,23 +15,19 @@ class DataManager: NSObject {
 	//MARK: - Prefetch Classes --
 
 	class func prefetchData() {
-//		self.getTypeData()
-//		self.getDetailData()
-//		self.getListData()
-
-		self.getAllData()
+		self.getCombinedData()
 	}
 
 	//MARK: - Get Data Classes --
 
-	class func getAllData() {
+	class func getCombinedData() {
 		let headers = DataAPI.getDefaultHeaders()
-		let config = NetConfig.initWithConfig(requestURL: DataAPI.allCloudData, requestHeaders: headers, requestMethod: .GET)
+		let config = NetConfig.initWithConfig(requestURL: DataAPI.combinedDataURL, requestHeaders: headers, requestMethod: .GET)
 
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapCloudList(data: data)
+				DataMapHelper.mapCloudData(data: data)
 				debugPrint("Fetch All Data complete")
 			}
 			else {
@@ -40,14 +36,14 @@ class DataManager: NSObject {
 		}
 	}
 
-	class func getTypeData() {
+	class func getAltitudeData() {
 		let headers = DataAPI.getDefaultHeaders()
-		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudType, requestHeaders: headers, requestMethod: .GET)
+		let config = NetConfig.initWithConfig(requestURL: DataAPI.clAltitudeURL, requestHeaders: headers, requestMethod: .GET)
 
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapCloudType(data: data)
+				DataMapHelper.mapAltitudeData(data: data)
 				debugPrint("Fetch Type Data complete")
 			}
 			else {
@@ -58,12 +54,12 @@ class DataManager: NSObject {
 
 	class func getDetailData() {
 		let headers = DataAPI.getDefaultHeaders()
-		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudDetail, requestHeaders: headers, requestMethod: .GET)
+		let config = NetConfig.initWithConfig(requestURL: DataAPI.clDetailURL, requestHeaders: headers, requestMethod: .GET)
 
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapCloudDetail(data: data)
+				DataMapHelper.mapDetailData(data: data)
 				debugPrint("Fetch Detail Data complete")
 			}
 			else {
@@ -72,14 +68,14 @@ class DataManager: NSObject {
 		}
 	}
 
-	class func getListData() {
+	class func getCloudData() {
 		let headers = DataAPI.getDefaultHeaders()
-		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudList, requestHeaders: headers, requestMethod: .GET)
+		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudURL, requestHeaders: headers, requestMethod: .GET)
 
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapCloudList(data: data)
+				DataMapHelper.mapCloudData(data: data)
 				debugPrint("Fetch List Data complete")
 			}
 			else {

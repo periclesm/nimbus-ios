@@ -10,7 +10,7 @@
 
 import RealmSwift
 
-class clDetail: Object {
+class CloudDetail: Object {
 
 	@objc dynamic var objectId: String = ""
 	@objc dynamic var detail: String = ""
@@ -35,8 +35,8 @@ class clDetail: Object {
 
 	//MARK: - Map Data --
 
-	class func mapObject(object: Dictionary<AnyHashable,Any>) -> clDetail {
-		let detailObject = clDetail()
+	class func mapObject(object: Dictionary<AnyHashable,Any>) -> CloudDetail {
+		let detailObject = CloudDetail()
 
 		detailObject.objectId = object["objectId"] as? String ?? ""
 		detailObject.detail = object["detail"] as? String ?? ""

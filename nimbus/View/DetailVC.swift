@@ -32,8 +32,7 @@ class DetailVC: UITableViewController {
     // MARK: - Data
     
     func getCloudData() {
-		let cl = ListController.getCloud(objectId: self.objectId)
-        //let cl = DataLogic.getCloudInfo(self.objectId)
+		let cl = CloudController.getCloud(objectId: self.objectId)
         
         self.title = cl?.name
         clInitials.text = cl?.initials
@@ -55,20 +54,12 @@ class DetailVC: UITableViewController {
 
 			self.activity.stopAnimating()
 		}
-        
-//        Networker.getRemoteImage(DataLogic.getCloudImageURL(cl?.detail)) { (image) in
-//            self.clImage.image = image
-//            UIView.animate(withDuration: 0.25) {
-//                self.clImage.alpha = 1
-//            }
-//            self.activity.stopAnimating()
-//        }
     }
 
     // MARK: - Actions
     
     @IBAction func WikiButton(_ sender: UIBarButtonItem) {
-		if let cl = ListController.getCloud(objectId: self.objectId) { //DataLogic.getCloudInfo(self.objectId) {
+		if let cl = CloudController.getCloud(objectId: self.objectId) { //DataLogic.getCloudInfo(self.objectId) {
 			if let url = URL(string: cl.detail!.wiki) {
 				let safari = SFSafariViewController(url: url)
 				safari.modalPresentationStyle = .formSheet

@@ -14,25 +14,25 @@ class DataAPI: NSObject {
 
 	//MARK: - Endpoints --
 
-	static var cloudType: URL {
+	static var clAltitudeURL: URL {
 		get {
 			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudType")!
 		}
 	}
 
-	static var cloudDetail: URL {
+	static var clDetailURL: URL {
 		get {
 			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudDetail")!
 		}
 	}
 
-	static var cloudList: URL {
+	static var cloudURL: URL {
 		get {
 			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudList")!
 		}
 	}
 
-	static var allCloudData: URL {
+	static var combinedDataURL: URL {
 		get {
 			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudList?include=detail&include=type")!
 		}

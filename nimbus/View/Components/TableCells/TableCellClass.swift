@@ -9,6 +9,7 @@
 import UIKit
 
 class cloudCell: UITableViewCell {
+	
     @IBOutlet weak var cloudInitials: UILabel!
     @IBOutlet weak var cloudName: UILabel!
     @IBOutlet weak var cloudDetail: UILabel!

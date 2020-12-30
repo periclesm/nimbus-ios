@@ -10,14 +10,14 @@
 
 import RealmSwift
 
-class clList: Object {
+class Cloud: Object {
 
 	@objc dynamic var objectId: String = ""
 	@objc dynamic var order: Int = 0
 	@objc dynamic var initials: String = ""
 	@objc dynamic var name: String = ""
-	@objc dynamic var detail: clDetail? = nil
-	@objc dynamic var type: clType? = nil
+	@objc dynamic var detail: CloudDetail? = nil
+	@objc dynamic var type: CloudAltitude? = nil
 
 
 	//MARK: - DB Properies --
@@ -37,8 +37,8 @@ class clList: Object {
 
 	//MARK: - Map Data --
 
-	class func mapObject(object: Dictionary<AnyHashable,Any>) -> clList {
-		let listObject = clList()
+	class func mapObject(object: Dictionary<AnyHashable,Any>) -> Cloud {
+		let listObject = Cloud()
 
 		listObject.objectId = object["objectId"] as? String ?? ""
 		listObject.order = object["order"] as? Int ?? 0
@@ -46,14 +46,14 @@ class clList: Object {
 		listObject.name = object["name"] as? String ?? ""
 
 		if let details = object["detail"] as? Dictionary<AnyHashable,Any> {
-			let detailObject = clDetail.mapObject(object: details)
+			let detailObject = CloudDetail.mapObject(object: details)
 			//add to database
 			RealmOperation.add(detailObject)
 			listObject.detail = detailObject
 		}
 
 		if let typeData = object["type"] as? Dictionary<AnyHashable,Any> {
-			let typeObject = clType.mapObject(object: typeData)
+			let typeObject = CloudAltitude.mapObject(object: typeData)
 			//add to database
 			RealmOperation.add(typeObject)
 			listObject.type = typeObject
