@@ -34,15 +34,16 @@ class MainVC: UITableViewController {
             cloudArray.removeAll()
         }
 
-		return  CloudController.getListData(sortBy: "order", ascending: true)
+		return CloudController.getListData(sortBy: "order", ascending: true)
     }
     
     // MARK: - Actions
     
     @IBAction func refreshData() {
-		DataManager.prefetchData()
-        self.tableView.reloadData()
-        self.refreshControl?.endRefreshing()
+		DataManager.prefetchData { (completed) in
+			self.tableView.reloadData()
+			self.refreshControl?.endRefreshing()
+		}
     }
 
     // MARK: - Table view data source

@@ -14,13 +14,15 @@ class DataManager: NSObject {
 
 	//MARK: - Prefetch Classes --
 
-	class func prefetchData() {
-		self.getCombinedData()
+	class func prefetchData(completion: @escaping (Bool) -> ()) {
+		self.getCombinedData({(completed) in
+			completion(completed)
+		})
 	}
 
 	//MARK: - Get Data Classes --
 
-	class func getCombinedData() {
+	class func getCombinedData(_ completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
 		let config = NetConfig.initWithConfig(requestURL: DataAPI.combinedDataURL, requestHeaders: headers, requestMethod: .GET)
 
@@ -28,15 +30,17 @@ class DataManager: NSObject {
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
 				DataMapHelper.mapCloudData(data: data)
+				completion?(true)
 				debugPrint("Fetch All Data complete")
 			}
 			else {
 				debugPrint(response.error?.localizedDescription ?? "error")
+				completion?(false)
 			}
 		}
 	}
 
-	class func getAltitudeData() {
+	class func getAltitudeData(_ completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
 		let config = NetConfig.initWithConfig(requestURL: DataAPI.clAltitudeURL, requestHeaders: headers, requestMethod: .GET)
 
@@ -44,15 +48,17 @@ class DataManager: NSObject {
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
 				DataMapHelper.mapAltitudeData(data: data)
+				completion?(true)
 				debugPrint("Fetch Type Data complete")
 			}
 			else {
 				debugPrint(response.error?.localizedDescription ?? "error")
+				completion?(false)
 			}
 		}
 	}
 
-	class func getDetailData() {
+	class func getDetailData(_ completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
 		let config = NetConfig.initWithConfig(requestURL: DataAPI.clDetailURL, requestHeaders: headers, requestMethod: .GET)
 
@@ -60,15 +66,17 @@ class DataManager: NSObject {
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
 				DataMapHelper.mapDetailData(data: data)
+				completion?(true)
 				debugPrint("Fetch Detail Data complete")
 			}
 			else {
 				debugPrint(response.error?.localizedDescription ?? "error")
+				completion?(false)
 			}
 		}
 	}
 
-	class func getCloudData() {
+	class func getCloudData(_ completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
 		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudURL, requestHeaders: headers, requestMethod: .GET)
 
@@ -76,10 +84,12 @@ class DataManager: NSObject {
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
 				DataMapHelper.mapCloudData(data: data)
+				completion?(true)
 				debugPrint("Fetch List Data complete")
 			}
 			else {
 				debugPrint(response.error?.localizedDescription ?? "error")
+				completion?(false)
 			}
 		}
 	}

@@ -224,7 +224,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="activity" destination="fhe-ti-d7m" id="hbU-mj-AVh"/>
+                        <outlet property="activity" destination="fhe-ti-d7m" id="eDZ-an-QVJ"/>
                         <outlet property="clAltitude" destination="v2R-cV-jye" id="nAV-qE-1ct"/>
                         <outlet property="clDetails" destination="t23-PT-gNh" id="ycR-ei-EC5"/>
                         <outlet property="clImage" destination="bHa-v6-AuB" id="e0c-97-1iN"/>
@@ -270,11 +270,21 @@ Updates will happen whenever needed. :)</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-UY-YPM" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="163.66666666666666" y="594.66666666666663" width="48" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="LNW-Xf-Evo"/>
+                                    <constraint firstAttribute="width" secondItem="FSb-UY-YPM" secondAttribute="height" multiplier="1:1" id="P7Z-Z9-jxx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="systemBlueColor"/>
                         <constraints>
                             <constraint firstItem="lNT-X8-cS2" firstAttribute="top" secondItem="vsG-gs-2an" secondAttribute="bottom" constant="64" id="ABY-zy-WAD"/>
+                            <constraint firstItem="FSb-UY-YPM" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="GbF-KG-AcO"/>
+                            <constraint firstItem="FSb-UY-YPM" firstAttribute="top" secondItem="lNT-X8-cS2" secondAttribute="bottom" constant="32" id="Vcl-jK-zlv"/>
                             <constraint firstItem="vsG-gs-2an" firstAttribute="leading" secondItem="3nj-J5-EEY" secondAttribute="leading" constant="16" id="cPZ-2l-em8"/>
                             <constraint firstItem="lNT-X8-cS2" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="m9H-uL-JAz"/>
                             <constraint firstItem="vsG-gs-2an" firstAttribute="centerY" secondItem="3nj-J5-EEY" secondAttribute="centerY" id="moj-jc-GhV"/>
@@ -282,6 +292,10 @@ Updates will happen whenever needed. :)</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Nimbus" id="htX-zK-iQ2"/>
+                    <connections>
+                        <outlet property="actionButton" destination="lNT-X8-cS2" id="oK8-LU-fPe"/>
+                        <outlet property="actionIndicator" destination="FSb-UY-YPM" id="2gS-Nn-ytY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDt-Mz-Xkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
