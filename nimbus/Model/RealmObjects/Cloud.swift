@@ -16,6 +16,7 @@ class Cloud: Object {
 	@objc dynamic var order: Int = 0
 	@objc dynamic var initials: String = ""
 	@objc dynamic var name: String = ""
+	@objc dynamic var excerpt: String = ""
 	@objc dynamic var detail: CloudDetail? = nil
 	@objc dynamic var type: CloudAltitude? = nil
 
@@ -44,6 +45,7 @@ class Cloud: Object {
 		listObject.order = object["order"] as? Int ?? 0
 		listObject.initials = object["initials"] as? String ?? ""
 		listObject.name = object["name"] as? String ?? ""
+		listObject.excerpt = object["excerpt"] as? String ?? ""
 
 		if let details = object["detail"] as? Dictionary<AnyHashable,Any> {
 			let detailObject = CloudDetail.mapObject(object: details)

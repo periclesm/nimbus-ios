@@ -15,7 +15,7 @@ class TableCellConstructor: NSObject {
         
         cell.cloudInitials?.text = dataObject.initials
         cell.cloudName?.text = dataObject.name
-		cell.cloudDetail?.text = dataObject.detail?.detail
+		cell.cloudDetail?.text = dataObject.excerpt
         
         return cell
     }
