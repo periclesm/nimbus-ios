@@ -31,7 +31,7 @@ class DataManager: NSObject {
 				let data = response.data as! Dictionary<AnyHashable,Any>
 				DataMapHelper.mapCloudData(data: data)
 				completion?(true)
-				debugPrint("Fetch All Data complete")
+				debugPrint("Fetch Combined Data complete")
 			}
 			else {
 				debugPrint(response.error?.localizedDescription ?? "error")
@@ -49,7 +49,7 @@ class DataManager: NSObject {
 				let data = response.data as! Dictionary<AnyHashable,Any>
 				DataMapHelper.mapAltitudeData(data: data)
 				completion?(true)
-				debugPrint("Fetch Type Data complete")
+				debugPrint("Fetch Altitude Data complete")
 			}
 			else {
 				debugPrint(response.error?.localizedDescription ?? "error")
@@ -85,7 +85,7 @@ class DataManager: NSObject {
 				let data = response.data as! Dictionary<AnyHashable,Any>
 				DataMapHelper.mapCloudData(data: data)
 				completion?(true)
-				debugPrint("Fetch List Data complete")
+				debugPrint("Fetch Cloud Data complete")
 			}
 			else {
 				debugPrint(response.error?.localizedDescription ?? "error")

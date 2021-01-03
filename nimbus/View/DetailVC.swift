@@ -14,7 +14,7 @@ import NVActivityIndicatorView
 
 class DetailVC: UITableViewController {
     
-    var objectId: String = ""
+	var vm: CloudVM!
     
     @IBOutlet weak var clImage: UIImageView!
     @IBOutlet weak var clInitials: UILabel!
@@ -32,7 +32,7 @@ class DetailVC: UITableViewController {
     // MARK: - Data
     
     func getCloudData() {
-		let cl = CloudController.getCloud(objectId: self.objectId)
+		let cl = CloudController.getCloud(objectId: vm.selectedCloud.objectId)
         
         self.title = cl?.name
         clInitials.text = cl?.initials
@@ -59,7 +59,7 @@ class DetailVC: UITableViewController {
     // MARK: - Actions
     
     @IBAction func WikiButton(_ sender: UIBarButtonItem) {
-		if let cl = CloudController.getCloud(objectId: self.objectId) { //DataLogic.getCloudInfo(self.objectId) {
+		if let cl = CloudController.getCloud(objectId: vm.selectedCloud.objectId) { //DataLogic.getCloudInfo(self.objectId) {
 			if let url = URL(string: cl.detail!.wiki) {
 				let safari = SFSafariViewController(url: url)
 				safari.modalPresentationStyle = .formSheet

@@ -24,7 +24,8 @@ class CloudVM: NSObject {
 	}
 
 	func refreshData(sender: UITableViewController) {
-		DataManager.getCloudData { (completed) in
+		DataManager.getCombinedData { (completed) in
+			self.updateArray()
 			sender.tableView.reloadData()
 			sender.refreshControl?.endRefreshing()
 		}

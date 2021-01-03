@@ -32,7 +32,7 @@
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-S4-Jqp">
                                             <rect key="frame" x="8" y="14" width="48" height="48"/>
-                                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="rpJ-S4-Jqp" secondAttribute="height" multiplier="1:1" id="ck5-QA-GaG"/>
                                                 <constraint firstAttribute="height" constant="48" id="pMC-Z4-XAB"/>
@@ -131,7 +131,7 @@
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-9A-EfN">
                                                     <rect key="frame" x="8" y="162" width="70" height="70"/>
-                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="Vov-AW-DEP"/>
                                                         <constraint firstAttribute="width" secondItem="8FY-9A-EfN" secondAttribute="height" multiplier="1:1" id="iIa-M6-dPM"/>
@@ -254,6 +254,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="grk-5y-90v"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <segue destination="8hJ-E8-668" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="SpG-3T-EWC"/>
@@ -322,7 +323,7 @@ Updates will happen whenever needed. :)</string>
             <point key="canvasLocation" x="452" y="106"/>
         </scene>
     </scenes>
-    <color key="tintColor" systemColor="systemBlueColor"/>
+    <color key="tintColor" systemColor="systemIndigoColor"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -332,6 +333,9 @@ Updates will happen whenever needed. :)</string>
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

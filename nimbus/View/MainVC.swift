@@ -20,8 +20,8 @@ class MainVC: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {
-            let dtc = segue.destination as! DetailVC
-            dtc.objectId = sender as? String ?? ""
+            let dvc = segue.destination as! DetailVC
+			dvc.vm = self.vm
         }
     }
     
