@@ -11,13 +11,11 @@
 import UIKit
 
 class MainVC: UITableViewController {
-    
-    var cloudArray: Array<Any> = []
+
+	var vm = CloudVM()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        cloudArray = self.getCloudData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,39 +25,27 @@ class MainVC: UITableViewController {
         }
     }
     
-    // MARK: - Data
-    
-    func getCloudData() -> Array<Any> {
-        if !cloudArray.isEmpty {
-            cloudArray.removeAll()
-        }
-
-		return CloudController.getListData(sortBy: "order", ascending: true)
-    }
-    
     // MARK: - Actions
     
     @IBAction func refreshData() {
-		DataManager.prefetchData { (completed) in
-			self.tableView.reloadData()
-			self.refreshControl?.endRefreshing()
-		}
+		vm.refreshData(sender: self)
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cloudArray.count
+		return vm.cloudArray.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return TableCellSynthesis.cloudCell(for: tableView, datasource: cloudArray, index: indexPath)
+		return TableCellSynthesis.cloudCell(for: tableView, datasource: vm.cloudArray, index: indexPath)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let cl = cloudArray[indexPath.row] as! Cloud
+		let cl = vm.cloudArray[indexPath.row]
+		vm.selectedCloud = vm.cloudArray[indexPath.row]
         self.performSegue(withIdentifier: "detailSegue", sender: cl.objectId)
     }
 }
