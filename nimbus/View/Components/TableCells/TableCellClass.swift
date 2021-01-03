@@ -16,5 +16,6 @@ class cloudCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+		cloudInitials.layer.cornerRadius = cloudInitials.bounds.size.height / 2
     }
 }
