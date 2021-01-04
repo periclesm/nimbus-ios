@@ -14,7 +14,7 @@ class NetAgent: NSObject, URLSessionDelegate {
     
     static let sharedInstance = NetAgent()
     
-    // MARK: - Synthesis
+    // MARK: - Synthesis --
     
     private func createRequest(requestURL: URL, config: NetConfig) -> URLRequest {
         var request = URLRequest(url: requestURL)
@@ -41,7 +41,7 @@ class NetAgent: NSObject, URLSessionDelegate {
         return request
     }
     
-    // MARK: - Main Methods
+    // MARK: - Main Methods --
     
     func getData(config: NetConfig, function: NetConfig.NetworkerFunction, completion: @escaping (NetResponse) -> ()) {
         let request = createRequest(requestURL: config.url, config: config)

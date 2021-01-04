@@ -19,7 +19,7 @@ class DataMapHelper: NSObject {
 
 		if let results = data["results"] as? Array<Dictionary<String,Any>> {
 			for object in results {
-				let typeObject = CloudAltitude.mapObject(object: object)
+				let typeObject = CloudAltitude.mapObject(dataObject: object)
 				dataArray.append(typeObject)
 			}
 		}
@@ -34,7 +34,7 @@ class DataMapHelper: NSObject {
 			var dataArray: Array<CloudDetail> = []
 
 			for object in results {
-				let detailObject = CloudDetail.mapObject(object: object)
+				let detailObject = CloudDetail.mapObject(dataObject: object)
 				dataArray.append(detailObject)
 			}
 
@@ -52,7 +52,7 @@ class DataMapHelper: NSObject {
 		var dataArray: Array<Cloud> = []
 
 		for object in results {
-			let listObject = Cloud.mapObject(object: object)
+			let listObject = Cloud.mapObject(dataObject: object)
 			dataArray.append(listObject)
 		}
 

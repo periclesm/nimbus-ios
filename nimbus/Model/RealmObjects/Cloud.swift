@@ -38,29 +38,29 @@ class Cloud: Object {
 
 	//MARK: - Map Data --
 
-	class func mapObject(object: Dictionary<AnyHashable,Any>) -> Cloud {
-		let listObject = Cloud()
+	class func mapObject(dataObject: Dictionary<AnyHashable,Any>) -> Cloud {
+		let clObject = Cloud()
 
-		listObject.objectId = object["objectId"] as? String ?? ""
-		listObject.order = object["order"] as? Int ?? 0
-		listObject.initials = object["initials"] as? String ?? ""
-		listObject.name = object["name"] as? String ?? ""
-		listObject.excerpt = object["excerpt"] as? String ?? ""
+		clObject.objectId = dataObject["objectId"] as? String ?? ""
+		clObject.order = dataObject["order"] as? Int ?? 0
+		clObject.initials = dataObject["initials"] as? String ?? ""
+		clObject.name = dataObject["name"] as? String ?? ""
+		clObject.excerpt = dataObject["excerpt"] as? String ?? ""
 
-		if let details = object["detail"] as? Dictionary<AnyHashable,Any> {
-			let detailObject = CloudDetail.mapObject(object: details)
+		if let detailData = dataObject["detail"] as? Dictionary<AnyHashable,Any> {
+			let detailObject = CloudDetail.mapObject(dataObject: detailData)
 			//add to database
 			RealmOperation.add(detailObject)
-			listObject.detail = detailObject
+			clObject.detail = detailObject
 		}
 
-		if let typeData = object["type"] as? Dictionary<AnyHashable,Any> {
-			let typeObject = CloudAltitude.mapObject(object: typeData)
+		if let typeData = dataObject["type"] as? Dictionary<AnyHashable,Any> {
+			let typeObject = CloudAltitude.mapObject(dataObject: typeData)
 			//add to database
 			RealmOperation.add(typeObject)
-			listObject.type = typeObject
+			clObject.type = typeObject
 		}
 
-		return listObject
+		return clObject
 	}
 }

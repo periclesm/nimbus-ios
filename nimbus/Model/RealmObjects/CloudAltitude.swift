@@ -34,12 +34,13 @@ class CloudAltitude: Object {
 
 	//MARK: - Map Data --
 
-	class func mapObject(object: Dictionary<AnyHashable,Any>) -> CloudAltitude {
-		let typeObject = CloudAltitude()
-		typeObject.objectId = object["objectId"] as? String ?? ""
-		typeObject.name = object["name"] as? String ?? ""
-		typeObject.detail = object["detail"] as? String ?? ""
+	class func mapObject(dataObject: Dictionary<AnyHashable,Any>) -> CloudAltitude {
+		let clAltitude = CloudAltitude()
+		
+		clAltitude.objectId = dataObject["objectId"] as? String ?? ""
+		clAltitude.name = dataObject["name"] as? String ?? ""
+		clAltitude.detail = dataObject["detail"] as? String ?? ""
 
-		return typeObject
+		return clAltitude
 	}
 }
