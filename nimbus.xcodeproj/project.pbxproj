@@ -38,13 +38,14 @@
 		68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFA259C6AF800E8D937 /* CloudController.swift */; };
 		68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */; };
 		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
-		68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */; };
+		68EA8E2D259CD00500E8D937 /* TableCellConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellConstructor.swift */; };
+		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43E24411CCB438040B973F82 /* Pods_nimbus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
-		683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellSynthesis.swift; sourceTree = "<group>"; };
+		683511E523E59B1E007AC2BB /* TableCellConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellConstructor.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
 		684109E3259B2BB200A80552 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		684109E8259B2D2800A80552 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
@@ -98,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				683511E723E59C13007AC2BB /* TableCellClass.swift */,
-				683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */,
+				683511E523E59B1E007AC2BB /* TableCellConstructor.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -403,7 +404,7 @@
 				68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */,
 				68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */,
 				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
-				68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */,
+				68EA8E2D259CD00500E8D937 /* TableCellConstructor.swift in Sources */,
 				684109F4259B2D2800A80552 /* NetIndicator.swift in Sources */,
 				684D75A0259A43DF003FCB1C /* CloudAltitude.swift in Sources */,
 				684109F5259B2D2800A80552 /* NetData.swift in Sources */,
