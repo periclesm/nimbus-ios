@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,12 @@
 		684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */; };
 		684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20EA1EA7A4F700BFC44C /* DataMapper.m */; };
 		684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20F31EA7DB2300BFC44C /* DetailVC.m */; };
+		684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D7597259A435D003FCB1C /* CloudDetail.swift */; };
+		684D759C259A436D003FCB1C /* CloudList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759B259A436D003FCB1C /* CloudList.swift */; };
+		684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759F259A43DF003FCB1C /* CloudType.swift */; };
+		684D75A3259A460D003FCB1C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A2259A460D003FCB1C /* Database.swift */; };
+		684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A7259A47A9003FCB1C /* RealmOperation.swift */; };
+		684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A8259A47AC003FCB1C /* RealmQuery.swift */; };
 		68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2E05420E9FAA200C20BD5 /* TableCellClass.m */; };
 		68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */; };
 		68B9265223E56D6B0046D78C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265123E56D6B0046D78C /* MainVC.swift */; };
@@ -67,6 +73,12 @@
 		684A20EA1EA7A4F700BFC44C /* DataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMapper.m; sourceTree = "<group>"; };
 		684A20F21EA7DB2300BFC44C /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
 		684A20F31EA7DB2300BFC44C /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
+		684D7597259A435D003FCB1C /* CloudDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDetail.swift; sourceTree = "<group>"; };
+		684D759B259A436D003FCB1C /* CloudList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudList.swift; sourceTree = "<group>"; };
+		684D759F259A43DF003FCB1C /* CloudType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudType.swift; sourceTree = "<group>"; };
+		684D75A2259A460D003FCB1C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		684D75A7259A47A9003FCB1C /* RealmOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperation.swift; sourceTree = "<group>"; };
+		684D75A8259A47AC003FCB1C /* RealmQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
 		68B2E05320E9FAA200C20BD5 /* TableCellClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellClass.h; sourceTree = "<group>"; };
 		68B2E05420E9FAA200C20BD5 /* TableCellClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellClass.m; sourceTree = "<group>"; };
 		68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellSynthesis.h; sourceTree = "<group>"; };
@@ -177,11 +189,9 @@
 		684A20B21EA76BF500BFC44C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */,
-				684A20E91EA7A4F700BFC44C /* DataMapper.h */,
-				684A20EA1EA7A4F700BFC44C /* DataMapper.m */,
-				684A20C91EA772D700BFC44C /* DataQuery.h */,
-				684A20CA1EA772D700BFC44C /* DataQuery.m */,
+				684D75C3259A4E1F003FCB1C /* _obsolete */,
+				684D7596259A4343003FCB1C /* RealmObjects */,
+				684D75A6259A4795003FCB1C /* RealmManager */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +217,38 @@
 				684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */,
 			);
 			path = Networker;
+			sourceTree = "<group>";
+		};
+		684D7596259A4343003FCB1C /* RealmObjects */ = {
+			isa = PBXGroup;
+			children = (
+				684D7597259A435D003FCB1C /* CloudDetail.swift */,
+				684D759B259A436D003FCB1C /* CloudList.swift */,
+				684D759F259A43DF003FCB1C /* CloudType.swift */,
+			);
+			path = RealmObjects;
+			sourceTree = "<group>";
+		};
+		684D75A6259A4795003FCB1C /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				684D75A2259A460D003FCB1C /* Database.swift */,
+				684D75A7259A47A9003FCB1C /* RealmOperation.swift */,
+				684D75A8259A47AC003FCB1C /* RealmQuery.swift */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		684D75C3259A4E1F003FCB1C /* _obsolete */ = {
+			isa = PBXGroup;
+			children = (
+				684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */,
+				684A20E91EA7A4F700BFC44C /* DataMapper.h */,
+				684A20EA1EA7A4F700BFC44C /* DataMapper.m */,
+				684A20C91EA772D700BFC44C /* DataQuery.h */,
+				684A20CA1EA772D700BFC44C /* DataQuery.m */,
+			);
+			path = _obsolete;
 			sourceTree = "<group>";
 		};
 		68B2E05120E9F43400C20BD5 /* Storyboards */ = {
@@ -307,7 +349,7 @@
 				};
 			};
 			buildConfigurationList = 684A207F1EA74B7400BFC44C /* Build configuration list for PBXProject "nimbus" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -392,19 +434,25 @@
 				68B9265223E56D6B0046D78C /* MainVC.swift in Sources */,
 				684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */,
 				68B9265323E5726C0046D78C /* MainVC.m in Sources */,
+				684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */,
+				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
 				684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
 				683511E623E59B1E007AC2BB /* TableCellSynthesis.swift in Sources */,
+				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
 				68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */,
 				684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */,
 				684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */,
 				684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */,
 				68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */,
+				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
 				683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */,
+				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
 				684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */,
 				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
 				684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */,
 				684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */,
+				684D759C259A436D003FCB1C /* CloudList.swift in Sources */,
 				684A20891EA74B7400BFC44C /* main.m in Sources */,
 				684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */,
 			);
@@ -558,7 +606,10 @@
 				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "nimbus/Nimbus-Bridge.h";
@@ -579,7 +630,10 @@
 				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "nimbus/Nimbus-Bridge.h";
