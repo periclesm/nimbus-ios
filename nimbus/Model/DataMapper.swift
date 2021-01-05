@@ -10,17 +10,15 @@
 
 import RealmSwift
 
-class DataMapHelper: NSObject {
-
-	/// Three different ways to check against nil... Why? Because we can!
+class DataMapper: NSObject {
 
 	class func mapAltitudeData(data: Dictionary<AnyHashable,Any>) {
 		var dataArray: Array<CloudAltitude> = []
 
 		if let results = data["results"] as? Array<Dictionary<String,Any>> {
 			for object in results {
-				let typeObject = CloudAltitude.mapObject(dataObject: object)
-				dataArray.append(typeObject)
+				let altitudeObject = CloudAltitude.mapObject(dataObject: object)
+				dataArray.append(altitudeObject)
 			}
 		}
 

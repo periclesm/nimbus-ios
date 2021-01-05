@@ -12,7 +12,7 @@ import UIKit
 
 class NetAgent: NSObject, URLSessionDelegate {
     
-    static let sharedInstance = NetAgent()
+    static let shared = NetAgent()
     
     // MARK: - Synthesis --
     
@@ -65,7 +65,7 @@ class NetAgent: NSObject, URLSessionDelegate {
             }
             else if NetUtilities.HTTPStatusValidation(status: (response as! HTTPURLResponse).statusCode) == false {
                 let errorDescription = "HTTP Status code:\((response as! HTTPURLResponse).statusCode)"
-                let error = NSError(domain: "gg.ugcesports.ugc", code: 1000, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
+                let error = NSError(domain: "Nimbus", code: 1000, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
                                                                                         "NSLocalizedFailureReasonErrorKey": errorDescription])
                 
                 let netResponse = NetResponse.constructResponse(identifier: config.identifier, completed: false, error: error, data: nil)
@@ -74,8 +74,7 @@ class NetAgent: NSObject, URLSessionDelegate {
             }
             else if (data?.isEmpty)! || data == nil {
                 let errorDescription = "Data length is zero"
-                
-                let error = NSError(domain: "gg.ugcesports.ugc", code: 2000, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
+                let error = NSError(domain: "Nimbus", code: 2000, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
                                                                                         "NSLocalizedFailureReasonErrorKey": errorDescription])
                 
                 let netResponse = NetResponse.constructResponse(identifier: config.identifier, completed: false, error: error, data: nil)
@@ -86,7 +85,7 @@ class NetAgent: NSObject, URLSessionDelegate {
                 
                 switch function {
                 case .JSON:
-                    returningData = NetData.DataToJSON(data: data!)
+                    returningData = NetUtilities.DataToJSON(data: data!)
                     
                 case .Image:
                     returningData = UIImage(data: data!)!

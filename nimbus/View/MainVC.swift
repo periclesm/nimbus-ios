@@ -25,13 +25,13 @@ class MainVC: UITableViewController {
         }
     }
     
-    // MARK: - Actions
+    // MARK: - IB Actions
     
     @IBAction func refreshData() {
 		vm.refreshData(sender: self)
     }
 
-    // MARK: - Table view data source
+    // MARK: - UITableView
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return vm.cloudArray.count

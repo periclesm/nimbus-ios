@@ -25,9 +25,4 @@ class DetailController: NSObject {
 
 		return nil
 	}
-
-	class func getDetailData(orderBy: String, ascending: Bool = true) {
-
-	}
-
 }

@@ -33,15 +33,15 @@ class DetailVC: UITableViewController {
     
     func getCloudData() {
 		let cl = CloudController.getCloud(objectId: vm.selectedCloud.objectId)
-        
-        self.title = cl?.name
-        clInitials.text = cl?.initials
-        clName.text = cl?.name
-		clAltitude.text = (cl?.type!.name)! + " altitude" //DataLogic.getCloudType(cl?.type) + " altitude"
-		clDetails.text = cl?.detail?.detail //DataLogic.getCloudDetails(cl?.detail, shortText: false)
-        
-        clImage.alpha = 0
-        activity.startAnimating()
+
+		self.title = cl?.name
+		clInitials.text = cl?.initials
+		clName.text = cl?.name
+		clAltitude.text = (cl?.type!.name)! + " altitude"
+		clDetails.text = cl?.detail?.detail
+
+		clImage.alpha = 0
+		activity.startAnimating()
 
 		let config = NetConfig.initWithConfig(requestURL: URL(string: (cl?.detail!.image)!), requestTimeout: 10, requestMethod: .GET)
 		Networker.getImage(config: config) { (response) in
@@ -54,9 +54,9 @@ class DetailVC: UITableViewController {
 
 			self.activity.stopAnimating()
 		}
-    }
+	}
 
-    // MARK: - Actions
+    // MARK: - IB Actions
     
     @IBAction func WikiButton(_ sender: UIBarButtonItem) {
 		if let cl = CloudController.getCloud(objectId: vm.selectedCloud.objectId) { //DataLogic.getCloudInfo(self.objectId) {

@@ -29,7 +29,7 @@ class DataManager: NSObject {
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapCloudData(data: data)
+				DataMapper.mapCloudData(data: data)
 				completion?(true)
 				debugPrint("Fetch Combined Data complete")
 			}
@@ -47,7 +47,7 @@ class DataManager: NSObject {
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapAltitudeData(data: data)
+				DataMapper.mapAltitudeData(data: data)
 				completion?(true)
 				debugPrint("Fetch Altitude Data complete")
 			}
@@ -65,7 +65,7 @@ class DataManager: NSObject {
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapDetailData(data: data)
+				DataMapper.mapDetailData(data: data)
 				completion?(true)
 				debugPrint("Fetch Detail Data complete")
 			}
@@ -83,7 +83,7 @@ class DataManager: NSObject {
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {
 				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapCloudData(data: data)
+				DataMapper.mapCloudData(data: data)
 				completion?(true)
 				debugPrint("Fetch Cloud Data complete")
 			}

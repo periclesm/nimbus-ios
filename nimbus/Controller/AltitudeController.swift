@@ -25,9 +25,4 @@ class AltitudeController: NSObject {
 
 		return nil
 	}
-
-	class func getTypeData(orderBy: String, ascending: Bool = true) {
-
-	}
-
 }
