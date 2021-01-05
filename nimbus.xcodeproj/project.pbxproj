@@ -47,7 +47,10 @@
 		68B9265323E5726C0046D78C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AF1EA76BCA00BFC44C /* MainVC.m */; };
 		68B9265523E572B00046D78C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265423E572B00046D78C /* DetailVC.swift */; };
 		68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265823E57B0C0046D78C /* IntroVC.swift */; };
-		AFB1D066129BCFF0DA9E5A8A /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E24411CCB438040B973F82 /* Pods_nimbus.framework */; };
+		68EA8DFB259C6AF800E8D937 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFA259C6AF800E8D937 /* ListController.swift */; };
+		68EA8DFE259C6B0900E8D937 /* TypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* TypeController.swift */; };
+		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
+		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +113,9 @@
 		68B9265423E572B00046D78C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		68B9265823E57B0C0046D78C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbusv2.xcdatamodel; sourceTree = "<group>"; };
+		68EA8DFA259C6AF800E8D937 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		68EA8DFD259C6B0900E8D937 /* TypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeController.swift; sourceTree = "<group>"; };
+		68EA8E00259C6B1900E8D937 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -267,6 +273,9 @@
 				684A20DF1EA7A3DB00BFC44C /* Networker-ObjC */,
 				684A20DC1EA7A3BB00BFC44C /* DataLogic.h */,
 				684A20DD1EA7A3BB00BFC44C /* DataLogic.m */,
+				68EA8DFA259C6AF800E8D937 /* ListController.swift */,
+				68EA8DFD259C6B0900E8D937 /* TypeController.swift */,
+				68EA8E00259C6B1900E8D937 /* DetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -497,9 +506,12 @@
 				684109DF259B2B5A00A80552 /* main.m in Sources */,
 				684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */,
 				684109E1259B2B6500A80552 /* AppDelegate.m in Sources */,
+				68EA8DFB259C6AF800E8D937 /* ListController.swift in Sources */,
 				68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */,
 				68B9265223E56D6B0046D78C /* MainVC.swift in Sources */,
 				684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */,
+				68EA8DFE259C6B0900E8D937 /* TypeController.swift in Sources */,
+				68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */,
 				68B9265323E5726C0046D78C /* MainVC.m in Sources */,
 				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
 				684109F4259B2D2800A80552 /* NetIndicator.swift in Sources */,
