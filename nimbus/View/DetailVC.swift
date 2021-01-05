@@ -10,6 +10,7 @@
 
 import UIKit
 import SafariServices
+import NVActivityIndicatorView
 
 class DetailVC: UITableViewController {
     
@@ -20,11 +21,12 @@ class DetailVC: UITableViewController {
     @IBOutlet weak var clName: UILabel!
     @IBOutlet weak var clAltitude: UILabel!
     @IBOutlet weak var clDetails: UILabel!
-    @IBOutlet weak var activity: ActivityView!
+    @IBOutlet weak var activity: NVActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getCloudData()
+		activity.type = .ballRotate
     }
     
     // MARK: - Data

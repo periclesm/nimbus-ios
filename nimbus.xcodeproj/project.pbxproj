@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1AEB264CC4731F2F3ADF43FF /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E24411CCB438040B973F82 /* Pods_nimbus.framework */; };
 		683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E723E59C13007AC2BB /* TableCellClass.swift */; };
-		683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511EC23E5A3C1007AC2BB /* ActivityView.swift */; };
 		684109DF259B2B5A00A80552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
 		684109E1259B2B6500A80552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208B1EA74B7400BFC44C /* AppDelegate.m */; };
 		684109E4259B2BB200A80552 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E3259B2BB200A80552 /* DataManager.swift */; };
@@ -46,7 +45,6 @@
 		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
 		683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellSynthesis.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
-		683511EC23E5A3C1007AC2BB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		684109E3259B2BB200A80552 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		684109E8259B2D2800A80552 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		684109E9259B2D2800A80552 /* NetAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetAgent.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 		684A20B41EA76C0600BFC44C /* nimbus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbus.xcdatamodel; sourceTree = "<group>"; };
 		684A20C91EA772D700BFC44C /* DataQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataQuery.h; sourceTree = "<group>"; };
 		684A20CA1EA772D700BFC44C /* DataQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataQuery.m; sourceTree = "<group>"; };
-		684A20CC1EA7733C00BFC44C /* Nimbus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Prefix.pch"; sourceTree = "<group>"; };
 		684A20DC1EA7A3BB00BFC44C /* DataLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLogic.h; sourceTree = "<group>"; };
 		684A20DD1EA7A3BB00BFC44C /* DataLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLogic.m; sourceTree = "<group>"; };
 		684A20E01EA7A3DB00BFC44C /* Networker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networker.h; sourceTree = "<group>"; };
@@ -205,7 +202,6 @@
 				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20981EA74B7400BFC44C /* Info.plist */,
 				684A20881EA74B7400BFC44C /* main.m */,
-				684A20CC1EA7733C00BFC44C /* Nimbus-Prefix.pch */,
 				68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */,
 			);
 			name = "Supporting Files";
@@ -292,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				683511E923E59F35007AC2BB /* TableCells */,
-				683511EC23E5A3C1007AC2BB /* ActivityView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -529,7 +524,6 @@
 				684109F1259B2D2800A80552 /* Networker.swift in Sources */,
 				684109E4259B2BB200A80552 /* DataManager.swift in Sources */,
 				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
-				683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */,
 				684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */,
 				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
 				684109F7259B2D2800A80552 /* NetResponse.swift in Sources */,

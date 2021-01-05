@@ -4,8 +4,7 @@ inhibit_all_warnings!
 
 # Pod Groups
 def production
-	#pod 'MagicalRecord', '~> 2.3.2'
-	pod 'DGActivityIndicatorView', '~> 2.1.1'
+	pod 'NVActivityIndicatorView'
 	pod 'RealmSwift'
 end
 
