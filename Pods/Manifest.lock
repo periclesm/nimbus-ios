@@ -1,22 +1,28 @@
 PODS:
-  - DGActivityIndicatorView (2.1.1)
-  - MagicalRecord (2.3.2):
-    - MagicalRecord/Core (= 2.3.2)
-  - MagicalRecord/Core (2.3.2)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - Realm (10.5.0):
+    - Realm/Headers (= 10.5.0)
+  - Realm/Headers (10.5.0)
+  - RealmSwift (10.5.0):
+    - Realm (= 10.5.0)
 
 DEPENDENCIES:
-  - DGActivityIndicatorView (~> 2.1.1)
-  - MagicalRecord (~> 2.3.2)
+  - NVActivityIndicatorView
+  - RealmSwift
 
 SPEC REPOS:
   trunk:
-    - DGActivityIndicatorView
-    - MagicalRecord
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
 
 SPEC CHECKSUMS:
-  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
-  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  Realm: e1c22c3d83b229afb70ebc10e1771c91e9542d12
+  RealmSwift: 6fc078d9d3fd7e58c71bfdbb694e252462f112a5
 
-PODFILE CHECKSUM: 2419c2ebd40e53479f302ce0851d5ceabf2b6710
+PODFILE CHECKSUM: 2aeb13e145228ee1da9c6655b7ec6f06d43ffc25
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

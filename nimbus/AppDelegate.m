@@ -16,15 +16,8 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	[MagicalRecord setupAutoMigratingCoreDataStack];
-	[MagicalRecord setLoggingLevel:MagicalRecordLoggingLevelError];
 	return YES;
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-	[MagicalRecord cleanUp];
 }
 
 @end

@@ -3,41 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		683511E623E59B1E007AC2BB /* TableCellSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */; };
+		1AEB264CC4731F2F3ADF43FF /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E24411CCB438040B973F82 /* Pods_nimbus.framework */; };
 		683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E723E59C13007AC2BB /* TableCellClass.swift */; };
-		683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511EC23E5A3C1007AC2BB /* ActivityView.swift */; };
-		684A20891EA74B7400BFC44C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
-		684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208B1EA74B7400BFC44C /* AppDelegate.m */; };
+		684109DF259B2B5A00A80552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
+		684109E1259B2B6500A80552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208B1EA74B7400BFC44C /* AppDelegate.m */; };
+		684109E4259B2BB200A80552 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E3259B2BB200A80552 /* DataManager.swift */; };
+		684109F1259B2D2800A80552 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E8259B2D2800A80552 /* Networker.swift */; };
+		684109F2259B2D2800A80552 /* NetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E9259B2D2800A80552 /* NetAgent.swift */; };
+		684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EB259B2D2800A80552 /* NetUtilities.swift */; };
+		684109F6259B2D2800A80552 /* NetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EF259B2D2800A80552 /* NetConfig.swift */; };
+		684109F7259B2D2800A80552 /* NetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109F0259B2D2800A80552 /* NetResponse.swift */; };
+		684109FB259B2E5100A80552 /* GQLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FA259B2E5100A80552 /* GQLAPI.swift */; };
+		684109FF259B39D500A80552 /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FE259B39D500A80552 /* DataAPI.swift */; };
+		68410A03259B3FA500A80552 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410A02259B3FA500A80552 /* DataMapper.swift */; };
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
-		684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AD1EA76BCA00BFC44C /* IntroVC.m */; };
-		684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */; };
-		684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20CA1EA772D700BFC44C /* DataQuery.m */; };
-		684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20DD1EA7A3BB00BFC44C /* DataLogic.m */; };
-		684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E11EA7A3DB00BFC44C /* Networker.m */; };
-		684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */; };
-		684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */; };
-		684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20EA1EA7A4F700BFC44C /* DataMapper.m */; };
-		684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20F31EA7DB2300BFC44C /* DetailVC.m */; };
-		68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2E05420E9FAA200C20BD5 /* TableCellClass.m */; };
-		68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */; };
+		684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D7597259A435D003FCB1C /* CloudDetail.swift */; };
+		684D759C259A436D003FCB1C /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759B259A436D003FCB1C /* Cloud.swift */; };
+		684D75A0259A43DF003FCB1C /* CloudAltitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759F259A43DF003FCB1C /* CloudAltitude.swift */; };
+		684D75A3259A460D003FCB1C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A2259A460D003FCB1C /* Database.swift */; };
+		684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A7259A47A9003FCB1C /* RealmOperation.swift */; };
+		684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A8259A47AC003FCB1C /* RealmQuery.swift */; };
+		685F19C125A22EF400D12A9A /* CloudVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F19C025A22EF400D12A9A /* CloudVM.swift */; };
 		68B9265223E56D6B0046D78C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265123E56D6B0046D78C /* MainVC.swift */; };
-		68B9265323E5726C0046D78C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AF1EA76BCA00BFC44C /* MainVC.m */; };
 		68B9265523E572B00046D78C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265423E572B00046D78C /* DetailVC.swift */; };
 		68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265823E57B0C0046D78C /* IntroVC.swift */; };
-		6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799085B13FD94F076C2E2A7A /* libPods-nimbus.a */; };
+		68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFA259C6AF800E8D937 /* CloudController.swift */; };
+		68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */; };
+		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
+		68EA8E2D259CD00500E8D937 /* TableCellConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellConstructor.swift */; };
+		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43E24411CCB438040B973F82 /* Pods_nimbus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
-		683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellSynthesis.swift; sourceTree = "<group>"; };
+		683511E523E59B1E007AC2BB /* TableCellConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellConstructor.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
-		683511EC23E5A3C1007AC2BB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		684109E3259B2BB200A80552 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		684109E8259B2D2800A80552 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		684109E9259B2D2800A80552 /* NetAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetAgent.swift; sourceTree = "<group>"; };
+		684109EB259B2D2800A80552 /* NetUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetUtilities.swift; sourceTree = "<group>"; };
+		684109EF259B2D2800A80552 /* NetConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConfig.swift; sourceTree = "<group>"; };
+		684109F0259B2D2800A80552 /* NetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetResponse.swift; sourceTree = "<group>"; };
+		684109FA259B2E5100A80552 /* GQLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GQLAPI.swift; sourceTree = "<group>"; };
+		684109FE259B39D500A80552 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
+		68410A02259B3FA500A80552 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A20881EA74B7400BFC44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		684A208A1EA74B7400BFC44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,36 +62,20 @@
 		684A20931EA74B7400BFC44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684A20961EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		684A20981EA74B7400BFC44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		684A20AC1EA76BCA00BFC44C /* IntroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroVC.h; sourceTree = "<group>"; };
-		684A20AD1EA76BCA00BFC44C /* IntroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroVC.m; sourceTree = "<group>"; };
-		684A20AE1EA76BCA00BFC44C /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
-		684A20AF1EA76BCA00BFC44C /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
-		684A20B41EA76C0600BFC44C /* nimbus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbus.xcdatamodel; sourceTree = "<group>"; };
-		684A20C91EA772D700BFC44C /* DataQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataQuery.h; sourceTree = "<group>"; };
-		684A20CA1EA772D700BFC44C /* DataQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataQuery.m; sourceTree = "<group>"; };
-		684A20CC1EA7733C00BFC44C /* Nimbus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Prefix.pch"; sourceTree = "<group>"; };
-		684A20DC1EA7A3BB00BFC44C /* DataLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLogic.h; sourceTree = "<group>"; };
-		684A20DD1EA7A3BB00BFC44C /* DataLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLogic.m; sourceTree = "<group>"; };
-		684A20E01EA7A3DB00BFC44C /* Networker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networker.h; sourceTree = "<group>"; };
-		684A20E11EA7A3DB00BFC44C /* Networker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networker.m; sourceTree = "<group>"; };
-		684A20E21EA7A3DB00BFC44C /* NetworkerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkerParameters.h; sourceTree = "<group>"; };
-		684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkerParameters.m; sourceTree = "<group>"; };
-		684A20E41EA7A3DB00BFC44C /* NetworkIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkIndicator.h; sourceTree = "<group>"; };
-		684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkIndicator.m; sourceTree = "<group>"; };
-		684A20E91EA7A4F700BFC44C /* DataMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMapper.h; sourceTree = "<group>"; };
-		684A20EA1EA7A4F700BFC44C /* DataMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMapper.m; sourceTree = "<group>"; };
-		684A20F21EA7DB2300BFC44C /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
-		684A20F31EA7DB2300BFC44C /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
-		68B2E05320E9FAA200C20BD5 /* TableCellClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellClass.h; sourceTree = "<group>"; };
-		68B2E05420E9FAA200C20BD5 /* TableCellClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellClass.m; sourceTree = "<group>"; };
-		68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellSynthesis.h; sourceTree = "<group>"; };
-		68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellSynthesis.m; sourceTree = "<group>"; };
+		684D7597259A435D003FCB1C /* CloudDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDetail.swift; sourceTree = "<group>"; };
+		684D759B259A436D003FCB1C /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		684D759F259A43DF003FCB1C /* CloudAltitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudAltitude.swift; sourceTree = "<group>"; };
+		684D75A2259A460D003FCB1C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		684D75A7259A47A9003FCB1C /* RealmOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperation.swift; sourceTree = "<group>"; };
+		684D75A8259A47AC003FCB1C /* RealmQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
+		685F19C025A22EF400D12A9A /* CloudVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudVM.swift; sourceTree = "<group>"; };
 		68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Bridge.h"; sourceTree = "<group>"; };
 		68B9265123E56D6B0046D78C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		68B9265423E572B00046D78C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		68B9265823E57B0C0046D78C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
-		68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbusv2.xcdatamodel; sourceTree = "<group>"; };
-		799085B13FD94F076C2E2A7A /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EA8DFA259C6AF800E8D937 /* CloudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudController.swift; sourceTree = "<group>"; };
+		68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeController.swift; sourceTree = "<group>"; };
+		68EA8E00259C6B1900E8D937 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */,
+				1AEB264CC4731F2F3ADF43FF /* Pods_nimbus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,30 +94,38 @@
 		683511E923E59F35007AC2BB /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
-				683511EB23E59F46007AC2BB /* ObjC */,
-				683511EA23E59F3E007AC2BB /* Swift */,
+				683511E723E59C13007AC2BB /* TableCellClass.swift */,
+				683511E523E59B1E007AC2BB /* TableCellConstructor.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
 		};
-		683511EA23E59F3E007AC2BB /* Swift */ = {
+		684109E7259B2D2800A80552 /* Networker */ = {
 			isa = PBXGroup;
 			children = (
-				683511E723E59C13007AC2BB /* TableCellClass.swift */,
-				683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */,
+				684109ED259B2D2800A80552 /* Constructors */,
+				684109E8259B2D2800A80552 /* Networker.swift */,
+				684109E9259B2D2800A80552 /* NetAgent.swift */,
+				684109EB259B2D2800A80552 /* NetUtilities.swift */,
 			);
-			path = Swift;
+			path = Networker;
 			sourceTree = "<group>";
 		};
-		683511EB23E59F46007AC2BB /* ObjC */ = {
+		684109ED259B2D2800A80552 /* Constructors */ = {
 			isa = PBXGroup;
 			children = (
-				68B2E05320E9FAA200C20BD5 /* TableCellClass.h */,
-				68B2E05420E9FAA200C20BD5 /* TableCellClass.m */,
-				68B2E05620E9FE9200C20BD5 /* TableCellSynthesis.h */,
-				68B2E05720E9FE9200C20BD5 /* TableCellSynthesis.m */,
+				684109EF259B2D2800A80552 /* NetConfig.swift */,
+				684109F0259B2D2800A80552 /* NetResponse.swift */,
 			);
-			path = ObjC;
+			path = Constructors;
+			sourceTree = "<group>";
+		};
+		684109F9259B2E3A00A80552 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				684109FA259B2E5100A80552 /* GQLAPI.swift */,
+			);
+			path = GraphQL;
 			sourceTree = "<group>";
 		};
 		684A207B1EA74B7400BFC44C = {
@@ -143,6 +151,7 @@
 			children = (
 				684A208A1EA74B7400BFC44C /* AppDelegate.h */,
 				684A208B1EA74B7400BFC44C /* AppDelegate.m */,
+				68EA8E17259CCA3D00E8D937 /* Platform */,
 				684A20B21EA76BF500BFC44C /* Model */,
 				684A20DB1EA7A3AB00BFC44C /* Controller */,
 				684A20AB1EA76BCA00BFC44C /* View */,
@@ -157,7 +166,6 @@
 				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20981EA74B7400BFC44C /* Info.plist */,
 				684A20881EA74B7400BFC44C /* main.m */,
-				684A20CC1EA7733C00BFC44C /* Nimbus-Prefix.pch */,
 				68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */,
 			);
 			name = "Supporting Files";
@@ -166,10 +174,12 @@
 		684A20AB1EA76BCA00BFC44C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				68B2E05220E9F98200C20BD5 /* Components */,
 				68B2E05120E9F43400C20BD5 /* Storyboards */,
-				68B9265723E57AD80046D78C /* ObjC */,
-				68B9265623E57AD20046D78C /* Swift */,
+				68B2E05220E9F98200C20BD5 /* Components */,
+				685F19C025A22EF400D12A9A /* CloudVM.swift */,
+				68B9265823E57B0C0046D78C /* IntroVC.swift */,
+				68B9265123E56D6B0046D78C /* MainVC.swift */,
+				68B9265423E572B00046D78C /* DetailVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,11 +187,12 @@
 		684A20B21EA76BF500BFC44C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */,
-				684A20E91EA7A4F700BFC44C /* DataMapper.h */,
-				684A20EA1EA7A4F700BFC44C /* DataMapper.m */,
-				684A20C91EA772D700BFC44C /* DataQuery.h */,
-				684A20CA1EA772D700BFC44C /* DataQuery.m */,
+				684109F9259B2E3A00A80552 /* GraphQL */,
+				684D7596259A4343003FCB1C /* RealmObjects */,
+				684D75A6259A4795003FCB1C /* RealmManager */,
+				684109FE259B39D500A80552 /* DataAPI.swift */,
+				684109E3259B2BB200A80552 /* DataManager.swift */,
+				68410A02259B3FA500A80552 /* DataMapper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,24 +200,31 @@
 		684A20DB1EA7A3AB00BFC44C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				684A20DF1EA7A3DB00BFC44C /* Networker */,
-				684A20DC1EA7A3BB00BFC44C /* DataLogic.h */,
-				684A20DD1EA7A3BB00BFC44C /* DataLogic.m */,
+				68EA8DFA259C6AF800E8D937 /* CloudController.swift */,
+				68EA8E00259C6B1900E8D937 /* DetailController.swift */,
+				68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		684A20DF1EA7A3DB00BFC44C /* Networker */ = {
+		684D7596259A4343003FCB1C /* RealmObjects */ = {
 			isa = PBXGroup;
 			children = (
-				684A20E21EA7A3DB00BFC44C /* NetworkerParameters.h */,
-				684A20E31EA7A3DB00BFC44C /* NetworkerParameters.m */,
-				684A20E01EA7A3DB00BFC44C /* Networker.h */,
-				684A20E11EA7A3DB00BFC44C /* Networker.m */,
-				684A20E41EA7A3DB00BFC44C /* NetworkIndicator.h */,
-				684A20E51EA7A3DB00BFC44C /* NetworkIndicator.m */,
+				684D759B259A436D003FCB1C /* Cloud.swift */,
+				684D7597259A435D003FCB1C /* CloudDetail.swift */,
+				684D759F259A43DF003FCB1C /* CloudAltitude.swift */,
 			);
-			path = Networker;
+			path = RealmObjects;
+			sourceTree = "<group>";
+		};
+		684D75A6259A4795003FCB1C /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				684D75A2259A460D003FCB1C /* Database.swift */,
+				684D75A7259A47A9003FCB1C /* RealmOperation.swift */,
+				684D75A8259A47AC003FCB1C /* RealmQuery.swift */,
+			);
+			path = RealmManager;
 			sourceTree = "<group>";
 		};
 		68B2E05120E9F43400C20BD5 /* Storyboards */ = {
@@ -222,38 +240,22 @@
 			isa = PBXGroup;
 			children = (
 				683511E923E59F35007AC2BB /* TableCells */,
-				683511EC23E5A3C1007AC2BB /* ActivityView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		68B9265623E57AD20046D78C /* Swift */ = {
+		68EA8E17259CCA3D00E8D937 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				68B9265823E57B0C0046D78C /* IntroVC.swift */,
-				68B9265123E56D6B0046D78C /* MainVC.swift */,
-				68B9265423E572B00046D78C /* DetailVC.swift */,
+				684109E7259B2D2800A80552 /* Networker */,
 			);
-			path = Swift;
-			sourceTree = "<group>";
-		};
-		68B9265723E57AD80046D78C /* ObjC */ = {
-			isa = PBXGroup;
-			children = (
-				684A20AC1EA76BCA00BFC44C /* IntroVC.h */,
-				684A20AD1EA76BCA00BFC44C /* IntroVC.m */,
-				684A20AE1EA76BCA00BFC44C /* MainVC.h */,
-				684A20AF1EA76BCA00BFC44C /* MainVC.m */,
-				684A20F21EA7DB2300BFC44C /* DetailVC.h */,
-				684A20F31EA7DB2300BFC44C /* DetailVC.m */,
-			);
-			path = ObjC;
+			path = Platform;
 			sourceTree = "<group>";
 		};
 		7896288071E0E771343E6221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				799085B13FD94F076C2E2A7A /* libPods-nimbus.a */,
+				43E24411CCB438040B973F82 /* Pods_nimbus.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -278,6 +280,7 @@
 				684A20801EA74B7400BFC44C /* Sources */,
 				684A20811EA74B7400BFC44C /* Frameworks */,
 				684A20821EA74B7400BFC44C /* Resources */,
+				45BA6605BB31CA3F2099FAA6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,7 +309,7 @@
 				};
 			};
 			buildConfigurationList = 684A207F1EA74B7400BFC44C /* Build configuration list for PBXProject "nimbus" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -337,6 +340,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		45BA6605BB31CA3F2099FAA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B943777581A2326B5D711B04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,26 +382,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684A20DE1EA7A3BB00BFC44C /* DataLogic.m in Sources */,
+				684109DF259B2B5A00A80552 /* main.m in Sources */,
+				684109E1259B2B6500A80552 /* AppDelegate.m in Sources */,
+				68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */,
 				68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */,
 				68B9265223E56D6B0046D78C /* MainVC.swift in Sources */,
-				684A20CB1EA772D700BFC44C /* DataQuery.m in Sources */,
-				68B9265323E5726C0046D78C /* MainVC.m in Sources */,
-				684A20B01EA76BCA00BFC44C /* IntroVC.m in Sources */,
+				68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */,
+				68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */,
+				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
+				68EA8E2D259CD00500E8D937 /* TableCellConstructor.swift in Sources */,
+				684D75A0259A43DF003FCB1C /* CloudAltitude.swift in Sources */,
+				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
-				683511E623E59B1E007AC2BB /* TableCellSynthesis.swift in Sources */,
-				68B2E05520E9FAA200C20BD5 /* TableCellClass.m in Sources */,
-				684A20B51EA76C0600BFC44C /* nimbus.xcdatamodeld in Sources */,
-				684A208C1EA74B7400BFC44C /* AppDelegate.m in Sources */,
-				684A20EB1EA7A4F700BFC44C /* DataMapper.m in Sources */,
-				68B2E05820E9FE9300C20BD5 /* TableCellSynthesis.m in Sources */,
-				683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */,
-				684A20E81EA7A3DB00BFC44C /* NetworkIndicator.m in Sources */,
+				68410A03259B3FA500A80552 /* DataMapper.swift in Sources */,
+				684109F2259B2D2800A80552 /* NetAgent.swift in Sources */,
+				684109FF259B39D500A80552 /* DataAPI.swift in Sources */,
+				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
+				684109F1259B2D2800A80552 /* Networker.swift in Sources */,
+				684109E4259B2BB200A80552 /* DataManager.swift in Sources */,
+				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
+				684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */,
+				685F19C125A22EF400D12A9A /* CloudVM.swift in Sources */,
+				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
+				684109F7259B2D2800A80552 /* NetResponse.swift in Sources */,
 				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
-				684A20F41EA7DB2300BFC44C /* DetailVC.m in Sources */,
-				684A20E71EA7A3DB00BFC44C /* NetworkerParameters.m in Sources */,
-				684A20891EA74B7400BFC44C /* main.m in Sources */,
-				684A20E61EA7A3DB00BFC44C /* Networker.m in Sources */,
+				684109FB259B2E5100A80552 /* GQLAPI.swift in Sources */,
+				684D759C259A436D003FCB1C /* Cloud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,14 +555,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "nimbus/Nimbus-Bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -550,14 +576,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "nimbus/Nimbus-Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -585,20 +611,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		684A20B31EA76C0600BFC44C /* nimbus.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */,
-				684A20B41EA76C0600BFC44C /* nimbus.xcdatamodel */,
-			);
-			currentVersion = 68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */;
-			path = nimbus.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 684A207C1EA74B7400BFC44C /* Project object */;
 }
