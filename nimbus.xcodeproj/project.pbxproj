@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AEB264CC4731F2F3ADF43FF /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E24411CCB438040B973F82 /* Pods_nimbus.framework */; };
 		683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E723E59C13007AC2BB /* TableCellClass.swift */; };
 		683511ED23E5A3C1007AC2BB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511EC23E5A3C1007AC2BB /* ActivityView.swift */; };
 		684109DF259B2B5A00A80552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
@@ -38,7 +39,6 @@
 		68EA8DFE259C6B0900E8D937 /* TypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* TypeController.swift */; };
 		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
 		68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */; };
-		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFB1D066129BCFF0DA9E5A8A /* Pods_nimbus.framework in Frameworks */,
+				1AEB264CC4731F2F3ADF43FF /* Pods_nimbus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,19 +471,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -690,8 +683,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -714,8 +705,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "nimbus/Nimbus-Prefix.pch";
 				INFOPLIST_FILE = nimbus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
