@@ -30,10 +30,11 @@
 		68B9265323E5726C0046D78C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20AF1EA76BCA00BFC44C /* MainVC.m */; };
 		68B9265523E572B00046D78C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265423E572B00046D78C /* DetailVC.swift */; };
 		68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265823E57B0C0046D78C /* IntroVC.swift */; };
-		6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799085B13FD94F076C2E2A7A /* libPods-nimbus.a */; };
+		AFB1D066129BCFF0DA9E5A8A /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E24411CCB438040B973F82 /* Pods_nimbus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43E24411CCB438040B973F82 /* Pods_nimbus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
 		683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellSynthesis.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 		68B9265423E572B00046D78C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		68B9265823E57B0C0046D78C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		68E4FACA1EA88CE30096E715 /* nimbusv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nimbusv2.xcdatamodel; sourceTree = "<group>"; };
-		799085B13FD94F076C2E2A7A /* libPods-nimbus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nimbus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D5C5B72EBE62A9BA475F971 /* libPods-nimbus.a in Frameworks */,
+				AFB1D066129BCFF0DA9E5A8A /* Pods_nimbus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +253,7 @@
 		7896288071E0E771343E6221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				799085B13FD94F076C2E2A7A /* libPods-nimbus.a */,
+				43E24411CCB438040B973F82 /* Pods_nimbus.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -278,6 +278,7 @@
 				684A20801EA74B7400BFC44C /* Sources */,
 				684A20811EA74B7400BFC44C /* Frameworks */,
 				684A20821EA74B7400BFC44C /* Resources */,
+				45BA6605BB31CA3F2099FAA6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,6 +338,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		45BA6605BB31CA3F2099FAA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B943777581A2326B5D711B04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
