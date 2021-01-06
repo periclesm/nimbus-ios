@@ -43,7 +43,7 @@ class DetailVC: UITableViewController {
 		clImage.alpha = 0
 		activity.startAnimating()
 
-		let config = NetConfig.initWithConfig(requestURL: URL(string: (cl?.detail!.image)!), requestTimeout: 10, requestMethod: .GET)
+		let config = NetConfig.initWithConfig(requestURL: URL(string: (cl?.detail!.image)!)!, requestTimeout: 10, requestMethod: .GET)
 		Networker.getImage(config: config) { (response) in
 			if response.completed {
 				self.clImage.image = response.data as? UIImage

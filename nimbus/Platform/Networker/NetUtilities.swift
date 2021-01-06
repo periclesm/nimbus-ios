@@ -8,10 +8,11 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
-import UIKit
+import Foundation
 
 class NetUtilities: NSObject {
-    
+
+	/// Provides a unique (string) identifier for each network call (to be further implemented).
     class func Identifier() -> String {
         let baseCharacters: String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         var identStr = ""
@@ -24,12 +25,13 @@ class NetUtilities: NSObject {
         return identStr
     }
 
-	class func DataToJSON(data: Data) -> AnyObject {
-		guard let returningData = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.init(rawValue: 0)) else {
-			return NSDictionary.init()
+	/// Parses and deserializes JSON data in a collection (Dictionary).
+	class func DataToJSON(data: Data) -> Dictionary<AnyHashable, Any> {
+		if let data = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.init(rawValue: 0)) {
+			return data as! Dictionary<AnyHashable, Any>
 		}
 
-		return returningData as AnyObject
+		return [:]
 	}
 
 	class func CollectionToJSON(collection: Any) -> String {
@@ -94,14 +96,8 @@ class NetUtilities: NSObject {
             return ""
         }
     }
-    
-    class func sessionConfiguration(cachePolicy: NetConfig.NetworkerCachingMethod) -> URLSessionConfiguration {
-        let config = URLSessionConfiguration.default
-        config.requestCachePolicy = URLRequest.CachePolicy.init(rawValue: UInt(cachePolicy.rawValue))!
-        config.httpShouldUsePipelining = true
-        return config
-    }
-    
+
+	/// Checks the HTTP code status for validity.
     class func HTTPStatusValidation(status: Int) -> Bool {
         switch status {
         //accepted cases
