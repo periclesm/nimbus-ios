@@ -26,7 +26,7 @@
 		684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D7597259A435D003FCB1C /* CloudDetail.swift */; };
 		684D759C259A436D003FCB1C /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759B259A436D003FCB1C /* Cloud.swift */; };
 		684D75A0259A43DF003FCB1C /* CloudAltitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759F259A43DF003FCB1C /* CloudAltitude.swift */; };
-		684D75A3259A460D003FCB1C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A2259A460D003FCB1C /* Database.swift */; };
+		684D75A3259A460D003FCB1C /* RealmDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A2259A460D003FCB1C /* RealmDatabase.swift */; };
 		684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A7259A47A9003FCB1C /* RealmOperation.swift */; };
 		684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A8259A47AC003FCB1C /* RealmQuery.swift */; };
 		685F19C125A22EF400D12A9A /* CloudVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F19C025A22EF400D12A9A /* CloudVM.swift */; };
@@ -37,7 +37,6 @@
 		68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */; };
 		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
 		68EA8E2D259CD00500E8D937 /* TableCellConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellConstructor.swift */; };
-		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +64,7 @@
 		684D7597259A435D003FCB1C /* CloudDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDetail.swift; sourceTree = "<group>"; };
 		684D759B259A436D003FCB1C /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		684D759F259A43DF003FCB1C /* CloudAltitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudAltitude.swift; sourceTree = "<group>"; };
-		684D75A2259A460D003FCB1C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		684D75A2259A460D003FCB1C /* RealmDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabase.swift; sourceTree = "<group>"; };
 		684D75A7259A47A9003FCB1C /* RealmOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperation.swift; sourceTree = "<group>"; };
 		684D75A8259A47AC003FCB1C /* RealmQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
 		685F19C025A22EF400D12A9A /* CloudVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudVM.swift; sourceTree = "<group>"; };
@@ -220,7 +219,7 @@
 		684D75A6259A4795003FCB1C /* RealmManager */ = {
 			isa = PBXGroup;
 			children = (
-				684D75A2259A460D003FCB1C /* Database.swift */,
+				684D75A2259A460D003FCB1C /* RealmDatabase.swift */,
 				684D75A7259A47A9003FCB1C /* RealmOperation.swift */,
 				684D75A8259A47AC003FCB1C /* RealmQuery.swift */,
 			);
@@ -392,7 +391,7 @@
 				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
 				68EA8E2D259CD00500E8D937 /* TableCellConstructor.swift in Sources */,
 				684D75A0259A43DF003FCB1C /* CloudAltitude.swift in Sources */,
-				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
+				684D75A3259A460D003FCB1C /* RealmDatabase.swift in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
 				68410A03259B3FA500A80552 /* DataMapper.swift in Sources */,
 				684109F2259B2D2800A80552 /* NetAgent.swift in Sources */,

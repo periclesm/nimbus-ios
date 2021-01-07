@@ -1,6 +1,6 @@
 //
 //  NetResponse.swift
-//  SwiftNetworker
+//  nimbus
 //
 //  Created by Pericles Maravelakis on 29/12/2020.
 //	periclesm@cloudfields.net

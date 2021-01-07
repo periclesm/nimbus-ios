@@ -10,15 +10,21 @@
 
 import RealmSwift
 
+/**
+Contains a set of functions that retrieve, prepare and deliver data from the lower Model to the higher UI layer.
+All functions here are per-app and depended to the Application and Business Logic of the app.
+Below is a sample set of functions for the Cloud-related data operations in the Nimbus app.
+The more complex the application, the greater the number of functions and their complexity.
+*/
 class CloudController: NSObject {
 
 	class func getCloudListCount() -> Int {
-		return Database.shared.db.objects(Cloud.self).count
+		return RealmDatabase.shared.db.objects(Cloud.self).count
 	}
 
 	class func getCloud(objectId: String) -> Cloud? {
 		let predicate = NSPredicate(format: "objectId = %@", objectId)
-		let cloud = Database.shared.db.objects(Cloud.self).filter(predicate)
+		let cloud = RealmDatabase.shared.db.objects(Cloud.self).filter(predicate)
 		if !cloud.isEmpty {
 			return cloud.first
 		}
@@ -27,12 +33,12 @@ class CloudController: NSObject {
 	}
 
 	class func getListData(sortBy: String, ascending: Bool = true) -> Array<Cloud> {
-		let data = Database.shared.db.objects(Cloud.self).sorted(byKeyPath: sortBy, ascending: ascending)
+		let data = RealmDatabase.shared.db.objects(Cloud.self).sorted(byKeyPath: sortBy, ascending: ascending)
 		return Array(data)
 	}
 
 	class func filterListData(filter: NSPredicate, sortBy: String, ascending: Bool = true) -> Array<Cloud> {
-		let data = Database.shared.db.objects(Cloud.self).filter(filter).sorted(byKeyPath: sortBy, ascending: ascending)
+		let data = RealmDatabase.shared.db.objects(Cloud.self).filter(filter).sorted(byKeyPath: sortBy, ascending: ascending)
 		return Array(data)
 	}
 

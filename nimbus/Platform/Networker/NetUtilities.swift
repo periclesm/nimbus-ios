@@ -1,6 +1,6 @@
 //
 //  NetUtilities.swift
-//  SwiftNetworker
+//  nimbus
 //
 //  Created by Pericles Maravelakis on 29/12/2020.
 //	periclesm@cloudfields.net
@@ -46,7 +46,6 @@ class NetUtilities: NSObject {
 				return string!
 
 			default:
-				debugPrint("Έχεις κάνει μαλακία")
 				return ""
 		}
 	}

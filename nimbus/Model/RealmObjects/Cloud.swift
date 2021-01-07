@@ -50,14 +50,14 @@ class Cloud: Object {
 		if let detailData = dataObject["detail"] as? Dictionary<AnyHashable,Any> {
 			let detailObject = CloudDetail.mapObject(dataObject: detailData)
 			//add to database
-			RealmOperation.add(detailObject)
+			RealmOperation.add(rObject: detailObject)
 			clObject.detail = detailObject
 		}
 
 		if let typeData = dataObject["type"] as? Dictionary<AnyHashable,Any> {
 			let typeObject = CloudAltitude.mapObject(dataObject: typeData)
 			//add to database
-			RealmOperation.add(typeObject)
+			RealmOperation.add(rObject: typeObject)
 			clObject.type = typeObject
 		}
 
