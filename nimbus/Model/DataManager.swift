@@ -17,9 +17,9 @@ class DataManager: NSObject {
 
 	/// Called at app start, this function prefetches a set of predetermined data needed for the app to use during launch and first display.
 	class func prefetchData(completion: @escaping (Bool) -> ()) {
-		self.getCombinedData({(completed) in
-			completion(completed)
-		})
+		self.getCombinedData(cachePolicy: .reloadRevalidatingCacheData) { (complete) in
+			completion(true)
+		}
 	}
 
 
@@ -30,12 +30,13 @@ class DataManager: NSObject {
 	Once the data have been fetched and validated, they are sent in `DataMapper` to map them in the Realm DB tables.
 	*/
 
+
 	//MARK: - Get Data Classes --
 
 	/// Fetches the combined data of Cloud, Alittide and Detail.
-	class func getCombinedData(_ completion: ((Bool) -> Void)? = nil) {
+	class func getCombinedData(cachePolicy: URLRequest.CachePolicy? = .useProtocolCachePolicy, completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
-		let config = NetConfig.initWithConfig(requestURL: DataAPI.combinedDataURL, requestHeaders: headers, requestMethod: .GET)
+		let config = NetConfig.initWithConfig(requestURL: DataAPI.combinedDataURL, requestHeaders: headers, requestMethod: .GET, requestCaching: cachePolicy)
 
 		Networker.getJSONData(config: config) { (response) in
 			if response.completed {

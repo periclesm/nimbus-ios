@@ -24,7 +24,7 @@ class RealmQuery: NSObject {
 	///   - limit: `Int` Limits the number of items returned. Only the top `limit` numbers are included.
 	/// - Returns: A Realm `Results` collection with data of the requested query.
 	class func filterAndSort(rObject: Object.Type, predicate: NSPredicate,
-							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object>? {
+							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object> {
 
 		return RealmOperation.get(rObject: rObject).filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
@@ -39,14 +39,11 @@ class RealmQuery: NSObject {
 	///   - ascending: `Boolean` The sort type: `true` for Ascending, `false` for Descending. Default is true.
 	///   - limit: `Int` Limits the number of items returned. Only the top `limit` numbers are included.
 	/// - Returns: A Realm `Results` collection with data of the requested query.
-	class func filterAndSort(objectResults: Results<Object>?, predicate: NSPredicate,
-							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object>? {
+	class func filterAndSort(objectResults: Results<Object>, predicate: NSPredicate,
+							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object> {
 
-		if let data = objectResults?.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending) {
-			return data
-		}
-
-		return nil
+		let data = objectResults.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
+		return data
 	}
 
 
@@ -60,14 +57,10 @@ class RealmQuery: NSObject {
 	///   - ascending: `Boolean` The sort type: `true` for Ascending, `false` for Descending. Default is true.
 	///   - limit: `Int` Limits the number of items returned. Only the top `limit` numbers are included.
 	/// - Returns: A Realm `Results` collection with data of the requested query.
-	class func filterAndSort(objectList: List<Object>?, predicate: NSPredicate,
-							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object>? {
+	class func filterAndSort(objectList: List<Object>, predicate: NSPredicate,
+							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object> {
 
-		if let data = objectList {
-			return data.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
-		}
-
-		return nil
+		return objectList.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
 
 
@@ -85,8 +78,7 @@ class RealmQuery: NSObject {
 	///   - ascending: `Boolean` The sort type: `true` for Ascending, `false` for Descending. Default is true.
 	///   - limit: `Int` Limits the number of items returned. Only the top `limit` numbers are included.
 	/// - Returns: A Realm `List` collection with data of the requested query.
-	class func filterAndSortList(rObject: Object.Type,
-								 predicate: NSPredicate,
+	class func filterAndSortList(rObject: Object.Type, predicate: NSPredicate,
 								 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> List<Object> {
 
 		let data = RealmOperation.get(rObject: rObject).filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
@@ -108,15 +100,11 @@ class RealmQuery: NSObject {
 	///   - ascending: `Boolean` The sort type: `true` for Ascending, `false` for Descending. Default is true.
 	///   - limit: `Int` Limits the number of items returned. Only the top `limit` numbers are included.
 	/// - Returns: A Realm `List` collection with data of the requested query.
-	class func filterAndSortList(objectResults: Results<Object>?,
-								 predicate: NSPredicate,
+	class func filterAndSortList(objectResults: Results<Object>, predicate: NSPredicate,
 								 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> List<Object> {
 
-		if let data = objectResults?.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending) {
-			return self.resultsToListConversion(results: data)
-		}
-
-		return List()
+		let data = objectResults.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
+		return self.resultsToListConversion(results: data)
 	}
 
 
@@ -127,7 +115,7 @@ class RealmQuery: NSObject {
 	///   - rObject: The Realm object.
 	///   - predicate: A `NSPredicate` filter with the query parameters.
 	/// - Returns: A Realm `Results` collection with data of the requested query.
-	class func filter(rObject: Object.Type, predicate: NSPredicate) -> Results<Object>? {
+	class func filter(rObject: Object.Type, predicate: NSPredicate) -> Results<Object> {
 		return RealmOperation.get(rObject: rObject).filter(predicate)
 	}
 
@@ -138,8 +126,8 @@ class RealmQuery: NSObject {
 	///   - objectResults: The Realm `Results` (used as input)
 	///   - predicate: A `NSPredicate` filter with the query parameters.
 	/// - Returns: A Realm `Results` collection with data of the requested query.
-	class func filter(objectResults: Results<Object>?, predicate: NSPredicate) -> Results<Object>? {
-		return objectResults?.filter(predicate)
+	class func filter(objectResults: Results<Object>, predicate: NSPredicate) -> Results<Object> {
+		return objectResults.filter(predicate)
 	}
 
 	/// Filters the input Realm `List` with a given `NSPredicate`.
@@ -149,8 +137,8 @@ class RealmQuery: NSObject {
 	///   - objectList: The Realm `List` (used as input)
 	///   - predicate: A `NSPredicate` filter with the query parameters.
 	/// - Returns: A Realm `Results` collection with data of the requested query.
-	class func filter(objectList: List<Object>?, predicate: NSPredicate) -> Results<Object>? {
-		return objectList?.filter(predicate)
+	class func filter(objectList: List<Object>, predicate: NSPredicate) -> Results<Object> {
+		return objectList.filter(predicate)
 	}
 
 
@@ -162,7 +150,7 @@ class RealmQuery: NSObject {
 	///   - sortAttribute: `String` The attribute name to be used for sorting the data.
 	///   - ascending: `Boolean` The sort type: `true` for Ascending, `false` for Descending. Default is true.
 	/// - Returns: A Realm `Results` collection with data of the requested query.
-	class func sort(rObject: Object.Type, sortAttribute: String, ascending: Bool = true) -> Results<Object>? {
+	class func sort(rObject: Object.Type, sortAttribute: String, ascending: Bool = true) -> Results<Object> {
 		return RealmOperation.get(rObject: rObject).sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
 

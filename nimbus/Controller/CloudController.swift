@@ -32,14 +32,14 @@ class CloudController: NSObject {
 		return nil
 	}
 
-	class func getListData(sortBy: String, ascending: Bool = true) -> Array<Cloud> {
-		let data = RealmDatabase.shared.db.objects(Cloud.self).sorted(byKeyPath: sortBy, ascending: ascending)
-		return Array(data)
+	class func getCloudData(sortBy: String, ascending: Bool = true) -> Array<Cloud> {
+		let results = RealmQuery.sort(rObject: Cloud.self, sortAttribute: sortBy, ascending: ascending)
+		return Array(results) as! Array<Cloud>
 	}
 
 	class func filterListData(filter: NSPredicate, sortBy: String, ascending: Bool = true) -> Array<Cloud> {
-		let data = RealmDatabase.shared.db.objects(Cloud.self).filter(filter).sorted(byKeyPath: sortBy, ascending: ascending)
-		return Array(data)
+		let results = RealmQuery.filterAndSort(rObject: Cloud.self, predicate: filter, sortAttribute: sortBy, ascending: ascending)
+		return Array(results) as! Array<Cloud>
 	}
 
 	class func getImageURL(for objectId: String) -> URL? {

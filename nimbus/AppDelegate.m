@@ -10,9 +10,12 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
-
-@end
+/**
+ Normally, this is the first file you check when start reviewing an app's code.
+ I am heavily using Storyboards in this app.
+ Check the *Main.storyboard* and then `IntroVC` as first steps in checking this project.
+ Have fun!
+ */
 
 @implementation AppDelegate
 
