@@ -82,7 +82,7 @@ class RealmQuery: NSObject {
 								 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> List<Object> {
 
 		let data = RealmOperation.get(rObject: rObject).filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
-		return self.resultsToListConversion(results: data)
+		return self.resultsToRealmListConversion(results: data)
 	}
 
 
@@ -104,7 +104,7 @@ class RealmQuery: NSObject {
 								 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> List<Object> {
 
 		let data = objectResults.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
-		return self.resultsToListConversion(results: data)
+		return self.resultsToRealmListConversion(results: data)
 	}
 
 
@@ -198,17 +198,29 @@ class RealmQuery: NSObject {
 	//MARK: - Utilities --
 
 	/// Converts an input Realm `Results` collection to a Realm `List`.
-	class func resultsToListConversion(results: Results<Object>?) -> List<Object> {
+	class func resultsToRealmListConversion(results: Results<Object>?) -> List<Object> {
 		if let data = results {
-			if data.count > 0 {
+			if !data.isEmpty {
 				let newList: List<Object> = List()
 
-				for object in data {
-					newList.append(object)
+				for rObject in data {
+					newList.append(rObject)
 				}
 			}
 		}
 
 		return List()
+	}
+
+	/// Converts an input Realm `Results` collection to an `Array`.
+	class func resultsToArrayConversion(results: Results<Object>?) -> Array<Object> {
+		if let data = results {
+			if !data.isEmpty {
+				let array = Array(data)
+				return array
+			}
+		}
+
+		return []
 	}
 }

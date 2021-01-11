@@ -18,7 +18,7 @@ The more complex the application, the greater the number of functions and their 
 */
 class CloudController: NSObject {
 
-	class func getCloudListCount() -> Int {
+	class func getCloudCount() -> Int {
 		return RealmDatabase.shared.db.objects(Cloud.self).count
 	}
 
@@ -34,11 +34,6 @@ class CloudController: NSObject {
 
 	class func getCloudData(sortBy: String, ascending: Bool = true) -> Array<Cloud> {
 		let results = RealmQuery.sort(rObject: Cloud.self, sortAttribute: sortBy, ascending: ascending)
-		return Array(results) as! Array<Cloud>
-	}
-
-	class func filterListData(filter: NSPredicate, sortBy: String, ascending: Bool = true) -> Array<Cloud> {
-		let results = RealmQuery.filterAndSort(rObject: Cloud.self, predicate: filter, sortAttribute: sortBy, ascending: ascending)
 		return Array(results) as! Array<Cloud>
 	}
 

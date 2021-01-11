@@ -28,13 +28,11 @@ class RealmDatabase: NSObject {
 		}
 
 		get {
-			if self.mainDB != nil {
-				return self.mainDB!
-			}
-			else {
+			if self.mainDB == nil {
 				self.mainDB = self.initDB()
-				return self.mainDB!
 			}
+
+			return self.mainDB!
 		}
 	}
 
