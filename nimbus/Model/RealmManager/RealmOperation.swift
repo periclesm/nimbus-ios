@@ -13,7 +13,7 @@ import RealmSwift
 /// Contains a set of functions acting as CRUD database operations
 class RealmOperation: NSObject {
 
-	//MARK: - Get Data Master Function --
+	//MARK: - Get Data Master Function
 
 	/// Returns the data requsted from the database
 	/// - Important:
@@ -27,7 +27,7 @@ class RealmOperation: NSObject {
 		return data
 	}
 
-	//MARK: - Additions & Updates --
+	//MARK: - Additions & Updates
 
 	/// Adds a single object in the database
 	/// - Parameters:

@@ -12,9 +12,9 @@ import RealmSwift
 
 /// Contains a set of functions for data filtering and sorting.
 class RealmQuery: NSObject {
-
-	//MARK: - Composite Sort and Filter --
-
+	
+	//MARK: - Composite Sort and Filter
+	
 	/// Given an Realm object, this function filters and sorts data according to input parameters.
 	/// - Parameters:
 	///   - rObject: The Realm object.
@@ -25,10 +25,10 @@ class RealmQuery: NSObject {
 	/// - Returns: A Realm `Results` collection with data of the requested query.
 	class func filterAndSort(rObject: Object.Type, predicate: NSPredicate,
 							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object> {
-
+		
 		return RealmOperation.get(rObject: rObject).filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
-
+	
 	/// Given a Realm `Results` Collection, this function filters and sorts its data according to input parameters
 	/// - Note:
 	/// This function does not query the database. It uses the `objectResults` as input.
@@ -41,12 +41,12 @@ class RealmQuery: NSObject {
 	/// - Returns: A Realm `Results` collection with data of the requested query.
 	class func filterAndSort(objectResults: Results<Object>, predicate: NSPredicate,
 							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object> {
-
+		
 		let data = objectResults.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 		return data
 	}
-
-
+	
+	
 	/// Given an Realm `List` Collection, this function filters and sorts data according to input parameters.
 	/// - Note:
 	/// This function does not query the database. It uses the `objectList` as input.
@@ -59,11 +59,11 @@ class RealmQuery: NSObject {
 	/// - Returns: A Realm `Results` collection with data of the requested query.
 	class func filterAndSort(objectList: List<Object>, predicate: NSPredicate,
 							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object> {
-
+		
 		return objectList.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
-
-
+	
+	
 	/// Given an Realm object, this function filters and sorts data according to input parameters.
 	/// - Note:
 	///  Same as
@@ -80,12 +80,12 @@ class RealmQuery: NSObject {
 	/// - Returns: A Realm `List` collection with data of the requested query.
 	class func filterAndSortList(rObject: Object.Type, predicate: NSPredicate,
 								 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> List<Object> {
-
+		
 		let data = RealmOperation.get(rObject: rObject).filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 		return self.resultsToRealmListConversion(results: data)
 	}
-
-
+	
+	
 	/// Given a Realm `Results` Collection, this function filters and sorts its data according to input parameters
 	/// - Note:
 	/// Same as
@@ -102,14 +102,14 @@ class RealmQuery: NSObject {
 	/// - Returns: A Realm `List` collection with data of the requested query.
 	class func filterAndSortList(objectResults: Results<Object>, predicate: NSPredicate,
 								 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> List<Object> {
-
+		
 		let data = objectResults.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 		return self.resultsToRealmListConversion(results: data)
 	}
-
-
-	//MARK: - Filter --
-
+	
+	
+	//MARK: - Filter
+	
 	/// Retrieves the requested Realm objects and filters them with the input `NSPredicate`.
 	/// - Parameters:
 	///   - rObject: The Realm object.
@@ -118,7 +118,7 @@ class RealmQuery: NSObject {
 	class func filter(rObject: Object.Type, predicate: NSPredicate) -> Results<Object> {
 		return RealmOperation.get(rObject: rObject).filter(predicate)
 	}
-
+	
 	/// Filters the input Realm `Results` with a given `NSPredicate`.
 	/// - Note:
 	/// Does not query the database. Uses `objectResults` instead.
@@ -129,7 +129,7 @@ class RealmQuery: NSObject {
 	class func filter(objectResults: Results<Object>, predicate: NSPredicate) -> Results<Object> {
 		return objectResults.filter(predicate)
 	}
-
+	
 	/// Filters the input Realm `List` with a given `NSPredicate`.
 	/// - Note:
 	/// Does not query the database. Uses `objectList` instead.
@@ -140,10 +140,10 @@ class RealmQuery: NSObject {
 	class func filter(objectList: List<Object>, predicate: NSPredicate) -> Results<Object> {
 		return objectList.filter(predicate)
 	}
-
-
-	//MARK: - Sort --
-
+	
+	
+	//MARK: - Sort
+	
 	/// Retrieves the requested Realm objects and sorts them by the input attributes.
 	/// - Parameters:
 	///   - rObject: The Realm object.
@@ -153,7 +153,7 @@ class RealmQuery: NSObject {
 	class func sort(rObject: Object.Type, sortAttribute: String, ascending: Bool = true) -> Results<Object> {
 		return RealmOperation.get(rObject: rObject).sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
-
+	
 	/// Sorts the input Realm `Results` by the input attributes.
 	/// - Note:
 	/// Does not query the database. Uses `objectResults` instead.
@@ -165,7 +165,7 @@ class RealmQuery: NSObject {
 	class func sort(objectResults: Results<Object>, sortAttribute: String, ascending: Bool = true) -> Results<Object> {
 		return objectResults.sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
-
+	
 	/// Sorts the input Realm `List` by the input attributes.
 	/// - Note:
 	/// Does not query the database. Uses `objectList` instead.
@@ -177,10 +177,10 @@ class RealmQuery: NSObject {
 	class func sort(objectList: List<Object>, sortAttribute: String, ascending: Bool = true) -> Results<Object> {
 		return objectList.sorted(byKeyPath: sortAttribute, ascending: ascending)
 	}
-
-
-	//MARK: - Limit --
-
+	
+	
+	//MARK: - Limit
+	
 	/// Limits a given Array to the (input) number of desired objects.
 	/// - Parameters:
 	///   - objectArray: An `Array`of objects (used as input).
@@ -190,28 +190,28 @@ class RealmQuery: NSObject {
 		if limit < objectArray.count {
 			return (objectArray as NSArray).subarray(with: NSRange(location: 0, length: limit))
 		}
-
+		
 		return objectArray
 	}
-
-
-	//MARK: - Utilities --
-
+	
+	
+	//MARK: - Utilities
+	
 	/// Converts an input Realm `Results` collection to a Realm `List`.
 	class func resultsToRealmListConversion(results: Results<Object>?) -> List<Object> {
 		if let data = results {
 			if !data.isEmpty {
 				let newList: List<Object> = List()
-
+				
 				for rObject in data {
 					newList.append(rObject)
 				}
 			}
 		}
-
+		
 		return List()
 	}
-
+	
 	/// Converts an input Realm `Results` collection to an `Array`.
 	class func resultsToArrayConversion(results: Results<Object>?) -> Array<Object> {
 		if let data = results {
@@ -220,7 +220,7 @@ class RealmQuery: NSObject {
 				return array
 			}
 		}
-
+		
 		return []
 	}
 }

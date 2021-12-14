@@ -12,20 +12,20 @@ import UIKit
 import NVActivityIndicatorView
 
 class IntroVC: UIViewController {
-
+	
 	@IBOutlet weak var actionButton: UIButton!
 	@IBOutlet weak var actionIndicator: NVActivityIndicatorView!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
 		self.actionButton.isEnabled = false
 		actionIndicator.type = .ballRotate
 		actionIndicator.startAnimating()
-
+		
 		DataManager.prefetchData { (completed) in
 			self.actionButton.isEnabled = true
 			self.actionIndicator.stopAnimating()
 		}
-    }
+	}
 }
