@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -53,9 +53,6 @@
 		684109FE259B39D500A80552 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
 		68410A02259B3FA500A80552 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		684A20881EA74B7400BFC44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		684A208A1EA74B7400BFC44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		684A208B1EA74B7400BFC44C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		684A20911EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		684A20931EA74B7400BFC44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684A20961EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +64,6 @@
 		684D75A7259A47A9003FCB1C /* RealmOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperation.swift; sourceTree = "<group>"; };
 		684D75A8259A47AC003FCB1C /* RealmQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
 		685F19C025A22EF400D12A9A /* CloudVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudVM.swift; sourceTree = "<group>"; };
-		68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Bridge.h"; sourceTree = "<group>"; };
 		68B9265123E56D6B0046D78C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		68B9265423E572B00046D78C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		68B9265823E57B0C0046D78C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
@@ -149,8 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				E88DD21A27689FAF00441ADC /* AppDelegate.swift */,
-				684A208A1EA74B7400BFC44C /* AppDelegate.h */,
-				684A208B1EA74B7400BFC44C /* AppDelegate.m */,
 				68EA8E17259CCA3D00E8D937 /* Platform */,
 				684A20B21EA76BF500BFC44C /* Model */,
 				684A20DB1EA7A3AB00BFC44C /* Controller */,
@@ -165,8 +159,6 @@
 			children = (
 				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20981EA74B7400BFC44C /* Info.plist */,
-				684A20881EA74B7400BFC44C /* main.m */,
-				68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -309,7 +301,7 @@
 				};
 			};
 			buildConfigurationList = 684A207F1EA74B7400BFC44C /* Build configuration list for PBXProject "nimbus" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

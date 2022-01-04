@@ -12,11 +12,11 @@ import Foundation
 
 class GQLAPI: NSObject {
 
-	//MARK: - Endpoints --
+	//MARK: - Endpoints
 
 	static var baseURL: URL {
 		get {
-			return URL(string: "https://stage.clfd.eu/nimbus_gql")!
+			return URL(string: "https://stage.clfd.eu/nimbusgql")!
 		}
 	}
 }

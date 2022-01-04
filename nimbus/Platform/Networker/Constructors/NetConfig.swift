@@ -12,36 +12,36 @@ import Foundation
 
 /// A class object containing the data and additional information to construct the call's request.
 class NetConfig: NSObject, URLSessionDelegate {
-    
-    enum NetworkerFunction {
-        case JSON
-        case Image
-        case Data
-    }
-    
-    enum NetworkerHTTPMethod: String {
-        case GET = "GET"
-        case POST = "POST"
-        case PUT = "PUT"            //not yet implemented
-        case DELETE = "DELETE"      //not yet implemented
-        case OPTIONS = "OPTIONS"    //not yet implemented
-    }
-    
-    var identifier: String = NetUtilities.Identifier()
+	
+	enum NetworkerFunction {
+		case JSON
+		case Image
+		case Data
+	}
+	
+	enum NetworkerHTTPMethod: String {
+		case GET = "GET"
+		case POST = "POST"
+		case PUT = "PUT"            //not yet implemented
+		case DELETE = "DELETE"      //not yet implemented
+		case OPTIONS = "OPTIONS"    //not yet implemented
+	}
+	
+	var identifier: String = NetUtilities.Identifier()
 	var function: NetworkerFunction = NetworkerFunction.JSON
-    
-    var HTTPMethod: NetworkerHTTPMethod = .GET
-    var caching: URLRequest.CachePolicy = .useProtocolCachePolicy
-    var timeout: TimeInterval = 30
-    
-    var url: URL?
-    var headers: Dictionary<String,String>? = [:]
+	
+	var HTTPMethod: NetworkerHTTPMethod = .GET
+	var caching: URLRequest.CachePolicy = .useProtocolCachePolicy
+	var timeout: TimeInterval = 30
+	
+	var url: URL?
+	var headers: Dictionary<String,String>? = [:]
 	var body: Data? = nil
-
+	
 	/// To be implemented
-    var sender: AnyObject?
-
-
+	var sender: AnyObject?
+	
+	
 	/// Constructor init function for the `NetConfig` object.
 	/// - Parameters:
 	///   - requestURL: The request URL. Note: If it's nil, it will throw later. Make sure you pass a valid URL.
@@ -60,27 +60,27 @@ class NetConfig: NSObject, URLSessionDelegate {
 							  requestMethod: NetworkerHTTPMethod? = .GET,
 							  requestCaching: URLRequest.CachePolicy? = .useProtocolCachePolicy,
 							  sender: AnyObject? = nil) -> NetConfig {
-        
-        let config = NetConfig()
-        
-        config.url = requestURL
-        
-        if let headers = requestHeaders {
-            config.headers = headers
-        }
-        
-        if let body = requestBody {
-            config.body = body
-        }
-        
-        config.timeout = requestTimeout!
+		
+		let config = NetConfig()
+		
+		config.url = requestURL
+		
+		if let headers = requestHeaders {
+			config.headers = headers
+		}
+		
+		if let body = requestBody {
+			config.body = body
+		}
+		
+		config.timeout = requestTimeout!
 		config.function = requestFunction!
-        config.HTTPMethod = requestMethod!
-        config.caching = requestCaching!
-        
-        config.sender = sender
-        
-        //debugPrint("++ Config \(config.identifier) init ++")
-        return config
-    }
+		config.HTTPMethod = requestMethod!
+		config.caching = requestCaching!
+		
+		config.sender = sender
+		
+		//debugPrint("++ Config \(config.identifier) init ++")
+		return config
+	}
 }
