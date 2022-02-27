@@ -60,17 +60,17 @@ class NetAgent: NSObject, URLSessionDelegate {
         
         let task = session.dataTask(with: request) { (data, response, err) in
             if (err != nil) {
-                let netResponse = NetResponse.constructResponse(identifier: config.identifier, completed: false, error: err as NSError?, data: nil)
-                completion (netResponse)
+				let response = NetResponse(identifier: config.identifier, completed: false, error: err as NSError?, data: nil)
+                completion(response)
             }
             else if NetUtilities.HTTPStatusValidation(status: (response as! HTTPURLResponse).statusCode) == false {
                 let errorDescription = "HTTP Status code:\((response as! HTTPURLResponse).statusCode)"
                 let error = NSError(domain: "nimbus", code: 1000, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
                                                                                         "NSLocalizedFailureReasonErrorKey": errorDescription])
                 
-                let netResponse = NetResponse.constructResponse(identifier: config.identifier, completed: false, error: error, data: nil)
+				let response = NetResponse(identifier: config.identifier, completed: false, error: error, data: nil)
                 debugPrint("\(error.localizedDescription)")
-                completion (netResponse)
+                completion(response)
             }
             else if (data?.isEmpty)! || data == nil {
                 let errorDescription = "Data length is zero"
@@ -78,25 +78,25 @@ class NetAgent: NSObject, URLSessionDelegate {
                 let error = NSError(domain: "nimbus", code: 2000, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
                                                                                         "NSLocalizedFailureReasonErrorKey": errorDescription])
                 
-                let netResponse = NetResponse.constructResponse(identifier: config.identifier, completed: false, error: error, data: nil)
-                completion (netResponse)
+				let response = NetResponse(identifier: config.identifier, completed: false, error: error, data: nil)
+                completion(response)
             }
             else {
-                var returningData: Any?
+                var content: Any?
                 
                 switch function {
                 case .JSON:
-                    returningData = NetData.dataToJSON(data: data!)
+					content = NetData.dataToJSON(data: data!)
                     
                 case .Image:
-                    returningData = UIImage(data: data!)!
+					content = UIImage(data: data!)!
                     
                 case .Data:
-                    returningData = data!
+					content = data!
                 }
                 
-                let netResponse = NetResponse.constructResponse(identifier: config.identifier, completed: true, error: nil, data: returningData)
-                completion(netResponse)
+				let response = NetResponse(identifier: config.identifier, completed: true, error: nil, data: content)
+                completion(response)
             }
         }
         

@@ -14,11 +14,7 @@ class DataManager: NSObject {
 
 	//MARK: - Prefetch Classes --
 
-	class func prefetchData(completion: @escaping (Bool) -> ()) {
-//		self.getCloudData({(completed) in
-//			completion(completed)
-//		})
-		
+	class func prefetchData(completion: @escaping (Bool) -> ()) {		
 		self.getData { completed in
 			completion(completed)
 		}
@@ -28,7 +24,7 @@ class DataManager: NSObject {
 	
 	class func getData(_ completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
-		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudURL, requestHeaders: headers, requestMethod: .GET)
+		let config = NetConfig(HTTPMethod: .GET, url: DataAPI.cloudURL, headers: headers)
 		
 		Networker.getData(config: config) { response in
 			if response.completed {
@@ -44,24 +40,6 @@ class DataManager: NSObject {
 			}
 			else {
 				completion?(response.completed)
-			}
-		}
-	}
-
-	class func getCloudData(_ completion: ((Bool) -> Void)? = nil) {
-		let headers = DataAPI.getDefaultHeaders()
-		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudURL, requestHeaders: headers, requestMethod: .GET)
-
-		Networker.getJSONData(config: config) { (response) in
-			if response.completed {
-				let data = response.data as! Dictionary<AnyHashable,Any>
-				DataMapHelper.mapCloudData(data: data)
-				completion?(true)
-				debugPrint("Fetch All Data complete")
-			}
-			else {
-				debugPrint(response.error?.localizedDescription ?? "error")
-				completion?(false)
 			}
 		}
 	}

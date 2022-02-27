@@ -16,7 +16,6 @@
 		684109F6259B2D2800A80552 /* NetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EF259B2D2800A80552 /* NetConfig.swift */; };
 		684109F7259B2D2800A80552 /* NetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109F0259B2D2800A80552 /* NetResponse.swift */; };
 		684109FF259B39D500A80552 /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FE259B39D500A80552 /* DataAPI.swift */; };
-		68410A03259B3FA500A80552 /* DataMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410A02259B3FA500A80552 /* DataMapHelper.swift */; };
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
@@ -52,7 +51,6 @@
 		684109F0259B2D2800A80552 /* NetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetResponse.swift; sourceTree = "<group>"; };
 		684109FA259B2E5100A80552 /* GQLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GQLAPI.swift; sourceTree = "<group>"; };
 		684109FE259B39D500A80552 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
-		68410A02259B3FA500A80552 /* DataMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapHelper.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A20911EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		684A20931EA74B7400BFC44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +109,7 @@
 		684109EA259B2D2800A80552 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				684109EE259B2D2800A80552 /* NetData.swift */,
 				684109EB259B2D2800A80552 /* NetUtilities.swift */,
 			);
 			path = Utilities;
@@ -119,7 +118,6 @@
 		684109ED259B2D2800A80552 /* Constructors */ = {
 			isa = PBXGroup;
 			children = (
-				684109EE259B2D2800A80552 /* NetData.swift */,
 				684109EF259B2D2800A80552 /* NetConfig.swift */,
 				684109F0259B2D2800A80552 /* NetResponse.swift */,
 			);
@@ -195,7 +193,6 @@
 				684D75A6259A4795003FCB1C /* RealmManager */,
 				684109FE259B39D500A80552 /* DataAPI.swift */,
 				684109E3259B2BB200A80552 /* DataManager.swift */,
-				68410A02259B3FA500A80552 /* DataMapHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -398,7 +395,6 @@
 				684109F5259B2D2800A80552 /* NetData.swift in Sources */,
 				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
-				68410A03259B3FA500A80552 /* DataMapHelper.swift in Sources */,
 				684109F2259B2D2800A80552 /* NetAgent.swift in Sources */,
 				684109FF259B39D500A80552 /* DataAPI.swift in Sources */,
 				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
