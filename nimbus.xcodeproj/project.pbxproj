@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E723E59C13007AC2BB /* TableCellClass.swift */; };
-		684109DF259B2B5A00A80552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A20881EA74B7400BFC44C /* main.m */; };
-		684109E1259B2B6500A80552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684A208B1EA74B7400BFC44C /* AppDelegate.m */; };
 		684109E4259B2BB200A80552 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E3259B2BB200A80552 /* DataManager.swift */; };
 		684109F1259B2D2800A80552 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E8259B2D2800A80552 /* Networker.swift */; };
 		684109F2259B2D2800A80552 /* NetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E9259B2D2800A80552 /* NetAgent.swift */; };
@@ -17,7 +15,6 @@
 		684109F5259B2D2800A80552 /* NetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EE259B2D2800A80552 /* NetData.swift */; };
 		684109F6259B2D2800A80552 /* NetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EF259B2D2800A80552 /* NetConfig.swift */; };
 		684109F7259B2D2800A80552 /* NetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109F0259B2D2800A80552 /* NetResponse.swift */; };
-		684109FB259B2E5100A80552 /* GQLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FA259B2E5100A80552 /* GQLAPI.swift */; };
 		684109FF259B39D500A80552 /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FE259B39D500A80552 /* DataAPI.swift */; };
 		68410A03259B3FA500A80552 /* DataMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410A02259B3FA500A80552 /* DataMapHelper.swift */; };
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
@@ -37,6 +34,7 @@
 		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
 		68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */; };
 		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
+		E83ECA8A27CAAD660016FB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83ECA8927CAAD660016FB3E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,9 +53,6 @@
 		684109FE259B39D500A80552 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
 		68410A02259B3FA500A80552 /* DataMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapHelper.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		684A20881EA74B7400BFC44C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		684A208A1EA74B7400BFC44C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		684A208B1EA74B7400BFC44C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		684A20911EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		684A20931EA74B7400BFC44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684A20961EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +71,7 @@
 		68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeController.swift; sourceTree = "<group>"; };
 		68EA8E00259C6B1900E8D937 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
+		E83ECA8927CAAD660016FB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +153,7 @@
 		684A20861EA74B7400BFC44C /* nimbus */ = {
 			isa = PBXGroup;
 			children = (
-				684A208A1EA74B7400BFC44C /* AppDelegate.h */,
-				684A208B1EA74B7400BFC44C /* AppDelegate.m */,
+				E83ECA8927CAAD660016FB3E /* AppDelegate.swift */,
 				68EA8E17259CCA3D00E8D937 /* Platform */,
 				684A20B21EA76BF500BFC44C /* Model */,
 				684A20DB1EA7A3AB00BFC44C /* Controller */,
@@ -173,7 +168,6 @@
 			children = (
 				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20981EA74B7400BFC44C /* Info.plist */,
-				684A20881EA74B7400BFC44C /* main.m */,
 				68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */,
 			);
 			name = "Supporting Files";
@@ -389,8 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684109DF259B2B5A00A80552 /* main.m in Sources */,
-				684109E1259B2B6500A80552 /* AppDelegate.m in Sources */,
 				68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */,
 				68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */,
 				68B9265223E56D6B0046D78C /* MainVC.swift in Sources */,
@@ -410,10 +402,10 @@
 				684109E4259B2BB200A80552 /* DataManager.swift in Sources */,
 				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
 				684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */,
+				E83ECA8A27CAAD660016FB3E /* AppDelegate.swift in Sources */,
 				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
 				684109F7259B2D2800A80552 /* NetResponse.swift in Sources */,
 				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
-				684109FB259B2E5100A80552 /* GQLAPI.swift in Sources */,
 				684D759C259A436D003FCB1C /* Cloud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
