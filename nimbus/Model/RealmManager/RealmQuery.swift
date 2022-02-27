@@ -10,7 +10,7 @@
 
 import RealmSwift
 
-class RealmQuery: NSObject {
+final class RealmQuery: NSObject {
 
 	//MARK: - Composite Sort and Filter --
 

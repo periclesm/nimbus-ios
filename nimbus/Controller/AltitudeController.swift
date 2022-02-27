@@ -13,12 +13,12 @@ import RealmSwift
 class AltitudeController: NSObject {
 
 	class func getTypeCount() -> Int {
-		return Database.shared.db.objects(CloudAltitude.self).count
+		return Database.shared.db.objects(CloudType.self).count
 	}
 
-	class func getCloudType(objectId: String) -> CloudAltitude? {
+	class func getCloudType(objectId: String) -> CloudType? {
 		let predicate = NSPredicate(format: "objectId = %@", objectId)
-		let cloud = Database.shared.db.objects(CloudAltitude.self).filter(predicate)
+		let cloud = Database.shared.db.objects(CloudType.self).filter(predicate)
 		if !cloud.isEmpty {
 			return cloud.first
 		}

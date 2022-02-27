@@ -10,14 +10,13 @@
 
 import RealmSwift
 
-class CloudDetail: Object {
+class CloudDetail: Object, Codable {
 
 	@objc dynamic var objectId: String = ""
 	@objc dynamic var detail: String = ""
 	@objc dynamic var image: String = ""
 	@objc dynamic var wiki: String = ""
 
-	
 	//MARK: - DB Properies --
 
 	override static func primaryKey() -> String? {

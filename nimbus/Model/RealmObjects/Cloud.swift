@@ -10,15 +10,15 @@
 
 import RealmSwift
 
-class Cloud: Object {
+class Cloud: Object, Codable {
 
 	@objc dynamic var objectId: String = ""
-	@objc dynamic var order: Int = 0
-	@objc dynamic var initials: String = ""
 	@objc dynamic var name: String = ""
+	@objc dynamic var order: Int = 0
+	@objc dynamic var type: CloudType? = nil
 	@objc dynamic var detail: CloudDetail? = nil
-	@objc dynamic var type: CloudAltitude? = nil
-
+	@objc dynamic var initials: String = ""
+	@objc dynamic var excerpt: String = ""
 
 	//MARK: - DB Properies --
 
@@ -53,7 +53,7 @@ class Cloud: Object {
 		}
 
 		if let typeData = object["type"] as? Dictionary<AnyHashable,Any> {
-			let typeObject = CloudAltitude.mapObject(object: typeData)
+			let typeObject = CloudType.mapObject(object: typeData)
 			//add to database
 			RealmOperation.add(typeObject)
 			listObject.type = typeObject

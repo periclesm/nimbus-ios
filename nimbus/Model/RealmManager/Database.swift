@@ -10,7 +10,7 @@
 
 import RealmSwift
 
-class Database: NSObject {
+final class Database: NSObject {
 
 	static var shared = Database()
 	private var mainDB: Realm?

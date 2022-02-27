@@ -10,7 +10,7 @@
 
 import RealmSwift
 
-class RealmOperation: NSObject {
+final class RealmOperation: NSObject {
 
 	//MARK: - Get Data Master Function --
 

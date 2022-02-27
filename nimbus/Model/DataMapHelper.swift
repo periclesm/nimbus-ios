@@ -15,11 +15,11 @@ class DataMapHelper: NSObject {
 	/// Three different ways to check against nil... Why? Because we can!
 
 	class func mapAltitudeData(data: Dictionary<AnyHashable,Any>) {
-		var dataArray: Array<CloudAltitude> = []
+		var dataArray: Array<CloudType> = []
 
 		if let results = data["results"] as? Array<Dictionary<String,Any>> {
 			for object in results {
-				let typeObject = CloudAltitude.mapObject(object: object)
+				let typeObject = CloudType.mapObject(object: object)
 				dataArray.append(typeObject)
 			}
 		}

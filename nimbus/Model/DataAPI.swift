@@ -10,9 +10,15 @@
 
 import Foundation
 
-class DataAPI: NSObject {
+final class DataAPI: NSObject {
 
 	//MARK: - Endpoints --
+	
+	static var cloudURL: URL {
+		get {
+			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudList?include=detail&include=type")!
+		}
+	}
 
 	static var clAltitudeURL: URL {
 		get {
@@ -26,23 +32,11 @@ class DataAPI: NSObject {
 		}
 	}
 
-	static var cloudURL: URL {
-		get {
-			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudList")!
-		}
-	}
-
-	static var combinedDataURL: URL {
-		get {
-			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudList?include=detail&include=type")!
-		}
-	}
-
-
 	//MARK: - Utilities --
 
 	class func getDefaultHeaders() -> Dictionary<String,String> {
-		let headers = ["X-Parse-Application-Id": "Y6372R67Q2UCqCsWuCnD4YZ3ACEiiFxngF6WNqwE", "X-Parse-REST-API-Key": "LdJJnrhcCEiY8kRA3vAwg4sxT73LhQu84Efmv796"]
+		let headers = ["X-Parse-Application-Id": "Y6372R67Q2UCqCsWuCnD4YZ3ACEiiFxngF6WNqwE",
+					   "X-Parse-REST-API-Key": "LdJJnrhcCEiY8kRA3vAwg4sxT73LhQu84Efmv796"]
 		return headers
 	}
 
