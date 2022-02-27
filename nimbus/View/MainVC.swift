@@ -11,42 +11,55 @@
 import UIKit
 
 class MainVC: UITableViewController {
-	
-	var vm = CloudVM()
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-	
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "detailSegue" {
-			let dvc = segue.destination as! DetailVC
-			dvc.vm = self.vm
+    
+    var cloudArray: Array<Any> = []
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        cloudArray = self.getCloudData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            let dtc = segue.destination as! DetailVC
+            dtc.objectId = sender as? String ?? ""
+        }
+    }
+    
+    // MARK: - Data
+    
+    func getCloudData() -> Array<Any> {
+        if !cloudArray.isEmpty {
+            cloudArray.removeAll()
+        }
+
+		return CloudController.getListData(sortBy: "order", ascending: true)
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func refreshData() {
+		DataManager.prefetchData { (completed) in
+			self.tableView.reloadData()
+			self.refreshControl?.endRefreshing()
 		}
-	}
-	
-	// MARK: - IB Actions
-	
-	@IBAction func refreshData() {
-		vm.refreshData(sender: self)
-	}
-	
-	// MARK: - UITableView
-	
-	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return vm.cloudArray.count
-	}
-	
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cl = vm.cloudArray[indexPath.row]
-		return TableCellConstructor.cloudCell(for: tableView, dataObject: cl, index: indexPath)
-	}
-	
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		tableView.deselectRow(at: indexPath, animated: true)
-		
-		let cl = vm.cloudArray[indexPath.row]
-		vm.selectedCloud = vm.cloudArray[indexPath.row]
-		self.performSegue(withIdentifier: "detailSegue", sender: cl.objectId)
-	}
+    }
+
+    // MARK: - Table view data source
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cloudArray.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return TableCellSynthesis.cloudCell(for: tableView, datasource: cloudArray, index: indexPath)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let cl = cloudArray[indexPath.row] as! Cloud
+        self.performSegue(withIdentifier: "detailSegue", sender: cl.objectId)
+    }
 }

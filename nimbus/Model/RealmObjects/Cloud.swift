@@ -16,7 +16,6 @@ class Cloud: Object {
 	@objc dynamic var order: Int = 0
 	@objc dynamic var initials: String = ""
 	@objc dynamic var name: String = ""
-	@objc dynamic var excerpt: String = ""
 	@objc dynamic var detail: CloudDetail? = nil
 	@objc dynamic var type: CloudAltitude? = nil
 
@@ -38,29 +37,28 @@ class Cloud: Object {
 
 	//MARK: - Map Data --
 
-	class func mapObject(dataObject: Dictionary<AnyHashable,Any>) -> Cloud {
-		let clObject = Cloud()
+	class func mapObject(object: Dictionary<AnyHashable,Any>) -> Cloud {
+		let listObject = Cloud()
 
-		clObject.objectId = dataObject["objectId"] as? String ?? ""
-		clObject.order = dataObject["order"] as? Int ?? 0
-		clObject.initials = dataObject["initials"] as? String ?? ""
-		clObject.name = dataObject["name"] as? String ?? ""
-		clObject.excerpt = dataObject["excerpt"] as? String ?? ""
+		listObject.objectId = object["objectId"] as? String ?? ""
+		listObject.order = object["order"] as? Int ?? 0
+		listObject.initials = object["initials"] as? String ?? ""
+		listObject.name = object["name"] as? String ?? ""
 
-		if let detailData = dataObject["detail"] as? Dictionary<AnyHashable,Any> {
-			let detailObject = CloudDetail.mapObject(dataObject: detailData)
+		if let details = object["detail"] as? Dictionary<AnyHashable,Any> {
+			let detailObject = CloudDetail.mapObject(object: details)
 			//add to database
-			RealmOperation.add(rObject: detailObject)
-			clObject.detail = detailObject
+			RealmOperation.add(detailObject)
+			listObject.detail = detailObject
 		}
 
-		if let typeData = dataObject["type"] as? Dictionary<AnyHashable,Any> {
-			let typeObject = CloudAltitude.mapObject(dataObject: typeData)
+		if let typeData = object["type"] as? Dictionary<AnyHashable,Any> {
+			let typeObject = CloudAltitude.mapObject(object: typeData)
 			//add to database
-			RealmOperation.add(rObject: typeObject)
-			clObject.type = typeObject
+			RealmOperation.add(typeObject)
+			listObject.type = typeObject
 		}
 
-		return clObject
+		return listObject
 	}
 }

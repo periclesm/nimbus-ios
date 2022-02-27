@@ -35,14 +35,14 @@ class CloudDetail: Object {
 
 	//MARK: - Map Data --
 
-	class func mapObject(dataObject: Dictionary<AnyHashable,Any>) -> CloudDetail {
-		let clDetail = CloudDetail()
+	class func mapObject(object: Dictionary<AnyHashable,Any>) -> CloudDetail {
+		let detailObject = CloudDetail()
 
-		clDetail.objectId = dataObject["objectId"] as? String ?? ""
-		clDetail.detail = dataObject["detail"] as? String ?? ""
-		clDetail.image = dataObject["image"] as? String ?? ""
-		clDetail.wiki = dataObject["wiki"] as? String ?? ""
+		detailObject.objectId = object["objectId"] as? String ?? ""
+		detailObject.detail = object["detail"] as? String ?? ""
+		detailObject.image = object["image"] as? String ?? ""
+		detailObject.wiki = object["wiki"] as? String ?? ""
 
-		return clDetail
+		return detailObject
 	}
 }

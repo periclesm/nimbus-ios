@@ -10,25 +10,24 @@
 
 import RealmSwift
 
-/**
- Contains a set of functions that retrieve, prepare and deliver data from the lower Model to the higher UI layer.
- All functions here are per-app and depended to the Application and Business Logic of the app.
- Below is a sample set of functions for the CloudAltitude-related data operations in the Nimbus app.
- The more complex the application, the greater the number of functions and their complexity.
- */
 class AltitudeController: NSObject {
-	
+
 	class func getTypeCount() -> Int {
-		return RealmDatabase.shared.db.objects(CloudAltitude.self).count
+		return Database.shared.db.objects(CloudAltitude.self).count
 	}
-	
+
 	class func getCloudType(objectId: String) -> CloudAltitude? {
 		let predicate = NSPredicate(format: "objectId = %@", objectId)
-		let cloud = RealmDatabase.shared.db.objects(CloudAltitude.self).filter(predicate)
+		let cloud = Database.shared.db.objects(CloudAltitude.self).filter(predicate)
 		if !cloud.isEmpty {
 			return cloud.first
 		}
-		
+
 		return nil
 	}
+
+	class func getTypeData(orderBy: String, ascending: Bool = true) {
+
+	}
+
 }

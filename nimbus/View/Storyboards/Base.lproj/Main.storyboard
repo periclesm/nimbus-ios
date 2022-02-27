@@ -18,21 +18,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="qxf-9x-Pby" userLabel="FooterView">
-                            <rect key="frame" x="0.0" y="126.33333587646484" width="375" height="1"/>
+                            <rect key="frame" x="0.0" y="117.33333206176758" width="375" height="1"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloudCell" id="Vb8-ab-CDU" customClass="cloudCell" customModule="nimbus" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="70.333335876464844"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="61.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vb8-ab-CDU" id="i2s-HP-iaW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70.333335876464844"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="61.333332061767578"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-S4-Jqp">
                                             <rect key="frame" x="8" y="14" width="48" height="48"/>
-                                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                            <color key="backgroundColor" systemColor="systemBlueColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="rpJ-S4-Jqp" secondAttribute="height" multiplier="1:1" id="ck5-QA-GaG"/>
                                                 <constraint firstAttribute="height" constant="48" id="pMC-Z4-XAB"/>
@@ -41,18 +41,18 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qaJ-Ep-EdK">
-                                            <rect key="frame" x="64" y="12.000000000000004" width="303" height="46.333333333333343"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qaJ-Ep-EdK">
+                                            <rect key="frame" x="64" y="12" width="303" height="37.333333333333336"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-w4-lp0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="19.333333333333332"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="19.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnW-vC-zNu">
-                                                    <rect key="frame" x="0.0" y="23.333333333333336" width="33" height="23"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <rect key="frame" x="0.0" y="21.333333333333336" width="32.666666666666664" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -61,7 +61,6 @@
                                     <constraints>
                                         <constraint firstItem="rpJ-S4-Jqp" firstAttribute="leading" secondItem="i2s-HP-iaW" secondAttribute="leading" constant="8" id="5zG-HD-3lZ"/>
                                         <constraint firstItem="qaJ-Ep-EdK" firstAttribute="leading" secondItem="rpJ-S4-Jqp" secondAttribute="trailing" constant="8" id="7Ml-M1-0r4"/>
-                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rpJ-S4-Jqp" secondAttribute="bottom" constant="8" id="NMk-5r-fqa"/>
                                         <constraint firstAttribute="bottom" secondItem="qaJ-Ep-EdK" secondAttribute="bottom" constant="12" id="O6X-IQ-aeM"/>
                                         <constraint firstItem="qaJ-Ep-EdK" firstAttribute="top" secondItem="i2s-HP-iaW" secondAttribute="top" constant="12" id="UN4-0f-C3c"/>
                                         <constraint firstItem="rpJ-S4-Jqp" firstAttribute="top" secondItem="qaJ-Ep-EdK" secondAttribute="top" constant="2" id="WoK-Ha-LuJ"/>
@@ -132,7 +131,7 @@
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-9A-EfN">
                                                     <rect key="frame" x="8" y="162" width="70" height="70"/>
-                                                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="Vov-AW-DEP"/>
                                                         <constraint firstAttribute="width" secondItem="8FY-9A-EfN" secondAttribute="height" multiplier="1:1" id="iIa-M6-dPM"/>
@@ -255,7 +254,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="grk-5y-90v"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <segue destination="8hJ-E8-668" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="SpG-3T-EWC"/>
@@ -324,7 +322,7 @@ Updates will happen whenever needed. :)</string>
             <point key="canvasLocation" x="452" y="106"/>
         </scene>
     </scenes>
-    <color key="tintColor" systemColor="systemIndigoColor"/>
+    <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -334,9 +332,6 @@ Updates will happen whenever needed. :)</string>
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
