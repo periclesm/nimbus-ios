@@ -33,32 +33,4 @@ class Cloud: Object, Codable {
 	override static func ignoredProperties() -> [String] {
 		return []
 	}
-
-
-	//MARK: - Map Data --
-
-	class func mapObject(object: Dictionary<AnyHashable,Any>) -> Cloud {
-		let listObject = Cloud()
-
-		listObject.objectId = object["objectId"] as? String ?? ""
-		listObject.order = object["order"] as? Int ?? 0
-		listObject.initials = object["initials"] as? String ?? ""
-		listObject.name = object["name"] as? String ?? ""
-
-		if let details = object["detail"] as? Dictionary<AnyHashable,Any> {
-			let detailObject = CloudDetail.mapObject(object: details)
-			//add to database
-			RealmOperation.add(detailObject)
-			listObject.detail = detailObject
-		}
-
-		if let typeData = object["type"] as? Dictionary<AnyHashable,Any> {
-			let typeObject = CloudType.mapObject(object: typeData)
-			//add to database
-			RealmOperation.add(typeObject)
-			listObject.type = typeObject
-		}
-
-		return listObject
-	}
 }

@@ -30,18 +30,4 @@ class CloudDetail: Object, Codable {
 	override static func ignoredProperties() -> [String] {
 		return []
 	}
-
-
-	//MARK: - Map Data --
-
-	class func mapObject(object: Dictionary<AnyHashable,Any>) -> CloudDetail {
-		let detailObject = CloudDetail()
-
-		detailObject.objectId = object["objectId"] as? String ?? ""
-		detailObject.detail = object["detail"] as? String ?? ""
-		detailObject.image = object["image"] as? String ?? ""
-		detailObject.wiki = object["wiki"] as? String ?? ""
-
-		return detailObject
-	}
 }

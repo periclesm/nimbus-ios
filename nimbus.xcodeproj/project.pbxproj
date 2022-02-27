@@ -63,7 +63,6 @@
 		684D75A2259A460D003FCB1C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		684D75A7259A47A9003FCB1C /* RealmOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperation.swift; sourceTree = "<group>"; };
 		684D75A8259A47AC003FCB1C /* RealmQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
-		68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimbus-Bridge.h"; sourceTree = "<group>"; };
 		68B9265123E56D6B0046D78C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		68B9265423E572B00046D78C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		68B9265823E57B0C0046D78C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
@@ -170,7 +169,6 @@
 			children = (
 				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20981EA74B7400BFC44C /* Info.plist */,
-				68B9265023E56D6B0046D78C /* Nimbus-Bridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

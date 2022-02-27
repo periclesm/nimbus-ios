@@ -40,7 +40,7 @@ class MainVC: UITableViewController {
     // MARK: - Actions
     
     @IBAction func refreshData() {
-		DataManager.prefetchData { (completed) in
+		DataManager.getData { complete in
 			self.tableView.reloadData()
 			self.refreshControl?.endRefreshing()
 		}

@@ -29,16 +29,4 @@ class CloudType: Object, Codable {
 	override static func ignoredProperties() -> [String] {
 		return []
 	}
-	
-
-	//MARK: - Map Data --
-
-	class func mapObject(object: Dictionary<AnyHashable,Any>) -> CloudType {
-		let typeObject = CloudType()
-		typeObject.objectId = object["objectId"] as? String ?? ""
-		typeObject.name = object["name"] as? String ?? ""
-		typeObject.detail = object["detail"] as? String ?? ""
-
-		return typeObject
-	}
 }

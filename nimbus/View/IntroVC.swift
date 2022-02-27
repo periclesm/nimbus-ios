@@ -22,8 +22,8 @@ class IntroVC: UIViewController {
 		self.actionButton.isEnabled = false
 		actionIndicator.type = .ballRotate
 		actionIndicator.startAnimating()
-
-		DataManager.prefetchData { (completed) in
+		
+		DataManager.getData { completed in
 			self.actionButton.isEnabled = true
 			self.actionIndicator.stopAnimating()
 		}

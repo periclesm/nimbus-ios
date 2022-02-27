@@ -12,14 +12,6 @@ import Foundation
 
 class DataManager: NSObject {
 
-	//MARK: - Prefetch Classes --
-
-	class func prefetchData(completion: @escaping (Bool) -> ()) {		
-		self.getData { completed in
-			completion(completed)
-		}
-	}
-
 	//MARK: - Get Data Classes --
 	
 	class func getData(_ completion: ((Bool) -> Void)? = nil) {
@@ -32,15 +24,13 @@ class DataManager: NSObject {
 				if let cloudData: CloudResults? = NetData.decodeJSON(responseData: response.data as? Data) {
 					//Add data to RealmDB
 					RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
-					completion?(response.completed)
 				}
 				else {
 					completion?(false)
 				}
 			}
-			else {
-				completion?(response.completed)
-			}
+			
+			completion?(response.completed)
 		}
 	}
 }
