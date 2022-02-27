@@ -16,7 +16,7 @@ class TableCellSynthesis: NSObject {
         
         cell.cloudInitials?.text = cl.initials
         cell.cloudName?.text = cl.name
-		cell.cloudDetail?.text = cl.detail?.detail
+		cell.cloudDetail?.text = cl.excerpt
         
         return cell
     }
