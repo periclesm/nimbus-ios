@@ -10,7 +10,7 @@
 
 import UIKit
 
-class NetConfig: NSObject, URLSessionDelegate {
+struct NetConfig {
     
     enum NetworkerFunction {
         case JSON
@@ -43,44 +43,4 @@ class NetConfig: NSObject, URLSessionDelegate {
     var headers: Dictionary<String,String>? = [:]
     var body: Data? = nil
     var sender: AnyObject?
-    
-    override init() {
-        //debugPrint("++ Config \(identifier) init ++")
-        super.init()
-    }
-    
-    class func initWithConfig(requestURL: URL?,
-                               requestHeaders: Dictionary<String, String>? = nil,
-                               requestBody: Data? = nil,
-                               requestTimeout: TimeInterval? = 30,
-                               requestMethod: NetworkerHTTPMethod? = .GET,
-                               requestCaching: NetworkerCachingMethod? = .defaultCaching,
-                               sender: AnyObject? = nil) -> NetConfig {
-        
-        let config = NetConfig()
-        
-        guard let url = requestURL else {
-            assert(true, "What exactly are you trying to accomplish with an empty URL????")
-            return NetConfig() //will never return. Assert will stop exec.
-        }
-        
-        config.url = url
-        
-        if let headers = requestHeaders {
-            config.headers = headers
-        }
-        
-        if let body = requestBody {
-            config.body = body
-        }
-        
-        config.timeout = requestTimeout!
-        config.HTTPMethod = requestMethod!
-        config.caching = requestCaching!
-        
-        config.sender = sender
-        
-        //debugPrint("++ Config \(config.identifier) init ++")
-        return config
-    }
 }
