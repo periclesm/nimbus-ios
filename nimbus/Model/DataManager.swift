@@ -15,14 +15,40 @@ class DataManager: NSObject {
 	//MARK: - Prefetch Classes --
 
 	class func prefetchData(completion: @escaping (Bool) -> ()) {
-		self.getCombinedData({(completed) in
+//		self.getCloudData({(completed) in
+//			completion(completed)
+//		})
+		
+		self.getData { completed in
 			completion(completed)
-		})
+		}
 	}
 
 	//MARK: - Get Data Classes --
+	
+	class func getData(_ completion: ((Bool) -> Void)? = nil) {
+		let headers = DataAPI.getDefaultHeaders()
+		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudURL, requestHeaders: headers, requestMethod: .GET)
+		
+		Networker.getData(config: config) { response in
+			if response.completed {
+				//Decode data
+				if let cloudData: CloudResults? = NetData.decodeJSON(responseData: response.data as? Data) {
+					//Add data to RealmDB
+					RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
+					completion?(response.completed)
+				}
+				else {
+					completion?(false)
+				}
+			}
+			else {
+				completion?(response.completed)
+			}
+		}
+	}
 
-	class func getCombinedData(_ completion: ((Bool) -> Void)? = nil) {
+	class func getCloudData(_ completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
 		let config = NetConfig.initWithConfig(requestURL: DataAPI.cloudURL, requestHeaders: headers, requestMethod: .GET)
 
