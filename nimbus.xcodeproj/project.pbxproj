@@ -160,7 +160,7 @@
 			children = (
 				E83ECA8927CAAD660016FB3E /* AppDelegate.swift */,
 				684A20B21EA76BF500BFC44C /* Model */,
-				684A20DB1EA7A3AB00BFC44C /* Controller */,
+				684A20DB1EA7A3AB00BFC44C /* Domain */,
 				684A20AB1EA76BCA00BFC44C /* View */,
 				68EA8E17259CCA3D00E8D937 /* System */,
 				684A20871EA74B7400BFC44C /* Supporting Files */,
@@ -203,14 +203,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		684A20DB1EA7A3AB00BFC44C /* Controller */ = {
+		684A20DB1EA7A3AB00BFC44C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */,
 				68EA8E00259C6B1900E8D937 /* DetailController.swift */,
 				68EA8DFA259C6AF800E8D937 /* CloudController.swift */,
 			);
-			path = Controller;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		684D7596259A4343003FCB1C /* RealmObjects */ = {

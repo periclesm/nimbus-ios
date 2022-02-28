@@ -21,7 +21,11 @@ class MainVM: NSObject {
 		self.clouds = CloudController.getListData(sortBy: sortBy, ascending: ascending)
 	}
 	
-	func getData(completion: @escaping ((Bool) -> Void)) {
+	func filterLocalData(filter: NSPredicate, sortBy: String, ascending: Bool = true) {
+		self.clouds = CloudController.filterListData(filter: filter, sortBy: sortBy, ascending: ascending)
+	}
+	
+	func refreshData(completion: @escaping ((Bool) -> Void)) {
 		DataManager.getData { success in
 			self.getLocalData()
 			completion(success)

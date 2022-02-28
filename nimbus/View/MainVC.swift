@@ -21,16 +21,20 @@ class MainVC: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {
             let dvc = segue.destination as! DetailVC
-			dvc.vm.cloud = sender as? Cloud
+			if let object = sender as? String {
+				dvc.vm.cloudId = object
+			}
         }
     }
     
     // MARK: - Actions
     
     @IBAction func refreshData() {
-		DataManager.getData { complete in
-			self.tableView.reloadData()
-			self.refreshControl?.endRefreshing()
+		vm.refreshData { completed in
+			if completed {
+				self.tableView.reloadData()
+				self.refreshControl?.endRefreshing()
+			}
 		}
     }
 
@@ -48,6 +52,6 @@ class MainVC: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
 		let cl = vm.clouds[indexPath.row]
-        self.performSegue(withIdentifier: "detailSegue", sender: cl)
+		self.performSegue(withIdentifier: "detailSegue", sender: cl.objectId)
     }
 }

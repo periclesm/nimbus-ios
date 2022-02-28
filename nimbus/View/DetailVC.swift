@@ -25,9 +25,13 @@ class DetailVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getCloudData()
 		activity.type = .ballRotate
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.getCloudData()
+	}
     
     // MARK: - Data
     
@@ -37,24 +41,26 @@ class DetailVC: UITableViewController {
         clName.text = vm.cloud?.name
 		clAltitude.text = (vm.cloud?.type!.name)! + " altitude"
 		clDetails.text = vm.cloud?.detail?.detail
+		self.getCloudImage()
         
-        clImage.alpha = 0
-        activity.startAnimating()
+    }
+	
+	private func getCloudImage() {
+		clImage.alpha = 0
+		activity.startAnimating()
 		
-		let requestURL = URL(string: (vm.cloud?.detail!.image)!)
-		
-		let config = NetConfig(HTTPMethod: .GET, timeout: 10, url: requestURL)
-		Networker.getImage(config: config) { (response) in
-			if response.completed {
-				self.clImage.image = response.data as? UIImage
+		vm.getCloudImage { image in
+			self.activity.stopAnimating()
+			
+			if let cloudImage = image {
+				self.clImage.image = cloudImage
+				
 				UIView.animate(withDuration: 0.25) {
 					self.clImage.alpha = 1
 				}
 			}
-
-			self.activity.stopAnimating()
 		}
-    }
+	}
 
     // MARK: - Actions
     
