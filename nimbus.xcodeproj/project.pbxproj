@@ -35,6 +35,8 @@
 		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 		E83871A427CBC57500B8D023 /* CloudResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83871A327CBC57500B8D023 /* CloudResults.swift */; };
 		E83ECA8A27CAAD660016FB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83ECA8927CAAD660016FB3E /* AppDelegate.swift */; };
+		E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9427CCA4D20015D1D6 /* MainVM.swift */; };
+		E8730F9727CCA4E20015D1D6 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9627CCA4E20015D1D6 /* DetailVM.swift */; };
 		E8A5A91927CC1BED0015FF04 /* InitialsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
 		E83871A327CBC57500B8D023 /* CloudResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudResults.swift; sourceTree = "<group>"; };
 		E83ECA8927CAAD660016FB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8730F9427CCA4D20015D1D6 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		E8730F9627CCA4E20015D1D6 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
 		E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialsLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,7 +184,9 @@
 				68B2E05220E9F98200C20BD5 /* Components */,
 				68B9265823E57B0C0046D78C /* IntroVC.swift */,
 				68B9265123E56D6B0046D78C /* MainVC.swift */,
+				E8730F9427CCA4D20015D1D6 /* MainVM.swift */,
 				68B9265423E572B00046D78C /* DetailVC.swift */,
+				E8730F9627CCA4E20015D1D6 /* DetailVM.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -395,6 +401,7 @@
 				68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */,
 				684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */,
 				684109F5259B2D2800A80552 /* NetData.swift in Sources */,
+				E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */,
 				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
 				684109F2259B2D2800A80552 /* NetAgent.swift in Sources */,
@@ -408,6 +415,7 @@
 				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
 				684109F7259B2D2800A80552 /* NetResponse.swift in Sources */,
 				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
+				E8730F9727CCA4E20015D1D6 /* DetailVM.swift in Sources */,
 				684D759C259A436D003FCB1C /* Cloud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,29 +12,17 @@ import UIKit
 
 class MainVC: UITableViewController {
     
-    var cloudArray: Array<Any> = []
+	let vm = MainVM()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        cloudArray = self.getCloudData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {
-            let dtc = segue.destination as! DetailVC
-            dtc.objectId = sender as? String ?? ""
+            let dvc = segue.destination as! DetailVC
+			dvc.vm.cloud = sender as? Cloud
         }
-    }
-    
-    // MARK: - Data
-    
-    func getCloudData() -> Array<Any> {
-        if !cloudArray.isEmpty {
-            cloudArray.removeAll()
-        }
-
-		return CloudController.getListData(sortBy: "order", ascending: true)
     }
     
     // MARK: - Actions
@@ -49,17 +37,17 @@ class MainVC: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cloudArray.count
+		return vm.clouds.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return TableCellSynthesis.cloudCell(for: tableView, datasource: cloudArray, index: indexPath)
+		return TableCellSynthesis.cloudCell(for: tableView, datasource: vm.clouds, index: indexPath)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let cl = cloudArray[indexPath.row] as! Cloud
-        self.performSegue(withIdentifier: "detailSegue", sender: cl.objectId)
+		let cl = vm.clouds[indexPath.row]
+        self.performSegue(withIdentifier: "detailSegue", sender: cl)
     }
 }

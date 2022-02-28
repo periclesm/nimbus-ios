@@ -14,7 +14,7 @@ import NVActivityIndicatorView
 
 class DetailVC: UITableViewController {
     
-    var objectId: String = ""
+    let vm = DetailVM()
     
     @IBOutlet weak var clImage: UIImageView!
     @IBOutlet weak var clInitials: UILabel!
@@ -32,18 +32,16 @@ class DetailVC: UITableViewController {
     // MARK: - Data
     
     func getCloudData() {
-		let cl = CloudController.getCloud(objectId: self.objectId)
-        
-        self.title = cl?.name
-        clInitials.text = cl?.initials
-        clName.text = cl?.name
-		clAltitude.text = (cl?.type!.name)! + " altitude" //DataLogic.getCloudType(cl?.type) + " altitude"
-		clDetails.text = cl?.detail?.detail //DataLogic.getCloudDetails(cl?.detail, shortText: false)
+		self.title = vm.cloud?.name
+        clInitials.text = vm.cloud?.initials
+        clName.text = vm.cloud?.name
+		clAltitude.text = (vm.cloud?.type!.name)! + " altitude"
+		clDetails.text = vm.cloud?.detail?.detail
         
         clImage.alpha = 0
         activity.startAnimating()
 		
-		let requestURL = URL(string: (cl?.detail!.image)!)
+		let requestURL = URL(string: (vm.cloud?.detail!.image)!)
 		
 		let config = NetConfig(HTTPMethod: .GET, timeout: 10, url: requestURL)
 		Networker.getImage(config: config) { (response) in
@@ -61,8 +59,8 @@ class DetailVC: UITableViewController {
     // MARK: - Actions
     
     @IBAction func WikiButton(_ sender: UIBarButtonItem) {
-		if let cl = CloudController.getCloud(objectId: self.objectId) { //DataLogic.getCloudInfo(self.objectId) {
-			if let url = URL(string: cl.detail!.wiki) {
+		if let clDetail = vm.cloud?.detail {
+			if let url = URL(string: clDetail.wiki) {
 				let safari = SFSafariViewController(url: url)
 				safari.modalPresentationStyle = .formSheet
 				safari.modalTransitionStyle = .coverVertical
