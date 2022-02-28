@@ -65,13 +65,15 @@ class DetailVC: UITableViewController {
     // MARK: - Actions
     
     @IBAction func WikiButton(_ sender: UIBarButtonItem) {
-		if let clDetail = vm.cloud?.detail {
-			if let url = URL(string: clDetail.wiki) {
-				let safari = SFSafariViewController(url: url)
-				safari.modalPresentationStyle = .formSheet
-				safari.modalTransitionStyle = .coverVertical
-				self.present(safari, animated: true, completion: nil)
-			}
+		if let url = vm.getWikiURL(vm.cloudId) {
+			let config = SFSafariViewController.Configuration()
+			config.barCollapsingEnabled = true
+			config.entersReaderIfAvailable = true
+			
+			let safari = SFSafariViewController(url: url, configuration: config)
+			safari.modalPresentationStyle = .formSheet
+			safari.modalTransitionStyle = .coverVertical
+			self.present(safari, animated: true, completion: nil)
 		}
 	}
 }
