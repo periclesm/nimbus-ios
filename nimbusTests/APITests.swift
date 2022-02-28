@@ -8,9 +8,8 @@
 
 import XCTest
 @testable import nimbus
-@testable import Pods_nimbus
 
-class ModelTests: XCTestCase {
+class APITests: XCTestCase {
 	
 	var timeout = 15
 	var config: NetConfig?
@@ -27,6 +26,7 @@ class ModelTests: XCTestCase {
     }
 	
 	func testEndpoint() throws {
+		debugPrint("+++ API Tests")
 		XCTAssertNotNil(endpointURL)
 	}
 	
@@ -57,7 +57,8 @@ class ModelTests: XCTestCase {
 		XCTAssertNotNil(cloudData)
 		
 		//add data to database
-		RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
+		let success = RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
+		XCTAssertTrue(success)
 		//RealmOperation needs to be more testable...
 	}
 }
