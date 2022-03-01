@@ -44,7 +44,18 @@ class NetAgent: NSObject, URLSessionDelegate {
     // MARK: - Main Methods
     
     func getData(config: NetConfig, function: NetConfig.NetworkerFunction, completion: @escaping (NetResponse) -> ()) {
-        let request = createRequest(requestURL: config.url, config: config)
+		guard let requestURL = config.url else {
+			let errorDescription = "Error in request URL"
+			let error = NSError(domain: "nimbus", code: 500, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
+																		 "NSLocalizedFailureReasonErrorKey": errorDescription])
+			
+			let response = NetResponse(identifier: config.identifier, completed: false, error: error, data: nil)
+			
+			completion(response)
+			return
+		}
+		
+        let request = createRequest(requestURL: requestURL, config: config)
         let session = URLSession(configuration: .default, delegate: self, delegateQueue: .main)
         
         DataTask(request: request, session: session, config: config, function: function) { (response) in

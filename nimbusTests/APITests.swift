@@ -12,17 +12,14 @@ import XCTest
 class APITests: XCTestCase {
 	
 	var timeout = 15
-	var config: NetConfig?
-	var endpointURL: URL?
+	var endpointURL = DataAPI.cloudURL
 
     override func setUpWithError() throws {
-		self.endpointURL = DataAPI.cloudURL
-		let headers = DataAPI.getDefaultHeaders()
-		self.config = NetConfig(HTTPMethod: .GET, url: endpointURL, headers: headers)
+		
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
     }
 	
 	func testEndpoint() throws {
@@ -33,19 +30,16 @@ class APITests: XCTestCase {
 	func testAPI() throws {
 		var responseData: Data?
 		
-		guard let config = self.config else {
-			XCTAssertNotNil(self.config)
-			return
-		}
-		
-		let promise = expectation(description: "Fetching API Data")
-		
+		let operationWait = expectation(description: "Fetching API Data")
+		let headers = DataAPI.getDefaultHeaders()
+		let config = NetConfig(HTTPMethod: .GET, url: endpointURL, headers: headers)
+
 		Networker.getData(config: config) { response in
-			XCTAssertTrue(response.completed, "Network call completion")
+			XCTAssertTrue(response.completed, "API Network call completion")
 			
 			responseData = response.data as? Data
 			
-			promise.fulfill()
+			operationWait.fulfill()
 		}
 		
 		waitForExpectations(timeout: TimeInterval(self.timeout), handler: nil)
