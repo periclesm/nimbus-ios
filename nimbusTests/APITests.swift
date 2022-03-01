@@ -38,12 +38,10 @@ class APITests: XCTestCase {
 			XCTAssertTrue(response.completed, "API Network call completion")
 			
 			responseData = response.data as? Data
-			
 			operationWait.fulfill()
 		}
 		
 		waitForExpectations(timeout: TimeInterval(self.timeout), handler: nil)
-
 		XCTAssertNotNil(responseData)
 		
 		//map data
@@ -53,6 +51,34 @@ class APITests: XCTestCase {
 		//add data to database
 		let success = RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
 		XCTAssertTrue(success)
+		//RealmOperation needs to be more testable...
+	}
+	
+	func testAPIFailed() throws {
+		var responseData: Data?
+		
+		let operationWait = expectation(description: "Fetching API Data")
+		let failed_endpointURL = URL(string: "https://stage.clfd.eu/nimbus")
+		let headers = DataAPI.getDefaultHeaders()
+		let config = NetConfig(HTTPMethod: .GET, url: failed_endpointURL, headers: headers)
+		
+		Networker.getData(config: config) { response in
+			XCTAssertFalse(response.completed, "API Network call completion")
+			
+			responseData = response.data as? Data
+			operationWait.fulfill()
+		}
+		
+		waitForExpectations(timeout: TimeInterval(self.timeout), handler: nil)
+		XCTAssertNil(responseData)
+		
+		//map data
+		let cloudData: CloudResults? = NetData.decodeJSON(responseData: responseData)
+		XCTAssertNil(cloudData)
+		
+		//add data to database
+		let success = RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
+		XCTAssertFalse(success)
 		//RealmOperation needs to be more testable...
 	}
 }
