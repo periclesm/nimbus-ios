@@ -35,6 +35,7 @@
 		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 		E83871A427CBC57500B8D023 /* CloudResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83871A327CBC57500B8D023 /* CloudResults.swift */; };
 		E83ECA8A27CAAD660016FB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83ECA8927CAAD660016FB3E /* AppDelegate.swift */; };
+		E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843A71927CE089900A0E39D /* RealmOperationsTests.swift */; };
 		E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C2E7527CD0EEF00E02462 /* APITests.swift */; };
 		E85C2E7827CD48FA00E02462 /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */; };
 		E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9427CCA4D20015D1D6 /* MainVM.swift */; };
@@ -90,6 +91,7 @@
 		DB5995033291F49F092C4276 /* Pods-nimbusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbusTests/Pods-nimbusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E83871A327CBC57500B8D023 /* CloudResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudResults.swift; sourceTree = "<group>"; };
 		E83ECA8927CAAD660016FB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E843A71927CE089900A0E39D /* RealmOperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmOperationsTests.swift; sourceTree = "<group>"; };
 		E85C2E6C27CD0E5000E02462 /* nimbusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nimbusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85C2E7527CD0EEF00E02462 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			children = (
 				E85C2E7527CD0EEF00E02462 /* APITests.swift */,
 				E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */,
+				E843A71927CE089900A0E39D /* RealmOperationsTests.swift */,
 			);
 			path = nimbusTests;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */,
 				E85C2E7827CD48FA00E02462 /* DatabaseTests.swift in Sources */,
 				E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */,
 			);

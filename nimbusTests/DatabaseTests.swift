@@ -12,14 +12,6 @@ import RealmSwift
 
 class DatabaseTests: XCTestCase {
 	
-	struct Query {
-		var dataObject: Object.Type
-		var predicate: NSPredicate
-		var sortAttribute: String
-		var ascending: Bool = true
-		var limit: Int = 0
-	}
-	
 	var cloudId = "JwYJf2rVyx"
 	var fail_cloudId = "wYJf2rVy"
 
