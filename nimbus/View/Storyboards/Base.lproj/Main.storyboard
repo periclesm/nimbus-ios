@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="uER-cu-quM" userLabel="Header">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="4"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="qxf-9x-Pby" userLabel="FooterView">
-                            <rect key="frame" x="0.0" y="133.66666412353516" width="375" height="4"/>
+                            <rect key="frame" x="0.0" y="131.66666412353516" width="375" height="2"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloudCell" id="Vb8-ab-CDU" customClass="cloudCell" customModule="nimbus" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="48.666666030883789" width="375" height="62.333332061767578"/>
+                                <rect key="frame" x="0.0" y="46.666666030883789" width="375" height="62.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vb8-ab-CDU" id="i2s-HP-iaW">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="62.333332061767578"/>
@@ -36,7 +36,7 @@
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-S4-Jqp" customClass="InitialsLabel" customModule="nimbus" customModuleProvider="target">
                                             <rect key="frame" x="10" y="7.3333333333333321" width="48" height="48"/>
-                                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="rpJ-S4-Jqp" secondAttribute="height" multiplier="1:1" id="ck5-QA-GaG"/>
                                                 <constraint firstAttribute="height" constant="48" id="pMC-Z4-XAB"/>
@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <attributedString key="attributedTitle">
-                            <fragment content="reforming clouds">
+                            <fragment content="reforming clouds...">
                                 <attributes>
                                     <font key="NSFont" metaFont="system"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -123,12 +123,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="ZqY-gv-NAb" userLabel="Header">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="4"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="rW7-8F-Dke" userLabel="Footer">
-                            <rect key="frame" x="0.0" y="341.33333396911621" width="375" height="4"/>
+                            <rect key="frame" x="0.0" y="338.33333396911621" width="375" height="1"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -136,7 +136,7 @@
                             <tableViewSection id="xC2-MU-oiD">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cloudDetailCell" id="1EJ-6T-GR1">
-                                        <rect key="frame" x="0.0" y="5" width="375" height="252"/>
+                                        <rect key="frame" x="0.0" y="2" width="375" height="252"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1EJ-6T-GR1" id="Wd2-iK-nsb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
@@ -207,7 +207,7 @@
                             <tableViewSection headerTitle="Information" id="lej-I7-8n9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cloudDetailCell" id="fhj-Wv-mdy">
-                                        <rect key="frame" x="0.0" y="306" width="375" height="18"/>
+                                        <rect key="frame" x="0.0" y="303" width="375" height="18"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fhj-Wv-mdy" id="id5-K5-Kyk">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="18"/>
@@ -238,7 +238,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="wig-YV-gH6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Rfk-Nt-8WG">
+                        <barButtonItem key="rightBarButtonItem" image="globe.badge.chevron.backward" catalog="system" id="Rfk-Nt-8WG">
                             <connections>
                                 <action selector="WikiButton:" destination="kkN-16-lcQ" id="9VM-kq-rib"/>
                             </connections>
@@ -301,7 +301,6 @@ Updates will happen whenever needed. :)</string>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <color key="tintColor" systemColor="systemBlueColor"/>
                         <constraints>
                             <constraint firstItem="lNT-X8-cS2" firstAttribute="top" secondItem="vsG-gs-2an" secondAttribute="bottom" constant="64" id="ABY-zy-WAD"/>
                             <constraint firstItem="FSb-UY-YPM" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="GbF-KG-AcO"/>
@@ -343,13 +342,11 @@ Updates will happen whenever needed. :)</string>
             <point key="canvasLocation" x="452" y="106"/>
         </scene>
     </scenes>
-    <color key="tintColor" systemColor="systemBlueColor"/>
+    <color key="tintColor" systemColor="systemIndigoColor"/>
     <resources>
+        <image name="globe.badge.chevron.backward" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -359,9 +356,6 @@ Updates will happen whenever needed. :)</string>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
