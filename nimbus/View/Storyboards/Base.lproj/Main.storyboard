@@ -1,13 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vKH-wv-OUL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vKH-wv-OUL">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--IntroController-->
+        <scene sceneID="ojk-oq-TdY">
+            <objects>
+                <viewController storyboardIdentifier="IntroVC" title="IntroController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vKH-wv-OUL" customClass="IntroVC" customModule="nimbus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cQS-Le-z1M"/>
+                        <viewControllerLayoutGuide type="bottom" id="zAq-0g-n0y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3nj-J5-EEY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-X8-cS2">
+                                <rect key="frame" x="127.66666666666669" y="532.66666666666663" width="120" height="30"/>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="grk-5y-90v"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="8hJ-E8-668" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="SpG-3T-EWC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsG-gs-2an">
+                                <rect key="frame" x="16" y="343.33333333333331" width="343" height="125.33333333333331"/>
+                                <string key="text">Nimbus is a testing application for iOS, focusing mainly on retrieving data via RESTful services.
+
+The app is simple, without many tricks &amp; treats and it's intented to remain that way.
+
+Updates will happen whenever needed. :)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-UY-YPM" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="163.66666666666666" y="594.66666666666663" width="48" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="LNW-Xf-Evo"/>
+                                    <constraint firstAttribute="width" secondItem="FSb-UY-YPM" secondAttribute="height" multiplier="1:1" id="P7Z-Z9-jxx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lNT-X8-cS2" firstAttribute="top" secondItem="vsG-gs-2an" secondAttribute="bottom" constant="64" id="ABY-zy-WAD"/>
+                            <constraint firstItem="FSb-UY-YPM" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="GbF-KG-AcO"/>
+                            <constraint firstItem="FSb-UY-YPM" firstAttribute="top" secondItem="lNT-X8-cS2" secondAttribute="bottom" constant="32" id="Vcl-jK-zlv"/>
+                            <constraint firstItem="vsG-gs-2an" firstAttribute="leading" secondItem="3nj-J5-EEY" secondAttribute="leading" constant="16" id="cPZ-2l-em8"/>
+                            <constraint firstItem="lNT-X8-cS2" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="m9H-uL-JAz"/>
+                            <constraint firstItem="vsG-gs-2an" firstAttribute="centerY" secondItem="3nj-J5-EEY" secondAttribute="centerY" id="moj-jc-GhV"/>
+                            <constraint firstAttribute="trailing" secondItem="vsG-gs-2an" secondAttribute="trailing" constant="16" id="q8Q-B2-nfi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nimbus" id="htX-zK-iQ2"/>
+                    <connections>
+                        <outlet property="actionButton" destination="lNT-X8-cS2" id="oK8-LU-fPe"/>
+                        <outlet property="actionIndicator" destination="FSb-UY-YPM" id="2gS-Nn-ytY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDt-Mz-Xkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-410" y="106"/>
+        </scene>
+        <!--navController-->
+        <scene sceneID="3vR-aE-VEv">
+            <objects>
+                <navigationController storyboardIdentifier="navController" title="navController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8hJ-E8-668" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a8C-xR-neX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ecp-d4-dJ9">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1rD-uf-3dq" kind="relationship" relationship="rootViewController" id="snY-Ac-fLa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oI1-Qc-9U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="106"/>
+        </scene>
         <!--MainController-->
         <scene sceneID="wEw-t0-znb">
             <objects>
@@ -15,7 +99,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="3yo-2g-wj8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="uER-cu-quM" userLabel="Header">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -76,6 +160,7 @@
                                         <constraint firstAttribute="trailing" secondItem="qaJ-Ep-EdK" secondAttribute="trailing" constant="8" id="c4h-tg-Ajf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <inset key="separatorInset" minX="64" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="cloudDetail" destination="tnW-vC-zNu" id="kVx-T0-Tew"/>
@@ -121,7 +206,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="eXb-D4-FoC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="ZqY-gv-NAb" userLabel="Header">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -199,7 +284,7 @@
                                                 <constraint firstItem="8FY-9A-EfN" firstAttribute="top" secondItem="bHa-v6-AuB" secondAttribute="bottom" constant="-20" id="zdI-ry-Hvz"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
@@ -227,7 +312,7 @@
                                                 <constraint firstItem="t23-PT-gNh" firstAttribute="leading" secondItem="id5-K5-Kyk" secondAttribute="leading" constant="10" id="wSR-9k-HgJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -257,94 +342,13 @@
             </objects>
             <point key="canvasLocation" x="2122" y="106"/>
         </scene>
-        <!--IntroController-->
-        <scene sceneID="ojk-oq-TdY">
-            <objects>
-                <viewController storyboardIdentifier="IntroVC" title="IntroController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vKH-wv-OUL" customClass="IntroVC" customModule="nimbus" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cQS-Le-z1M"/>
-                        <viewControllerLayoutGuide type="bottom" id="zAq-0g-n0y"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3nj-J5-EEY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-X8-cS2">
-                                <rect key="frame" x="127.66666666666669" y="532.66666666666663" width="120" height="30"/>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="grk-5y-90v"/>
-                                </constraints>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <segue destination="8hJ-E8-668" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="SpG-3T-EWC"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsG-gs-2an">
-                                <rect key="frame" x="16" y="343.33333333333331" width="343" height="125.33333333333331"/>
-                                <string key="text">Nimbus is a testing application for iOS, focusing mainly on retrieving data via RESTful services.
-
-The app is simple, without many tricks &amp; treats and it's intented to remain that way.
-
-Updates will happen whenever needed. :)</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-UY-YPM" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="163.66666666666666" y="594.66666666666663" width="48" height="48"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="48" id="LNW-Xf-Evo"/>
-                                    <constraint firstAttribute="width" secondItem="FSb-UY-YPM" secondAttribute="height" multiplier="1:1" id="P7Z-Z9-jxx"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="lNT-X8-cS2" firstAttribute="top" secondItem="vsG-gs-2an" secondAttribute="bottom" constant="64" id="ABY-zy-WAD"/>
-                            <constraint firstItem="FSb-UY-YPM" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="GbF-KG-AcO"/>
-                            <constraint firstItem="FSb-UY-YPM" firstAttribute="top" secondItem="lNT-X8-cS2" secondAttribute="bottom" constant="32" id="Vcl-jK-zlv"/>
-                            <constraint firstItem="vsG-gs-2an" firstAttribute="leading" secondItem="3nj-J5-EEY" secondAttribute="leading" constant="16" id="cPZ-2l-em8"/>
-                            <constraint firstItem="lNT-X8-cS2" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="m9H-uL-JAz"/>
-                            <constraint firstItem="vsG-gs-2an" firstAttribute="centerY" secondItem="3nj-J5-EEY" secondAttribute="centerY" id="moj-jc-GhV"/>
-                            <constraint firstAttribute="trailing" secondItem="vsG-gs-2an" secondAttribute="trailing" constant="16" id="q8Q-B2-nfi"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Nimbus" id="htX-zK-iQ2"/>
-                    <connections>
-                        <outlet property="actionButton" destination="lNT-X8-cS2" id="oK8-LU-fPe"/>
-                        <outlet property="actionIndicator" destination="FSb-UY-YPM" id="2gS-Nn-ytY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mDt-Mz-Xkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-410" y="106"/>
-        </scene>
-        <!--navController-->
-        <scene sceneID="3vR-aE-VEv">
-            <objects>
-                <navigationController storyboardIdentifier="navController" title="navController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8hJ-E8-668" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="a8C-xR-neX"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ecp-d4-dJ9">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="1rD-uf-3dq" kind="relationship" relationship="rootViewController" id="snY-Ac-fLa"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oI1-Qc-9U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="452" y="106"/>
-        </scene>
     </scenes>
     <color key="tintColor" systemColor="systemIndigoColor"/>
     <resources>
         <image name="globe.badge.chevron.backward" catalog="system" width="128" height="113"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

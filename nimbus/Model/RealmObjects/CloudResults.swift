@@ -11,5 +11,5 @@
 import Foundation
 
 struct CloudResults: Codable {
-	var results: [Cloud]
+	var results: Array<Cloud> = []
 }

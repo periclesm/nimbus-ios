@@ -18,8 +18,11 @@ class NetData: NSObject {
 			return nil
 		}
 		
+		let decoder = JSONDecoder()
+		decoder.keyDecodingStrategy = .convertFromSnakeCase
+		
 		do {
-			return try JSONDecoder().decode(T.self, from: data)
+			return try decoder.decode(T.self, from: data)
 		}
 		catch {
 			debugPrint("Parsing error: \(error.localizedDescription)")

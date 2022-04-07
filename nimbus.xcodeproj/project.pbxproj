@@ -31,7 +31,7 @@
 		68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFA259C6AF800E8D937 /* CloudController.swift */; };
 		68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */; };
 		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
-		68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */; };
+		68EA8E2D259CD00500E8D937 /* TableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellController.swift */; };
 		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 		E83871A427CBC57500B8D023 /* CloudResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83871A327CBC57500B8D023 /* CloudResults.swift */; };
 		E83ECA8A27CAAD660016FB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83ECA8927CAAD660016FB3E /* AppDelegate.swift */; };
@@ -58,7 +58,7 @@
 		1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
-		683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellSynthesis.swift; sourceTree = "<group>"; };
+		683511E523E59B1E007AC2BB /* TableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellController.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
 		684109E3259B2BB200A80552 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		684109E8259B2D2800A80552 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
@@ -67,7 +67,6 @@
 		684109EE259B2D2800A80552 /* NetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetData.swift; sourceTree = "<group>"; };
 		684109EF259B2D2800A80552 /* NetConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConfig.swift; sourceTree = "<group>"; };
 		684109F0259B2D2800A80552 /* NetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetResponse.swift; sourceTree = "<group>"; };
-		684109FA259B2E5100A80552 /* GQLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GQLAPI.swift; sourceTree = "<group>"; };
 		684109FE259B39D500A80552 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A20911EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				683511E723E59C13007AC2BB /* TableCellClass.swift */,
-				683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */,
+				683511E523E59B1E007AC2BB /* TableCellController.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -156,14 +155,6 @@
 				684109F0259B2D2800A80552 /* NetResponse.swift */,
 			);
 			path = Constructors;
-			sourceTree = "<group>";
-		};
-		684109F9259B2E3A00A80552 /* GraphQL */ = {
-			isa = PBXGroup;
-			children = (
-				684109FA259B2E5100A80552 /* GQLAPI.swift */,
-			);
-			path = GraphQL;
 			sourceTree = "<group>";
 		};
 		684A207B1EA74B7400BFC44C = {
@@ -225,7 +216,6 @@
 		684A20B21EA76BF500BFC44C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				684109F9259B2E3A00A80552 /* GraphQL */,
 				684D7596259A4343003FCB1C /* RealmObjects */,
 				684D75A6259A4795003FCB1C /* RealmManager */,
 				684109FE259B39D500A80552 /* DataAPI.swift */,
@@ -514,7 +504,7 @@
 				68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */,
 				68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */,
 				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
-				68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */,
+				68EA8E2D259CD00500E8D937 /* TableCellController.swift in Sources */,
 				684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */,
 				684109F5259B2D2800A80552 /* NetData.swift in Sources */,
 				E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */,
