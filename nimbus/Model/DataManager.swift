@@ -23,7 +23,12 @@ class DataManager: NSObject {
 				//Decode data
 				if let cloudData: CloudResults? = NetData.decodeJSON(responseData: response.data as? Data) {
 					//Add data to RealmDB
-					RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
+					let completed = RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
+					
+					if !completed {
+						assert(true, "Send a RealmDB error")
+						completion?(false)
+					}
 				}
 				else {
 					completion?(false)

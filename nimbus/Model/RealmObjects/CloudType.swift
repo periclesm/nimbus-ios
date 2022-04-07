@@ -22,11 +22,11 @@ class CloudType: Object, Codable {
 		return "objectId"
 	}
 
-	override static func indexedProperties() -> [String] {
+	override static func indexedProperties() -> Array<String> {
 		return ["name"]
 	}
 
-	override static func ignoredProperties() -> [String] {
+	override static func ignoredProperties() -> Array<String> {
 		return []
 	}
 }

@@ -45,7 +45,7 @@ class MainVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		return TableCellSynthesis.cloudCell(for: tableView, datasource: vm.clouds, index: indexPath)
+		return TableCellController.cloudCell(for: tableView, datasource: vm.clouds, index: indexPath)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

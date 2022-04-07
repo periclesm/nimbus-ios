@@ -23,11 +23,11 @@ class CloudDetail: Object, Codable {
 		return "objectId"
 	}
 
-	override static func indexedProperties() -> [String] {
+	override static func indexedProperties() -> Array<String> {
 		return ["image", "wiki"]
 	}
 
-	override static func ignoredProperties() -> [String] {
+	override static func ignoredProperties() -> Array<String> {
 		return []
 	}
 }
