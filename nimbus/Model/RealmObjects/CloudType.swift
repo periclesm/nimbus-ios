@@ -1,5 +1,5 @@
 //
-//  Detail.swift
+//  CloudType.swift
 //  nimbus
 //
 //  Created by Pericles Maravelakis on 28/12/20.
@@ -10,12 +10,11 @@
 
 import RealmSwift
 
-class CloudDetail: Object, Codable {
+class CloudType: Object, Codable {
 
 	@objc dynamic var objectId: String = ""
+	@objc dynamic var name: String = ""
 	@objc dynamic var detail: String = ""
-	@objc dynamic var image: String = ""
-	@objc dynamic var wiki: String = ""
 
 	//MARK: - DB Properies --
 
@@ -24,7 +23,7 @@ class CloudDetail: Object, Codable {
 	}
 
 	override static func indexedProperties() -> [String] {
-		return ["image", "wiki"]
+		return ["name"]
 	}
 
 	override static func ignoredProperties() -> [String] {

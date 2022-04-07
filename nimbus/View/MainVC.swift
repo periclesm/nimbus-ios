@@ -11,42 +11,47 @@
 import UIKit
 
 class MainVC: UITableViewController {
-	
-	var vm = CloudVM()
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-	
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "detailSegue" {
-			let dvc = segue.destination as! DetailVC
-			dvc.vm = self.vm
+    
+	let vm = MainVM()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            let dvc = segue.destination as! DetailVC
+			if let object = sender as? String {
+				dvc.vm.cloudId = object
+			}
+        }
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func refreshData() {
+		vm.refreshData { completed in
+			if completed {
+				self.tableView.reloadData()
+				self.refreshControl?.endRefreshing()
+			}
 		}
-	}
-	
-	// MARK: - IB Actions
-	
-	@IBAction func refreshData() {
-		vm.refreshData(sender: self)
-	}
-	
-	// MARK: - UITableView
-	
-	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return vm.cloudArray.count
-	}
-	
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cl = vm.cloudArray[indexPath.row]
-		return TableCellConstructor.cloudCell(for: tableView, dataObject: cl, index: indexPath)
-	}
-	
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		tableView.deselectRow(at: indexPath, animated: true)
-		
-		let cl = vm.cloudArray[indexPath.row]
-		vm.selectedCloud = vm.cloudArray[indexPath.row]
+    }
+
+    // MARK: - Table view data source
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return vm.clouds.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		return TableCellSynthesis.cloudCell(for: tableView, datasource: vm.clouds, index: indexPath)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+		let cl = vm.clouds[indexPath.row]
 		self.performSegue(withIdentifier: "detailSegue", sender: cl.objectId)
-	}
+    }
 }

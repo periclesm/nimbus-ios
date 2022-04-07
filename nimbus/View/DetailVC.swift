@@ -13,59 +13,67 @@ import SafariServices
 import NVActivityIndicatorView
 
 class DetailVC: UITableViewController {
-	
-	var vm: CloudVM!
-	
-	@IBOutlet weak var clImage: UIImageView!
-	@IBOutlet weak var clInitials: UILabel!
-	@IBOutlet weak var clName: UILabel!
-	@IBOutlet weak var clAltitude: UILabel!
-	@IBOutlet weak var clDetails: UILabel!
-	@IBOutlet weak var activity: NVActivityIndicatorView!
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		self.getCloudData()
+    
+    let vm = DetailVM()
+    
+    @IBOutlet weak var clImage: UIImageView!
+    @IBOutlet weak var clInitials: UILabel!
+    @IBOutlet weak var clName: UILabel!
+    @IBOutlet weak var clAltitude: UILabel!
+    @IBOutlet weak var clDetails: UILabel!
+    @IBOutlet weak var activity: NVActivityIndicatorView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
 		activity.type = .ballRotate
+    }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.getCloudData()
 	}
+    
+    // MARK: - Data
+    
+    func getCloudData() {
+		self.title = vm.cloud?.name
+        clInitials.text = vm.cloud?.initials
+        clName.text = vm.cloud?.name
+		clAltitude.text = (vm.cloud?.type!.name)! + " altitude"
+		clDetails.text = vm.cloud?.detail?.detail
+		self.getCloudImage()
+        
+    }
 	
-	// MARK: - Data
-	
-	func getCloudData() {
-		let cl = CloudController.getCloud(objectId: vm.selectedCloud.objectId)
-		
-		self.title = cl?.name
-		clInitials.text = cl?.initials
-		clName.text = cl?.name
-		clAltitude.text = (cl?.type!.name)! + " altitude"
-		clDetails.text = cl?.detail?.detail
-		
+	private func getCloudImage() {
 		clImage.alpha = 0
 		activity.startAnimating()
 		
-		let config = NetConfig.initWithConfig(requestURL: URL(string: (cl?.detail!.image)!)!, requestTimeout: 10, requestMethod: .GET)
-		Networker.getImage(config: config) { (response) in
-			if response.completed {
-				self.clImage.image = response.data as? UIImage
+		vm.getCloudImage { image in
+			self.activity.stopAnimating()
+			
+			if let cloudImage = image {
+				self.clImage.image = cloudImage
+				
 				UIView.animate(withDuration: 0.25) {
 					self.clImage.alpha = 1
 				}
 			}
-			
-			self.activity.stopAnimating()
 		}
 	}
-	
-	// MARK: - IB Actions
-	
-	@IBAction func WikiButton(_ sender: UIBarButtonItem) {
-		if let cl = CloudController.getCloud(objectId: vm.selectedCloud.objectId) { //DataLogic.getCloudInfo(self.objectId) {
-			if let url = URL(string: cl.detail!.wiki) {
-				let safari = SFSafariViewController(url: url)
-				safari.modalPresentationStyle = .formSheet
-				safari.modalTransitionStyle = .coverVertical
-				self.present(safari, animated: true, completion: nil)
-			}
+
+    // MARK: - Actions
+    
+    @IBAction func WikiButton(_ sender: UIBarButtonItem) {
+		if let url = vm.getWikiURL(vm.cloudId) {
+			let config = SFSafariViewController.Configuration()
+			config.barCollapsingEnabled = true
+			config.entersReaderIfAvailable = true
+			
+			let safari = SFSafariViewController(url: url, configuration: config)
+			safari.modalPresentationStyle = .formSheet
+			safari.modalTransitionStyle = .coverVertical
+			self.present(safari, animated: true, completion: nil)
 		}
 	}
 }

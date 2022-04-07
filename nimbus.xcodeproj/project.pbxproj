@@ -3,55 +3,72 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AEB264CC4731F2F3ADF43FF /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E24411CCB438040B973F82 /* Pods_nimbus.framework */; };
 		683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E723E59C13007AC2BB /* TableCellClass.swift */; };
 		684109E4259B2BB200A80552 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E3259B2BB200A80552 /* DataManager.swift */; };
 		684109F1259B2D2800A80552 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E8259B2D2800A80552 /* Networker.swift */; };
 		684109F2259B2D2800A80552 /* NetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E9259B2D2800A80552 /* NetAgent.swift */; };
 		684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EB259B2D2800A80552 /* NetUtilities.swift */; };
+		684109F5259B2D2800A80552 /* NetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EE259B2D2800A80552 /* NetData.swift */; };
 		684109F6259B2D2800A80552 /* NetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109EF259B2D2800A80552 /* NetConfig.swift */; };
 		684109F7259B2D2800A80552 /* NetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109F0259B2D2800A80552 /* NetResponse.swift */; };
-		684109FB259B2E5100A80552 /* GQLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FA259B2E5100A80552 /* GQLAPI.swift */; };
 		684109FF259B39D500A80552 /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109FE259B39D500A80552 /* DataAPI.swift */; };
-		68410A03259B3FA500A80552 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68410A02259B3FA500A80552 /* DataMapper.swift */; };
 		684A20921EA74B7400BFC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
 		684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D7597259A435D003FCB1C /* CloudDetail.swift */; };
 		684D759C259A436D003FCB1C /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759B259A436D003FCB1C /* Cloud.swift */; };
-		684D75A0259A43DF003FCB1C /* CloudAltitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759F259A43DF003FCB1C /* CloudAltitude.swift */; };
-		684D75A3259A460D003FCB1C /* RealmDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A2259A460D003FCB1C /* RealmDatabase.swift */; };
+		684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759F259A43DF003FCB1C /* CloudType.swift */; };
+		684D75A3259A460D003FCB1C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A2259A460D003FCB1C /* Database.swift */; };
 		684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A7259A47A9003FCB1C /* RealmOperation.swift */; };
 		684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D75A8259A47AC003FCB1C /* RealmQuery.swift */; };
-		685F19C125A22EF400D12A9A /* CloudVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F19C025A22EF400D12A9A /* CloudVM.swift */; };
 		68B9265223E56D6B0046D78C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265123E56D6B0046D78C /* MainVC.swift */; };
 		68B9265523E572B00046D78C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265423E572B00046D78C /* DetailVC.swift */; };
 		68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9265823E57B0C0046D78C /* IntroVC.swift */; };
 		68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFA259C6AF800E8D937 /* CloudController.swift */; };
 		68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */; };
 		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
-		68EA8E2D259CD00500E8D937 /* TableCellConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellConstructor.swift */; };
-		E88DD21B27689FAF00441ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DD21A27689FAF00441ADC /* AppDelegate.swift */; };
+		68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */; };
+		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
+		E83871A427CBC57500B8D023 /* CloudResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83871A327CBC57500B8D023 /* CloudResults.swift */; };
+		E83ECA8A27CAAD660016FB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83ECA8927CAAD660016FB3E /* AppDelegate.swift */; };
+		E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843A71927CE089900A0E39D /* RealmOperationsTests.swift */; };
+		E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C2E7527CD0EEF00E02462 /* APITests.swift */; };
+		E85C2E7827CD48FA00E02462 /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */; };
+		E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9427CCA4D20015D1D6 /* MainVM.swift */; };
+		E8730F9727CCA4E20015D1D6 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9627CCA4E20015D1D6 /* DetailVM.swift */; };
+		E8A5A91927CC1BED0015FF04 /* InitialsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */; };
+		F66E979FACF97745CB56C0A4 /* Pods_nimbusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E85C2E7027CD0E5000E02462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 684A207C1EA74B7400BFC44C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 684A20831EA74B7400BFC44C;
+			remoteInfo = nimbus;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		43E24411CCB438040B973F82 /* Pods_nimbus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
-		683511E523E59B1E007AC2BB /* TableCellConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellConstructor.swift; sourceTree = "<group>"; };
+		683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellSynthesis.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
 		684109E3259B2BB200A80552 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		684109E8259B2D2800A80552 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		684109E9259B2D2800A80552 /* NetAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetAgent.swift; sourceTree = "<group>"; };
 		684109EB259B2D2800A80552 /* NetUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetUtilities.swift; sourceTree = "<group>"; };
+		684109EE259B2D2800A80552 /* NetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetData.swift; sourceTree = "<group>"; };
 		684109EF259B2D2800A80552 /* NetConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConfig.swift; sourceTree = "<group>"; };
 		684109F0259B2D2800A80552 /* NetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetResponse.swift; sourceTree = "<group>"; };
 		684109FA259B2E5100A80552 /* GQLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GQLAPI.swift; sourceTree = "<group>"; };
 		684109FE259B39D500A80552 /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
-		68410A02259B3FA500A80552 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 		684A20841EA74B7400BFC44C /* nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A20911EA74B7400BFC44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		684A20931EA74B7400BFC44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,19 +76,28 @@
 		684A20981EA74B7400BFC44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		684D7597259A435D003FCB1C /* CloudDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDetail.swift; sourceTree = "<group>"; };
 		684D759B259A436D003FCB1C /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
-		684D759F259A43DF003FCB1C /* CloudAltitude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudAltitude.swift; sourceTree = "<group>"; };
-		684D75A2259A460D003FCB1C /* RealmDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabase.swift; sourceTree = "<group>"; };
+		684D759F259A43DF003FCB1C /* CloudType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudType.swift; sourceTree = "<group>"; };
+		684D75A2259A460D003FCB1C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		684D75A7259A47A9003FCB1C /* RealmOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmOperation.swift; sourceTree = "<group>"; };
 		684D75A8259A47AC003FCB1C /* RealmQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
-		685F19C025A22EF400D12A9A /* CloudVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudVM.swift; sourceTree = "<group>"; };
 		68B9265123E56D6B0046D78C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		68B9265423E572B00046D78C /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		68B9265823E57B0C0046D78C /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		68EA8DFA259C6AF800E8D937 /* CloudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudController.swift; sourceTree = "<group>"; };
 		68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeController.swift; sourceTree = "<group>"; };
 		68EA8E00259C6B1900E8D937 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		B744837051979EBD0D7E913C /* Pods-nimbusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbusTests/Pods-nimbusTests.release.xcconfig"; sourceTree = "<group>"; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
-		E88DD21A27689FAF00441ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB5995033291F49F092C4276 /* Pods-nimbusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbusTests/Pods-nimbusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E83871A327CBC57500B8D023 /* CloudResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudResults.swift; sourceTree = "<group>"; };
+		E83ECA8927CAAD660016FB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E843A71927CE089900A0E39D /* RealmOperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmOperationsTests.swift; sourceTree = "<group>"; };
+		E85C2E6C27CD0E5000E02462 /* nimbusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nimbusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85C2E7527CD0EEF00E02462 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
+		E8730F9427CCA4D20015D1D6 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		E8730F9627CCA4E20015D1D6 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialsLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +105,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AEB264CC4731F2F3ADF43FF /* Pods_nimbus.framework in Frameworks */,
+				80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85C2E6927CD0E5000E02462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66E979FACF97745CB56C0A4 /* Pods_nimbusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				683511E723E59C13007AC2BB /* TableCellClass.swift */,
-				683511E523E59B1E007AC2BB /* TableCellConstructor.swift */,
+				683511E523E59B1E007AC2BB /* TableCellSynthesis.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -98,12 +132,21 @@
 		684109E7259B2D2800A80552 /* Networker */ = {
 			isa = PBXGroup;
 			children = (
+				684109EA259B2D2800A80552 /* Utilities */,
 				684109ED259B2D2800A80552 /* Constructors */,
 				684109E8259B2D2800A80552 /* Networker.swift */,
 				684109E9259B2D2800A80552 /* NetAgent.swift */,
-				684109EB259B2D2800A80552 /* NetUtilities.swift */,
 			);
 			path = Networker;
+			sourceTree = "<group>";
+		};
+		684109EA259B2D2800A80552 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				684109EE259B2D2800A80552 /* NetData.swift */,
+				684109EB259B2D2800A80552 /* NetUtilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		684109ED259B2D2800A80552 /* Constructors */ = {
@@ -127,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				684A20861EA74B7400BFC44C /* nimbus */,
+				E85C2E6D27CD0E5000E02462 /* nimbusTests */,
 				684A20851EA74B7400BFC44C /* Products */,
 				D2828EE83853650EBC6D7666 /* Pods */,
 				7896288071E0E771343E6221 /* Frameworks */,
@@ -137,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				684A20841EA74B7400BFC44C /* nimbus.app */,
+				E85C2E6C27CD0E5000E02462 /* nimbusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,11 +189,11 @@
 		684A20861EA74B7400BFC44C /* nimbus */ = {
 			isa = PBXGroup;
 			children = (
-				E88DD21A27689FAF00441ADC /* AppDelegate.swift */,
-				68EA8E17259CCA3D00E8D937 /* Platform */,
+				E83ECA8927CAAD660016FB3E /* AppDelegate.swift */,
 				684A20B21EA76BF500BFC44C /* Model */,
-				684A20DB1EA7A3AB00BFC44C /* Controller */,
+				684A20DB1EA7A3AB00BFC44C /* Domain */,
 				684A20AB1EA76BCA00BFC44C /* View */,
+				68EA8E17259CCA3D00E8D937 /* System */,
 				684A20871EA74B7400BFC44C /* Supporting Files */,
 			);
 			path = nimbus;
@@ -168,10 +213,11 @@
 			children = (
 				68B2E05120E9F43400C20BD5 /* Storyboards */,
 				68B2E05220E9F98200C20BD5 /* Components */,
-				685F19C025A22EF400D12A9A /* CloudVM.swift */,
 				68B9265823E57B0C0046D78C /* IntroVC.swift */,
 				68B9265123E56D6B0046D78C /* MainVC.swift */,
+				E8730F9427CCA4D20015D1D6 /* MainVM.swift */,
 				68B9265423E572B00046D78C /* DetailVC.swift */,
+				E8730F9627CCA4E20015D1D6 /* DetailVM.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,27 +230,27 @@
 				684D75A6259A4795003FCB1C /* RealmManager */,
 				684109FE259B39D500A80552 /* DataAPI.swift */,
 				684109E3259B2BB200A80552 /* DataManager.swift */,
-				68410A02259B3FA500A80552 /* DataMapper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		684A20DB1EA7A3AB00BFC44C /* Controller */ = {
+		684A20DB1EA7A3AB00BFC44C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				68EA8DFA259C6AF800E8D937 /* CloudController.swift */,
-				68EA8E00259C6B1900E8D937 /* DetailController.swift */,
 				68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */,
+				68EA8E00259C6B1900E8D937 /* DetailController.swift */,
+				68EA8DFA259C6AF800E8D937 /* CloudController.swift */,
 			);
-			path = Controller;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		684D7596259A4343003FCB1C /* RealmObjects */ = {
 			isa = PBXGroup;
 			children = (
+				E83871A327CBC57500B8D023 /* CloudResults.swift */,
 				684D759B259A436D003FCB1C /* Cloud.swift */,
+				684D759F259A43DF003FCB1C /* CloudType.swift */,
 				684D7597259A435D003FCB1C /* CloudDetail.swift */,
-				684D759F259A43DF003FCB1C /* CloudAltitude.swift */,
 			);
 			path = RealmObjects;
 			sourceTree = "<group>";
@@ -212,7 +258,7 @@
 		684D75A6259A4795003FCB1C /* RealmManager */ = {
 			isa = PBXGroup;
 			children = (
-				684D75A2259A460D003FCB1C /* RealmDatabase.swift */,
+				684D75A2259A460D003FCB1C /* Database.swift */,
 				684D75A7259A47A9003FCB1C /* RealmOperation.swift */,
 				684D75A8259A47AC003FCB1C /* RealmQuery.swift */,
 			);
@@ -232,22 +278,24 @@
 			isa = PBXGroup;
 			children = (
 				683511E923E59F35007AC2BB /* TableCells */,
+				E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		68EA8E17259CCA3D00E8D937 /* Platform */ = {
+		68EA8E17259CCA3D00E8D937 /* System */ = {
 			isa = PBXGroup;
 			children = (
 				684109E7259B2D2800A80552 /* Networker */,
 			);
-			path = Platform;
+			path = System;
 			sourceTree = "<group>";
 		};
 		7896288071E0E771343E6221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43E24411CCB438040B973F82 /* Pods_nimbus.framework */,
+				1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */,
+				532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,8 +305,20 @@
 			children = (
 				677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */,
 				D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */,
+				DB5995033291F49F092C4276 /* Pods-nimbusTests.debug.xcconfig */,
+				B744837051979EBD0D7E913C /* Pods-nimbusTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E85C2E6D27CD0E5000E02462 /* nimbusTests */ = {
+			isa = PBXGroup;
+			children = (
+				E85C2E7527CD0EEF00E02462 /* APITests.swift */,
+				E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */,
+				E843A71927CE089900A0E39D /* RealmOperationsTests.swift */,
+			);
+			path = nimbusTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +332,7 @@
 				684A20801EA74B7400BFC44C /* Sources */,
 				684A20811EA74B7400BFC44C /* Frameworks */,
 				684A20821EA74B7400BFC44C /* Resources */,
-				45BA6605BB31CA3F2099FAA6 /* [CP] Embed Pods Frameworks */,
+				3F44FEF31CEA611819A25BA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,12 +343,33 @@
 			productReference = 684A20841EA74B7400BFC44C /* nimbus.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E85C2E6B27CD0E5000E02462 /* nimbusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E85C2E7227CD0E5000E02462 /* Build configuration list for PBXNativeTarget "nimbusTests" */;
+			buildPhases = (
+				797AE082DDCEABBDF496C467 /* [CP] Check Pods Manifest.lock */,
+				E85C2E6827CD0E5000E02462 /* Sources */,
+				E85C2E6927CD0E5000E02462 /* Frameworks */,
+				E85C2E6A27CD0E5000E02462 /* Resources */,
+				C8BEF9A71BBBA7C0149258F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E85C2E7127CD0E5000E02462 /* PBXTargetDependency */,
+			);
+			name = nimbusTests;
+			productName = nimbusTests;
+			productReference = E85C2E6C27CD0E5000E02462 /* nimbusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		684A207C1EA74B7400BFC44C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = Cloudfields;
 				TargetAttributes = {
@@ -298,10 +379,14 @@
 						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
+					E85C2E6B27CD0E5000E02462 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 684A20831EA74B7400BFC44C;
+					};
 				};
 			};
 			buildConfigurationList = 684A207F1EA74B7400BFC44C /* Build configuration list for PBXProject "nimbus" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -314,6 +399,7 @@
 			projectRoot = "";
 			targets = (
 				684A20831EA74B7400BFC44C /* nimbus */,
+				E85C2E6B27CD0E5000E02462 /* nimbusTests */,
 			);
 		};
 /* End PBXProject section */
@@ -329,10 +415,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E85C2E6A27CD0E5000E02462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45BA6605BB31CA3F2099FAA6 /* [CP] Embed Pods Frameworks */ = {
+		3F44FEF31CEA611819A25BA1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,6 +440,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		797AE082DDCEABBDF496C467 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nimbusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B943777581A2326B5D711B04 /* [CP] Check Pods Manifest.lock */ = {
@@ -367,6 +482,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C8BEF9A71BBBA7C0149258F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbusTests/Pods-nimbusTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nimbusTests/Pods-nimbusTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbusTests/Pods-nimbusTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -374,17 +506,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83871A427CBC57500B8D023 /* CloudResults.swift in Sources */,
 				68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */,
+				E8A5A91927CC1BED0015FF04 /* InitialsLabel.swift in Sources */,
 				68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */,
 				68B9265223E56D6B0046D78C /* MainVC.swift in Sources */,
 				68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */,
 				68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */,
 				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
-				68EA8E2D259CD00500E8D937 /* TableCellConstructor.swift in Sources */,
-				684D75A0259A43DF003FCB1C /* CloudAltitude.swift in Sources */,
-				684D75A3259A460D003FCB1C /* RealmDatabase.swift in Sources */,
+				68EA8E2D259CD00500E8D937 /* TableCellSynthesis.swift in Sources */,
+				684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */,
+				684109F5259B2D2800A80552 /* NetData.swift in Sources */,
+				E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */,
+				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
-				68410A03259B3FA500A80552 /* DataMapper.swift in Sources */,
 				684109F2259B2D2800A80552 /* NetAgent.swift in Sources */,
 				684109FF259B39D500A80552 /* DataAPI.swift in Sources */,
 				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
@@ -392,17 +527,34 @@
 				684109E4259B2BB200A80552 /* DataManager.swift in Sources */,
 				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
 				684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */,
-				685F19C125A22EF400D12A9A /* CloudVM.swift in Sources */,
-				E88DD21B27689FAF00441ADC /* AppDelegate.swift in Sources */,
+				E83ECA8A27CAAD660016FB3E /* AppDelegate.swift in Sources */,
 				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
 				684109F7259B2D2800A80552 /* NetResponse.swift in Sources */,
 				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
-				684109FB259B2E5100A80552 /* GQLAPI.swift in Sources */,
+				E8730F9727CCA4E20015D1D6 /* DetailVM.swift in Sources */,
 				684D759C259A436D003FCB1C /* Cloud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E85C2E6827CD0E5000E02462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */,
+				E85C2E7827CD48FA00E02462 /* DatabaseTests.swift in Sources */,
+				E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E85C2E7127CD0E5000E02462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 684A20831EA74B7400BFC44C /* nimbus */;
+			targetProxy = E85C2E7027CD0E5000E02462 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		684A20901EA74B7400BFC44C /* Main.storyboard */ = {
@@ -547,7 +699,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = nimbus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,7 +720,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = nimbus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +729,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E85C2E7327CD0E5000E02462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB5995033291F49F092C4276 /* Pods-nimbusTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFNBPBD3C5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nimbus.app/nimbus";
+			};
+			name = Debug;
+		};
+		E85C2E7427CD0E5000E02462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B744837051979EBD0D7E913C /* Pods-nimbusTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFNBPBD3C5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nimbus.app/nimbus";
 			};
 			name = Release;
 		};
@@ -597,6 +803,15 @@
 			buildConfigurations = (
 				684A209C1EA74B7400BFC44C /* Debug */,
 				684A209D1EA74B7400BFC44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E85C2E7227CD0E5000E02462 /* Build configuration list for PBXNativeTarget "nimbusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85C2E7327CD0E5000E02462 /* Debug */,
+				E85C2E7427CD0E5000E02462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

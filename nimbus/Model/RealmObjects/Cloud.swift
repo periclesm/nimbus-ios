@@ -10,16 +10,15 @@
 
 import RealmSwift
 
-class Cloud: Object {
+class Cloud: Object, Codable {
 
 	@objc dynamic var objectId: String = ""
-	@objc dynamic var order: Int = 0
-	@objc dynamic var initials: String = ""
 	@objc dynamic var name: String = ""
-	@objc dynamic var excerpt: String = ""
+	@objc dynamic var order: Int = 0
+	@objc dynamic var type: CloudType? = nil
 	@objc dynamic var detail: CloudDetail? = nil
-	@objc dynamic var type: CloudAltitude? = nil
-
+	@objc dynamic var initials: String = ""
+	@objc dynamic var excerpt: String = ""
 
 	//MARK: - DB Properies --
 
@@ -33,34 +32,5 @@ class Cloud: Object {
 
 	override static func ignoredProperties() -> [String] {
 		return []
-	}
-
-
-	//MARK: - Map Data --
-
-	class func mapObject(dataObject: Dictionary<AnyHashable,Any>) -> Cloud {
-		let clObject = Cloud()
-
-		clObject.objectId = dataObject["objectId"] as? String ?? ""
-		clObject.order = dataObject["order"] as? Int ?? 0
-		clObject.initials = dataObject["initials"] as? String ?? ""
-		clObject.name = dataObject["name"] as? String ?? ""
-		clObject.excerpt = dataObject["excerpt"] as? String ?? ""
-
-		if let detailData = dataObject["detail"] as? Dictionary<AnyHashable,Any> {
-			let detailObject = CloudDetail.mapObject(dataObject: detailData)
-			//add to database
-			RealmOperation.add(rObject: detailObject)
-			clObject.detail = detailObject
-		}
-
-		if let typeData = dataObject["type"] as? Dictionary<AnyHashable,Any> {
-			let typeObject = CloudAltitude.mapObject(dataObject: typeData)
-			//add to database
-			RealmOperation.add(rObject: typeObject)
-			clObject.type = typeObject
-		}
-
-		return clObject
 	}
 }
