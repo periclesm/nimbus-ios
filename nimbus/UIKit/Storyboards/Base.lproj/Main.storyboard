@@ -33,7 +33,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsG-gs-2an">
                                 <rect key="frame" x="16" y="343.33333333333331" width="343" height="125.33333333333331"/>
-                                <string key="text">Nimbus is a testing application for iOS, focusing mainly on retrieving data from a REST services.
+                                <string key="text">Nimbus is a testing application for iOS, focusing mainly on retrieving data from a REST service.
 
 The app is simple, without many tricks &amp; treats and it's intented to remain that way.
 

@@ -8,29 +8,38 @@
 
 import SwiftUI
 
-//on load, fetch data
-//on start button, present next screen (table list)
-
 struct Main: View {
-    var body: some View {
-		VStack(alignment: .center, spacing: 64.0) {
-			Text("Nimbus is a testing application for iOS, focusing mainly on retrieving data from a REST service.\n\nThe app is simple, without many tricks & treats and it's intented to remain that way.\n\nUpdates will happen whenever needed. :)")
-				.padding(.horizontal, 10.0)
-			
-			Button(/*@START_MENU_TOKEN@*/"Start"/*@END_MENU_TOKEN@*/) {
-				debugPrint("Present navigation")
+	var body: some View {
+		NavigationView {
+			List(0 ..< 2) { item in
+				CloudCell()
 			}
-			.frame(width: 120.0, height: 30.0)
-			.foregroundColor(.blue)
-			.tint(.indigo)
-			.border(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+			.navigationTitle("Clouds")
 		}
-    }
+	}
+}
+
+struct CloudCell: View {
+	var body: some View {
+		NavigationLink(destination: Detail()) {
+			HStack {
+				Image(systemName: "photo")
+				
+				VStack(alignment: .leading) {
+					Text("Cloud Type")
+						.fontWeight(.semibold)
+					Text("cloud description")
+						.font(.subheadline)
+						.foregroundColor(.secondary)
+				}
+			}
+		}
+	}
 }
 
 struct Main_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
 		Main()
 			.preferredColorScheme(.dark)
-    }
+	}
 }

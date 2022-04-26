@@ -39,8 +39,10 @@
 		E85C2E7827CD48FA00E02462 /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */; };
 		E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9427CCA4D20015D1D6 /* MainVM.swift */; };
 		E8730F9727CCA4E20015D1D6 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9627CCA4E20015D1D6 /* DetailVM.swift */; };
-		E876FBD42817F161007A3DC9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBD32817F161007A3DC9 /* Main.swift */; };
+		E876FBD42817F161007A3DC9 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBD32817F161007A3DC9 /* Intro.swift */; };
 		E876FBD82818729E007A3DC9 /* nimbus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBD5281871B6007A3DC9 /* nimbus.swift */; };
+		E876FBDA28187503007A3DC9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBD928187503007A3DC9 /* Main.swift */; };
+		E876FBDC281875EC007A3DC9 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBDB281875EC007A3DC9 /* Detail.swift */; };
 		E8A5A91927CC1BED0015FF04 /* InitialsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */; };
 		F66E979FACF97745CB56C0A4 /* Pods_nimbusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */; };
 /* End PBXBuildFile section */
@@ -97,8 +99,10 @@
 		E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
 		E8730F9427CCA4D20015D1D6 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 		E8730F9627CCA4E20015D1D6 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
-		E876FBD32817F161007A3DC9 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		E876FBD32817F161007A3DC9 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		E876FBD5281871B6007A3DC9 /* nimbus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nimbus.swift; sourceTree = "<group>"; };
+		E876FBD928187503007A3DC9 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		E876FBDB281875EC007A3DC9 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialsLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,7 +323,9 @@
 		E876FBD22817F138007A3DC9 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E876FBD32817F161007A3DC9 /* Main.swift */,
+				E876FBD32817F161007A3DC9 /* Intro.swift */,
+				E876FBD928187503007A3DC9 /* Main.swift */,
+				E876FBDB281875EC007A3DC9 /* Detail.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -515,6 +521,7 @@
 				68B9265923E57B0C0046D78C /* IntroVC.swift in Sources */,
 				68B9265223E56D6B0046D78C /* MainVC.swift in Sources */,
 				68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */,
+				E876FBDA28187503007A3DC9 /* Main.swift in Sources */,
 				68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */,
 				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
 				68EA8E2D259CD00500E8D937 /* TableCellController.swift in Sources */,
@@ -534,8 +541,9 @@
 				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
 				684109F7259B2D2800A80552 /* NetResponse.swift in Sources */,
 				683511E823E59C13007AC2BB /* TableCellClass.swift in Sources */,
+				E876FBDC281875EC007A3DC9 /* Detail.swift in Sources */,
 				E8730F9727CCA4E20015D1D6 /* DetailVM.swift in Sources */,
-				E876FBD42817F161007A3DC9 /* Main.swift in Sources */,
+				E876FBD42817F161007A3DC9 /* Intro.swift in Sources */,
 				684D759C259A436D003FCB1C /* Cloud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
