@@ -32,7 +32,6 @@ class NetUtilities: NSObject {
         var returnString: String = "\(baseURL)?"
         
         for keyName in (params?.allKeys)! {
-            
 			let keyValue: String = self.validateKeyValue(value: params![keyName] as Any)
             returnString.append("&\(keyName)=\(keyValue)")
         }
