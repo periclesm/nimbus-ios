@@ -10,7 +10,7 @@
 
 import RealmSwift
 
-class Cloud: Object, Codable {
+class Cloud: Object, Codable, Identifiable {
 
 	@objc dynamic var objectId: String = ""
 	@objc dynamic var name: String = ""

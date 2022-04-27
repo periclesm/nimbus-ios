@@ -40,9 +40,9 @@
 		E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9427CCA4D20015D1D6 /* MainVM.swift */; };
 		E8730F9727CCA4E20015D1D6 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9627CCA4E20015D1D6 /* DetailVM.swift */; };
 		E876FBD42817F161007A3DC9 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBD32817F161007A3DC9 /* Intro.swift */; };
-		E876FBD82818729E007A3DC9 /* nimbus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBD5281871B6007A3DC9 /* nimbus.swift */; };
 		E876FBDA28187503007A3DC9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBD928187503007A3DC9 /* Main.swift */; };
 		E876FBDC281875EC007A3DC9 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBDB281875EC007A3DC9 /* Detail.swift */; };
+		E898233528192EB2003E9CA5 /* nimbus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E876FBD5281871B6007A3DC9 /* nimbus.swift */; };
 		E8A5A91927CC1BED0015FF04 /* InitialsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */; };
 		F66E979FACF97745CB56C0A4 /* Pods_nimbusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */; };
 /* End PBXBuildFile section */
@@ -529,13 +529,13 @@
 				684109F5259B2D2800A80552 /* NetData.swift in Sources */,
 				E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */,
 				684D75A3259A460D003FCB1C /* Database.swift in Sources */,
-				E876FBD82818729E007A3DC9 /* nimbus.swift in Sources */,
 				68B9265523E572B00046D78C /* DetailVC.swift in Sources */,
 				684109F2259B2D2800A80552 /* NetAgent.swift in Sources */,
 				684109FF259B39D500A80552 /* DataAPI.swift in Sources */,
 				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
 				684109F1259B2D2800A80552 /* Networker.swift in Sources */,
 				684109E4259B2BB200A80552 /* DataManager.swift in Sources */,
+				E898233528192EB2003E9CA5 /* nimbus.swift in Sources */,
 				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
 				684109F3259B2D2800A80552 /* NetUtilities.swift in Sources */,
 				684D75A9259A47AC003FCB1C /* RealmOperation.swift in Sources */,
