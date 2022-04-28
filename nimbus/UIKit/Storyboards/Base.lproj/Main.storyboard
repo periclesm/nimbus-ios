@@ -10,7 +10,7 @@
         <!--IntroController-->
         <scene sceneID="ojk-oq-TdY">
             <objects>
-                <viewController storyboardIdentifier="IntroVC" title="IntroController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vKH-wv-OUL" customClass="IntroVC" customModule="nimbus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroVC" title="IntroController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vKH-wv-OUL" customClass="IntroVC" customModule="nimbus_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cQS-Le-z1M"/>
                         <viewControllerLayoutGuide type="bottom" id="zAq-0g-n0y"/>
@@ -94,7 +94,7 @@ Updates will happen whenever needed. :)</string>
         <!--MainController-->
         <scene sceneID="wEw-t0-znb">
             <objects>
-                <tableViewController storyboardIdentifier="MainVC" title="MainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1rD-uf-3dq" customClass="MainVC" customModule="nimbus" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MainVC" title="MainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1rD-uf-3dq" customClass="MainVC" customModule="nimbus_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="3yo-2g-wj8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,14 +110,14 @@ Updates will happen whenever needed. :)</string>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloudCell" id="Vb8-ab-CDU" customClass="cloudCell" customModule="nimbus" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloudCell" id="Vb8-ab-CDU" customClass="cloudCell" customModule="nimbus_SwiftUI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="46.666666030883789" width="375" height="62.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vb8-ab-CDU" id="i2s-HP-iaW">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="62.333332061767578"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-S4-Jqp" customClass="InitialsLabel" customModule="nimbus" customModuleProvider="target">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-S4-Jqp" customClass="InitialsLabel" customModule="nimbus_SwiftUI" customModuleProvider="target">
                                             <rect key="frame" x="10" y="7.3333333333333321" width="48" height="48"/>
                                             <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                             <constraints>
@@ -201,7 +201,7 @@ Updates will happen whenever needed. :)</string>
         <!--DetailController-->
         <scene sceneID="L7X-is-6HO">
             <objects>
-                <tableViewController storyboardIdentifier="DetailVC" title="DetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kkN-16-lcQ" customClass="DetailVC" customModule="nimbus" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DetailVC" title="DetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kkN-16-lcQ" customClass="DetailVC" customModule="nimbus_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="eXb-D4-FoC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,7 +233,7 @@ Updates will happen whenever needed. :)</string>
                                                         <constraint firstAttribute="height" constant="180" id="KKa-Aw-d6a"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-9A-EfN" customClass="InitialsLabel" customModule="nimbus" customModuleProvider="target">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-9A-EfN" customClass="InitialsLabel" customModule="nimbus_SwiftUI" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="160" width="90" height="90"/>
                                                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                     <constraints>
@@ -345,7 +345,7 @@ Updates will happen whenever needed. :)</string>
     </scenes>
     <color key="tintColor" systemColor="systemIndigoColor"/>
     <resources>
-        <image name="globe.badge.chevron.backward" catalog="system" width="128" height="113"/>
+        <image name="globe.badge.chevron.backward" catalog="system" width="32" height="32"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

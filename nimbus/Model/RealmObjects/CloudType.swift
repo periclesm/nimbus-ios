@@ -29,4 +29,14 @@ class CloudType: Object, Codable {
 	override static func ignoredProperties() -> Array<String> {
 		return []
 	}
+	
+//	init(objectId: String = "", name: String = "", detail: String = "") {
+//		self.objectId = objectId
+//		self.name = name
+//		self.detail = detail
+//	}
+//	
+//	required init?(coder aDecoder: NSCoder) {
+//		super.init()
+//	}
 }

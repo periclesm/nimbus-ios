@@ -33,4 +33,15 @@ class Cloud: Object, Codable, Identifiable {
 	override static func ignoredProperties() -> Array<String> {
 		return []
 	}
+	
+//	init(objectId: String = "", name: String = "", order: Int = 0, type: CloudType? = nil, detail: CloudDetail? = nil, initials: String = "", excerpt: String = "") {
+//		self.objectId = objectId
+//		self.name = name
+//		self.order = order
+//		self.initials = initials
+//		self.excerpt = excerpt
+//		
+//		self.type = type
+//		self.detail = detail
+//	}
 }

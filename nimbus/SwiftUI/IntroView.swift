@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Intro: View {
+struct IntroView: View {
 	@State var present: Bool = false
 	
 	init() {
@@ -29,7 +29,7 @@ struct Intro: View {
 			.tint(.indigo)
 			.border(.blue, width: 1)
 			.fullScreenCover(isPresented: $present) {
-				Main()
+				MainView()
 			}
 		}
     }
@@ -37,7 +37,7 @@ struct Intro: View {
 
 struct Intro_Previews: PreviewProvider {
     static var previews: some View {
-		Intro()
+		IntroView()
 			.preferredColorScheme(.dark)
     }
 }

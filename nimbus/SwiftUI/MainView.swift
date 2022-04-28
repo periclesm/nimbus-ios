@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Main: View {
+struct MainView: View {
 	var data: MainVM = MainVM()
 	
 	var body: some View {
@@ -27,7 +27,7 @@ struct CloudCell: View {
 	var cloud: Cloud
 	
 	var body: some View {
-		NavigationLink(destination: Detail(cloud: cloud)) {
+		NavigationLink(destination: DetailView(cloud: cloud)) {
 			HStack(alignment: .center, spacing: 10.0) {
 				Text(cloud.initials)
 					.font(.system(size: 24))
@@ -56,7 +56,7 @@ struct CloudCell: View {
 
 struct Main_Previews: PreviewProvider {
 	static var previews: some View {
-		Main()
+		MainView()
 			.preferredColorScheme(.dark)
 	}
 }

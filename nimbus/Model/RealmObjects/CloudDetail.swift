@@ -30,4 +30,11 @@ class CloudDetail: Object, Codable {
 	override static func ignoredProperties() -> Array<String> {
 		return []
 	}
+	
+//	init(objectId: String = "", detail: String = "", image: String = "", wiki: String = "") {
+//		self.objectId = objectId
+//		self.detail = detail
+//		self.image = image
+//		self.wiki = wiki
+//	}
 }

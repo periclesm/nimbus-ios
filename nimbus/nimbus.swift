@@ -19,7 +19,7 @@ import SwiftUI
 struct nimbus: App {
 	var body: some Scene {
 		WindowGroup {
-			Intro()
+			IntroView()
 		}
 	}
 }
