@@ -24,14 +24,15 @@ struct Detail_Previews: PreviewProvider {
 }
 
 struct DetailView: View {
-	var vm = DetailVM()
+	//var vm = DetailVM()
 	var cloud: Cloud = Cloud()
 	
 	var body: some View {
 		NavigationView {
-			ZStack(alignment: .top) {
+			ScrollView {
 				DetailImageView(imageURL: cloud.detail?.image)
-				Spacer()
+				DetailHeaderView(cloud: cloud)
+				DetailInfoView(cloud: cloud)
 			}
 		}
 		.navigationTitle(cloud.name)
