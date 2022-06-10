@@ -16,7 +16,7 @@ class NetAgent: NSObject, URLSessionDelegate {
     
     // MARK: - Synthesis
     
-    private func createRequest(requestURL: URL, config: NetConfig) -> URLRequest {
+    func createRequest(requestURL: URL, config: NetConfig) -> URLRequest {
         var request = URLRequest(url: requestURL)
         request.httpBody = config.body
         request.timeoutInterval = config.timeout
