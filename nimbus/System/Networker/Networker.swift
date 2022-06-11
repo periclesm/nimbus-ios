@@ -26,7 +26,7 @@ class Networker: NSObject {
 		return await NetAsyncAwait().getData(config: config, function: .data)
 	}
 	
-	//MARK: - NSOperation iOS 14-
+	//MARK: - NSOperation iOS 14- -- Deprecated
 	
 	class func getJSONData(config: NetConfig, completion: @escaping (NetResponse) -> ()) {
 		NetAgent.sharedInstance.getData(config: config, function: .json) { (response) in
@@ -38,7 +38,6 @@ class Networker: NSObject {
 		NetAgent.sharedInstance.getData(config: config, function: .image) { (response) in
 			completion(response)
 		}
-		
 	}
 	
 	class func getData(config: NetConfig, completion: @escaping (NetResponse) -> ()) {
