@@ -2,11 +2,11 @@ PODS:
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
-  - Realm (10.25.0):
-    - Realm/Headers (= 10.25.0)
-  - Realm/Headers (10.25.0)
-  - RealmSwift (10.25.0):
-    - Realm (= 10.25.0)
+  - Realm (10.28.0):
+    - Realm/Headers (= 10.28.0)
+  - Realm/Headers (10.28.0)
+  - RealmSwift (10.28.0):
+    - Realm (= 10.28.0)
 
 DEPENDENCIES:
   - NVActivityIndicatorView
@@ -20,8 +20,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
-  Realm: 22a82aaa0e73f3483e3a6df32549c4c5cd34aa63
-  RealmSwift: c2a635212400923edd3f828b8a37d55d3eb31863
+  Realm: a0dd4e07530faaa327244ddb4ecb445c98f0537a
+  RealmSwift: 625a21f03e01e80f6b9b86bade269ebebcd7892c
 
 PODFILE CHECKSUM: 19bddc787e9a90e82327aa6bd86e5d4a8a8b5612
 

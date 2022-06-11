@@ -13,37 +13,10 @@ import UIKit
 class NetAgent: NSObject, URLSessionDelegate {
     
     static let sharedInstance = NetAgent()
-    
-    // MARK: - Synthesis
-    
-    private func createRequest(requestURL: URL, config: NetConfig) -> URLRequest {
-        var request = URLRequest(url: requestURL)
-        request.httpBody = config.body
-        request.timeoutInterval = config.timeout
-        request.httpMethod = config.HTTPMethod.rawValue
-        request.cachePolicy = URLRequest.CachePolicy.init(rawValue: UInt(config.caching.rawValue))!
-        request.httpShouldUsePipelining = true
-        request.allowsCellularAccess = true
         
-        if #available(iOS 13.0, *) {
-            request.allowsConstrainedNetworkAccess = true
-            request.allowsExpensiveNetworkAccess = true
-        }
-        
-        // Headers
-        if let headerData = config.headers {
-            for headerName in headerData.keys {
-                let headerValue: String = (config.headers?[headerName]!)!
-                request.addValue(headerValue, forHTTPHeaderField: headerName)
-            }
-        }
-        
-        return request
-    }
-    
     // MARK: - Main Methods
     
-    func getData(config: NetConfig, function: NetConfig.NetworkerFunction, completion: @escaping (NetResponse) -> ()) {
+    func getData(config: NetConfig, function: NetworkerFunction, completion: @escaping (NetResponse) -> ()) {
 		guard let requestURL = config.url else {
 			let errorDescription = "Error in request URL"
 			let error = NSError(domain: "nimbus", code: 500, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
@@ -55,7 +28,7 @@ class NetAgent: NSObject, URLSessionDelegate {
 			return
 		}
 		
-        let request = createRequest(requestURL: requestURL, config: config)
+		let request = NetParameters.createRequest(requestURL: requestURL, config: config)
         let session = URLSession(configuration: .default, delegate: self, delegateQueue: .main)
         
         DataTask(request: request, session: session, config: config, function: function) { (response) in
@@ -66,7 +39,7 @@ class NetAgent: NSObject, URLSessionDelegate {
     private func DataTask(request: URLRequest,
                           session: URLSession,
                           config: NetConfig,
-                          function: NetConfig.NetworkerFunction,
+                          function: NetworkerFunction,
                           completion: @escaping (NetResponse) -> Void) {
         
         let task = session.dataTask(with: request) { (data, response, err) in
@@ -96,13 +69,13 @@ class NetAgent: NSObject, URLSessionDelegate {
                 var content: Any?
                 
                 switch function {
-                case .JSON:
+                case .json:
 					content = NetData.dataToJSON(data: data!)
                     
-                case .Image:
+                case .image:
 					content = UIImage(data: data!)!
                     
-                case .Data:
+                case .data:
 					content = data!
                 }
                 

@@ -23,9 +23,18 @@ class IntroVC: UIViewController {
 		actionIndicator.type = .ballRotate
 		actionIndicator.startAnimating()
 		
-		DataManager.getData { completed in
-			self.actionButton.isEnabled = true
-			self.actionIndicator.stopAnimating()
+		if #available(iOS 15.0, *) {
+			Task(priority: .high) {
+				await DataManager.asyncData()
+				self.actionButton.isEnabled = true
+				self.actionIndicator.stopAnimating()
+			}
+		}
+		else {
+			DataManager.getData { completed in
+				self.actionButton.isEnabled = true
+				self.actionIndicator.stopAnimating()
+			}
 		}
     }
 }
