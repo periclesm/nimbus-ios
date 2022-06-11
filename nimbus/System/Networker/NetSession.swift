@@ -10,21 +10,13 @@
 
 import UIKit
 
-class NetParameters: NSObject {
+class NetSession: NSObject {
 
-	class func createRequest(requestURL: URL, config: NetConfig) -> URLRequest {
+	class func request(requestURL: URL, config: NetConfig) -> URLRequest {
 		var request = URLRequest(url: requestURL)
 		request.httpBody = config.body
-		request.timeoutInterval = config.timeout
 		request.httpMethod = config.HTTPMethod.rawValue
 		request.cachePolicy = URLRequest.CachePolicy.init(rawValue: UInt(config.caching.rawValue))!
-		request.httpShouldUsePipelining = true
-		request.allowsCellularAccess = true
-		
-		if #available(iOS 13.0, *) {
-			request.allowsConstrainedNetworkAccess = true
-			request.allowsExpensiveNetworkAccess = true
-		}
 		
 		// Headers
 		if let headerData = config.headers {
@@ -37,7 +29,7 @@ class NetParameters: NSObject {
 		return request
 	}
 	
-	class func createSession(config: NetConfig) -> URLSession {
+	class func session(config: NetConfig, delegate: URLSessionDelegate? = nil) -> URLSession {
 		let configuration = URLSessionConfiguration.default
 		
 		configuration.timeoutIntervalForRequest = config.timeout
@@ -45,11 +37,11 @@ class NetParameters: NSObject {
 		configuration.httpAdditionalHeaders = config.headers
 		configuration.waitsForConnectivity = true
 		configuration.isDiscretionary = true
+		configuration.allowsCellularAccess = true
 		configuration.httpShouldUsePipelining = true
-		configuration.httpShouldSetCookies = false
 		configuration.multipathServiceType = .handover
 		
-		let session = URLSession(configuration: configuration)
+		let session = URLSession(configuration: configuration, delegate: delegate, delegateQueue: .main)
 		return session
 	}
 }

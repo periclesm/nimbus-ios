@@ -323,7 +323,7 @@ Updates will happen whenever needed. :)</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="wig-YV-gH6">
-                        <barButtonItem key="rightBarButtonItem" image="globe.badge.chevron.backward" catalog="system" id="Rfk-Nt-8WG">
+                        <barButtonItem key="rightBarButtonItem" image="link.circle" catalog="system" id="Rfk-Nt-8WG">
                             <connections>
                                 <action selector="WikiButton:" destination="kkN-16-lcQ" id="9VM-kq-rib"/>
                             </connections>
@@ -345,7 +345,7 @@ Updates will happen whenever needed. :)</string>
     </scenes>
     <color key="tintColor" systemColor="systemIndigoColor"/>
     <resources>
-        <image name="globe.badge.chevron.backward" catalog="system" width="128" height="113"/>
+        <image name="link.circle" catalog="system" width="128" height="121"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

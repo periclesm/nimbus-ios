@@ -14,11 +14,11 @@ class NetAsyncAwait: NSObject {
 	
 	func getData(config: NetConfig, function: NetworkerFunction) async -> NetResponse {
 		if #available(iOS 15.0, *) {
-			let request = NetParameters.createRequest(requestURL: config.url, config: config)
+			let request = NetSession.request(requestURL: config.url, config: config)
 			var responseData: (Data, URLResponse)
 			
 			do {
-				let session = NetParameters.createSession(config: config)
+				let session = NetSession.session(config: config)
 				responseData = try await session.data(for: request)
 				guard (responseData.1 as? HTTPURLResponse)?.statusCode == 200 else {
 					debugPrint("Response HTTP Code: \(String(describing: (responseData.1 as? HTTPURLResponse)?.statusCode))")

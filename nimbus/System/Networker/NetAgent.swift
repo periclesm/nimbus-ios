@@ -28,8 +28,9 @@ class NetAgent: NSObject, URLSessionDelegate {
 			return
 		}
 		
-		let request = NetParameters.createRequest(requestURL: requestURL, config: config)
-        let session = URLSession(configuration: .default, delegate: self, delegateQueue: .main)
+		let request = NetSession.request(requestURL: requestURL, config: config)
+        //let session = URLSession(configuration: .default, delegate: self, delegateQueue: .main)
+		let session = NetSession.session(config: config, delegate: self)
         
         DataTask(request: request, session: session, config: config, function: function) { (response) in
             completion(response)
