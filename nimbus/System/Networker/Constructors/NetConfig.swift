@@ -17,7 +17,6 @@ enum NetworkerFunction {
 }
 
 struct NetConfig {
-    
     enum NetworkerHTTPMethod: String {
         case GET = "GET"
         case POST = "POST"
