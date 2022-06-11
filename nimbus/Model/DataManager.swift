@@ -14,6 +14,28 @@ class DataManager: NSObject {
 
 	//MARK: - Get Data Classes --
 	
+	///iOS 15+
+	class func asyncData() async {
+		let headers = DataAPI.getDefaultHeaders()
+		let config = NetConfig(HTTPMethod: .GET, url: DataAPI.cloudURL, headers: headers)
+		
+		let response = await Networker.asyncData(config: config)
+		if response.completed {
+			//Decode data
+			if let cloudData: CloudResults? = NetData.decodeJSON(responseData: response.data as? Data) {
+				//Add data to RealmDB
+				DispatchQueue.main.async {
+					let completed = RealmOperation.add(dataArray: cloudData?.results, updatePolicy: .modified)
+					
+					if !completed {
+						assert(true, "Send a RealmDB error")
+					}
+				}
+			}
+		}
+	}
+	
+	///iOS 14- -- Deprecated
 	class func getData(_ completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
 		let config = NetConfig(HTTPMethod: .GET, url: DataAPI.cloudURL, headers: headers)
