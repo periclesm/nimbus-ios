@@ -3,7 +3,9 @@
 //  nimbusTests
 //
 //  Created by Perikles Maravelakis on 28/2/22.
-//  Copyright © 2022 Cloudfields. All rights reserved.
+//	periclesm@cloudfields.net
+//	Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+//	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
 import XCTest
