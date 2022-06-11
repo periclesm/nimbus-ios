@@ -11,30 +11,39 @@
 import UIKit
 
 class Networker: NSObject {
-    
-    class func getJSONData(config: NetConfig, completion: @escaping (NetResponse) -> ()) {
-        let net = NetAgent.sharedInstance
-        net.getData(config: config, function: NetConfig.NetworkerFunction.JSON) { (response) in
-            completion(response)
-        }
-    }
-    
-    class func getImage(config: NetConfig, completion: @escaping (NetResponse) -> ()) {
-        let net = NetAgent.sharedInstance
-        net.getData(config: config, function: NetConfig.NetworkerFunction.Image) { (response) in
-            completion(response)
-        }
-    }
-    
-    class func getData(config: NetConfig, completion: @escaping (NetResponse) -> ()) {
-        let net = NetAgent.sharedInstance
-        net.getData(config: config, function: NetConfig.NetworkerFunction.Data) { (response) in
-            completion(response)
-        }
-    }
-    
-    class func cancelSessionTask(url: String, completion: @escaping (Bool) -> ()) {
-        //let net = NetAgent.sharedInstance
-        debugPrint("Task enumeration")
-    }
+	
+	//MARK: - Async/Await iOS 15+
+	
+	class func getAsyncJSON(config: NetConfig) async -> NetResponse {
+		return await NetAsyncAwait().getData(config: config, function: .json)
+	}
+	
+	class func asyncImage(config: NetConfig) async -> NetResponse {
+		return await NetAsyncAwait().getData(config: config, function: .image)
+	}
+	
+	class func asyncData(config: NetConfig) async -> NetResponse {
+		return await NetAsyncAwait().getData(config: config, function: .data)
+	}
+	
+	//MARK: - NSOperation iOS 14-
+	
+	class func getJSONData(config: NetConfig, completion: @escaping (NetResponse) -> ()) {
+		NetAgent.sharedInstance.getData(config: config, function: .json) { (response) in
+			completion(response)
+		}
+	}
+	
+	class func getImage(config: NetConfig, completion: @escaping (NetResponse) -> ()) {
+		NetAgent.sharedInstance.getData(config: config, function: .image) { (response) in
+			completion(response)
+		}
+		
+	}
+	
+	class func getData(config: NetConfig, completion: @escaping (NetResponse) -> ()) {
+		NetAgent.sharedInstance.getData(config: config, function: .data) { (response) in
+			completion(response)
+		}
+	}
 }
