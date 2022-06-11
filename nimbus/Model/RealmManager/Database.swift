@@ -14,12 +14,14 @@ final class Database: NSObject {
 
 	static var shared = Database()
 	private var mainDB: Realm?
+	
+	let rdbQueue = DispatchQueue(label: "RealmDBQueue", attributes: .concurrent, autoreleaseFrequency: .never)
 
 	var db: Realm {
 		set(newSchema) {
 			self.mainDB = newSchema
 		}
-
+		
 		get {
 			if self.mainDB != nil {
 				return self.mainDB!
@@ -33,7 +35,10 @@ final class Database: NSObject {
 
 	override init() {
 		super.init()
-		self.mainDB = self.initMainDB()
+		
+//		self.rdbQueue.async {
+			self.mainDB = self.initMainDB()
+//		}
 	}
 
 	private func initMainDB() -> Realm? {
