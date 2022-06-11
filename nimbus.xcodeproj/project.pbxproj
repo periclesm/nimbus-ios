@@ -42,6 +42,7 @@
 		E8730F9527CCA4D20015D1D6 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9427CCA4D20015D1D6 /* MainVM.swift */; };
 		E8730F9727CCA4E20015D1D6 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9627CCA4E20015D1D6 /* DetailVM.swift */; };
 		E8A53B6C28547BEF006C07D4 /* NetParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A53B6B28547BEF006C07D4 /* NetParameters.swift */; };
+		E8A53B702854E297006C07D4 /* AsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A53B6F2854E297006C07D4 /* AsyncTests.swift */; };
 		E8A5A91927CC1BED0015FF04 /* InitialsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */; };
 		F66E979FACF97745CB56C0A4 /* Pods_nimbusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,7 @@
 		E8730F9427CCA4D20015D1D6 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 		E8730F9627CCA4E20015D1D6 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
 		E8A53B6B28547BEF006C07D4 /* NetParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetParameters.swift; sourceTree = "<group>"; };
+		E8A53B6F2854E297006C07D4 /* AsyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTests.swift; sourceTree = "<group>"; };
 		E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialsLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				E85C2E7527CD0EEF00E02462 /* APITests.swift */,
+				E8A53B6F2854E297006C07D4 /* AsyncTests.swift */,
 				E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */,
 				E843A71927CE089900A0E39D /* RealmOperationsTests.swift */,
 			);
@@ -538,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A53B702854E297006C07D4 /* AsyncTests.swift in Sources */,
 				E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */,
 				E85C2E7827CD48FA00E02462 /* DatabaseTests.swift in Sources */,
 				E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */,
