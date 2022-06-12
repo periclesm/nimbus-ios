@@ -45,7 +45,12 @@ final class Database: NSObject {
 			fileURL: self.dbFile(name: "cloudDB.realm"),
 			readOnly: false,
 			schemaVersion: schemaVer,
-			deleteRealmIfMigrationNeeded: true)
+			deleteRealmIfMigrationNeeded: true,
+			shouldCompactOnLaunch: { totalBytes, usedBytes in
+				// Compact if the file is over 2MB in size and less than 50% 'used'
+				let oneHundredMB = 2 * 1024 * 1024
+				return (totalBytes > oneHundredMB) && (Double(usedBytes) / Double(totalBytes)) < 0.5
+			})
 
 		var db: Realm? = nil
 
