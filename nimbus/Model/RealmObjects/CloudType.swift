@@ -16,15 +16,4 @@ class CloudType: Object, Codable {
 	@Persisted (indexed: true) var name: String = ""
 	@Persisted var detail: String = ""
 
-//	override static func primaryKey() -> String? {
-//		return "objectId"
-//	}
-
-//	override static func indexedProperties() -> Array<String> {
-//		return ["name"]
-//	}
-//
-//	override static func ignoredProperties() -> Array<String> {
-//		return []
-//	}
 }

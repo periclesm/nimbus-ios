@@ -17,15 +17,4 @@ class CloudDetail: Object, Codable {
 	@Persisted (indexed: true) var image: String = ""
 	@Persisted (indexed: true) var wiki: String = ""
 
-//	override static func primaryKey() -> String? {
-//		return "objectId"
-//	}
-
-//	override static func indexedProperties() -> Array<String> {
-//		return ["image", "wiki"]
-//	}
-//
-//	override static func ignoredProperties() -> Array<String> {
-//		return []
-//	}
 }
