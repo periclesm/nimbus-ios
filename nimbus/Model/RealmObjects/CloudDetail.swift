@@ -12,22 +12,9 @@ import RealmSwift
 
 class CloudDetail: Object, Codable {
 
-	@objc dynamic var objectId: String = ""
-	@objc dynamic var detail: String = ""
-	@objc dynamic var image: String = ""
-	@objc dynamic var wiki: String = ""
+	@Persisted (primaryKey: true) var objectId: String = ""
+	@Persisted var detail: String = ""
+	@Persisted (indexed: true) var image: String = ""
+	@Persisted (indexed: true) var wiki: String = ""
 
-	//MARK: - DB Properies --
-
-	override static func primaryKey() -> String? {
-		return "objectId"
-	}
-
-	override static func indexedProperties() -> Array<String> {
-		return ["image", "wiki"]
-	}
-
-	override static func ignoredProperties() -> Array<String> {
-		return []
-	}
 }

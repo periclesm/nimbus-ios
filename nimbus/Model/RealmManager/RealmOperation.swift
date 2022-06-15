@@ -12,14 +12,14 @@ import RealmSwift
 
 final class RealmOperation: NSObject {
 
-	//MARK: - Get Data Master Function --
+	//MARK: - Get Data Master Function
 
 	class func get(dataObject: Object.Type) -> Results<Object> {
 		let data = Database.shared.db.objects(dataObject)
 		return data
 	}
 
-	//MARK: - Additions & Updates --
+	//MARK: - Additions & Updates
 
 	/// Adds a single object in the database
 	class func add(_ object: Object, updatePolicy: Realm.UpdatePolicy = .modified) -> Bool {
@@ -59,7 +59,7 @@ final class RealmOperation: NSObject {
 		return true
 	}
 
-	//MARK: - Deletions --
+	//MARK: - Deletions
 
 	/// Delete an object from the database
 	class func delete(dataObject: Object) -> Bool {
