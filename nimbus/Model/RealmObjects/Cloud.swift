@@ -12,36 +12,12 @@ import RealmSwift
 
 class Cloud: Object, Codable, Identifiable {
 
-	@objc dynamic var objectId: String = ""
-	@objc dynamic var name: String = ""
-	@objc dynamic var order: Int = 0
-	@objc dynamic var type: CloudType? = nil
-	@objc dynamic var detail: CloudDetail? = nil
-	@objc dynamic var initials: String = ""
-	@objc dynamic var excerpt: String = ""
+	@Persisted (primaryKey: true) var objectId: String = ""
+	@Persisted (indexed: true) var name: String = ""
+	@Persisted (indexed: true) var order: Int = 0
+	@Persisted var type: CloudType? = nil
+	@Persisted var detail: CloudDetail? = nil
+	@Persisted (indexed: true) var initials: String = ""
+	@Persisted var excerpt: String = ""
 
-	//MARK: - DB Properies --
-
-	override static func primaryKey() -> String? {
-		return "objectId"
-	}
-
-	override static func indexedProperties() -> Array<String> {
-		return ["order", "name", "initials"]
-	}
-
-	override static func ignoredProperties() -> Array<String> {
-		return []
-	}
-	
-//	init(objectId: String = "", name: String = "", order: Int = 0, type: CloudType? = nil, detail: CloudDetail? = nil, initials: String = "", excerpt: String = "") {
-//		self.objectId = objectId
-//		self.name = name
-//		self.order = order
-//		self.initials = initials
-//		self.excerpt = excerpt
-//		
-//		self.type = type
-//		self.detail = detail
-//	}
 }

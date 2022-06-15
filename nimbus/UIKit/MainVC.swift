@@ -29,11 +29,20 @@ class MainVC: UITableViewController {
     
     // MARK: - Actions
     
-    @IBAction func refreshData() {
-		vm.refreshData { completed in
-			if completed {
+	@IBAction func refreshData() {
+		if #available(iOS 15.0, *) {
+			Task(priority: .high) {
+				await vm.refreshDataAsync()
 				self.tableView.reloadData()
 				self.refreshControl?.endRefreshing()
+			}
+		}
+		else {
+			vm.refreshData { completed in
+				if completed {
+					self.tableView.reloadData()
+					self.refreshControl?.endRefreshing()
+				}
 			}
 		}
     }

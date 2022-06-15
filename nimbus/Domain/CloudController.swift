@@ -12,10 +12,6 @@ import RealmSwift
 
 class CloudController: NSObject {
 
-	class func getCloudListCount() -> Int {
-		return Database.shared.db.objects(Cloud.self).count
-	}
-
 	class func getCloud(objectId: String) -> Cloud? {
 		let predicate = NSPredicate(format: "objectId = %@", objectId)
 		let cloud = Database.shared.db.objects(Cloud.self).filter(predicate)
@@ -28,11 +24,6 @@ class CloudController: NSObject {
 
 	class func getListData(sortBy: String, ascending: Bool = true) -> Array<Cloud> {
 		let data = Database.shared.db.objects(Cloud.self).sorted(byKeyPath: sortBy, ascending: ascending)
-		return Array(data)
-	}
-
-	class func filterListData(filter: NSPredicate, sortBy: String, ascending: Bool = true) -> Array<Cloud> {
-		let data = Database.shared.db.objects(Cloud.self).filter(filter).sorted(byKeyPath: sortBy, ascending: ascending)
 		return Array(data)
 	}
 

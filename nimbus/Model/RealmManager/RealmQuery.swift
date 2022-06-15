@@ -12,7 +12,7 @@ import RealmSwift
 
 final class RealmQuery: NSObject {
 
-	//MARK: - Composite Sort and Filter --
+	//MARK: - Composite Sort and Filter
 
 	/**
 	Given an object, this function filters and sorts data according to input parameters
@@ -74,7 +74,7 @@ final class RealmQuery: NSObject {
 	}
 
 
-	//MARK: - Filter --
+	//MARK: - Filter
 	
 	class func filter(dataObject: Object.Type, predicate: NSPredicate) -> Results<Object>? {
 		return RealmOperation.get(dataObject: dataObject).filter(predicate)
@@ -89,7 +89,7 @@ final class RealmQuery: NSObject {
 	}
 
 
-	//MARK: - Sort --
+	//MARK: - Sort
 
 	class func sort(dataObject: Object.Type, sortAttribute: String, ascending: Bool = true) -> Results<Object>? {
 		return RealmOperation.get(dataObject: dataObject).sorted(byKeyPath: sortAttribute, ascending: ascending)
@@ -104,7 +104,7 @@ final class RealmQuery: NSObject {
 	}
 
 
-	//MARK: - Limit --
+	//MARK: - Limit
 	
 	class func limitArray(dataArray: Array<Any>, limit: Int) -> Array<Any> {
 		if limit < dataArray.count {
@@ -115,7 +115,7 @@ final class RealmQuery: NSObject {
 	}
 
 
-	//MARK: - Utilities --
+	//MARK: - Utilities
 
 	class func resultsToListConversion(results: Results<Object>?) -> List<Object> {
 		if let data = results {

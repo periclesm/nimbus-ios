@@ -10,14 +10,13 @@
 
 import UIKit
 
+enum NetworkerFunction {
+	case json
+	case image
+	case data
+}
+
 struct NetConfig {
-    
-    enum NetworkerFunction {
-        case JSON
-        case Image
-        case Data
-    }
-    
     enum NetworkerHTTPMethod: String {
         case GET = "GET"
         case POST = "POST"

@@ -21,10 +21,14 @@ class MainVM: NSObject {
 		self.clouds = CloudController.getListData(sortBy: sortBy, ascending: ascending)
 	}
 	
-	func filterLocalData(filter: NSPredicate, sortBy: String, ascending: Bool = true) {
-		self.clouds = CloudController.filterListData(filter: filter, sortBy: sortBy, ascending: ascending)
+	func refreshDataAsync() async {
+		await DataManager.asyncData()
+		DispatchQueue.main.async {
+			self.getLocalData()
+		}
 	}
 	
+	///Deprecated
 	func refreshData(completion: @escaping ((Bool) -> Void)) {
 		DataManager.getData { success in
 			self.getLocalData()

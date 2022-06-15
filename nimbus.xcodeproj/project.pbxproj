@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55ED8BDF06B0C61E93B6582E /* Pods_nimbus_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40EB6CCCB70D85BEC10B869 /* Pods_nimbus_UIKit.framework */; };
 		684109E4259B2BB200A80552 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E3259B2BB200A80552 /* DataManager.swift */; };
 		684109F1259B2D2800A80552 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E8259B2D2800A80552 /* Networker.swift */; };
 		684109F2259B2D2800A80552 /* NetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E9259B2D2800A80552 /* NetAgent.swift */; };
@@ -26,7 +27,8 @@
 		68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFA259C6AF800E8D937 /* CloudController.swift */; };
 		68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */; };
 		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
-		80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
+		C4CF78C7710DD15CC070A1CF /* Pods_nimbus_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30546F5E9B864F78DE164462 /* Pods_nimbus_SwiftUI.framework */; };
+		E813107428524AC700823764 /* NetAsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813107328524AC700823764 /* NetAsyncAwait.swift */; };
 		E83871A427CBC57500B8D023 /* CloudResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83871A327CBC57500B8D023 /* CloudResults.swift */; };
 		E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843A71927CE089900A0E39D /* RealmOperationsTests.swift */; };
 		E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C2E7527CD0EEF00E02462 /* APITests.swift */; };
@@ -67,11 +69,14 @@
 		E8982352281A5F9F003E9CA5 /* TableCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683511E723E59C13007AC2BB /* TableCellClass.swift */; };
 		E8982354281A5F9F003E9CA5 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8730F9627CCA4E20015D1D6 /* DetailVM.swift */; };
 		E8982356281A5F9F003E9CA5 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D759B259A436D003FCB1C /* Cloud.swift */; };
-		E8982358281A5F9F003E9CA5 /* Pods_nimbus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */; };
 		E898235A281A5F9F003E9CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20951EA74B7400BFC44C /* LaunchScreen.storyboard */; };
 		E898235B281A5F9F003E9CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		E898235C281A5F9F003E9CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		E8982363281A5FF0003E9CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83ECA8927CAAD660016FB3E /* AppDelegate.swift */; };
+		E8FCE43A285A17EA00E423CB /* NetAsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813107328524AC700823764 /* NetAsyncAwait.swift */; };
+		E8FCE43C285A180700E423CB /* NetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCE43B285A180700E423CB /* NetSession.swift */; };
+		E8FCE43D285A180700E423CB /* NetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCE43B285A180700E423CB /* NetSession.swift */; };
+		E8FCE43F285A192800E423CB /* AsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCE43E285A192800E423CB /* AsyncTests.swift */; };
 		F66E979FACF97745CB56C0A4 /* Pods_nimbusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,8 +91,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30546F5E9B864F78DE164462 /* Pods_nimbus_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E64306014F88E8C6167872D /* Pods-nimbus-UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus-UIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus-UIKit/Pods-nimbus-UIKit.release.xcconfig"; sourceTree = "<group>"; };
 		532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5400DE49E178B373EE3A1DF7 /* Pods-nimbus-UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus-UIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus-UIKit/Pods-nimbus-UIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.debug.xcconfig"; sourceTree = "<group>"; };
 		683511E523E59B1E007AC2BB /* TableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellController.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
@@ -116,9 +123,13 @@
 		68EA8DFA259C6AF800E8D937 /* CloudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudController.swift; sourceTree = "<group>"; };
 		68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeController.swift; sourceTree = "<group>"; };
 		68EA8E00259C6B1900E8D937 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		9C52C83DE175FBF8A18F1FB3 /* Pods-nimbus-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus-SwiftUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus-SwiftUI/Pods-nimbus-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		B744837051979EBD0D7E913C /* Pods-nimbusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbusTests/Pods-nimbusTests.release.xcconfig"; sourceTree = "<group>"; };
+		D40EB6CCCB70D85BEC10B869 /* Pods_nimbus_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nimbus_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus.release.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus/Pods-nimbus.release.xcconfig"; sourceTree = "<group>"; };
 		DB5995033291F49F092C4276 /* Pods-nimbusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbusTests/Pods-nimbusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E34DCAC7ECAB81CB8078DE0E /* Pods-nimbus-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nimbus-SwiftUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nimbus-SwiftUI/Pods-nimbus-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		E813107328524AC700823764 /* NetAsyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetAsyncAwait.swift; sourceTree = "<group>"; };
 		E83871A327CBC57500B8D023 /* CloudResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudResults.swift; sourceTree = "<group>"; };
 		E83ECA8927CAAD660016FB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E843A71927CE089900A0E39D /* RealmOperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmOperationsTests.swift; sourceTree = "<group>"; };
@@ -137,6 +148,8 @@
 		E8982361281A5F9F003E9CA5 /* nimbus-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nimbus-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8982362281A5FA0003E9CA5 /* nimbus copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "nimbus copy-Info.plist"; path = "/Users/perikles/Vaults/CodeVault/OpenSource/nimbus-ios/nimbus copy-Info.plist"; sourceTree = "<absolute>"; };
 		E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialsLabel.swift; sourceTree = "<group>"; };
+		E8FCE43B285A180700E423CB /* NetSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetSession.swift; sourceTree = "<group>"; };
+		E8FCE43E285A192800E423CB /* AsyncTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80AA9E3C8C8867841DE32FA6 /* Pods_nimbus.framework in Frameworks */,
+				C4CF78C7710DD15CC070A1CF /* Pods_nimbus_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8982358281A5F9F003E9CA5 /* Pods_nimbus.framework in Frameworks */,
+				55ED8BDF06B0C61E93B6582E /* Pods_nimbus_UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +195,8 @@
 				684109EA259B2D2800A80552 /* Utilities */,
 				684109ED259B2D2800A80552 /* Constructors */,
 				684109E8259B2D2800A80552 /* Networker.swift */,
+				E8FCE43B285A180700E423CB /* NetSession.swift */,
+				E813107328524AC700823764 /* NetAsyncAwait.swift */,
 				684109E9259B2D2800A80552 /* NetAgent.swift */,
 			);
 			path = Networker;
@@ -336,8 +351,9 @@
 		7896288071E0E771343E6221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1272D989A4F583ADA49D8CDD /* Pods_nimbus.framework */,
 				532E0FA70043F4AE84A09A09 /* Pods_nimbusTests.framework */,
+				30546F5E9B864F78DE164462 /* Pods_nimbus_SwiftUI.framework */,
+				D40EB6CCCB70D85BEC10B869 /* Pods_nimbus_UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -349,6 +365,10 @@
 				D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */,
 				DB5995033291F49F092C4276 /* Pods-nimbusTests.debug.xcconfig */,
 				B744837051979EBD0D7E913C /* Pods-nimbusTests.release.xcconfig */,
+				E34DCAC7ECAB81CB8078DE0E /* Pods-nimbus-SwiftUI.debug.xcconfig */,
+				9C52C83DE175FBF8A18F1FB3 /* Pods-nimbus-SwiftUI.release.xcconfig */,
+				5400DE49E178B373EE3A1DF7 /* Pods-nimbus-UIKit.debug.xcconfig */,
+				3E64306014F88E8C6167872D /* Pods-nimbus-UIKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -357,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				E85C2E7527CD0EEF00E02462 /* APITests.swift */,
+				E8FCE43E285A192800E423CB /* AsyncTests.swift */,
 				E85C2E7727CD48FA00E02462 /* DatabaseTests.swift */,
 				E843A71927CE089900A0E39D /* RealmOperationsTests.swift */,
 			);
@@ -369,11 +390,19 @@
 				E876FBD32817F161007A3DC9 /* IntroView.swift */,
 				E876FBD928187503007A3DC9 /* MainView.swift */,
 				E876FBDB281875EC007A3DC9 /* DetailView.swift */,
+				E8FCE440285A1A3D00E423CB /* DetailComponents */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		E8FCE440285A1A3D00E423CB /* DetailComponents */ = {
+			isa = PBXGroup;
+			children = (
 				E865331A281A82C700533A23 /* DetailImageView.swift */,
 				E865331C281A98BC00533A23 /* DetailHeaderView.swift */,
 				E865331E281A98CC00533A23 /* DetailInfoView.swift */,
 			);
-			path = SwiftUI;
+			path = DetailComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,15 +545,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus-SwiftUI/Pods-nimbus-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus-SwiftUI/Pods-nimbus-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbus-SwiftUI/Pods-nimbus-SwiftUI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		797AE082DDCEABBDF496C467 /* [CP] Check Pods Manifest.lock */ = {
@@ -560,7 +589,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-nimbus-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-nimbus-SwiftUI-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -595,7 +624,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-nimbus-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-nimbus-UIKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -608,15 +637,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus-UIKit/Pods-nimbus-UIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-nimbus-UIKit/Pods-nimbus-UIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbus/Pods-nimbus-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nimbus-UIKit/Pods-nimbus-UIKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -630,6 +659,7 @@
 				68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */,
 				68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */,
 				E876FBDA28187503007A3DC9 /* MainView.swift in Sources */,
+				E8FCE43C285A180700E423CB /* NetSession.swift in Sources */,
 				68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */,
 				684109F6259B2D2800A80552 /* NetConfig.swift in Sources */,
 				684D75A0259A43DF003FCB1C /* CloudType.swift in Sources */,
@@ -643,6 +673,7 @@
 				684109FF259B39D500A80552 /* DataAPI.swift in Sources */,
 				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
 				684109F1259B2D2800A80552 /* Networker.swift in Sources */,
+				E813107428524AC700823764 /* NetAsyncAwait.swift in Sources */,
 				684109E4259B2BB200A80552 /* DataManager.swift in Sources */,
 				E898233528192EB2003E9CA5 /* nimbus.swift in Sources */,
 				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
@@ -660,6 +691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FCE43F285A192800E423CB /* AsyncTests.swift in Sources */,
 				E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */,
 				E85C2E7827CD48FA00E02462 /* DatabaseTests.swift in Sources */,
 				E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */,
@@ -674,6 +706,7 @@
 				E898233A281A5F9F003E9CA5 /* CloudController.swift in Sources */,
 				E898233B281A5F9F003E9CA5 /* InitialsLabel.swift in Sources */,
 				E898233C281A5F9F003E9CA5 /* IntroVC.swift in Sources */,
+				E8FCE43D285A180700E423CB /* NetSession.swift in Sources */,
 				E898233D281A5F9F003E9CA5 /* MainVC.swift in Sources */,
 				E898233E281A5F9F003E9CA5 /* AltitudeController.swift in Sources */,
 				E8982340281A5F9F003E9CA5 /* DetailController.swift in Sources */,
@@ -687,6 +720,7 @@
 				E8982348281A5F9F003E9CA5 /* NetAgent.swift in Sources */,
 				E8982349281A5F9F003E9CA5 /* DataAPI.swift in Sources */,
 				E898234A281A5F9F003E9CA5 /* CloudDetail.swift in Sources */,
+				E8FCE43A285A17EA00E423CB /* NetAsyncAwait.swift in Sources */,
 				E8982363281A5FF0003E9CA5 /* AppDelegate.swift in Sources */,
 				E898234B281A5F9F003E9CA5 /* Networker.swift in Sources */,
 				E898234C281A5F9F003E9CA5 /* DataManager.swift in Sources */,
@@ -781,7 +815,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -835,7 +869,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -847,7 +881,7 @@
 		};
 		684A209C1EA74B7400BFC44C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */;
+			baseConfigurationReference = E34DCAC7ECAB81CB8078DE0E /* Pods-nimbus-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -868,7 +902,7 @@
 		};
 		684A209D1EA74B7400BFC44C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */;
+			baseConfigurationReference = 9C52C83DE175FBF8A18F1FB3 /* Pods-nimbus-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -942,7 +976,7 @@
 		};
 		E898235F281A5F9F003E9CA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 677CD0CD5F91D9D829360CD8 /* Pods-nimbus.debug.xcconfig */;
+			baseConfigurationReference = 5400DE49E178B373EE3A1DF7 /* Pods-nimbus-UIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -963,7 +997,7 @@
 		};
 		E8982360281A5F9F003E9CA5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6D798D25D566E7015950EE6 /* Pods-nimbus.release.xcconfig */;
+			baseConfigurationReference = 3E64306014F88E8C6167872D /* Pods-nimbus-UIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
