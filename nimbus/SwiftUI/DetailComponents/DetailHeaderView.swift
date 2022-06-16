@@ -8,18 +8,12 @@
 
 import SwiftUI
 
-struct DetailHeaderView_Previews: PreviewProvider {
-	static var previews: some View {
-		DetailHeaderView()
-			.preferredColorScheme(.dark)
-	}
-}
-
 struct DetailHeaderView: View {
 	var cloud: Cloud = Cloud()
 	
 	var body: some View {
-		VStack(alignment: .leading) {
+		
+		HStack(alignment: .center) {
 			Text(cloud.initials)
 				.font(.system(size: 45))
 				.fontWeight(.light)
@@ -28,8 +22,8 @@ struct DetailHeaderView: View {
 				.background(.indigo)
 				.cornerRadius(45.0)
 			
-			VStack(alignment: .leading, spacing: 4.0) {
-				Text("\(cloud.type!.name) altitude")
+			VStack(alignment: .leading, spacing: 0.0) {
+				Text("(cloud.type?.name) altitude")
 					.font(.system(size: 14))
 					.fontWeight(.medium)
 					.foregroundColor(.secondary)
@@ -38,9 +32,15 @@ struct DetailHeaderView: View {
 					.fontWeight(.semibold)
 			}
 		}
+		.frame(maxWidth: .infinity)
 		.padding(.top, -20.0)
 	}
+	
 }
 
-
-
+struct DetailHeaderView_Previews: PreviewProvider {
+	static var previews: some View {
+		DetailHeaderView()
+			.preferredColorScheme(.dark)
+	}
+}

@@ -19,10 +19,13 @@ struct IntroView: View {
 		VStack(alignment: .center, spacing: 64.0) {
 			Text("Nimbus is a testing application for iOS, focusing mainly on retrieving data from a REST service.\n\nThe app is simple, without many tricks & treats and it's intented to remain that way.\n\nUpdates will happen whenever needed. :)")
 				.padding(.horizontal, 10.0)
+				.font(.system(size: 15))
 			
 			Button("Start") {
 				debugPrint("Present navigation")
-				self.present.toggle()
+				withAnimation {
+					self.present.toggle()
+				}
 			}
 			.frame(width: 120.0, height: 30.0)
 			.foregroundColor(.blue)
@@ -30,6 +33,7 @@ struct IntroView: View {
 			.border(.blue, width: 1)
 			.fullScreenCover(isPresented: $present) {
 				MainView()
+					.transition(AnyTransition.scale(scale: 1.0, anchor: .center)) // ??? wtf?
 			}
 		}
     }

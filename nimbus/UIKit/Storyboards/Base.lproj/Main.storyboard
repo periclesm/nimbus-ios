@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +28,7 @@
                                 </constraints>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="8hJ-E8-668" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="SpG-3T-EWC"/>
+                                    <segue destination="GZ7-QR-BfN" kind="presentation" modalPresentationStyle="fullScreen" id="bAf-MQ-2gs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsG-gs-2an">
@@ -69,27 +70,35 @@ Updates will happen whenever needed. :)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDt-Mz-Xkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="106"/>
+            <point key="canvasLocation" x="-546" y="106"/>
         </scene>
-        <!--navController-->
-        <scene sceneID="3vR-aE-VEv">
+        <!--Navigation Controller-->
+        <scene sceneID="dJy-2u-vh1">
             <objects>
-                <navigationController storyboardIdentifier="navController" title="navController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8hJ-E8-668" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="a8C-xR-neX"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ecp-d4-dJ9">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                <navigationController id="GZ7-QR-BfN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="R3S-Wp-ydl">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <connections>
-                        <segue destination="1rD-uf-3dq" kind="relationship" relationship="rootViewController" id="snY-Ac-fLa"/>
+                        <segue destination="1rD-uf-3dq" kind="relationship" relationship="rootViewController" id="WoV-mH-Az0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oI1-Qc-9U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqA-rh-2Uf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="106"/>
+            <point key="canvasLocation" x="332" y="106"/>
         </scene>
         <!--MainController-->
         <scene sceneID="wEw-t0-znb">
@@ -99,47 +108,49 @@ Updates will happen whenever needed. :)</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="uER-cu-quM" userLabel="Header">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="qxf-9x-Pby" userLabel="FooterView">
-                            <rect key="frame" x="0.0" y="131.66666412353516" width="375" height="2"/>
+                            <rect key="frame" x="0.0" y="134.33333206176758" width="375" height="2"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloudCell" id="Vb8-ab-CDU" customClass="cloudCell" customModule="nimbus_SwiftUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="46.666666030883789" width="375" height="62.333332061767578"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cloudCell" id="Vb8-ab-CDU" customClass="cloudCell" customModule="nimbus_SwiftUI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="46.666666030883789" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vb8-ab-CDU" id="i2s-HP-iaW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="62.333332061767578"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350.33333333333331" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-S4-Jqp" customClass="InitialsLabel" customModule="nimbus_SwiftUI" customModuleProvider="target">
-                                            <rect key="frame" x="10" y="7.3333333333333321" width="48" height="48"/>
+                                            <rect key="frame" x="10" y="8.6666666666666643" width="48" height="48"/>
                                             <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="rpJ-S4-Jqp" secondAttribute="height" multiplier="1:1" id="ck5-QA-GaG"/>
                                                 <constraint firstAttribute="height" constant="48" id="pMC-Z4-XAB"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qaJ-Ep-EdK">
-                                            <rect key="frame" x="68" y="12" width="299" height="38.333333333333336"/>
+                                            <rect key="frame" x="68" y="12" width="274.33333333333331" height="41"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-w4-lp0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="19.333333333333332"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="21.666666666666668"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnW-vC-zNu">
-                                                    <rect key="frame" x="0.0" y="21.333333333333336" width="32.666666666666664" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                    <rect key="frame" x="0.0" y="23.666666666666664" width="35.333333333333336" height="17.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -177,7 +188,7 @@ Updates will happen whenever needed. :)</string>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="xAx-2q-pTK">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <attributedString key="attributedTitle">
                             <fragment content="reforming clouds...">
                                 <attributes>
@@ -186,6 +197,7 @@ Updates will happen whenever needed. :)</string>
                                 </attributes>
                             </fragment>
                         </attributedString>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <connections>
                             <action selector="refreshData" destination="1rD-uf-3dq" eventType="primaryActionTriggered" id="mJN-Xh-Ac8"/>
                         </connections>
@@ -208,12 +220,12 @@ Updates will happen whenever needed. :)</string>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="ZqY-gv-NAb" userLabel="Header">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="rW7-8F-Dke" userLabel="Footer">
-                            <rect key="frame" x="0.0" y="338.33333396911621" width="375" height="1"/>
+                            <rect key="frame" x="0.0" y="337.33333396911621" width="375" height="1"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -221,7 +233,7 @@ Updates will happen whenever needed. :)</string>
                             <tableViewSection id="xC2-MU-oiD">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cloudDetailCell" id="1EJ-6T-GR1">
-                                        <rect key="frame" x="0.0" y="2" width="375" height="252"/>
+                                        <rect key="frame" x="0.0" y="1" width="375" height="252"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1EJ-6T-GR1" id="Wd2-iK-nsb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
@@ -292,7 +304,7 @@ Updates will happen whenever needed. :)</string>
                             <tableViewSection headerTitle="Information" id="lej-I7-8n9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cloudDetailCell" id="fhj-Wv-mdy">
-                                        <rect key="frame" x="0.0" y="303" width="375" height="18"/>
+                                        <rect key="frame" x="0.0" y="302" width="375" height="18"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fhj-Wv-mdy" id="id5-K5-Kyk">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="18"/>
@@ -345,12 +357,18 @@ Updates will happen whenever needed. :)</string>
     </scenes>
     <color key="tintColor" systemColor="systemIndigoColor"/>
     <resources>
-        <image name="globe.badge.chevron.backward" catalog="system" width="32" height="32"/>
+        <image name="globe.badge.chevron.backward" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>

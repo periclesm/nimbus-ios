@@ -24,7 +24,7 @@ struct DetailInfoView: View {
 				.textCase(.uppercase)
 				.foregroundColor(.secondary)
 			Spacer()
-			Text(cloud.detail!.detail)
+			Text("cloud.detail!.detail")
 		}
     }
 }
