@@ -45,8 +45,8 @@ final class RealmQuery: NSObject {
 							 predicate: NSPredicate,
 							 sortAttribute: String, ascending: Bool = true, limit: Int = 0) -> Results<Object>? {
 
-		if let data = dataList {
-			return data.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
+		if let dataList {
+			return dataList.filter(predicate).sorted(byKeyPath: sortAttribute, ascending: ascending)
 		}
 
 		return nil
@@ -118,11 +118,11 @@ final class RealmQuery: NSObject {
 	//MARK: - Utilities
 
 	class func resultsToListConversion(results: Results<Object>?) -> List<Object> {
-		if let data = results {
-			if data.count > 0 {
+		if let results {
+			if results.count > 0 {
 				let newList: List<Object> = List()
 
-				for object in data {
+				for object in results {
 					newList.append(object)
 				}
 			}
