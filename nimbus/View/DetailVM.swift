@@ -40,7 +40,7 @@ class DetailVM: NSObject {
 		return nil
 	}
 	
-	///iOS 14- -- Deprecated
+	///iOS 14-
 	func getCloudImage(completion: @escaping ((UIImage?) -> Void)) {
 		let imageURL = self.getImageURL(self.cloud?.objectId)
 		let config = NetConfig(HTTPMethod: .GET, timeout: 10, url: imageURL)
