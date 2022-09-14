@@ -62,8 +62,8 @@ class DetailVC: UITableViewController {
 			vm.getCloudImage { image in
 				self.activity.stopAnimating()
 				
-				if let cloudImage = image {
-					self.clImage.image = cloudImage
+				if let image {
+					self.clImage.image = image
 					
 					UIView.animate(withDuration: 0.25) {
 						self.clImage.alpha = 1
