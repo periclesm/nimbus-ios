@@ -35,7 +35,7 @@ class DataManager: NSObject {
 		}
 	}
 	
-	///iOS 14- -- Deprecated
+	///iOS 14-
 	class func getData(_ completion: ((Bool) -> Void)? = nil) {
 		let headers = DataAPI.getDefaultHeaders()
 		let config = NetConfig(HTTPMethod: .GET, url: DataAPI.cloudURL, headers: headers)

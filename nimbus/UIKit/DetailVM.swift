@@ -28,10 +28,12 @@ class DetailVM: NSObject {
 	// MARK: - Image functions --
 	
 	//iOS 15+
-	func asyncCloudImage() async -> UIImage? {
-		let imageURL = self.getImageURL(self.cloud?.objectId)
+	func asyncCloudImage(imageURL: URL?) async -> UIImage? {
+		guard let imageURL else {
+			return nil
+		}
+
 		let config = NetConfig(HTTPMethod: .GET, timeout: 10, url: imageURL)
-		
 		let response = await Networker.asyncImage(config: config)
 		if response.completed {
 			return (response.data as? UIImage)
@@ -40,7 +42,7 @@ class DetailVM: NSObject {
 		return nil
 	}
 	
-	///iOS 14- -- Deprecated
+	///iOS 14-
 	func getCloudImage(completion: @escaping ((UIImage?) -> Void)) {
 		let imageURL = self.getImageURL(self.cloud?.objectId)
 		let config = NetConfig(HTTPMethod: .GET, timeout: 10, url: imageURL)
@@ -58,7 +60,7 @@ class DetailVM: NSObject {
 	
 	//MARK: - Wiki functions --
 	
-	private func getImageURL(_ objectId: String?) -> URL? {
+	func getImageURL(_ objectId: String?) -> URL? {
 		guard let id = objectId else {
 			return nil
 		}
