@@ -22,7 +22,7 @@ class CloudController: NSObject {
 		return nil
 	}
 
-	class func getListData(sortBy: String, ascending: Bool = true) -> Array<Cloud> {
+	class func getListData(sortBy: String, ascending: Bool = true) -> CloudData {
 		let data = Database.shared.db.objects(Cloud.self).sorted(byKeyPath: sortBy, ascending: ascending)
 		return Array(data)
 	}

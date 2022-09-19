@@ -10,7 +10,7 @@ import Foundation
 
 class MainVM: NSObject {
 	
-	var clouds: Array<Cloud> = []
+	var clouds: CloudData = []
 	
 	override init() {
 		super.init()
