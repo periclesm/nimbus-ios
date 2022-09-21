@@ -14,8 +14,4 @@ class cloudCell: UITableViewCell {
     @IBOutlet weak var cloudName: UILabel!
     @IBOutlet weak var cloudDetail: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.backgroundColor = UIColor.clear
-    }
 }
