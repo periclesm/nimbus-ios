@@ -16,19 +16,19 @@ final class DataAPI: NSObject {
 	
 	static var cloudURL: URL {
 		get {
-			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudList?include=detail&include=type")!
+			return URL(string: "https://api.clfd.eu/nimbus/classes/cloudList?include=detail&include=type")!
 		}
 	}
 
 	static var clAltitudeURL: URL {
 		get {
-			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudType")!
+			return URL(string: "https://api.clfd.eu/nimbus/classes/cloudType")!
 		}
 	}
 
 	static var clDetailURL: URL {
 		get {
-			return URL(string: "https://stage.clfd.eu/nimbus/classes/cloudDetail")!
+			return URL(string: "https://api.clfd.eu/nimbus/classes/cloudDetail")!
 		}
 	}
 
