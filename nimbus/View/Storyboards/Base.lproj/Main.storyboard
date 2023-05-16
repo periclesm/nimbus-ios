@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vKH-wv-OUL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vKH-wv-OUL">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-X8-cS2">
-                                <rect key="frame" x="127.66666666666669" y="532.66666666666663" width="120" height="30"/>
+                                <rect key="frame" x="127.66666666666669" y="541.66666666666663" width="120" height="30"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="grk-5y-90v"/>
@@ -32,10 +32,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsG-gs-2an">
-                                <rect key="frame" x="16" y="343.33333333333331" width="343" height="125.33333333333331"/>
-                                <string key="text">Nimbus is a testing application for iOS, focusing mainly on retrieving data via RESTful services.
+                                <rect key="frame" x="16" y="334.33333333333331" width="343" height="143.33333333333331"/>
+                                <string key="text">Nimbus is a testing application for iOS, focusing mainly on retrieving data via RESTful services and caching them on a RealmDB.
 
-The app is simple, without many tricks &amp; treats and it's intented to remain that way.
+The app is simple, without many tricks &amp; treats and it's intented that way.
 
 Updates will happen whenever needed. :)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -43,7 +43,7 @@ Updates will happen whenever needed. :)</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSb-UY-YPM" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="163.66666666666666" y="594.66666666666663" width="48" height="48"/>
+                                <rect key="frame" x="163.66666666666666" y="603.66666666666663" width="48" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="LNW-Xf-Evo"/>
@@ -78,7 +78,7 @@ Updates will happen whenever needed. :)</string>
                 <navigationController storyboardIdentifier="navController" title="navController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8hJ-E8-668" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="a8C-xR-neX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ecp-d4-dJ9">
-                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
