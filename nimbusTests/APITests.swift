@@ -60,7 +60,7 @@ class APITests: XCTestCase {
 		var responseData: Data?
 		
 		let operationWait = expectation(description: "Fetching API Data")
-		let failed_endpointURL = URL(string: "https://stage.clfd.eu/nimbus")
+		let failed_endpointURL = URL(string: "https://api.clfd.eu/nimbus")
 		let headers = DataAPI.getDefaultHeaders()
 		let config = NetConfig(HTTPMethod: .GET, url: failed_endpointURL, headers: headers)
 		
