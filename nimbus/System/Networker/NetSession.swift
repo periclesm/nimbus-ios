@@ -39,7 +39,7 @@ class NetSession: NSObject {
 		configuration.isDiscretionary = true
 		configuration.allowsCellularAccess = true
 		configuration.httpShouldUsePipelining = true
-		configuration.multipathServiceType = .handover
+		//configuration.multipathServiceType = .handover
 		
 		let session = URLSession(configuration: configuration, delegate: delegate, delegateQueue: .main)
 		return session

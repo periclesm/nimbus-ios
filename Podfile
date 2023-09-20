@@ -4,7 +4,7 @@ inhibit_all_warnings!
 
 # Pod Groups
 def production
-	pod 'NVActivityIndicatorView'
+	#pod 'NVActivityIndicatorView'
 	pod 'RealmSwift'
 end
 
