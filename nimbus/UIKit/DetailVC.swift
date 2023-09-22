@@ -10,7 +10,6 @@
 
 import UIKit
 import SafariServices
-import NVActivityIndicatorView
 
 class DetailVC: UITableViewController {
     
@@ -21,11 +20,10 @@ class DetailVC: UITableViewController {
     @IBOutlet weak var clName: UILabel!
     @IBOutlet weak var clAltitude: UILabel!
     @IBOutlet weak var clDetails: UILabel!
-    @IBOutlet weak var activity: NVActivityIndicatorView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		activity.type = .ballRotate
     }
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -85,6 +83,8 @@ class DetailVC: UITableViewController {
 			let safari = SFSafariViewController(url: url, configuration: config)
 			safari.modalPresentationStyle = .formSheet
 			safari.modalTransitionStyle = .coverVertical
+            safari.preferredControlTintColor = UIColor.systemIndigo
+            
 			self.present(safari, animated: true, completion: nil)
 		}
 	}

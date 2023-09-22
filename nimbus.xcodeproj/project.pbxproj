@@ -146,7 +146,7 @@
 		E876FBD928187503007A3DC9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E876FBDB281875EC007A3DC9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E8982361281A5F9F003E9CA5 /* nimbus-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nimbus-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8982362281A5FA0003E9CA5 /* nimbus copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "nimbus copy-Info.plist"; path = "/Users/perikles/Vaults/CodeVault/OpenSource/nimbus-ios/nimbus copy-Info.plist"; sourceTree = "<absolute>"; };
+		E8982362281A5FA0003E9CA5 /* Info-UIKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-UIKit.plist"; path = "/Users/perikles/Vaults/CodeVault/OpenSource/nimbus-ios/nimbus/Info-UIKit.plist"; sourceTree = "<absolute>"; };
 		E8A5A91827CC1BED0015FF04 /* InitialsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialsLabel.swift; sourceTree = "<group>"; };
 		E8FCE43B285A180700E423CB /* NetSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetSession.swift; sourceTree = "<group>"; };
 		E8FCE43E285A192800E423CB /* AsyncTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTests.swift; sourceTree = "<group>"; };
@@ -228,7 +228,6 @@
 				684A20851EA74B7400BFC44C /* Products */,
 				D2828EE83853650EBC6D7666 /* Pods */,
 				7896288071E0E771343E6221 /* Frameworks */,
-				E8982362281A5FA0003E9CA5 /* nimbus copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,6 +261,7 @@
 			children = (
 				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20981EA74B7400BFC44C /* Info.plist */,
+				E8982362281A5FA0003E9CA5 /* Info-UIKit.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -472,8 +472,9 @@
 		684A207C1EA74B7400BFC44C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Cloudfields;
 				TargetAttributes = {
 					684A20831EA74B7400BFC44C = {
@@ -815,7 +816,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -869,7 +870,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -885,15 +886,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = nimbus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus SUI";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus.swiftui;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.clfd.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -910,15 +912,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = nimbus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus SUI";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus.swiftui;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.clfd.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -945,13 +948,16 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbusTests;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.clfd.nimbusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nimbus.app/nimbus";
 			};
 			name = Debug;
@@ -972,12 +978,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbusTests;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.clfd.nimbusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nimbus.app/nimbus";
 			};
 			name = Release;
@@ -988,15 +997,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
-				INFOPLIST_FILE = "nimbus copy-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIK";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_FILE = "nimbus/Info-UIKit.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIKit";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus.uikit;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.clfd.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1013,15 +1023,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
-				INFOPLIST_FILE = "nimbus copy-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIK";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_FILE = "nimbus/Info-UIKit.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIKit";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.cloudfields.nimbus.uikit;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.clfd.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

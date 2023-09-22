@@ -9,18 +9,16 @@
 //
 
 import UIKit
-import NVActivityIndicatorView
 
 class IntroVC: UIViewController {
 
 	@IBOutlet weak var actionButton: UIButton!
-	@IBOutlet weak var actionIndicator: NVActivityIndicatorView!
+	@IBOutlet weak var actionIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		self.actionButton.isEnabled = false
-		actionIndicator.type = .ballRotate
 		actionIndicator.startAnimating()
 		
 		if #available(iOS 15.0, *) {
