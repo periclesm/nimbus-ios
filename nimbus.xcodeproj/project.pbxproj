@@ -474,7 +474,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = Cloudfields;
 				TargetAttributes = {
 					684A20831EA74B7400BFC44C = {
