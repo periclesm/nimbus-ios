@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "684A20831EA74B7400BFC44C"
-               BuildableName = "nimbus-SwiftUI.app"
-               BlueprintName = "nimbus-SwiftUI"
+               BlueprintIdentifier = "E8982336281A5F9F003E9CA5"
+               BuildableName = "nimbus-UIKit.app"
+               BlueprintName = "nimbus-UIKit"
                ReferencedContainer = "container:nimbus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E85C2E6B27CD0E5000E02462"
-               BuildableName = "nimbusTests.xctest"
-               BlueprintName = "nimbusTests"
-               ReferencedContainer = "container:nimbus.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -54,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "684A20831EA74B7400BFC44C"
-            BuildableName = "nimbus-SwiftUI.app"
-            BlueprintName = "nimbus-SwiftUI"
+            BlueprintIdentifier = "E8982336281A5F9F003E9CA5"
+            BuildableName = "nimbus-UIKit.app"
+            BlueprintName = "nimbus-UIKit"
             ReferencedContainer = "container:nimbus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -71,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "684A20831EA74B7400BFC44C"
-            BuildableName = "nimbus-SwiftUI.app"
-            BlueprintName = "nimbus-SwiftUI"
+            BlueprintIdentifier = "E8982336281A5F9F003E9CA5"
+            BuildableName = "nimbus-UIKit.app"
+            BlueprintName = "nimbus-UIKit"
             ReferencedContainer = "container:nimbus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

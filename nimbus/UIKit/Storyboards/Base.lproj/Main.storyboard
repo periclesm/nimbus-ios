@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +12,7 @@
         <!--IntroController-->
         <scene sceneID="ojk-oq-TdY">
             <objects>
-                <viewController storyboardIdentifier="IntroVC" title="IntroController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vKH-wv-OUL" customClass="IntroVC" customModule="nimbus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroVC" title="IntroController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vKH-wv-OUL" customClass="IntroVC" customModule="nimbus_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cQS-Le-z1M"/>
                         <viewControllerLayoutGuide type="bottom" id="zAq-0g-n0y"/>
@@ -20,38 +21,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-X8-cS2">
-                                <rect key="frame" x="127.66666666666669" y="541.66666666666663" width="120" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-X8-cS2">
+                                <rect key="frame" x="127.66666666666669" y="532.66666666666663" width="120" height="34.333333333333371"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="grk-5y-90v"/>
                                 </constraints>
                                 <state key="normal" title="Start"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start" cornerStyle="large"/>
                                 <connections>
-                                    <segue destination="8hJ-E8-668" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="SpG-3T-EWC"/>
+                                    <segue destination="GZ7-QR-BfN" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="bAf-MQ-2gs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsG-gs-2an">
-                                <rect key="frame" x="16" y="334.33333333333331" width="343" height="143.33333333333331"/>
-                                <string key="text">Nimbus is a testing application for iOS, focusing mainly on retrieving data via RESTful services and caching them on a RealmDB.
+                                <rect key="frame" x="16" y="343.33333333333331" width="343" height="125.33333333333331"/>
+                                <string key="text">Nimbus is a testing application for iOS, focusing mainly on retrieving data from a REST service.
 
-The app is simple, without many tricks &amp; treats and it's intented that way.
+The app is simple, without many tricks &amp; treats and it's intented to remain that way.
 
 Updates will happen whenever needed. :)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="sqV-xw-sLc">
-                                <rect key="frame" x="177.66666666666666" y="595.66666666666663" width="20" height="20"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="pVb-jp-IUP">
+                                <rect key="frame" x="177.66666666666666" y="591" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sqV-xw-sLc" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="0bk-72-gkG"/>
                             <constraint firstItem="lNT-X8-cS2" firstAttribute="top" secondItem="vsG-gs-2an" secondAttribute="bottom" constant="64" id="ABY-zy-WAD"/>
-                            <constraint firstItem="sqV-xw-sLc" firstAttribute="top" secondItem="lNT-X8-cS2" secondAttribute="bottom" constant="24" id="TCR-8I-NH5"/>
+                            <constraint firstItem="pVb-jp-IUP" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="Jus-qi-CpB"/>
                             <constraint firstItem="vsG-gs-2an" firstAttribute="leading" secondItem="3nj-J5-EEY" secondAttribute="leading" constant="16" id="cPZ-2l-em8"/>
+                            <constraint firstItem="pVb-jp-IUP" firstAttribute="top" secondItem="lNT-X8-cS2" secondAttribute="bottom" constant="24" id="dDs-du-goY"/>
                             <constraint firstItem="lNT-X8-cS2" firstAttribute="centerX" secondItem="3nj-J5-EEY" secondAttribute="centerX" id="m9H-uL-JAz"/>
                             <constraint firstItem="vsG-gs-2an" firstAttribute="centerY" secondItem="3nj-J5-EEY" secondAttribute="centerY" id="moj-jc-GhV"/>
                             <constraint firstAttribute="trailing" secondItem="vsG-gs-2an" secondAttribute="trailing" constant="16" id="q8Q-B2-nfi"/>
@@ -60,97 +62,100 @@ Updates will happen whenever needed. :)</string>
                     <navigationItem key="navigationItem" title="Nimbus" id="htX-zK-iQ2"/>
                     <connections>
                         <outlet property="actionButton" destination="lNT-X8-cS2" id="oK8-LU-fPe"/>
-                        <outlet property="actionIndicator" destination="sqV-xw-sLc" id="eSs-KH-7C7"/>
+                        <outlet property="actionIndicator" destination="pVb-jp-IUP" id="8mW-Be-AIU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDt-Mz-Xkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="106"/>
+            <point key="canvasLocation" x="-546" y="106"/>
         </scene>
-        <!--navController-->
-        <scene sceneID="3vR-aE-VEv">
+        <!--Navigation Controller-->
+        <scene sceneID="dJy-2u-vh1">
             <objects>
-                <navigationController storyboardIdentifier="navController" title="navController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8hJ-E8-668" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="a8C-xR-neX"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ecp-d4-dJ9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <navigationController id="GZ7-QR-BfN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="R3S-Wp-ydl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                        </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="1rD-uf-3dq" kind="relationship" relationship="rootViewController" id="snY-Ac-fLa"/>
+                        <segue destination="1rD-uf-3dq" kind="relationship" relationship="rootViewController" id="WoV-mH-Az0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oI1-Qc-9U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqA-rh-2Uf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="106"/>
+            <point key="canvasLocation" x="332" y="106"/>
         </scene>
         <!--MainController-->
         <scene sceneID="wEw-t0-znb">
             <objects>
-                <tableViewController storyboardIdentifier="MainVC" title="MainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1rD-uf-3dq" customClass="MainVC" customModule="nimbus" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MainVC" title="MainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1rD-uf-3dq" customClass="MainVC" customModule="nimbus_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="3yo-2g-wj8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="uER-cu-quM" userLabel="Header">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="qxf-9x-Pby" userLabel="FooterView">
-                            <rect key="frame" x="0.0" y="144" width="375" height="2"/>
+                            <rect key="frame" x="0.0" y="122.33333396911621" width="375" height="2"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloudCell" id="Vb8-ab-CDU" customClass="cloudCell" customModule="nimbus" customModuleProvider="target">
-                                <rect key="frame" x="20" y="57.333332061767578" width="335" height="69.333335876464844"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cloudCell" id="Vb8-ab-CDU" customClass="cloudCell" customModule="nimbus_SwiftUI" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="335" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vb8-ab-CDU" id="i2s-HP-iaW">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="69.333335876464844"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="304.66666666666669" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-S4-Jqp" customClass="InitialsLabel" customModule="nimbus" customModuleProvider="target">
-                                            <rect key="frame" x="12" y="7.6666666666666643" width="54" height="54"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpJ-S4-Jqp" customClass="InitialsLabel" customModule="nimbus_SwiftUI" customModuleProvider="target">
+                                            <rect key="frame" x="10" y="8.6666666666666643" width="48" height="48"/>
                                             <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="rpJ-S4-Jqp" secondAttribute="height" multiplier="1:1" id="ck5-QA-GaG"/>
-                                                <constraint firstAttribute="height" constant="54" id="pMC-Z4-XAB"/>
+                                                <constraint firstAttribute="height" constant="48" id="pMC-Z4-XAB"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qaJ-Ep-EdK">
-                                            <rect key="frame" x="76" y="16.333333333333329" width="247" height="37"/>
+                                            <rect key="frame" x="67.999999999999986" y="12" width="228.66666666666663" height="41"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-w4-lp0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="19.333333333333332"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="21.666666666666668"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnW-vC-zNu">
-                                                    <rect key="frame" x="0.0" y="21.333333333333332" width="32.666666666666664" height="15.666666666666668"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                    <rect key="frame" x="0.0" y="23.666666666666664" width="35.333333333333336" height="17.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="PwB-EE-gqM"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="rpJ-S4-Jqp" firstAttribute="leading" secondItem="i2s-HP-iaW" secondAttribute="leading" constant="12" id="5zG-HD-3lZ"/>
+                                        <constraint firstItem="rpJ-S4-Jqp" firstAttribute="leading" secondItem="i2s-HP-iaW" secondAttribute="leading" constant="10" id="5zG-HD-3lZ"/>
                                         <constraint firstItem="qaJ-Ep-EdK" firstAttribute="leading" secondItem="rpJ-S4-Jqp" secondAttribute="trailing" constant="10" id="7Ml-M1-0r4"/>
-                                        <constraint firstItem="qaJ-Ep-EdK" firstAttribute="centerY" secondItem="rpJ-S4-Jqp" secondAttribute="centerY" id="BVk-9D-vDS"/>
                                         <constraint firstItem="rpJ-S4-Jqp" firstAttribute="centerY" secondItem="i2s-HP-iaW" secondAttribute="centerY" id="HNV-vB-FMz"/>
-                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qaJ-Ep-EdK" secondAttribute="bottom" constant="16" id="O6X-IQ-aeM"/>
-                                        <constraint firstItem="qaJ-Ep-EdK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i2s-HP-iaW" secondAttribute="top" constant="16" id="UN4-0f-C3c"/>
-                                        <constraint firstAttribute="trailing" secondItem="qaJ-Ep-EdK" secondAttribute="trailing" constant="12" id="c4h-tg-Ajf"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qaJ-Ep-EdK" secondAttribute="bottom" constant="12" id="O6X-IQ-aeM"/>
+                                        <constraint firstItem="qaJ-Ep-EdK" firstAttribute="top" secondItem="i2s-HP-iaW" secondAttribute="topMargin" constant="1" id="PHH-DQ-19i"/>
+                                        <constraint firstItem="qaJ-Ep-EdK" firstAttribute="centerY" secondItem="rpJ-S4-Jqp" secondAttribute="centerY" id="TV1-et-5LW"/>
+                                        <constraint firstItem="qaJ-Ep-EdK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i2s-HP-iaW" secondAttribute="top" constant="12" id="UN4-0f-C3c"/>
+                                        <constraint firstAttribute="trailing" secondItem="qaJ-Ep-EdK" secondAttribute="trailing" constant="8" id="c4h-tg-Ajf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <inset key="separatorInset" minX="64" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="cloudDetail" destination="tnW-vC-zNu" id="kVx-T0-Tew"/>
@@ -177,6 +182,7 @@ Updates will happen whenever needed. :)</string>
                                 </attributes>
                             </fragment>
                         </attributedString>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <connections>
                             <action selector="refreshData" destination="1rD-uf-3dq" eventType="primaryActionTriggered" id="mJN-Xh-Ac8"/>
                         </connections>
@@ -192,18 +198,19 @@ Updates will happen whenever needed. :)</string>
         <!--DetailController-->
         <scene sceneID="L7X-is-6HO">
             <objects>
-                <tableViewController storyboardIdentifier="DetailVC" title="DetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kkN-16-lcQ" customClass="DetailVC" customModule="nimbus" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="eXb-D4-FoC">
+                <tableViewController storyboardIdentifier="DetailVC" title="DetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kkN-16-lcQ" customClass="DetailVC" customModule="nimbus_SwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="eXb-D4-FoC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="ZqY-gv-NAb" userLabel="Header">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="rW7-8F-Dke" userLabel="Footer">
-                            <rect key="frame" x="0.0" y="344.66666793823242" width="375" height="1"/>
+                            <rect key="frame" x="0.0" y="360.33333396911621" width="375" height="1"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -211,7 +218,7 @@ Updates will happen whenever needed. :)</string>
                             <tableViewSection id="xC2-MU-oiD">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cloudDetailCell" id="1EJ-6T-GR1">
-                                        <rect key="frame" x="0.0" y="2" width="375" height="252"/>
+                                        <rect key="frame" x="0.0" y="17.666666030883789" width="375" height="252"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1EJ-6T-GR1" id="Wd2-iK-nsb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
@@ -223,7 +230,7 @@ Updates will happen whenever needed. :)</string>
                                                         <constraint firstAttribute="height" constant="180" id="KKa-Aw-d6a"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-9A-EfN" customClass="InitialsLabel" customModule="nimbus" customModuleProvider="target">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-9A-EfN" customClass="InitialsLabel" customModule="nimbus_SwiftUI" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="160" width="90" height="90"/>
                                                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                     <constraints>
@@ -251,25 +258,25 @@ Updates will happen whenever needed. :)</string>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="CXJ-Me-Y8l">
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="lNZ-gB-rB4">
                                                     <rect key="frame" x="177.66666666666666" y="116" width="20" height="20"/>
                                                 </activityIndicatorView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="CXJ-Me-Y8l" firstAttribute="centerX" secondItem="Wd2-iK-nsb" secondAttribute="centerX" id="1qC-8h-vkG"/>
                                                 <constraint firstAttribute="trailing" secondItem="bHa-v6-AuB" secondAttribute="trailing" id="5j6-kM-V6g"/>
+                                                <constraint firstItem="lNZ-gB-rB4" firstAttribute="centerX" secondItem="Wd2-iK-nsb" secondAttribute="centerX" id="8Xm-j3-Jls"/>
                                                 <constraint firstItem="8FY-9A-EfN" firstAttribute="leading" secondItem="Wd2-iK-nsb" secondAttribute="leading" constant="10" id="Ahy-sF-Y9R"/>
                                                 <constraint firstAttribute="bottom" secondItem="8FY-9A-EfN" secondAttribute="bottom" constant="2" id="Cql-tL-OXE"/>
                                                 <constraint firstItem="bHa-v6-AuB" firstAttribute="top" secondItem="Wd2-iK-nsb" secondAttribute="top" id="D0W-c6-l6I"/>
                                                 <constraint firstItem="GAx-qe-R6a" firstAttribute="top" secondItem="bHa-v6-AuB" secondAttribute="bottom" constant="8" id="FrH-EK-jVF"/>
                                                 <constraint firstItem="bHa-v6-AuB" firstAttribute="leading" secondItem="Wd2-iK-nsb" secondAttribute="leading" id="ULL-De-cj4"/>
-                                                <constraint firstItem="CXJ-Me-Y8l" firstAttribute="centerY" secondItem="Wd2-iK-nsb" secondAttribute="centerY" id="fis-6N-SmQ"/>
                                                 <constraint firstAttribute="trailing" secondItem="GAx-qe-R6a" secondAttribute="trailing" constant="10" id="kyj-LX-tBQ"/>
                                                 <constraint firstItem="GAx-qe-R6a" firstAttribute="leading" secondItem="8FY-9A-EfN" secondAttribute="trailing" constant="10" id="mug-1G-GOz"/>
+                                                <constraint firstItem="lNZ-gB-rB4" firstAttribute="centerY" secondItem="Wd2-iK-nsb" secondAttribute="centerY" id="sQz-Jk-IU5"/>
                                                 <constraint firstItem="8FY-9A-EfN" firstAttribute="top" secondItem="bHa-v6-AuB" secondAttribute="bottom" constant="-20" id="zdI-ry-Hvz"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
@@ -277,7 +284,7 @@ Updates will happen whenever needed. :)</string>
                             <tableViewSection headerTitle="Information" id="lej-I7-8n9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cloudDetailCell" id="fhj-Wv-mdy">
-                                        <rect key="frame" x="0.0" y="309.33333396911621" width="375" height="18"/>
+                                        <rect key="frame" x="0.0" y="325" width="375" height="18"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fhj-Wv-mdy" id="id5-K5-Kyk">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="18"/>
@@ -297,7 +304,7 @@ Updates will happen whenever needed. :)</string>
                                                 <constraint firstItem="t23-PT-gNh" firstAttribute="leading" secondItem="id5-K5-Kyk" secondAttribute="leading" constant="10" id="wSR-9k-HgJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -308,14 +315,14 @@ Updates will happen whenever needed. :)</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="wig-YV-gH6">
-                        <barButtonItem key="rightBarButtonItem" image="link.circle" catalog="system" id="Rfk-Nt-8WG">
+                        <barButtonItem key="rightBarButtonItem" image="globe.badge.chevron.backward" catalog="system" id="Rfk-Nt-8WG">
                             <connections>
                                 <action selector="WikiButton:" destination="kkN-16-lcQ" id="9VM-kq-rib"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="activity" destination="CXJ-Me-Y8l" id="JWp-Z4-D59"/>
+                        <outlet property="activity" destination="lNZ-gB-rB4" id="IrY-KP-f9C"/>
                         <outlet property="clAltitude" destination="v2R-cV-jye" id="nAV-qE-1ct"/>
                         <outlet property="clDetails" destination="t23-PT-gNh" id="ycR-ei-EC5"/>
                         <outlet property="clImage" destination="bHa-v6-AuB" id="e0c-97-1iN"/>
@@ -330,7 +337,16 @@ Updates will happen whenever needed. :)</string>
     </scenes>
     <color key="tintColor" systemColor="systemIndigoColor"/>
     <resources>
-        <image name="link.circle" catalog="system" width="128" height="123"/>
+        <image name="globe.badge.chevron.backward" catalog="system" width="128" height="114"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -340,11 +356,11 @@ Updates will happen whenever needed. :)</string>
         <systemColor name="systemGray2Color">
             <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

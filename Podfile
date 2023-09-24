@@ -8,8 +8,12 @@ def production
 	pod 'RealmSwift'
 end
 
-target 'nimbus' do
+target 'nimbus-SwiftUI' do
   production
+end
+
+target 'nimbus-UIKit' do
+	production
 end
 
 target 'nimbusTests' do

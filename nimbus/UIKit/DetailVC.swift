@@ -83,6 +83,8 @@ class DetailVC: UITableViewController {
 			let safari = SFSafariViewController(url: url, configuration: config)
 			safari.modalPresentationStyle = .formSheet
 			safari.modalTransitionStyle = .coverVertical
+            safari.preferredControlTintColor = UIColor.systemIndigo
+            
 			self.present(safari, animated: true, completion: nil)
 		}
 	}
