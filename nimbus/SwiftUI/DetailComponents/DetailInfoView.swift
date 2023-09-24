@@ -8,25 +8,26 @@
 
 import SwiftUI
 
-struct DetailInfoView_Previews: PreviewProvider {
-	static var previews: some View {
-		DetailInfoView()
-			.preferredColorScheme(.dark)
-	}
-}
-
 struct DetailInfoView: View {
 	var cloud: Cloud = Cloud()
 	
     var body: some View {
 		VStack(alignment: .leading) {
-			Text("Information")
+            Text("Information")
+                .font(.subheadline)
+                .padding(.leading, 10.0)
 				.textCase(.uppercase)
 				.foregroundColor(.secondary)
 			Spacer()
-			Text("cloud.detail!.detail")
+            Text(cloud.detail?.detail ?? "Nimbostratus is a former \"Family C\" low-level stratiform genus that is now classified by the World Meteorological Organization (WMO) as a vertical or multi-level stratus type because it forms in the middle level or étage of the troposphere and usually spreads vertically into the low and high étages. This change in classification would once have made it a \"Family D\" cloud, but this style of nomenclature was discontinued by the WMO in 1956.")
+                .font(.body)
+                .padding(.horizontal, 10.0)
 		}
     }
 }
 
-
+struct DetailInfoView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailInfoView()
+    }
+}

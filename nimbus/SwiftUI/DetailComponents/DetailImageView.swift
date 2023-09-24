@@ -11,8 +11,7 @@ import Combine
 
 struct DetailImageView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailImageView(imageURL: "https://stage.clfd.eu/nimbusapp/Cirrus.jpg")
-			.preferredColorScheme(.dark)
+        DetailImageView(imageURL: "https://api.clfd.eu/nimbusapp/Cirrus.jpg")
     }
 }
 
@@ -25,7 +24,7 @@ struct DetailImageView: View {
 			imageLoader = ImageDownloader(imageURLString: urlString)
 		}
 		else {
-			imageLoader = ImageDownloader(imageURLString: "")
+			imageLoader = ImageDownloader(imageURLString: "https://api.clfd.eu/nimbusapp/Cirrus.jpg")
 		}
 	}
 	

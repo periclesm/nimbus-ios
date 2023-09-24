@@ -27,13 +27,15 @@ struct IntroView: View {
 					self.present.toggle()
 				}
 			}
-			.frame(width: 120.0, height: 30.0)
-			.foregroundColor(.blue)
-			.tint(.indigo)
-			.border(.blue, width: 1)
-			.fullScreenCover(isPresented: $present) {
+			.frame(width: 120.0, height: 35.0)
+            .background(Color.indigo)
+            .clipShape(.capsule)
+            .tint(.white)
+            .font(.callout)
+			
+            .fullScreenCover(isPresented: $present) {
 				MainView()
-					.transition(AnyTransition.scale(scale: 1.0, anchor: .center)) // ??? wtf?
+                    .transition(.slide)
 			}
 		}
     }
@@ -42,6 +44,5 @@ struct IntroView: View {
 struct Intro_Previews: PreviewProvider {
     static var previews: some View {
 		IntroView()
-			.preferredColorScheme(.dark)
     }
 }
