@@ -32,11 +32,13 @@ struct DetailImageView: View {
 		Image(uiImage: image)
 			.resizable()
 			.aspectRatio(contentMode: .fill)
+			.padding(.horizontal, 4.0)
 			.frame(height: 180.0)
 			.onReceive(imageLoader.didChange) { data in
 				self.image = data
 			}
 			.clipped()
+			.cornerRadius(12.0)
 	}
 }
 

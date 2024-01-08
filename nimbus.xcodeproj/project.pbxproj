@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -230,6 +230,7 @@
 				7896288071E0E771343E6221 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		684A20851EA74B7400BFC44C /* Products */ = {
 			isa = PBXGroup;
@@ -244,8 +245,8 @@
 		684A20861EA74B7400BFC44C /* nimbus */ = {
 			isa = PBXGroup;
 			children = (
-				E876FBD5281871B6007A3DC9 /* nimbus.swift */,
 				E83ECA8927CAAD660016FB3E /* AppDelegate.swift */,
+				E876FBD5281871B6007A3DC9 /* nimbus.swift */,
 				684A20B21EA76BF500BFC44C /* Model */,
 				684A20DB1EA7A3AB00BFC44C /* Domain */,
 				E876FBD22817F138007A3DC9 /* SwiftUI */,
@@ -474,7 +475,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = Cloudfields;
 				TargetAttributes = {
 					684A20831EA74B7400BFC44C = {
@@ -490,7 +491,7 @@
 				};
 			};
 			buildConfigurationList = 684A207F1EA74B7400BFC44C /* Build configuration list for PBXProject "nimbus" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -997,7 +998,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = "nimbus/Info-UIKit.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIKit";
@@ -1023,7 +1024,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = "nimbus/Info-UIKit.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIKit";
