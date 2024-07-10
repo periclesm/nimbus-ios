@@ -10,7 +10,7 @@
 		6830E66D2C3E64260078A41B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6830E66C2C3E64260078A41B /* RealmSwift */; };
 		6830E6722C3E64380078A41B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6830E6712C3E64380078A41B /* RealmSwift */; };
 		6830E6732C3E64380078A41B /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6830E6712C3E64380078A41B /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6830E6782C3E70540078A41B /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6830E66C2C3E64260078A41B /* RealmSwift */; };
+		6830E6782C3E70540078A41B /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 6830E66C2C3E64260078A41B /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		684109E4259B2BB200A80552 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E3259B2BB200A80552 /* DataManager.swift */; };
 		684109F1259B2D2800A80552 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E8259B2D2800A80552 /* Networker.swift */; };
 		684109F2259B2D2800A80552 /* NetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684109E9259B2D2800A80552 /* NetAgent.swift */; };
@@ -118,6 +118,7 @@
 
 /* Begin PBXFileReference section */
 		6830E6762C3E6EDD0078A41B /* Info-UIKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-UIKit.plist"; sourceTree = "<group>"; };
+		6830E67C2C3E72F50078A41B /* nimbus-UIKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "nimbus-UIKit.entitlements"; sourceTree = "<group>"; };
 		683511E523E59B1E007AC2BB /* TableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellController.swift; sourceTree = "<group>"; };
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
 		684109E3259B2BB200A80552 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -275,6 +276,7 @@
 				684A20931EA74B7400BFC44C /* Assets.xcassets */,
 				684A20981EA74B7400BFC44C /* Info.plist */,
 				6830E6762C3E6EDD0078A41B /* Info-UIKit.plist */,
+				6830E67C2C3E72F50078A41B /* nimbus-UIKit.entitlements */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -495,8 +497,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				684A20831EA74B7400BFC44C /* nimbus-SwiftUI */,
 				E8982336281A5F9F003E9CA5 /* nimbus-UIKit */,
+				684A20831EA74B7400BFC44C /* nimbus-SwiftUI */,
 				E85C2E6B27CD0E5000E02462 /* nimbusTests */,
 			);
 		};
@@ -877,6 +879,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "nimbus/nimbus-UIKit.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
@@ -890,12 +893,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.clfd.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,6";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -904,6 +907,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "nimbus/nimbus-UIKit.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
@@ -917,11 +921,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.clfd.nimbus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,6";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
