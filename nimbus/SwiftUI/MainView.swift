@@ -13,9 +13,12 @@ struct MainView: View {
 	
 	var body: some View {
 		NavigationView {
-			List(data.clouds) { item in
-				CloudCell(cloud: item)
-			}
+			Color(uiColor: .secondarySystemBackground)
+				.ignoresSafeArea()
+				.overlay(
+					List(data.clouds) { item in
+						CloudCell(cloud: item)
+					})
             .padding(.horizontal, 0.0)
 			.frame(height: nil)
 			.navigationTitle("Clouds")

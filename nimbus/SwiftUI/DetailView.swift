@@ -20,6 +20,8 @@ struct DetailView: View {
             DetailInfoView(cloud: cloud)
         }
         .navigationTitle(cloud.name)
+		.navigationBarTitleDisplayMode(.inline)
+		.background(Color(.secondarySystemBackground))
 	}
 	
 	func getImage(imageURL: String?) -> UIImage {

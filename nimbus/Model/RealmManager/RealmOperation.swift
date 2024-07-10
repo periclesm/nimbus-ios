@@ -8,6 +8,7 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
+import Foundation
 import RealmSwift
 
 final class RealmOperation: NSObject {
