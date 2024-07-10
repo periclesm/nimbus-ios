@@ -12,7 +12,7 @@ import RealmSwift
 
 typealias CloudData = Array<Cloud>
 
-class Cloud: Object, Codable {
+class Cloud: Object, Codable, Identifiable {
 
 	@Persisted (primaryKey: true) var objectId: String = ""
 	@Persisted (indexed: true) var name: String = ""

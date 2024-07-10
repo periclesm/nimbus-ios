@@ -9,6 +9,13 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
+/*
+ To enable SwiftUI:
+ - Remove AppDelegate.swift from target
+ - Add nimbus.swift to target
+ - build and run
+ */
+
 import UIKit
 
 @main
