@@ -69,7 +69,7 @@ class NetUtilities: NSObject {
         }
     }
     
-    class func sessionConfiguration(cachePolicy: NetConfig.NetworkerCachingMethod) -> URLSessionConfiguration {
+    class func sessionConfiguration(cachePolicy: NetConfig.cachingMethod) -> URLSessionConfiguration {
         let config = URLSessionConfiguration.default
         config.requestCachePolicy = URLRequest.CachePolicy.init(rawValue: UInt(cachePolicy.rawValue))!
         config.httpShouldUsePipelining = true

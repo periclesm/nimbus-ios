@@ -17,15 +17,14 @@ enum NetworkerFunction {
 }
 
 struct NetConfig {
-    enum NetworkerHTTPMethod: String {
+    enum HTTPMethod: String {
         case GET = "GET"
         case POST = "POST"
-        case PUT = "PUT"            //not yet implemented
-        case DELETE = "DELETE"      //not yet implemented
-        case OPTIONS = "OPTIONS"    //not yet implemented
+        case PUT = "PUT"
+        case DELETE = "DELETE"
     }
     
-    enum NetworkerCachingMethod: Int {
+    enum cachingMethod: Int {
         case defaultCaching = 0
         case ignoreCached = 1
         case tryCached = 2
@@ -34,8 +33,8 @@ struct NetConfig {
     
     var identifier: String = NetUtilities.Identifier()
     
-    var HTTPMethod: NetworkerHTTPMethod = .GET
-    var caching: NetworkerCachingMethod = .defaultCaching
+    var HTTPMethod: HTTPMethod = .GET
+    var caching: cachingMethod = .defaultCaching
     var timeout: TimeInterval = 30
     
     var url: URL!

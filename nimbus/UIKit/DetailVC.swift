@@ -47,27 +47,12 @@ class DetailVC: UITableViewController {
 		clImage.alpha = 0
 		activity.startAnimating()
 		
-		if #available(iOS 15.0, *) {
-			Task(priority: .medium) {
-				let imageURL = vm.getImageURL(vm.cloud?.objectId)
-				self.clImage.image = await vm.asyncCloudImage(imageURL: imageURL)
-				self.activity.stopAnimating()
-				UIView.animate(withDuration: 0.25) {
-					self.clImage.alpha = 1
-				}
-			}
-		}
-		else {
-			vm.getCloudImage { image in
-				self.activity.stopAnimating()
-				
-				if let image {
-					self.clImage.image = image
-					
-					UIView.animate(withDuration: 0.25) {
-						self.clImage.alpha = 1
-					}
-				}
+		Task(priority: .medium) {
+			let imageURL = vm.getImageURL(vm.cloud?.objectId)
+			self.clImage.image = await vm.asyncCloudImage(imageURL: imageURL)
+			self.activity.stopAnimating()
+			UIView.animate(withDuration: 0.25) {
+				self.clImage.alpha = 1
 			}
 		}
 	}

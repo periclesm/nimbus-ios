@@ -12,7 +12,7 @@ import UIKit
 
 class NetAsyncAwait: NSObject {
 	
-	func getData(config: NetConfig, function: NetworkerFunction) async -> NetResponse {
+	@MainActor func getData(config: NetConfig, function: NetworkerFunction) async -> NetResponse {
 		if #available(iOS 15.0, *) {
 			let request = NetSession.request(requestURL: config.url, config: config)
 			var responseData: (Data, URLResponse)

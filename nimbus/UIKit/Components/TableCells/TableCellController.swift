@@ -10,7 +10,7 @@ import UIKit
 
 class TableCellController: NSObject {
     
-    class func cloudCell(for tableView: UITableView, datasource: Array<Any>, index: IndexPath) -> cloudCell {
+	@MainActor class func cloudCell(for tableView: UITableView, datasource: Array<Any>, index: IndexPath) -> cloudCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cloudCell", for: index) as! cloudCell
         let cl = datasource[index.row] as! Cloud
         

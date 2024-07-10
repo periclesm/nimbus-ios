@@ -11,118 +11,150 @@
 import Foundation
 import RealmSwift
 
-final class RealmOperation: NSObject {
+final class RealmOperation: NSObject, Sendable {
 
+	func autoincrement(_ dataObject: Object.Type) -> Int {
+		let total = Database.shared.db.objects(dataObject).count
+		return total + 1
+	}
+	
+	func count(dataObject: Object.Type) -> Int {
+		return Database.shared.db.objects(dataObject).count
+	}
+	
 	//MARK: - Get Data Master Function
-
-	class func get(dataObject: Object.Type) -> Results<Object> {
+	
+	func get<T: Object>(dataObject: T.Type) -> Results<T> {
 		let data = Database.shared.db.objects(dataObject)
 		return data
 	}
-
+	
 	//MARK: - Additions & Updates
-
+	
 	/// Adds a single object in the database
-	class func add(_ object: Object, updatePolicy: Realm.UpdatePolicy = .modified) -> Bool {
-		let db = Database.shared.db
-
+	func insert(dataObject: Object) throws {
 		do {
-			try db.write {
-				db.add(object, update: updatePolicy)
+			try Database.shared.db.write {
+				Database.shared.db.add(dataObject, update: .modified)
 			}
-		} catch {
-			debugPrint("Error in adding object: \(error.localizedDescription)")
-			return false
+		} catch let error as NSError {
+			debugPrint("[REALM] Error in adding object: \(error.localizedDescription)")
+			throw error
 		}
-		
-		return true
 	}
-
+	
 	/// Adds an array of objects in the database
-	class func add(dataArray: Array<Object>?, updatePolicy: Realm.UpdatePolicy = .modified) -> Bool {
-		guard let data = dataArray else {
-			return false
+	func insertCollection(dataList: Array<Object>) throws {
+		do {
+			try Database.shared.db.write {
+				Database.shared.db.add(dataList, update: .modified)
+			}
+		} catch let error as NSError {
+			debugPrint("[REALM] Error in adding object array: \(error.localizedDescription)")
+			throw error
 		}
-
-		if !data.isEmpty {
-			let db = Database.shared.db
-
-			do {
-				try db.write {
-					db.add(data, update: updatePolicy)
+	}
+	
+	/// Adds a new object that needs to be manually initialized or updates an existing object that was retrieved earlier.
+	func update(dataObject: (() -> Object)?) throws {
+		do {
+			try Database.shared.db.write {
+				if let object = dataObject?() {
+					Database.shared.db.add(object, update: .modified)
 				}
-			} catch {
-				debugPrint("Error in adding object array: \(error.localizedDescription)")
-				return false
 			}
+		} catch let error as NSError {
+			debugPrint("[REALM] Error in adding object: \(error.localizedDescription)")
+			throw error
 		}
-		
-		return true
 	}
-
+	
 	//MARK: - Deletions
-
+	
 	/// Delete an object from the database
-	class func delete(dataObject: Object) -> Bool {
-		let db = Database.shared.db
-
+	func delete(dataObject: Object) throws {
 		do {
-			try db.write {
-				db.delete(dataObject)
+			try Database.shared.db.write {
+				Database.shared.db.delete(dataObject)
 			}
-		} catch {
-			debugPrint("Error in deleting object: \(error.localizedDescription)")
-			return false
+		} catch let error as NSError {
+			debugPrint("[REALM] Error in deleting object: \(error.localizedDescription)")
+			throw error
 		}
-		
-		return true
 	}
-
+	
 	/// Delete an array of objects from the database
-	class func delete(dataList: List<Object>) -> Bool {
-		let db = Database.shared.db
-
+	func delete(dataList: List<Object>) throws {
 		do {
-			try db.write {
-				db.delete(dataList)
+			try Database.shared.db.write {
+				Database.shared.db.delete(dataList)
 			}
-		} catch {
-			debugPrint("Error in deleting data list: \(error.localizedDescription)")
-			return false
+		} catch let error as NSError {
+			debugPrint("[REALM] Error in deleting data list: \(error.localizedDescription)")
+			throw error
+		}
+	}
+	
+	/// Delete everything from a table
+	@MainActor
+	func deleteAll(dataObject: Object.Type) throws {
+		let data = Database.shared.db.objects(dataObject)
+		
+		do {
+			try Database.shared.db.write {
+				Database.shared.db.delete(data)
+			}
+		} catch let error as NSError {
+			debugPrint("[REALM] Error in deleting data: \(error.localizedDescription)")
+			throw error
+		}
+	}
+	
+	/// Delete everything from the database
+	@MainActor
+	func deleteEverything() throws {
+		do {
+			try Database.shared.db.write {
+				Database.shared.db.deleteAll()
+			}
+		} catch let error as NSError {
+			debugPrint("[REALM] Error in deleting all data: \(error.localizedDescription)")
+			throw error
+		}
+	}
+	
+	//MARK: - Comparisons
+	
+	/**
+	 Compares two Realm objects. Returns `true` if objects are the same.
+	 */
+	func compare<T: Object>(_ firstObject: T, _ secondObject: T) -> Bool {
+		// Get the list of all properties of the objects
+		let objectSchema = firstObject.objectSchema
+		
+		for property in objectSchema.properties {
+			let propertyName = property.name
+			
+			if propertyName != "objectId" {
+				// Using KVC (Key-Value Coding) to get the value of the property
+				if let value1 = firstObject.value(forKey: propertyName), let value2 = secondObject.value(forKey: propertyName) {
+					if !compareValues(value1, value2) {
+						return false
+					}
+				} else if (firstObject.value(forKey: propertyName) == nil) != (secondObject.value(forKey: propertyName) == nil) {
+					return false
+				}
+			}
 		}
 		
 		return true
 	}
-
-	/// Delete all entries of an entity/object/table
-	class func deleteAll(dataObject: Object.Type) -> Bool {
-		let db = Database.shared.db
-
-		do {
-			try db.write {
-				db.delete(db.objects(dataObject))
-			}
-		} catch {
-			debugPrint("Error in deleting all object data: \(error.localizedDescription)")
-			return false
+	
+	///Compares two values. Returns `true` is equal
+	func compareValues(_ value1: Any, _ value2: Any) -> Bool {
+		if let value1 = value1 as? NSObject, let value2 = value2 as? NSObject {
+			return value1.isEqual(value2)
 		}
-		
-		return true
-	}
-
-	/// Delete everything from the database - Use it only when the user logs out
-	class func deleteAllData() -> Bool {
-		let db = Database.shared.db
-		
-		do {
-			try db.write {
-				db.deleteAll()
-			}
-		} catch {
-			debugPrint("Error in deleting all data: \(error.localizedDescription)")
-			return false
-		}
-		
-		return true
+		return false
 	}
 }

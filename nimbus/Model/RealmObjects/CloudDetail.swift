@@ -8,13 +8,14 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
+import Foundation
 import RealmSwift
 
 class CloudDetail: Object, Codable {
 
-	@Persisted (primaryKey: true) var objectId: String = ""
+	@Persisted(primaryKey: true) var objectId: String = ""
 	@Persisted var detail: String = ""
-	@Persisted (indexed: true) var image: String = ""
-	@Persisted (indexed: true) var wiki: String = ""
+	@Persisted(indexed: true) var image: String = ""
+	@Persisted(indexed: true) var wiki: String = ""
 
 }

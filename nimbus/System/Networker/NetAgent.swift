@@ -10,7 +10,7 @@
 
 import UIKit
 
-class NetAgent: NSObject, URLSessionDelegate {
+final class NetAgent: NSObject, URLSessionDelegate {
     
     static let sharedInstance = NetAgent()
         
