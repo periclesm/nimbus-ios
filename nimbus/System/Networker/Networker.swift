@@ -12,15 +12,15 @@ import UIKit
 
 class Networker: NSObject {
 		
-	@MainActor class func getAsyncJSON(config: NetConfig) async -> NetResponse {
-		return await NetAsyncAwait().getData(config: config, function: .json)
+	class func getAsyncJSON(config: NetConfig) async -> NetResponse {
+		return await NetAgent.shared.getData(config: config, function: .json)
 	}
 	
-	@MainActor class func asyncImage(config: NetConfig) async -> NetResponse {
-		return await NetAsyncAwait().getData(config: config, function: .image)
+	class func asyncImage(config: NetConfig) async -> NetResponse {
+		return await NetAgent.shared.getData(config: config, function: .image)
 	}
 	
-	@MainActor class func asyncData(config: NetConfig) async -> NetResponse {
-		return await NetAsyncAwait().getData(config: config, function: .data)
+	class func asyncData(config: NetConfig) async -> NetResponse {
+		return await NetAgent.shared.getData(config: config, function: .data)
 	}
 }

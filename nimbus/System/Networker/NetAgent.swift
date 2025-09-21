@@ -1,8 +1,8 @@
 //
-//  NetworkAgent.swift
+//  NetAgent.swift
 //  SwiftNetworker
 //
-//  Created by Pericles Maravelakis on 29/12/2020.
+//  Created by Perikles Maravelakis on 9/6/22.
 //	periclesm@cloudfields.net
 //	Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //	https://creativecommons.org/licenses/by-sa/4.0/
@@ -10,100 +10,61 @@
 
 import UIKit
 
-final class NetAgent: NSObject, URLSessionDelegate {
-    
-    static let sharedInstance = NetAgent()
-        
-    // MARK: - Main Methods
-    
-    func getData(config: NetConfig, function: NetworkerFunction, completion: @escaping (NetResponse) -> ()) {
-		guard let requestURL = config.url else {
-			let errorDescription = "Error in request URL"
-			let error = NSError(domain: "nimbus", code: 500, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
-																		 "NSLocalizedFailureReasonErrorKey": errorDescription])
+final class NetAgent: NSObject, Sendable {
+	
+	static let shared = NetAgent()
+	
+	func getData(config: NetConfig, function: NetworkerFunction) async -> NetResponse {
+		let request = NetSession.request(requestURL: config.url, config: config)
+		var responseData: (Data, URLResponse)
+		
+		do {
+			let session = NetSession.session(config: config)
+			responseData = try await session.data(for: request)
+			guard (responseData.1 as? HTTPURLResponse)?.statusCode == 200 else {
+				debugPrint("Response HTTP Code: \(String(describing: (responseData.1 as? HTTPURLResponse)?.statusCode))")
+				///Must create error here
+				return self.createResponse(data: nil, error: nil, identifier: config.identifier)
+			}
 			
-			let response = NetResponse(identifier: config.identifier, completed: false, error: error, data: nil)
+			//Process Data
+			let data = self.processData(data: responseData.0, function: function)
+			return self.createResponse(data: data, error: nil, identifier: config.identifier)
 			
-			completion(response)
-			return
+		} catch {
+			//URLSession Error
+			debugPrint("Error fetching data \(error.localizedDescription)")
+			return self.createResponse(data: nil, error: error as NSError, identifier: config.identifier)
+		}
+	}
+	
+	private func processData(data: Data, function: NetworkerFunction) -> Any? {
+		var content: Any?
+		
+		switch function {
+		case .json:
+			content = NetData.dataToJSON(data: data)
+			
+		case .image:
+			content = UIImage(data: data)
+			
+		case .data:
+			content = data
 		}
 		
-		let request = NetSession.request(requestURL: requestURL, config: config)
-        //let session = URLSession(configuration: .default, delegate: self, delegateQueue: .main)
-		let session = NetSession.session(config: config, delegate: self)
-        
-        DataTask(request: request, session: session, config: config, function: function) { (response) in
-            completion(response)
-        }
-    }
-    
-    private func DataTask(request: URLRequest,
-                          session: URLSession,
-                          config: NetConfig,
-                          function: NetworkerFunction,
-                          completion: @escaping (NetResponse) -> Void) {
-        
-        let task = session.dataTask(with: request) { (data, response, err) in
-            if (err != nil) {
-				let response = NetResponse(identifier: config.identifier, completed: false, error: err as NSError?, data: nil)
-                completion(response)
-            }
-            else if NetUtilities.HTTPStatusValidation(status: (response as! HTTPURLResponse).statusCode) == false {
-                let errorDescription = "HTTP Status code:\((response as! HTTPURLResponse).statusCode)"
-                let error = NSError(domain: "nimbus", code: 1000, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
-                                                                                        "NSLocalizedFailureReasonErrorKey": errorDescription])
-                
-				let response = NetResponse(identifier: config.identifier, completed: false, error: error, data: nil)
-                debugPrint("\(error.localizedDescription)")
-                completion(response)
-            }
-            else if (data?.isEmpty)! || data == nil {
-                let errorDescription = "Data length is zero"
-                
-                let error = NSError(domain: "nimbus", code: 2000, userInfo: ["NSLocalizedDescriptionKey": errorDescription,
-                                                                                        "NSLocalizedFailureReasonErrorKey": errorDescription])
-                
-				let response = NetResponse(identifier: config.identifier, completed: false, error: error, data: nil)
-                completion(response)
-            }
-            else {
-                var content: Any?
-                
-                switch function {
-                case .json:
-					content = NetData.dataToJSON(data: data!)
-                    
-                case .image:
-					content = UIImage(data: data!)!
-                    
-                case .data:
-					content = data!
-                }
-                
-				let response = NetResponse(identifier: config.identifier, completed: true, error: nil, data: content)
-                completion(response)
-            }
-        }
-        
-        task.resume()
-        session.finishTasksAndInvalidate()
-    }
-    
-    func UploadTask(request: URLRequest, session: URLSession, completion: @escaping (NetResponse) -> Void) {
-        assert(true, "Not yet complete")
-    }
-    
-    func DownloadTask(request: URLRequest, session: URLSession, completion: @escaping (NetResponse) -> Void) {
-        assert(true, "Not yet complete")
-    }
-    
-    // MARK: Delegates
-    
-    func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
-        //debugPrint("finished task \(session)")
-    }
-    
-    func urlSession(_ session: URLSession, didBecomeInvalidWithError error: Error?) {
-        //debugPrint("invalidated with reason: \(String(describing: error?.localizedDescription))")
-    }
+		return content
+	}
+	
+	private func createResponse(data: Any?, error: NSError?, identifier: String) -> NetResponse {
+		var response: NetResponse
+		
+		if error == nil {
+			response = NetResponse(identifier: identifier, completed: true, error: nil, data: data)
+		}
+		else {
+			response = NetResponse(identifier: identifier, completed: false, error: error, data: nil)
+		}
+		
+		return response
+	}
 }

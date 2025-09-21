@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,7 +29,7 @@
 		68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFA259C6AF800E8D937 /* CloudController.swift */; };
 		68EA8DFE259C6B0900E8D937 /* AltitudeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */; };
 		68EA8E01259C6B1900E8D937 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EA8E00259C6B1900E8D937 /* DetailController.swift */; };
-		E813107428524AC700823764 /* NetAsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813107328524AC700823764 /* NetAsyncAwait.swift */; };
+		E813107428524AC700823764 /* NetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813107328524AC700823764 /* NetAgent.swift */; };
 		E83871A427CBC57500B8D023 /* CloudResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83871A327CBC57500B8D023 /* CloudResults.swift */; };
 		E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843A71927CE089900A0E39D /* RealmOperationsTests.swift */; };
 		E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C2E7527CD0EEF00E02462 /* APITests.swift */; };
@@ -73,7 +73,7 @@
 		E898235B281A5F9F003E9CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A20931EA74B7400BFC44C /* Assets.xcassets */; };
 		E898235C281A5F9F003E9CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A20901EA74B7400BFC44C /* Main.storyboard */; };
 		E8982363281A5FF0003E9CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83ECA8927CAAD660016FB3E /* AppDelegate.swift */; };
-		E8FCE43A285A17EA00E423CB /* NetAsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813107328524AC700823764 /* NetAsyncAwait.swift */; };
+		E8FCE43A285A17EA00E423CB /* NetAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813107328524AC700823764 /* NetAgent.swift */; };
 		E8FCE43C285A180700E423CB /* NetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCE43B285A180700E423CB /* NetSession.swift */; };
 		E8FCE43D285A180700E423CB /* NetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCE43B285A180700E423CB /* NetSession.swift */; };
 		E8FCE43F285A192800E423CB /* AsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCE43E285A192800E423CB /* AsyncTests.swift */; };
@@ -92,25 +92,21 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		6830E6742C3E64380078A41B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolder = Frameworks;
 			files = (
 				6830E6732C3E64380078A41B /* RealmSwift in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6830E6792C3E70540078A41B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolder = Frameworks;
 			files = (
 				6830E6782C3E70540078A41B /* RealmSwift in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -121,7 +117,6 @@
 		683511E723E59C13007AC2BB /* TableCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellClass.swift; sourceTree = "<group>"; };
 		684109E3259B2BB200A80552 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		684109E8259B2D2800A80552 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
-		684109E9259B2D2800A80552 /* NetAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetAgent.swift; sourceTree = "<group>"; };
 		684109EB259B2D2800A80552 /* NetUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetUtilities.swift; sourceTree = "<group>"; };
 		684109EE259B2D2800A80552 /* NetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetData.swift; sourceTree = "<group>"; };
 		684109EF259B2D2800A80552 /* NetConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConfig.swift; sourceTree = "<group>"; };
@@ -144,7 +139,7 @@
 		68EA8DFA259C6AF800E8D937 /* CloudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudController.swift; sourceTree = "<group>"; };
 		68EA8DFD259C6B0900E8D937 /* AltitudeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltitudeController.swift; sourceTree = "<group>"; };
 		68EA8E00259C6B1900E8D937 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
-		E813107328524AC700823764 /* NetAsyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetAsyncAwait.swift; sourceTree = "<group>"; };
+		E813107328524AC700823764 /* NetAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetAgent.swift; sourceTree = "<group>"; };
 		E83871A327CBC57500B8D023 /* CloudResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudResults.swift; sourceTree = "<group>"; };
 		E83ECA8927CAAD660016FB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E843A71927CE089900A0E39D /* RealmOperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmOperationsTests.swift; sourceTree = "<group>"; };
@@ -169,26 +164,20 @@
 /* Begin PBXFrameworksBuildPhase section */
 		684A20811EA74B7400BFC44C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				6830E6722C3E64380078A41B /* RealmSwift in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E85C2E6927CD0E5000E02462 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E8982357281A5F9F003E9CA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				6830E66D2C3E64260078A41B /* RealmSwift in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -208,9 +197,8 @@
 				684109EA259B2D2800A80552 /* Utilities */,
 				684109ED259B2D2800A80552 /* Constructors */,
 				684109E8259B2D2800A80552 /* Networker.swift */,
+				E813107328524AC700823764 /* NetAgent.swift */,
 				E8FCE43B285A180700E423CB /* NetSession.swift */,
-				E813107328524AC700823764 /* NetAsyncAwait.swift */,
-				684109E9259B2D2800A80552 /* NetAgent.swift */,
 			);
 			path = Networker;
 			sourceTree = "<group>";
@@ -407,8 +395,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "nimbus-SwiftUI";
 			packageProductDependencies = (
 				6830E6712C3E64380078A41B /* RealmSwift */,
@@ -446,8 +432,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "nimbus-UIKit";
 			packageProductDependencies = (
 				6830E66C2C3E64260078A41B /* RealmSwift */,
@@ -480,7 +464,6 @@
 				};
 			};
 			buildConfigurationList = 684A207F1EA74B7400BFC44C /* Build configuration list for PBXProject "nimbus" */;
-			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -491,6 +474,7 @@
 			packageReferences = (
 				6830E6692C3E64260078A41B /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 684A20851EA74B7400BFC44C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -505,37 +489,30 @@
 /* Begin PBXResourcesBuildPhase section */
 		684A20821EA74B7400BFC44C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E8653318281A618000533A23 /* Main.storyboard in Resources */,
 				684A20971EA74B7400BFC44C /* LaunchScreen.storyboard in Resources */,
 				684A20941EA74B7400BFC44C /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E85C2E6A27CD0E5000E02462 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E8982359281A5F9F003E9CA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E898235A281A5F9F003E9CA5 /* LaunchScreen.storyboard in Resources */,
 				E898235B281A5F9F003E9CA5 /* Assets.xcassets in Resources */,
 				E898235C281A5F9F003E9CA5 /* Main.storyboard in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		684A20801EA74B7400BFC44C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E83871A427CBC57500B8D023 /* CloudResults.swift in Sources */,
 				68EA8DFB259C6AF800E8D937 /* CloudController.swift in Sources */,
@@ -554,7 +531,7 @@
 				684109FF259B39D500A80552 /* DataAPI.swift in Sources */,
 				684D7598259A435D003FCB1C /* CloudDetail.swift in Sources */,
 				684109F1259B2D2800A80552 /* Networker.swift in Sources */,
-				E813107428524AC700823764 /* NetAsyncAwait.swift in Sources */,
+				E813107428524AC700823764 /* NetAgent.swift in Sources */,
 				684109E4259B2BB200A80552 /* DataManager.swift in Sources */,
 				E898233528192EB2003E9CA5 /* nimbus.swift in Sources */,
 				684D75AA259A47AC003FCB1C /* RealmQuery.swift in Sources */,
@@ -566,22 +543,18 @@
 				E876FBD42817F161007A3DC9 /* IntroView.swift in Sources */,
 				684D759C259A436D003FCB1C /* Cloud.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E85C2E6827CD0E5000E02462 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E8FCE43F285A192800E423CB /* AsyncTests.swift in Sources */,
 				E843A71A27CE089900A0E39D /* RealmOperationsTests.swift in Sources */,
 				E85C2E7827CD48FA00E02462 /* DatabaseTests.swift in Sources */,
 				E85C2E7627CD0EEF00E02462 /* APITests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E8982338281A5F9F003E9CA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E8982339281A5F9F003E9CA5 /* CloudResults.swift in Sources */,
 				E898233A281A5F9F003E9CA5 /* CloudController.swift in Sources */,
@@ -600,7 +573,7 @@
 				E8982347281A5F9F003E9CA5 /* DetailVC.swift in Sources */,
 				E8982349281A5F9F003E9CA5 /* DataAPI.swift in Sources */,
 				E898234A281A5F9F003E9CA5 /* CloudDetail.swift in Sources */,
-				E8FCE43A285A17EA00E423CB /* NetAsyncAwait.swift in Sources */,
+				E8FCE43A285A17EA00E423CB /* NetAgent.swift in Sources */,
 				E8982363281A5FF0003E9CA5 /* AppDelegate.swift in Sources */,
 				E898234B281A5F9F003E9CA5 /* Networker.swift in Sources */,
 				E898234C281A5F9F003E9CA5 /* DataManager.swift in Sources */,
@@ -612,7 +585,6 @@
 				E8982354281A5F9F003E9CA5 /* DetailVM.swift in Sources */,
 				E8982356281A5F9F003E9CA5 /* Cloud.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -644,7 +616,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		684A20991EA74B7400BFC44C /* Debug */ = {
+		684A20991EA74B7400BFC44C /* Debug configuration for PBXProject "nimbus" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -702,12 +674,12 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		684A209A1EA74B7400BFC44C /* Release */ = {
+		684A209A1EA74B7400BFC44C /* Release configuration for PBXProject "nimbus" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -759,13 +731,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		684A209C1EA74B7400BFC44C /* Debug */ = {
+		684A209C1EA74B7400BFC44C /* Debug configuration for PBXNativeTarget "nimbus-SwiftUI" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -790,7 +762,7 @@
 			};
 			name = Debug;
 		};
-		684A209D1EA74B7400BFC44C /* Release */ = {
+		684A209D1EA74B7400BFC44C /* Release configuration for PBXNativeTarget "nimbus-SwiftUI" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -814,7 +786,7 @@
 			};
 			name = Release;
 		};
-		E85C2E7327CD0E5000E02462 /* Debug */ = {
+		E85C2E7327CD0E5000E02462 /* Debug configuration for PBXNativeTarget "nimbusTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -844,7 +816,7 @@
 			};
 			name = Debug;
 		};
-		E85C2E7427CD0E5000E02462 /* Release */ = {
+		E85C2E7427CD0E5000E02462 /* Release configuration for PBXNativeTarget "nimbusTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -872,14 +844,14 @@
 			};
 			name = Release;
 		};
-		E898235F281A5F9F003E9CA5 /* Debug */ = {
+		E898235F281A5F9F003E9CA5 /* Debug configuration for PBXNativeTarget "nimbus-UIKit" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "nimbus/nimbus-UIKit.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = "nimbus/Info-UIKit.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIKit";
@@ -899,14 +871,14 @@
 			};
 			name = Debug;
 		};
-		E8982360281A5F9F003E9CA5 /* Release */ = {
+		E8982360281A5F9F003E9CA5 /* Release configuration for PBXNativeTarget "nimbus-UIKit" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "nimbus/nimbus-UIKit.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = "nimbus/Info-UIKit.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIKit";
@@ -931,37 +903,33 @@
 		684A207F1EA74B7400BFC44C /* Build configuration list for PBXProject "nimbus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				684A20991EA74B7400BFC44C /* Debug */,
-				684A209A1EA74B7400BFC44C /* Release */,
+				684A20991EA74B7400BFC44C /* Debug configuration for PBXProject "nimbus" */,
+				684A209A1EA74B7400BFC44C /* Release configuration for PBXProject "nimbus" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		684A209B1EA74B7400BFC44C /* Build configuration list for PBXNativeTarget "nimbus-SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				684A209C1EA74B7400BFC44C /* Debug */,
-				684A209D1EA74B7400BFC44C /* Release */,
+				684A209C1EA74B7400BFC44C /* Debug configuration for PBXNativeTarget "nimbus-SwiftUI" */,
+				684A209D1EA74B7400BFC44C /* Release configuration for PBXNativeTarget "nimbus-SwiftUI" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		E85C2E7227CD0E5000E02462 /* Build configuration list for PBXNativeTarget "nimbusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E85C2E7327CD0E5000E02462 /* Debug */,
-				E85C2E7427CD0E5000E02462 /* Release */,
+				E85C2E7327CD0E5000E02462 /* Debug configuration for PBXNativeTarget "nimbusTests" */,
+				E85C2E7427CD0E5000E02462 /* Release configuration for PBXNativeTarget "nimbusTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		E898235E281A5F9F003E9CA5 /* Build configuration list for PBXNativeTarget "nimbus-UIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E898235F281A5F9F003E9CA5 /* Debug */,
-				E8982360281A5F9F003E9CA5 /* Release */,
+				E898235F281A5F9F003E9CA5 /* Debug configuration for PBXNativeTarget "nimbus-UIKit" */,
+				E8982360281A5F9F003E9CA5 /* Release configuration for PBXNativeTarget "nimbus-UIKit" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
