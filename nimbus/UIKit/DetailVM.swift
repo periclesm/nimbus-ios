@@ -27,8 +27,7 @@ class DetailVM: NSObject {
 	
 	// MARK: - Image functions --
 	
-	//iOS 15+
-	func asyncCloudImage(imageURL: URL?) async -> UIImage? {
+	@MainActor func asyncCloudImage(imageURL: URL?) async -> UIImage? {
 		guard let imageURL else {
 			return nil
 		}
@@ -40,22 +39,6 @@ class DetailVM: NSObject {
 		}
 		
 		return nil
-	}
-	
-	///iOS 14-
-	func getCloudImage(completion: @escaping ((UIImage?) -> Void)) {
-		let imageURL = self.getImageURL(self.cloud?.objectId)
-		let config = NetConfig(HTTPMethod: .GET, timeout: 10, url: imageURL)
-		
-		Networker.getImage(config: config) { (response) in
-			if response.completed {
-				completion(response.data as? UIImage)
-			}
-			else {
-				assert(true, "Return a default image")
-				completion(nil)
-			}
-		}
 	}
 	
 	//MARK: - Wiki functions --

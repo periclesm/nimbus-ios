@@ -21,18 +21,8 @@ class MainVM: NSObject {
 		self.clouds = CloudController.getListData(sortBy: sortBy, ascending: ascending)
 	}
 	
-	func refreshDataAsync() async {
+	@MainActor func refreshDataAsync() async {
 		await DataManager.asyncData()
-		DispatchQueue.main.async {
-			self.getLocalData()
-		}
-	}
-	
-	///Deprecated
-	func refreshData(completion: @escaping ((Bool) -> Void)) {
-		DataManager.getData { success in
-			self.getLocalData()
-			completion(success)
-		}
+		getLocalData()
 	}
 }

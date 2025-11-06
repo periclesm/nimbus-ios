@@ -8,18 +8,19 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
+import Foundation
 import RealmSwift
 
 typealias CloudData = Array<Cloud>
 
 class Cloud: Object, Codable, Identifiable {
 
-	@Persisted (primaryKey: true) var objectId: String = ""
-	@Persisted (indexed: true) var name: String = ""
-	@Persisted (indexed: true) var order: Int = 0
+	@Persisted(primaryKey: true) var objectId: String = ""
+	@Persisted(indexed: true) var name: String = ""
+	@Persisted(indexed: true) var order: Int = 0
 	@Persisted var type: CloudType? = nil
 	@Persisted var detail: CloudDetail? = nil
-	@Persisted (indexed: true) var initials: String = ""
+	@Persisted(indexed: true) var initials: String = ""
 	@Persisted var excerpt: String = ""
 
 }

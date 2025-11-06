@@ -1,6 +1,6 @@
 //
 //  NetParameters.swift
-//  nimbus
+//  SwiftNetworker
 //
 //  Created by Perikles Maravelakis on 11/6/22.
 //	periclesm@cloudfields.net

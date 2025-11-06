@@ -8,12 +8,13 @@
 //	https://creativecommons.org/licenses/by-sa/4.0/
 //
 
+import Foundation
 import RealmSwift
 
 class CloudType: Object, Codable {
 
-	@Persisted (primaryKey: true) var objectId: String = ""
-	@Persisted (indexed: true) var name: String = ""
+	@Persisted(primaryKey: true) var objectId: String = ""
+	@Persisted(indexed: true) var name: String = ""
 	@Persisted var detail: String = ""
 
 }

@@ -11,13 +11,13 @@
 import Foundation
 import RealmSwift
 
-final class Database: NSObject {
+final class Database: NSObject, @unchecked Sendable {
 
-	static var shared = Database()
-	private var mainDB: Realm?
+	static let shared = Database()
+	let ops = RealmOperation()
+	let query = RealmQuery()
 	
-	//let rdbQueue = DispatchQueue(label: "RealmDBQueue", attributes: .concurrent, autoreleaseFrequency: .never)
-
+	private var mainDB: Realm?
 	var db: Realm {
 		set(newSchema) {
 			self.mainDB = newSchema
