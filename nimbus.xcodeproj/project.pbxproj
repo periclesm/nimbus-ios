@@ -851,7 +851,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "nimbus/nimbus-UIKit.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = "nimbus/Info-UIKit.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIKit";
@@ -878,7 +878,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "nimbus/nimbus-UIKit.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = AFNBPBD3C5;
 				INFOPLIST_FILE = "nimbus/Info-UIKit.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Nimbus UIKit";
@@ -939,7 +939,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
-				branch = master;
+				branch = community;
 				kind = branch;
 			};
 		};
